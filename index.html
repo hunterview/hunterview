@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>헌터뷰(HUNTERVIEW) — 체험단 통합 검색</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary: #FF6B35;
+  --primary-dark: #E85520;
+  --primary-light: #FF8C5A;
+  --primary-pale: #FFF0EA;
+  --grad: linear-gradient(135deg, #FF6B35 0%, #FF9A5C 100%);
+  --bg: #F8F9FA;
+  --surface: #FFFFFF;
+  --border: #EBEBEB;
+  --border2: #F0F0F0;
+  --text: #1A1A1A;
+  --text2: #555555;
+  --text3: #AAAAAA;
+  --green: #00C471;
+  --green-bg: #E6FAF2;
+  --red: #FF3B30;
+  --red-bg: #FFF0EF;
+  --blue: #0066FF;
+  --blue-bg: #EEF3FF;
+  --yellow: #FFAA00;
+  --yellow-bg: #FFF8E6;
+  --shadow-sm: 0 1px 4px rgba(0,0,0,.06);
+  --shadow-md: 0 4px 20px rgba(0,0,0,.08);
+  --shadow-hover: 0 8px 32px rgba(255,107,53,.15);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Noto Sans KR', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; font-size: 14px; line-height: 1.6; }
+
+/* ─── 헤더 ─── */
+header {
+  background: var(--surface); border-bottom: 1px solid var(--border);
+  padding: 0 32px; display: flex; align-items: center; justify-content: space-between;
+  height: 60px; position: sticky; top: 0; z-index: 100; box-shadow: var(--shadow-sm);
+}
+.logo { font-size: 20px; font-weight: 900; color: var(--text); text-decoration: none; letter-spacing: -.5px; }
+.logo-dot { color: var(--primary); }
+nav { display: flex; gap: 2px; align-items: center; }
+nav a { color: var(--text2); text-decoration: none; font-size: 13px; font-weight: 500; padding: 6px 14px; border-radius: 8px; transition: all .15s; }
+nav a:hover, nav a.active { background: var(--primary-pale); color: var(--primary); font-weight: 700; }
+.btn-login { background: var(--primary); color: #fff; border: none; padding: 8px 20px; border-radius: 8px; font-size: 13px; font-weight: 700; cursor: pointer; font-family: inherit; transition: background .2s; margin-left: 8px; }
+.btn-login:hover { background: var(--primary-dark); }
+
+/* ─── 탭 페이지 ─── */
+.page { display: none; }
+.page.active { display: block; }
+
+/* ─── 히어로 ─── */
+.hero {
+  background: var(--surface); border-bottom: 1px solid var(--border);
+  padding: 52px 32px 48px; text-align: center;
+}
+.hero-badge { display: inline-flex; align-items: center; gap: 6px; background: var(--primary-pale); color: var(--primary); font-size: 12px; font-weight: 700; padding: 5px 14px; border-radius: 20px; margin-bottom: 20px; }
+.hero h1 { font-size: clamp(28px, 4vw, 48px); font-weight: 900; color: var(--text); line-height: 1.2; margin-bottom: 12px; letter-spacing: -1px; }
+.hero h1 .hl { color: var(--primary); border-bottom: 3px solid var(--primary); padding-bottom: 2px; }
+.hero p { color: var(--text2); font-size: 15px; margin-bottom: 36px; }
+
+.search-box { max-width: 600px; margin: 0 auto; display: flex; border: 2px solid var(--border); border-radius: 12px; background: var(--surface); overflow: hidden; box-shadow: var(--shadow-md); transition: border-color .2s; }
+.search-box:focus-within { border-color: var(--primary); }
+.search-box input { flex: 1; padding: 14px 18px; border: none; font-size: 14px; font-family: inherit; color: var(--text); outline: none; background: transparent; }
+.search-box input::placeholder { color: var(--text3); }
+.search-box button { background: var(--primary); color: #fff; border: none; padding: 0 24px; font-size: 14px; font-weight: 700; cursor: pointer; font-family: inherit; transition: background .2s; display: flex; align-items: center; gap: 6px; }
+.search-box button:hover { background: var(--primary-dark); }
+.search-box button svg { width: 16px; height: 16px; stroke: #fff; fill: none; stroke-width: 2.5; stroke-linecap: round; }
+
+.filter-row { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-top: 18px; }
+.filter-tag { padding: 6px 16px; border-radius: 20px; font-size: 13px; font-weight: 500; cursor: pointer; background: var(--bg); color: var(--text2); border: 1.5px solid var(--border); font-family: inherit; transition: all .15s; }
+.filter-tag:hover { border-color: var(--primary); color: var(--primary); background: var(--primary-pale); }
+.filter-tag.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+
+/* ─── 통계 바 ─── */
+.stats-bar { background: var(--surface); border-bottom: 1px solid var(--border); display: flex; justify-content: center; }
+.stat { flex: 1; max-width: 180px; text-align: center; padding: 18px 12px; border-right: 1px solid var(--border2); }
+.stat:last-child { border-right: none; }
+.stat-num { font-size: 22px; font-weight: 900; color: var(--primary); line-height: 1; margin-bottom: 3px; }
+.stat-label { font-size: 11px; color: var(--text3); font-weight: 500; }
+
+/* ─── 광고 ─── */
+.ad-wrap { background: var(--surface); border-bottom: 1px solid var(--border); padding: 16px 32px; text-align: center; }
+.ad-inline { background: var(--surface); border: 1.5px solid var(--border); border-radius: 12px; padding: 18px; text-align: center; margin-bottom: 32px; }
+.ad-label { font-size: 10px; color: var(--text3); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
+.ad-disclaimer { font-size: 11px; color: var(--text3); margin-top: 8px; }
+
+/* ─── 체험단 검색 메인 ─── */
+.main { max-width: 960px; margin: 0 auto; padding: 36px 32px; }
+
+/* ─── 사이트 태그 모음 ─── */
+.sites-section { background: var(--surface); border-bottom: 1px solid var(--border); padding: 24px 32px; }
+.sites-header { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; }
+.sites-header-title { font-size: 15px; font-weight: 700; }
+.sites-total { font-size: 12px; color: var(--text3); background: var(--bg); padding: 3px 10px; border-radius: 20px; }
+.sites-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.site-tag {
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 500;
+  border: 1.5px solid var(--border); background: var(--surface); color: var(--text2);
+  text-decoration: none; cursor: pointer; transition: all .15s;
+}
+.site-tag:hover { border-color: var(--primary); color: var(--primary); background: var(--primary-pale); }
+.site-tag.hot { border-color: #FFD0B5; background: var(--primary-pale); color: var(--primary); }
+
+/* ─── 오늘 오픈 배너 ─── */
+.today-banner { background: linear-gradient(135deg, #FFF0EA 0%, #FFE4D4 100%); border: 1.5px solid #FFD0B5; border-radius: 12px; padding: 14px 18px; display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+.today-badge { background: var(--primary); color: #fff; font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 6px; white-space: nowrap; }
+.today-text { font-size: 13px; font-weight: 600; color: var(--primary-dark); }
+.today-sub { font-size: 12px; color: var(--primary); opacity: .7; }
+
+.section-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px; }
+.section-title { font-size: 17px; font-weight: 900; color: var(--text); display: flex; align-items: center; gap: 8px; }
+.badge-count { background: var(--primary-pale); color: var(--primary); font-size: 12px; font-weight: 700; padding: 2px 10px; border-radius: 20px; }
+.sort-select { padding: 7px 12px; border: 1.5px solid var(--border); border-radius: 8px; font-size: 12px; font-family: inherit; background: var(--surface); color: var(--text2); cursor: pointer; outline: none; }
+
+/* ─── 캠페인 카드 ─── */
+.card-list { display: flex; flex-direction: column; gap: 12px; }
+.card { background: var(--surface); border: 1.5px solid var(--border); border-radius: 14px; padding: 20px 22px; transition: all .2s; box-shadow: var(--shadow-sm); text-decoration: none; color: inherit; display: block; }
+.card:hover { box-shadow: var(--shadow-hover); border-color: #FFD0B5; transform: translateY(-1px); }
+.card-inner { display: flex; align-items: flex-start; gap: 16px; }
+.card-left { flex: 1; min-width: 0; }
+.card-right { flex-shrink: 0; text-align: right; }
+.card-top { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; flex-wrap: wrap; }
+.platform-badge { display: inline-flex; align-items: center; gap: 5px; background: var(--bg); border: 1px solid var(--border); color: var(--text2); font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 6px; }
+.platform-dot { width: 6px; height: 6px; border-radius: 50%; }
+.d-orange{background:var(--primary)} .d-coral{background:#FF8C69} .d-teal{background:#00B4A6}
+.d-blue{background:#0066FF} .d-green{background:#00C471} .d-pink{background:#FF6B9D} .d-amber{background:#FFAA00}
+.card h3 { font-size: 15px; font-weight: 700; line-height: 1.45; margin-bottom: 10px; }
+.card-meta { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 10px; }
+.meta-item { display: flex; align-items: center; gap: 4px; font-size: 12px; color: var(--text2); }
+.meta-item svg { width: 13px; height: 13px; stroke: currentColor; fill: none; stroke-width: 2; flex-shrink: 0; }
+.card-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+.tag { font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 6px; }
+.tag-blog{background:#EEF3FF;color:#0066FF} .tag-insta{background:#FFF0F8;color:#D4006A}
+.tag-short{background:#E6FAF2;color:#007A45} .tag-cat{background:var(--bg);color:var(--text2);border:1px solid var(--border)}
+.deadline-badge { font-size: 12px; font-weight: 700; padding: 4px 12px; border-radius: 6px; }
+.dl-hot{background:var(--red-bg);color:var(--red)} .dl-soon{background:var(--yellow-bg);color:var(--yellow)} .dl-normal{background:var(--green-bg);color:var(--green)}
+.new-badge { background: var(--primary); color: #fff; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 4px; }
+.reward-amount { font-size: 18px; font-weight: 900; color: var(--primary); margin-bottom: 4px; }
+.reward-sub { font-size: 11px; color: var(--text3); margin-bottom: 12px; }
+.apply-btn { display: block; width: 100%; background: var(--primary); color: #fff; border: none; padding: 9px 18px; border-radius: 8px; font-size: 13px; font-weight: 700; cursor: pointer; font-family: inherit; transition: background .2s; text-align: center; }
+.apply-btn:hover { background: var(--primary-dark); }
+.comp-wrap { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--border2); }
+.comp-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px; }
+.comp-text { font-size: 11px; color: var(--text3); }
+.comp-pct { font-size: 11px; font-weight: 700; }
+.comp-low-t{color:var(--green)} .comp-mid-t{color:var(--yellow)} .comp-high-t{color:var(--red)}
+.comp-bar { height: 5px; background: var(--bg); border-radius: 3px; overflow: hidden; }
+.comp-fill { height: 100%; border-radius: 3px; }
+.comp-fill-low{background:var(--green)} .comp-fill-mid{background:var(--yellow)} .comp-fill-high{background:linear-gradient(to right,var(--primary),#FF9A5C)}
+.no-results { text-align: center; padding: 60px 20px; color: var(--text2); display: none; }
+.no-results h3 { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
+
+/* ─── 체험단 관리 페이지 ─── */
+.manage-wrap { max-width: 960px; margin: 0 auto; padding: 32px; }
+.manage-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; }
+.manage-title { font-size: 20px; font-weight: 900; }
+.btn-add { background: var(--primary); color: #fff; border: none; padding: 10px 20px; border-radius: 10px; font-size: 14px; font-weight: 700; cursor: pointer; font-family: inherit; display: flex; align-items: center; gap: 6px; transition: background .2s; }
+.btn-add:hover { background: var(--primary-dark); }
+
+/* 탭 (할 일 / 완료) */
+.manage-tabs { display: flex; gap: 0; border-bottom: 2px solid var(--border); margin-bottom: 24px; }
+.manage-tab { padding: 10px 24px; font-size: 14px; font-weight: 600; color: var(--text3); cursor: pointer; border: none; background: none; font-family: inherit; border-bottom: 2px solid transparent; margin-bottom: -2px; transition: all .15s; }
+.manage-tab.active { color: var(--primary); border-bottom-color: var(--primary); }
+
+/* 스케줄 카드 */
+.schedule-list { display: flex; flex-direction: column; gap: 12px; }
+.schedule-card {
+  background: var(--surface); border: 1.5px solid var(--border);
+  border-radius: 14px; padding: 18px 22px;
+  display: flex; align-items: flex-start; gap: 16px;
+  box-shadow: var(--shadow-sm); transition: all .2s;
+  position: relative; overflow: hidden;
+}
+.schedule-card::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: var(--grad); border-radius: 14px 0 0 14px; }
+.schedule-card:hover { box-shadow: var(--shadow-hover); border-color: #FFD0B5; }
+.schedule-card.done { opacity: .6; }
+.schedule-card.done::before { background: #ccc; }
+
+.sch-check { margin-top: 2px; flex-shrink: 0; }
+.sch-check input[type=checkbox] { width: 18px; height: 18px; accent-color: var(--primary); cursor: pointer; }
+.sch-body { flex: 1; min-width: 0; }
+.sch-top { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; flex-wrap: wrap; }
+.sch-platform { font-size: 11px; font-weight: 700; padding: 2px 10px; border-radius: 6px; background: var(--primary-pale); color: var(--primary); }
+.sch-status { font-size: 11px; font-weight: 700; padding: 2px 10px; border-radius: 6px; }
+.status-waiting  { background: var(--blue-bg); color: var(--blue); }
+.status-selected { background: var(--green-bg); color: var(--green); }
+.status-writing  { background: var(--yellow-bg); color: var(--yellow); }
+.status-done     { background: var(--bg); color: var(--text3); }
+.sch-title { font-size: 15px; font-weight: 700; margin-bottom: 8px; line-height: 1.4; }
+.sch-meta { display: flex; gap: 16px; flex-wrap: wrap; }
+.sch-meta-item { display: flex; align-items: center; gap: 4px; font-size: 12px; color: var(--text2); }
+.sch-meta-item svg { width: 13px; height: 13px; stroke: currentColor; fill: none; stroke-width: 2; }
+.sch-right { flex-shrink: 0; display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
+.sch-dday { font-size: 13px; font-weight: 900; }
+.sch-dday.urgent { color: var(--red); }
+.sch-dday.soon   { color: var(--yellow); }
+.sch-dday.ok     { color: var(--green); }
+.sch-dday.done-t { color: var(--text3); }
+.sch-delete { background: none; border: 1px solid var(--border); color: var(--text3); padding: 4px 10px; border-radius: 6px; font-size: 11px; cursor: pointer; font-family: inherit; transition: all .15s; }
+.sch-delete:hover { border-color: var(--red); color: var(--red); background: var(--red-bg); }
+
+/* 빈 상태 */
+.empty-state { text-align: center; padding: 80px 20px; color: var(--text3); }
+.empty-state .empty-icon { font-size: 48px; margin-bottom: 16px; }
+.empty-state h3 { font-size: 18px; font-weight: 700; color: var(--text2); margin-bottom: 8px; }
+
+/* 모달 */
+.modal-bg { position: fixed; inset: 0; background: rgba(0,0,0,.45); z-index: 200; display: none; align-items: center; justify-content: center; }
+.modal-bg.open { display: flex; }
+.modal { background: var(--surface); border-radius: 20px; padding: 32px; width: 500px; max-width: 90vw; box-shadow: 0 20px 60px rgba(0,0,0,.2); }
+.modal h2 { font-size: 18px; font-weight: 900; margin-bottom: 24px; }
+.form-group { margin-bottom: 16px; }
+.form-label { font-size: 13px; font-weight: 700; color: var(--text2); margin-bottom: 6px; display: block; }
+.form-input, .form-select {
+  width: 100%; padding: 11px 14px; border: 1.5px solid var(--border);
+  border-radius: 10px; font-size: 14px; font-family: inherit; color: var(--text);
+  outline: none; transition: border-color .2s; background: var(--surface);
+}
+.form-input:focus, .form-select:focus { border-color: var(--primary); }
+.form-row { display: flex; gap: 12px; }
+.form-row .form-group { flex: 1; }
+.modal-btns { display: flex; gap: 10px; margin-top: 24px; }
+.btn-cancel { flex: 1; padding: 12px; border: 1.5px solid var(--border); border-radius: 10px; font-size: 14px; font-weight: 700; cursor: pointer; font-family: inherit; background: var(--surface); color: var(--text2); transition: all .2s; }
+.btn-cancel:hover { border-color: var(--text2); }
+.btn-save { flex: 2; padding: 12px; background: var(--primary); color: #fff; border: none; border-radius: 10px; font-size: 14px; font-weight: 700; cursor: pointer; font-family: inherit; transition: background .2s; }
+.btn-save:hover { background: var(--primary-dark); }
+
+/* ─── 푸터 ─── */
+footer { background: #1A1A1A; color: rgba(255,255,255,.4); text-align: center; padding: 40px 32px; font-size: 12px; line-height: 2; margin-top: 20px; }
+.footer-logo { font-size: 18px; font-weight: 900; color: var(--primary); display: block; margin-bottom: 8px; }
+
+/* ─── 반응형 ─── */
+@media (max-width: 580px) {
+  header { padding: 0 16px; } nav span { display: none; }
+  .hero { padding: 36px 16px 40px; }
+  .main, .manage-wrap { padding: 20px 16px; }
+  .sites-section { padding: 20px 16px; }
+  .ad-wrap { padding: 14px 16px; }
+  .card-inner, .schedule-card { flex-direction: column; }
+  .card-right { text-align: left; width: 100%; }
+}
+@keyframes fadeUp { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
+.card { animation: fadeUp .32s ease both; }
+.schedule-card { animation: fadeUp .32s ease both; }
+</style>
+</head>
+<body>
+
+<!-- 헤더 -->
+<header>
+  <a class="logo" href="#" onclick="showPage('search')">헌터뷰<span class="logo-dot">.</span></a>
+  <nav>
+    <a href="#" onclick="showPage('search')" id="nav-search" class="active">🔍 <span>체험단 검색</span></a>
+
+    <a href="#" onclick="showPage('manage')" id="nav-manage">📋 <span>내 체험단 관리</span></a>
+  </nav>
+  <button class="btn-login" onclick="alert('준비 중인 기능이에요!')">로그인</button>
+</header>
+
+<!-- ══════════════ 검색 페이지 ══════════════ -->
+<div class="page active" id="page-search">
+
+  <!-- 히어로 -->
+  <section class="hero">
+    <div class="hero-badge">🔥 10개+ 체험단 사이트 통합 검색</div>
+    <h1>체험단 캠페인,<br><span class="hl">한 번에</span> 찾아보세요</h1>
+    <p>인기 체험단 사이트를 모두 한 곳에서</p>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="지역, 카테고리, 키워드 검색 (예: 서울 맛집, 뷰티 제품)" oninput="filterCards()">
+      <button onclick="filterCards()">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        검색
+      </button>
+    </div>
+    <div class="filter-row">
+      <button class="filter-tag active" onclick="setFilter('전체',this)">전체</button>
+      <button class="filter-tag" onclick="setFilter('블로그',this)">📝 블로그</button>
+      <button class="filter-tag" onclick="setFilter('인스타',this)">📸 인스타</button>
+      <button class="filter-tag" onclick="setFilter('숏폼',this)">🎬 숏폼/릴스</button>
+      <button class="filter-tag" onclick="setFilter('맛집',this)">🍽️ 맛집</button>
+      <button class="filter-tag" onclick="setFilter('뷰티',this)">💄 뷰티</button>
+      <button class="filter-tag" onclick="setFilter('숙박',this)">🏨 숙박</button>
+      <button class="filter-tag" onclick="setFilter('제품',this)">📦 제품</button>
+    </div>
+  </section>
+
+  <!-- 통계 -->
+  <div class="stats-bar">
+    <div class="stat"><div class="stat-num">44,875</div><div class="stat-label">총 캠페인</div></div>
+    <div class="stat"><div class="stat-num">64</div><div class="stat-label">연동 사이트</div></div>
+    <div class="stat"><div class="stat-num">89</div><div class="stat-label">오늘 신규</div></div>
+    <div class="stat"><div class="stat-num">43</div><div class="stat-label">마감 임박</div></div>
+  </div>
+
+  <!-- 광고 -->
+  <div class="ad-wrap">
+    <div class="ad-label">Advertisement</div>
+    <script src="https://ads-partners.coupang.com/g.js"></script>
+    <script>new PartnersCoupang.G({"id":976349,"template":"carousel","trackingCode":"AF5506301","width":"1000","height":"140","tsource":""});</script>
+    <div class="ad-disclaimer">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</div>
+  </div>
+
+  <!-- 캠페인 목록 -->
+  <div class="main">
+    <div class="today-banner">
+      <span class="today-badge">🔥 오늘 오픈</span>
+      <div>
+        <div class="today-text">오늘 새로 열린 캠페인 <strong>89개</strong></div>
+        <div class="today-sub">경쟁률 낮을 때 빠르게 신청하세요!</div>
+      </div>
+    </div>
+    <div class="section-header">
+      <div class="section-title">캠페인 <span class="badge-count" id="cardCount">12개</span></div>
+      <select class="sort-select" onchange="sortCards(this.value)">
+        <option value="latest">최신순</option>
+        <option value="deadline">마감 임박순</option>
+        <option value="reward">혜택 큰 순</option>
+        <option value="competition">경쟁률 낮은 순</option>
+      </select>
+    </div>
+    <div class="card-list" id="cardGrid"></div>
+    <div class="no-results" id="noResults"><h3>😅 검색 결과가 없어요</h3><p>다른 키워드나 카테고리를 시도해보세요</p></div>
+
+    <!-- 광고 중간 -->
+    <div class="ad-inline" style="margin-top:32px">
+      <div class="ad-label">Advertisement</div>
+      <script>new PartnersCoupang.G({"id":976349,"template":"carousel","trackingCode":"AF5506301","width":"1000","height":"140","tsource":""});</script>
+      <div class="ad-disclaimer">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- ══════════════ 체험단 관리 페이지 ══════════════ -->
+<div class="page" id="page-manage">
+  <div class="manage-wrap">
+    <div class="manage-top">
+      <div class="manage-title">📋 내 체험단 관리</div>
+      <button class="btn-add" onclick="openModal()">+ 새 스케줄 추가</button>
+    </div>
+
+    <div class="manage-tabs">
+      <button class="manage-tab active" onclick="switchTab('todo', this)">할 일</button>
+      <button class="manage-tab" onclick="switchTab('done', this)">완료</button>
+    </div>
+
+    <div class="schedule-list" id="scheduleList"></div>
+    <div class="empty-state" id="emptyState" style="display:none">
+      <div class="empty-icon">📭</div>
+      <h3>등록된 스케줄이 없어요</h3>
+      <p>새 스케줄 추가 버튼으로 체험단을 등록해보세요!</p>
+    </div>
+  </div>
+</div>
+
+<!-- 광고 하단 -->
+<div class="ad-wrap">
+  <div class="ad-label">Advertisement</div>
+  <script>new PartnersCoupang.G({"id":976349,"template":"carousel","trackingCode":"AF5506301","width":"1000","height":"140","tsource":""});</script>
+  <div class="ad-disclaimer">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</div>
+</div>
+
+<!-- 푸터 -->
+<footer>
+  <span class="footer-logo">헌터뷰.</span>
+  체험단 통합 검색 플랫폼 &nbsp;·&nbsp; 문의: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5e363b322e1e362b302a3b2c28373b2970352c">[email&#160;protected]</a><br>
+  본 사이트는 각 체험단 플랫폼의 정보를 수집·제공하며, 실제 신청은 해당 사이트에서 진행됩니다.
+</footer>
+
+<!-- 스케줄 추가 모달 -->
+<div class="modal-bg" id="modalBg" onclick="if(event.target===this)closeModal()">
+  <div class="modal">
+    <h2>✍️ 새 체험단 스케줄 추가</h2>
+    <div class="form-group">
+      <label class="form-label">체험단 제목 *</label>
+      <input class="form-input" id="f-title" placeholder="예: [서울/강남] 한우 오마카세 방문 체험단">
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label">플랫폼</label>
+        <input class="form-input" id="f-platform" placeholder="예: 파블로체험단">
+      </div>
+      <div class="form-group">
+        <label class="form-label">상태</label>
+        <select class="form-select" id="f-status">
+          <option value="waiting">신청 대기</option>
+          <option value="selected">선정됨</option>
+          <option value="writing">리뷰 작성 중</option>
+          <option value="done">완료</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label">마감일</label>
+        <input class="form-input" id="f-deadline" type="date">
+      </div>
+      <div class="form-group">
+        <label class="form-label">혜택</label>
+        <input class="form-input" id="f-reward" placeholder="예: 5만원 상당">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label">메모</label>
+      <input class="form-input" id="f-memo" placeholder="예: 리뷰 가이드 확인 필요">
+    </div>
+    <div class="modal-btns">
+      <button class="btn-cancel" onclick="closeModal()">취소</button>
+      <button class="btn-save" onclick="addSchedule()">추가하기</button>
+    </div>
+  </div>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+// ── 페이지 전환 ──
+function showPage(name) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+  document.getElementById('page-' + name).classList.add('active');
+  document.getElementById('nav-' + name).classList.add('active');
+  window.scrollTo(0, 0);
+}
+
+// ── 체험단 사이트 목록 ──
+const sites = [
+  {name:'SSG',url:'https://www.ssg.com',hot:false},
+  {name:'가보자체험단',url:'#',hot:false},
+  {name:'강남맛집',url:'https://www.gangnamfood.com',hot:true},
+  {name:'구구다스',url:'#',hot:false},
+  {name:'놀러와체험단',url:'#',hot:true},
+  {name:'다나와',url:'https://www.danawa.com',hot:false},
+  {name:'대한민국어디',url:'#',hot:false},
+  {name:'데일리뷰',url:'#',hot:true},
+  {name:'디너의여왕',url:'https://dinnerqueen.net',hot:true},
+  {name:'디노단',url:'#',hot:false},
+  {name:'똑똑체험단',url:'#',hot:true},
+  {name:'레뷰',url:'https://www.revu.net',hot:false},
+  {name:'롯데ON',url:'https://www.lotteon.com',hot:false},
+  {name:'리뷰노트',url:'#',hot:false},
+  {name:'리뷰스토리',url:'#',hot:false},
+  {name:'리뷰어스',url:'#',hot:false},
+  {name:'리뷰윙',url:'#',hot:false},
+  {name:'리뷰진',url:'#',hot:true},
+  {name:'리뷰퀸',url:'#',hot:false},
+  {name:'리뷰통',url:'#',hot:false},
+  {name:'리뷰플레이스',url:'#',hot:true},
+  {name:'리얼리뷰',url:'#',hot:false},
+  {name:'링블',url:'#',hot:false},
+  {name:'마녀체험단',url:'#',hot:false},
+  {name:'마케팅셰프',url:'#',hot:false},
+  {name:'머니쿤',url:'#',hot:false},
+  {name:'메타체험단',url:'#',hot:false},
+  {name:'모두모여',url:'https://xn--6j1br0ag3lba435lvsj96p.com',hot:true},
+  {name:'모두의체험단',url:'https://www.modan.kr',hot:false},
+  {name:'무신사',url:'https://www.musinsa.com',hot:false},
+  {name:'미블',url:'https://www.mrblog.net',hot:false},
+  {name:'뷰티의여왕',url:'#',hot:false},
+  {name:'볼덱스체험단',url:'#',hot:false},
+  {name:'블로그주민센터',url:'#',hot:false},
+  {name:'블릿지',url:'#',hot:false},
+  {name:'서울오빠',url:'#',hot:true},
+  {name:'스타일씨',url:'#',hot:true},
+  {name:'스토리앤미디어',url:'#',hot:true},
+  {name:'시원뷰',url:'#',hot:false},
+  {name:'아싸뷰',url:'https://assaview.co.kr',hot:true},
+  {name:'어디야체험단',url:'#',hot:false},
+  {name:'여기앤다있어',url:'#',hot:false},
+  {name:'오마이블로그',url:'#',hot:true},
+  {name:'우리가게체험단',url:'#',hot:true},
+  {name:'원블',url:'#',hot:false},
+  {name:'이놀자',url:'#',hot:true},
+  {name:'이음체험단',url:'#',hot:false},
+  {name:'잠자리체험단',url:'#',hot:false},
+  {name:'체험단닷컴',url:'http://chehumdan.com',hot:true},
+  {name:'체험뷰',url:'#',hot:true},
+  {name:'클라우드리뷰',url:'#',hot:false},
+  {name:'태그바이',url:'https://www.tagby.kr',hot:false},
+  {name:'택배의여왕',url:'#',hot:false},
+  {name:'티블',url:'https://tble.kr',hot:false},
+  {name:'파블로체험단',url:'https://pavlovu.com',hot:false},
+  {name:'파인앳플',url:'#',hot:false},
+  {name:'퍼스트리뷰',url:'#',hot:false},
+  {name:'퍼플체험단',url:'#',hot:false},
+  {name:'포블로그',url:'https://4blog.net',hot:false},
+  {name:'포포몬',url:'https://popomon.com',hot:false},
+  {name:'플레이체험단',url:'#',hot:false},
+  {name:'픽미',url:'#',hot:false},
+  {name:'핫블',url:'#',hot:false},
+  {name:'허니뷰',url:'#',hot:false},
+  {name:'후기업',url:'#',hot:false},
+  {name:'후키',url:'#',hot:false},
+];
+
+function renderSiteTags() {
+  document.getElementById('siteTagList').innerHTML = sites.map(s =>
+    `<a class="site-tag${s.hot?' hot':''}" href="${s.url}" target="_blank" ${s.url==='#'?'onclick="event.preventDefault();alert(\'준비 중!\')"':''}>
+      ${s.name}
+    </a>`
+  ).join('');
+}
+renderSiteTags();
+
+// ── 캠페인 데이터 ──
+const campaigns = [
+  {id:1,title:"[서울/강남] 프리미엄 한우 오마카세 방문 체험단",platform:"디너의여왕",dot:"d-coral",type:["블로그"],tags:["맛집","서울","강남","한우"],reward:"15만원 상당",rewardNum:150000,location:"서울 강남구",deadline:3,total:8,applied:5,site:"dinnerqueen.net",isNew:true},
+  {id:2,title:"[배송] 비타민C 세럼 + 수분크림 풀 세트 인스타 체험단",platform:"파블로체험단",dot:"d-orange",type:["인스타"],tags:["뷰티","스킨케어","제품"],reward:"7만원 상당",rewardNum:70000,location:"배송형",deadline:7,total:20,applied:6,site:"pavlovu.com",isNew:false},
+  {id:3,title:"[부산/해운대] 오션뷰 풀빌라 1박2일 숙박 블로그 체험단",platform:"모두의체험단",dot:"d-blue",type:["블로그"],tags:["숙박","부산","풀빌라","여행"],reward:"39만원 상당",rewardNum:390000,location:"부산 해운대",deadline:2,total:3,applied:8,site:"modan.kr",isNew:true},
+  {id:4,title:"[전국] 프리미엄 반려동물 간식 릴스 체험단",platform:"아싸뷰",dot:"d-green",type:["숏폼"],tags:["제품","반려동물","릴스"],reward:"3만원 상당",rewardNum:30000,location:"배송형",deadline:10,total:15,applied:3,site:"assaview.co.kr",isNew:false},
+  {id:5,title:"[서울/홍대] 인스타 감성 브런치 카페 방문 체험단",platform:"강남맛집",dot:"d-pink",type:["인스타","블로그"],tags:["맛집","서울","홍대","카페"],reward:"4만원 상당",rewardNum:40000,location:"서울 마포구",deadline:5,total:10,applied:4,site:"moaview.co.kr",isNew:true},
+  {id:6,title:"[제주] 감귤 테마 한달살기 체험 게스트하우스 블로그",platform:"모아뷰",dot:"d-teal",type:["블로그"],tags:["숙박","제주","여행","한달살기"],reward:"숙박 무료",rewardNum:200000,location:"제주도",deadline:14,total:2,applied:1,site:"moaview.co.kr",isNew:false},
+  {id:7,title:"[배송] 국내산 사과·배 혼합 과일 박스 인스타 체험단",platform:"포포몬",dot:"d-green",type:["인스타"],tags:["제품","식품","과일"],reward:"3.5만원 상당",rewardNum:35000,location:"배송형",deadline:4,total:30,applied:12,site:"popomon.com",isNew:false},
+  {id:8,title:"[경기/판교] 프리미엄 네일아트 블로그 체험단",platform:"파블로체험단",dot:"d-orange",type:["블로그"],tags:["뷰티","네일","경기","판교"],reward:"6만원 상당",rewardNum:60000,location:"경기 성남",deadline:6,total:5,applied:2,site:"pavlovu.com",isNew:true},
+  {id:9,title:"[인천] 스크린골프 4인 무료 체험 블로그 체험단",platform:"아싸뷰",dot:"d-green",type:["블로그"],tags:["스포츠","인천","레저","골프"],reward:"8만원 상당",rewardNum:80000,location:"인천",deadline:1,total:10,applied:3,site:"assaview.co.kr",isNew:false},
+  {id:10,title:"[배송] 비건 단백질 쉐이크 3종 릴스/숏폼 체험단",platform:"디너의여왕",dot:"d-coral",type:["숏폼","인스타"],tags:["제품","건강","비건","운동"],reward:"5만원 상당",rewardNum:50000,location:"배송형",deadline:9,total:25,applied:7,site:"dinnerqueen.net",isNew:false},
+  {id:11,title:"[대구/수성] 프리미엄 한식 코스 요리 블로그 체험단",platform:"모두의체험단",dot:"d-blue",type:["블로그"],tags:["맛집","대구","한식","코스"],reward:"9만원 상당",rewardNum:90000,location:"대구 수성구",deadline:8,total:6,applied:1,site:"modan.kr",isNew:true},
+  {id:12,title:"[서울/강서] 체형교정 전문센터 방문 인스타 체험단",platform:"모아뷰",dot:"d-teal",type:["인스타","블로그"],tags:["뷰티","건강","서울","강서"],reward:"12만원 상당",rewardNum:120000,location:"서울 강서구",deadline:12,total:10,applied:5,site:"moaview.co.kr",isNew:false},
+];
+
+let activeFilter='전체', searchTerm='';
+
+function dlBadge(d){
+  if(d<=3)  return`<span class="deadline-badge dl-hot">마감 D-${d}</span>`;
+  if(d<=7)  return`<span class="deadline-badge dl-soon">마감 D-${d}</span>`;
+  return`<span class="deadline-badge dl-normal">마감 D-${d}</span>`;
+}
+function typeTag(t){
+  if(t==='블로그') return`<span class="tag tag-blog">블로그</span>`;
+  if(t==='인스타') return`<span class="tag tag-insta">인스타</span>`;
+  return`<span class="tag tag-short">숏폼</span>`;
+}
+function getComp(a,t){const p=Math.min(100,(a/t)*100);const cls=p<50?'low':p<80?'mid':'high';return{pct:p,cls,rate:(a/t).toFixed(1)};}
+
+function renderCards(list){
+  const grid=document.getElementById('cardGrid');
+  const noRes=document.getElementById('noResults');
+  document.getElementById('cardCount').textContent=`${list.length}개`;
+  if(!list.length){grid.innerHTML='';noRes.style.display='block';return;}
+  noRes.style.display='none';
+  grid.innerHTML=list.map((c,i)=>{
+    const comp=getComp(c.applied,c.total);
+    return`<a class="card" href="https://${c.site}" target="_blank" style="animation-delay:${i*.04}s">
+      <div class="card-inner">
+        <div class="card-left">
+          <div class="card-top">
+            <div class="platform-badge"><span class="platform-dot ${c.dot}"></span>${c.platform}</div>
+            ${c.isNew?'<span class="new-badge">NEW</span>':''}
+            ${dlBadge(c.deadline)}
+          </div>
+          <h3>${c.title}</h3>
+          <div class="card-meta">
+            <span class="meta-item"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>${c.location}</span>
+            <span class="meta-item"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>${c.applied}/${c.total}명 신청</span>
+          </div>
+          <div class="card-tags">${c.type.map(typeTag).join('')}${c.tags.map(t=>`<span class="tag tag-cat">${t}</span>`).join('')}</div>
+        </div>
+        <div class="card-right">
+          <div class="reward-amount">${c.reward}</div>
+          <div class="reward-sub">체험 혜택</div>
+          <button class="apply-btn" onclick="event.preventDefault();window.open('https://${c.site}','_blank')">신청하기 →</button>
+        </div>
+      </div>
+      <div class="comp-wrap">
+        <div class="comp-row">
+          <span class="comp-text">경쟁률 ${comp.rate}:1 &nbsp;·&nbsp; ${c.applied}/${c.total}명</span>
+          <span class="comp-pct comp-${comp.cls}-t">${Math.round(comp.pct)}%</span>
+        </div>
+        <div class="comp-bar"><div class="comp-fill comp-fill-${comp.cls}" style="width:${comp.pct}%"></div></div>
+      </div>
+    </a>`;
+  }).join('');
+}
+
+function filterCards(){
+  searchTerm=document.getElementById('searchInput').value.toLowerCase();
+  renderCards(campaigns.filter(c=>{
+    const mt=activeFilter==='전체'||c.type.includes(activeFilter)||c.tags.includes(activeFilter);
+    const ms=!searchTerm||c.title.toLowerCase().includes(searchTerm)||c.tags.some(t=>t.includes(searchTerm))||c.location.toLowerCase().includes(searchTerm)||c.platform.includes(searchTerm);
+    return mt&&ms;
+  }));
+}
+function setFilter(f,el){
+  activeFilter=f;
+  document.querySelectorAll('.filter-tag').forEach(b=>b.classList.remove('active'));
+  el.classList.add('active');
+  filterCards();
+}
+function sortCards(by){
+  let list=campaigns.filter(c=>{
+    const mt=activeFilter==='전체'||c.type.includes(activeFilter)||c.tags.includes(activeFilter);
+    const ms=!searchTerm||c.title.toLowerCase().includes(searchTerm)||c.tags.some(t=>t.includes(searchTerm));
+    return mt&&ms;
+  });
+  if(by==='deadline') list.sort((a,b)=>a.deadline-b.deadline);
+  else if(by==='reward') list.sort((a,b)=>b.rewardNum-a.rewardNum);
+  else if(by==='competition') list.sort((a,b)=>(a.applied/a.total)-(b.applied/b.total));
+  renderCards(list);
+}
+renderCards(campaigns);
+
+// ── 체험단 관리 ──
+let schedules = [
+  {id:1,title:"[서울/강남] 한우 오마카세 방문 체험단",platform:"디너의여왕",status:"selected",deadline:"2026-04-01",reward:"15만원 상당",memo:"선정 완료! 방문 예약 필요",done:false},
+  {id:2,title:"[배송] 비타민C 세럼 인스타 체험단",platform:"파블로체험단",status:"writing",deadline:"2026-04-05",reward:"7만원 상당",memo:"제품 수령 완료, 리뷰 작성 중",done:false},
+  {id:3,title:"[경기/판교] 네일아트 블로그 체험단",platform:"파블로체험단",status:"waiting",deadline:"2026-04-08",reward:"6만원 상당",memo:"신청 완료, 결과 대기 중",done:false},
+  {id:4,title:"[제주] 감귤 게스트하우스 숙박 체험단",platform:"모아뷰",status:"done",deadline:"2026-03-20",reward:"숙박 무료",memo:"리뷰 업로드 완료",done:true},
+];
+let currentTab = 'todo';
+
+const statusMap = {waiting:'신청 대기',selected:'선정됨',writing:'리뷰 작성 중',done:'완료'};
+const statusCls = {waiting:'status-waiting',selected:'status-selected',writing:'status-writing',done:'status-done'};
+
+function dday(dateStr){
+  const diff = Math.ceil((new Date(dateStr) - new Date()) / 86400000);
+  if(diff < 0) return {text:'마감', cls:'done-t'};
+  if(diff === 0) return {text:'D-Day', cls:'urgent'};
+  if(diff <= 3) return {text:`D-${diff}`, cls:'urgent'};
+  if(diff <= 7) return {text:`D-${diff}`, cls:'soon'};
+  return {text:`D-${diff}`, cls:'ok'};
+}
+
+function renderSchedules(){
+  const list = schedules.filter(s => currentTab==='todo' ? !s.done : s.done);
+  const el = document.getElementById('scheduleList');
+  const empty = document.getElementById('emptyState');
+  if(!list.length){ el.innerHTML=''; empty.style.display='block'; return; }
+  empty.style.display='none';
+  el.innerHTML = list.map(s => {
+    const dd = dday(s.deadline);
+    return`<div class="schedule-card${s.done?' done':''}" id="sch-${s.id}">
+      <div class="sch-check">
+        <input type="checkbox" ${s.done?'checked':''} onchange="toggleDone(${s.id},this.checked)">
+      </div>
+      <div class="sch-body">
+        <div class="sch-top">
+          <span class="sch-platform">${s.platform}</span>
+          <span class="sch-status ${statusCls[s.status]}">${statusMap[s.status]}</span>
+        </div>
+        <div class="sch-title">${s.title}</div>
+        <div class="sch-meta">
+          <span class="sch-meta-item"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>마감 ${s.deadline}</span>
+          <span class="sch-meta-item"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>${s.reward}</span>
+          ${s.memo?`<span class="sch-meta-item">📝 ${s.memo}</span>`:''}
+        </div>
+      </div>
+      <div class="sch-right">
+        <span class="sch-dday ${dd.cls}">${dd.text}</span>
+        <button class="sch-delete" onclick="deleteSchedule(${s.id})">삭제</button>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function toggleDone(id, checked){
+  const s = schedules.find(x=>x.id===id);
+  if(s){ s.done=checked; if(checked) s.status='done'; }
+  renderSchedules();
+}
+function deleteSchedule(id){
+  if(!confirm('삭제할까요?')) return;
+  schedules = schedules.filter(x=>x.id!==id);
+  renderSchedules();
+}
+function switchTab(tab, el){
+  currentTab=tab;
+  document.querySelectorAll('.manage-tab').forEach(t=>t.classList.remove('active'));
+  el.classList.add('active');
+  renderSchedules();
+}
+
+// 모달
+function openModal(){
+  document.getElementById('modalBg').classList.add('open');
+  const today = new Date().toISOString().split('T')[0];
+  document.getElementById('f-deadline').value = today;
+}
+function closeModal(){ document.getElementById('modalBg').classList.remove('open'); }
+function addSchedule(){
+  const title = document.getElementById('f-title').value.trim();
+  if(!title){ alert('제목을 입력해주세요!'); return; }
+  schedules.unshift({
+    id: Date.now(),
+    title,
+    platform: document.getElementById('f-platform').value || '직접 입력',
+    status: document.getElementById('f-status').value,
+    deadline: document.getElementById('f-deadline').value,
+    reward: document.getElementById('f-reward').value || '-',
+    memo: document.getElementById('f-memo').value,
+    done: false
+  });
+  closeMo
