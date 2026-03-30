@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-30 12:30",
-  "total": 27,
+  "updated_at": "2026-03-30 23:02",
+  "total": 31,
   "campaigns": [
     {
       "title": "[150,000원 상당] 주류",
@@ -224,19 +224,6 @@
       "id": 17
     },
     {
-      "title": "[신제품 출시 기념 단독 특가] 바이향 차량용 방향제 최고급 섬유심지 디퓨저 120ml 2개",
-      "reward": "알리익스프레스 신규회원은 가격이 상이할 수 있으니 기존회원만 진행해주셔야 됩니다.",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1774491505",
-      "image": "./data/campaign/thumb/thumb-2072898589_fYSw602b_1_300x300.jpg",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 18
-    },
-    {
       "title": "[200,000원 상당] 스파+마사지패키지",
       "reward": "",
       "platform": "아싸뷰",
@@ -247,7 +234,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 19
+      "id": 18
     },
     {
       "title": "FADERMA 임산부 청소년 스포츠 쿨샴푸",
@@ -260,7 +247,33 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
+      "id": 19
+    },
+    {
+      "title": "임산부 기초화장품 3종 세트",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1774502659",
+      "image": "./data/campaign/thumb/thumb-17745026591766140428175643230917525903692040499670_Q6ghXTZp_A1-B_300x300.jpg",
+      "deadline": "",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
       "id": 20
+    },
+    {
+      "title": "메인 캐러셀 링크",
+      "reward": "",
+      "platform": "디너의여왕",
+      "link": "https://dinnerqueen.net/taste/1281012",
+      "image": "https://dq-files.gcdn.ntruss.com/banner/019d28ee-af42-7199-a1fb-842dc9411e7c.webp",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 21
     },
     {
       "title": "메인 캐러셀 링크",
@@ -273,7 +286,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 21
+      "id": 22
     },
     {
       "title": "메인 캐러셀 링크",
@@ -281,19 +294,6 @@
       "platform": "디너의여왕",
       "link": "https://dinnerqueen.net/taste/1277200",
       "image": "https://dq-files.gcdn.ntruss.com/banner/019d2321-1cf8-77e3-a99a-5b73ca13c711.webp",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 22
-    },
-    {
-      "title": "메인 캐러셀 링크",
-      "reward": "",
-      "platform": "디너의여왕",
-      "link": "https://dinnerqueen.net/taste/1273306",
-      "image": "https://dq-files.gcdn.ntruss.com/banner/019d1987-b103-743d-9285-048917018835.webp",
       "deadline": "",
       "location": "방문형",
       "review_type": "블로그",
@@ -341,17 +341,69 @@
       "id": 26
     },
     {
-      "title": "메인 캐러셀 링크",
+      "title": "마이페이지",
       "reward": "",
-      "platform": "디너의여왕",
-      "link": "https://dinnerqueen.net/taste/1281012",
-      "image": "https://dq-files.gcdn.ntruss.com/banner/019d28ee-af42-7199-a1fb-842dc9411e7c.webp",
+      "platform": "모두의체험단",
+      "link": "https://www.modan.kr/login?back_url=L3Nob3BfbXlwYWdl&type=mypage",
+      "image": "",
       "deadline": "",
       "location": "방문형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
       "id": 27
+    },
+    {
+      "title": "로그인이 필요합니다.",
+      "reward": "",
+      "platform": "모두의체험단",
+      "link": "https://www.modan.kr/login?back_url=L21hdHppcA%3D%3D&used_login_btn=Y",
+      "image": "",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 28
+    },
+    {
+      "title": "로그인이 필요합니다.",
+      "reward": "",
+      "platform": "모두의체험단",
+      "link": "https://www.modan.kr/login?back_url=L2JlYXV0eQ%3D%3D&used_login_btn=Y",
+      "image": "",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 29
+    },
+    {
+      "title": "로그인이 필요합니다.",
+      "reward": "",
+      "platform": "모두의체험단",
+      "link": "https://www.modan.kr/login?back_url=L2RlbGl2ZXJ5&used_login_btn=Y",
+      "image": "",
+      "deadline": "",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 30
+    },
+    {
+      "title": "로그인이 필요합니다.",
+      "reward": "",
+      "platform": "모두의체험단",
+      "link": "https://www.modan.kr/login?back_url=L3Byb2R1Y3Q%3D&used_login_btn=Y",
+      "image": "",
+      "deadline": "",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 31
     }
   ]
 }
