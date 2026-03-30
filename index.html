@@ -238,7 +238,7 @@ let searchTerm = '';
 const dotMap = {'아싸뷰':'dg','파블로체험단':'do','디너의여왕':'dc','모두의체험단':'db','모아뷰':'dt','포포몬':'dg'};
 
 // GitHub raw URL에서 직접 로드
-const DATA_URL = 'https://raw.githubusercontent.com/doorhilily/hunterview/main/data.json';
+const DATA_URL = 'https://raw.githubusercontent.com/hunterview/hunterview/main/data.json';
 async function loadData() {
   try {
     const res = await fetch(DATA_URL + "?t=" + Date.now());
