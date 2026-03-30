@@ -46,7 +46,7 @@ async def crawl_assaview(page):
         for item in items[:50]:
             try:
                 href = await item.get_attribute("href") or ""
-                link = "https://assaview.co.kr" + href if href.startswith("/") else href
+                link = "https://assaview.co.kr/" + href if not href.startswith("http") else href
                 text = await item.inner_text()
                 lines = [l.strip() for l in text.split('\n') if l.strip()]
 
