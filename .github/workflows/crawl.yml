@@ -12,25 +12,31 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+
       - name: 라이브러리 설치
         run: |
           pip install playwright
           playwright install chromium
           playwright install-deps chromium
+
       - name: 크롤러 실행
         run: python crawler.py
+
       - name: 저장
         run: |
-          git config user.name "hunterview-bot"
-          git config user.email "bot@hunterview.kr"
-          git fetch origin
-          git reset --hard origin/main
-          python crawler.py
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull origin main --rebase
           git add data.json
           git diff --staged --quiet || git commit -m "🔄 데이터 업데이트 $(date '+%Y-%m-%d %H:%M')"
-          git push --force origin main
+          git push origin main
