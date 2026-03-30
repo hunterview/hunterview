@@ -238,18 +238,27 @@ let searchTerm = '';
 const dotMap = {'아싸뷰':'dg','파블로체험단':'do','디너의여왕':'dc','모두의체험단':'db','모아뷰':'dt','포포몬':'dg'};
 
 // GitHub raw URL에서 직접 로드
-const DATA_URL = 'https://raw.githubusercontent.com/hunterview/hunterview/main/data.json';
 async function loadData() {
-  try {
-    const res = await fetch(DATA_URL + "?t=" + Date.now());
-    if (!res.ok) throw new Error('data.json 없음');
-    const json = await res.json();
-    allCampaigns = json.campaigns || [];
-    document.getElementById('updateTime').textContent = `마지막 업데이트: ${json.updated_at || '알 수 없음'} · 총 ${json.total}개 캠페인`;
-  } catch(e) {
-    // data.json 없으면 샘플 표시
+  const urls = [
+    'data.json?t=' + Date.now(),
+    'https://raw.githubusercontent.com/hunterview/hunterview/main/data.json?t=' + Date.now(),
+  ];
+  let loaded = false;
+  for (const url of urls) {
+    try {
+      const res = await fetch(url);
+      if (!res.ok) continue;
+      const json = await res.json();
+      if (!json.campaigns) continue;
+      allCampaigns = json.campaigns;
+      document.getElementById('updateTime').textContent = '마지막 업데이트: ' + (json.updated_at || '알 수 없음') + ' · 총 ' + json.total + '개 캠페인';
+      loaded = true;
+      break;
+    } catch(e) { continue; }
+  }
+  if (!loaded) {
     allCampaigns = getSample();
-    document.getElementById('updateTime').textContent = '샘플 데이터 표시 중 (크롤러 실행 후 실제 데이터로 교체됩니다)';
+    document.getElementById('updateTime').textContent = '샘플 데이터 표시 중';
   }
   updateStats();
   filterCards();
