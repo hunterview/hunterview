@@ -1,0 +1,15 @@
+{
+  "name": "hunterview-crawler",
+  "version": "1.0.0",
+  "description": "체험단 사이트 크롤러",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "crawl": "node index.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0",
+    "playwright": "^1.40.0"
+  }
+}

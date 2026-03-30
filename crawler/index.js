@@ -1,0 +1,69 @@
+const fs = require('fs');
+const path = require('path');
+
+const crawlTble       = require('./sites/tble');
+const crawlPavlovu    = require('./sites/pavlovu');
+const crawlDinnerqueen = require('./sites/dinnerqueen');
+const crawlMrblog     = require('./sites/mrblog');
+
+const OUTPUT_PATH = path.join(__dirname, '..', 'data.json');
+
+async function main() {
+  console.log('🔍 헌터뷰 크롤러 시작...\n');
+
+  const results = await Promise.allSettled([
+    runCrawler('티블',        crawlTble),
+    runCrawler('파블로',      crawlPavlovu),
+    runCrawler('디너의여왕',  crawlDinnerqueen),
+    runCrawler('미블',        crawlMrblog),
+  ]);
+
+  const allCampaigns = [];
+  for (const r of results) {
+    if (r.status === 'fulfilled') {
+      allCampaigns.push(...r.value);
+    }
+  }
+
+  // 중복 제거 (id 기준)
+  const seen = new Set();
+  const unique = allCampaigns.filter(c => {
+    if (seen.has(c.id)) return false;
+    seen.add(c.id);
+    return true;
+  });
+
+  // 마감일 기준 정렬
+  unique.sort((a, b) => {
+    const da = a.dday ?? 999;
+    const db = b.dday ?? 999;
+    return da - db;
+  });
+
+  const output = {
+    updated: new Date().toISOString(),
+    total: unique.length,
+    campaigns: unique,
+  };
+
+  fs.writeFileSync(OUTPUT_PATH, JSON.stringify(output, null, 2), 'utf8');
+  console.log(`\n✅ 완료! 총 ${unique.length}개 캠페인 저장 → data.json`);
+  console.log(`   업데이트: ${output.updated}`);
+}
+
+async function runCrawler(name, fn) {
+  try {
+    console.log(`▶ [${name}] 크롤링 중...`);
+    const items = await fn();
+    console.log(`  ✓ [${name}] ${items.length}개 수집`);
+    return items;
+  } catch (err) {
+    console.error(`  ✗ [${name}] 실패: ${err.message}`);
+    return [];
+  }
+}
+
+main().catch(err => {
+  console.error('크롤러 오류:', err);
+  process.exit(1);
+});

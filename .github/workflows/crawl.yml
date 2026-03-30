@@ -1,0 +1,60 @@
+name: 체험단 크롤러
+
+on:
+  # 6시간마다 자동 실행 (UTC 0,6,12,18시 = KST 9,15,21,3시)
+  schedule:
+    - cron: '0 0,6,12,18 * * *'
+  # 수동으로도 실행 가능
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: 레포 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Node.js 설정
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: crawler/package.json
+
+      - name: 의존성 설치
+        working-directory: crawler
+        run: npm install
+
+      - name: Playwright Chromium 설치
+        working-directory: crawler
+        run: npx playwright install chromium --with-deps
+
+      - name: 크롤러 실행
+        working-directory: crawler
+        run: node index.js
+        env:
+          NODE_ENV: production
+
+      - name: data.json 변경 확인
+        id: check_changes
+        run: |
+          if git diff --quiet data.json; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: 커밋 & 푸시
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          git config user.name  "hunterview-bot"
+          git config user.email "bot@hunterview.co.kr"
+          git add data.json
+          CAMPAIGN_COUNT=$(node -e "const d=require('./data.json');console.log(d.total||d.campaigns?.length||0)")
+          git commit -m "🤖 데이터 업데이트: ${CAMPAIGN_COUNT}개 캠페인 ($(date '+%Y-%m-%d %H:%M KST' -d '+9 hours'))"
+          git push
