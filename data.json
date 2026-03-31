@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-31 09:46",
-  "total": 32,
+  "updated_at": "2026-03-31 15:54",
+  "total": 26,
   "campaigns": [
     {
       "title": "[80,000원 상당] 1박 제공(평일 가능, 주말은 예약 상황에 따라 불가할 수 있습니다.)",
@@ -81,19 +81,6 @@
       "id": 6
     },
     {
-      "title": "[50,000원 상당] 피로민 1정",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1774937456",
-      "image": "./data/campaign/thumb/thumb-1954441154_FGbyQRMv_KakaoTalk_20260219_143214870_02_300x300.jpg",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 7
-    },
-    {
       "title": "[12,600원 상당] 우디베이크샵 유기농 무설탕 통밀치아바타 3종 세트 (플레인, 치즈, 씨앗)",
       "reward": "",
       "platform": "아싸뷰",
@@ -104,7 +91,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 8
+      "id": 7
     },
     {
       "title": "[150,000원 상당] 남자일반펌,여성셋팅펌(C컬S컬,허쉬,빌드펌),전체염색(뿌리염색,탈색불가)/ 대리시술불가",
@@ -117,7 +104,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 9
+      "id": 8
     },
     {
       "title": "[효도치킨] 모자 떡볶이 2인분 x 2팩 [배송비 포함16,800원]",
@@ -130,7 +117,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 10
+      "id": 9
     },
     {
       "title": "고탄력 3중 보호 밴드 발목보호대 남여공용 좌우겸용 세트",
@@ -143,7 +130,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 11
+      "id": 10
     },
     {
       "title": "베리엣지 여성 뱃살 보정 힙업 사각 드로즈 팬티 심리스 속바지 2장세트",
@@ -156,7 +143,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 12
+      "id": 11
     },
     {
       "title": "[19,800원 상당] 더펫즈 높이조절 각도조절 급체방지 고양이 강아지 유리 밥그릇 식기, 퍼플, 1개",
@@ -169,7 +156,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 13
+      "id": 12
     },
     {
       "title": "[서울 강남구] 하입 서울 라운지 (hype seoul)",
@@ -182,7 +169,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 14
+      "id": 13
     },
     {
       "title": "[10,000원 상당] 떡, 음료",
@@ -195,7 +182,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 15
+      "id": 14
     },
     {
       "title": "에코젠 샤워기 본품 [배송비 포함24,800원]",
@@ -208,7 +195,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 16
+      "id": 15
     },
     {
       "title": "[50,000원 상당] 루꼴라 잠봉뵈르 샌드위치2+ 아메리카노2",
@@ -221,7 +208,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 17
+      "id": 16
     },
     {
       "title": "[서울 강남구] 플로우서울",
@@ -234,7 +221,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 18
+      "id": 17
     },
     {
       "title": "[서울 송파구] 플로우서울",
@@ -247,7 +234,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 19
+      "id": 18
     },
     {
       "title": "[서울 관악구] 플로우서울",
@@ -260,7 +247,33 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
+      "id": 19
+    },
+    {
+      "title": "[50,000원 상당] 성격 및 기질검사 / 학습역량검사 / 기본심리검사",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1764125761",
+      "image": "./data/campaign/thumb/thumb-2009347559_ArwSYFDV_2025-11-26_123B143B41_300x300.png",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
       "id": 20
+    },
+    {
+      "title": "메인 캐러셀 링크",
+      "reward": "",
+      "platform": "디너의여왕",
+      "link": "https://dinnerqueen.net/taste/1282757",
+      "image": "https://dq-files.gcdn.ntruss.com/banner/019d2e17-90d9-70cb-9e63-1052d33e4729.webp",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 21
     },
     {
       "title": "메인 캐러셀 링크",
@@ -273,7 +286,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 21
+      "id": 22
     },
     {
       "title": "메인 캐러셀 링크",
@@ -281,19 +294,6 @@
       "platform": "디너의여왕",
       "link": "https://dinnerqueen.net/taste/1281599",
       "image": "https://dq-files.gcdn.ntruss.com/banner/019d28dd-f6f9-724b-a2e1-8d780ee33306.webp",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 22
-    },
-    {
-      "title": "메인 캐러셀 링크",
-      "reward": "",
-      "platform": "디너의여왕",
-      "link": "https://dinnerqueen.net/taste/1277200",
-      "image": "https://dq-files.gcdn.ntruss.com/banner/019d2321-1cf8-77e3-a99a-5b73ca13c711.webp",
       "deadline": "",
       "location": "방문형",
       "review_type": "블로그",
@@ -339,84 +339,6 @@
       "applied": 0,
       "total": 10,
       "id": 26
-    },
-    {
-      "title": "메인 캐러셀 링크",
-      "reward": "",
-      "platform": "디너의여왕",
-      "link": "https://dinnerqueen.net/taste/1282757",
-      "image": "https://dq-files.gcdn.ntruss.com/banner/019d2e17-90d9-70cb-9e63-1052d33e4729.webp",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 27
-    },
-    {
-      "title": "마이페이지",
-      "reward": "",
-      "platform": "모두의체험단",
-      "link": "https://www.modan.kr/login?back_url=L3Nob3BfbXlwYWdl&type=mypage",
-      "image": "",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 28
-    },
-    {
-      "title": "로그인이 필요합니다.",
-      "reward": "",
-      "platform": "모두의체험단",
-      "link": "https://www.modan.kr/login?back_url=L21hdHppcA%3D%3D&used_login_btn=Y",
-      "image": "",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 29
-    },
-    {
-      "title": "로그인이 필요합니다.",
-      "reward": "",
-      "platform": "모두의체험단",
-      "link": "https://www.modan.kr/login?back_url=L2JlYXV0eQ%3D%3D&used_login_btn=Y",
-      "image": "",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 30
-    },
-    {
-      "title": "로그인이 필요합니다.",
-      "reward": "",
-      "platform": "모두의체험단",
-      "link": "https://www.modan.kr/login?back_url=L2RlbGl2ZXJ5&used_login_btn=Y",
-      "image": "",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 31
-    },
-    {
-      "title": "로그인이 필요합니다.",
-      "reward": "",
-      "platform": "모두의체험단",
-      "link": "https://www.modan.kr/login?back_url=L3Byb2R1Y3Q%3D&used_login_btn=Y",
-      "image": "",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 32
     }
   ]
 }
