@@ -578,22 +578,67 @@ async function loadData() {
 }
 
 // 데이터 정규화 (crawler → frontend 포맷 맞추기)
+// Python 크롤러(link/image/review_type)와 Node 크롤러(url/thumbnail/type) 모두 지원
 function normalizeItem(c) {
-  // dday 계산 (deadline이 날짜 문자열인 경우)
-  if (c.deadline && typeof c.deadline === 'string' && !c.dday) {
+  // 필드명 통일
+  if (!c.url && c.link) c.url = c.link;
+  if (!c.thumbnail && c.image) c.thumbnail = c.image;
+  if (!c.type && c.review_type) c.type = [c.review_type];
+  if (!c.type) c.type = ['블로그'];
+
+  // dday 계산
+  if (c.deadline && typeof c.deadline === 'string' && c.deadline.trim() && c.dday == null) {
     const diff = Math.ceil((new Date(c.deadline) - new Date()) / 86400000);
     c.dday = diff;
   }
-  // site 추출 (url에서)
+  if (c.dday == null) c.dday = 30;
+
+  // site 추출
   if (!c.site && c.url) {
     try { c.site = new URL(c.url).hostname.replace('www.', ''); } catch(e) {}
   }
+
+  // tags 자동 생성
+  if (!c.tags || c.tags.length === 0) c.tags = inferTagsFromTitle(c.title || '');
+
   // rewardNum 추출
-  if (!c.rewardNum && c.reward) {
-    const m = c.reward.match(/(\d+(?:\.\d+)?)/);
-    c.rewardNum = m ? parseFloat(m[1]) * (c.reward.includes('만') ? 10000 : 1) : 0;
+  if (!c.rewardNum) {
+    const text = (c.reward || '') + ' ' + (c.title || '');
+    const m1 = text.match(/(\d+(?:,\d+)?(?:\.\d+)?)\s*만원/);
+    if (m1) c.rewardNum = parseFloat(m1[1].replace(',','')) * 10000;
+    else {
+      const m2 = text.match(/\[?\s*(\d+(?:,\d+)?)\s*원\s*(?:상당)?\]?/);
+      if (m2) c.rewardNum = parseInt(m2[1].replace(',',''));
+    }
   }
+
+  // platform dot 색상
+  if (!c.dot) {
+    const dotMap = {'아싸뷰':'d-green','티블':'d-teal','파블로':'d-orange','디너의여왕':'d-coral','미블':'d-blue','모두의체험단':'d-blue','레뷰':'d-amber'};
+    c.dot = dotMap[c.platform] || 'd-orange';
+  }
+
   return c;
+}
+
+function inferTagsFromTitle(title) {
+  const tags = [];
+  const rules = [
+    [/이유식|아기|유아|육아/, '육아'],
+    [/맛집|레스토랑|카페|식당|음식|요리|브런치|오마카세/, '맛집'],
+    [/뷰티|스킨케어|화장품|립|세럼|크림|마스크팩|네일|헤어/, '뷰티'],
+    [/숙박|호텔|풀빌라|펜션|리조트/, '숙박'],
+    [/여행|관광|투어/, '여행'],
+    [/반려|강아지|고양이/, '반려동물'],
+    [/식품|간식|음료|커피|과일|채소|김치/, '식품'],
+    [/패션|의류|옷|신발|가방/, '패션'],
+    [/운동|헬스|필라테스|요가|스포츠/, '운동'],
+    [/인테리어|가구|생활/, '생활'],
+  ];
+  for (const [re, tag] of rules) {
+    if (re.test(title)) tags.push(tag);
+  }
+  return tags;
 }
 
 // ── 카드 렌더링 ──
