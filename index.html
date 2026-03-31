@@ -567,8 +567,19 @@ async function loadData() {
 function normalizeItem(c) {
   // 필드명 통일
   if (!c.url && c.link) c.url = c.link;
-  if (!c.thumbnail && c.image) c.thumbnail = c.image;
   if (!c.type && c.review_type) c.type = [c.review_type];
+
+  // 이미지 경로 절대경로로 변환
+  let img = c.image || c.thumbnail || '';
+  if (img) {
+    if (img.startsWith('./') || img.startsWith('data/')) {
+      // 상대경로 → 플랫폼 도메인 기반 절대경로
+      const domainMap = {'아싸뷰':'https://assaview.co.kr','파블로':'https://pavlovu.com','파블로체험단':'https://pavlovu.com','디너의여왕':'https://dinnerqueen.net','미블':'https://www.mrblog.net','포블로그':'https://4blog.net','모두의체험단':'https://www.modan.kr','티블':'https://tble.kr'};
+      const base = domainMap[c.platform] || '';
+      img = base + '/' + img.replace(/^\.\//, '');
+    }
+    c.thumbnail = img;
+  }
   if (!c.type) c.type = ['블로그'];
 
   // dday 계산

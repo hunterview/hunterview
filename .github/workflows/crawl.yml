@@ -1,10 +1,8 @@
 name: 체험단 크롤러
 
 on:
-  # 6시간마다 자동 실행 (UTC 0,6,12,18시 = KST 9,15,21,3시)
   schedule:
-    - cron: '0 0,6,12,18 * * *'
-  # 수동으로도 실행 가능
+    - cron: '0 0,6,12,18 * * *'  # KST 9시, 15시, 21시, 3시
   workflow_dispatch:
 
 permissions:
@@ -19,26 +17,19 @@ jobs:
       - name: 레포 체크아웃
         uses: actions/checkout@v4
 
-      - name: Node.js 설정
-        uses: actions/setup-node@v4
+      - name: Python 설정
+        uses: actions/setup-python@v5
         with:
-          node-version: '20'
-          cache: 'npm'
-          cache-dependency-path: crawler/package.json
+          python-version: '3.11'
 
       - name: 의존성 설치
-        working-directory: crawler
-        run: npm install
+        run: pip install playwright
 
       - name: Playwright Chromium 설치
-        working-directory: crawler
-        run: npx playwright install chromium --with-deps
+        run: playwright install chromium --with-deps
 
       - name: 크롤러 실행
-        working-directory: crawler
-        run: node index.js
-        env:
-          NODE_ENV: production
+        run: python crawler.py
 
       - name: data.json 변경 확인
         id: check_changes
@@ -55,6 +46,6 @@ jobs:
           git config user.name  "hunterview-bot"
           git config user.email "bot@hunterview.co.kr"
           git add data.json
-          CAMPAIGN_COUNT=$(node -e "const d=require('./data.json');console.log(d.total||d.campaigns?.length||0)")
-          git commit -m "🤖 데이터 업데이트: ${CAMPAIGN_COUNT}개 캠페인 ($(date '+%Y-%m-%d %H:%M KST' -d '+9 hours'))"
+          COUNT=$(python -c "import json; d=json.load(open('data.json')); print(d.get('total', len(d.get('campaigns',[]))))")
+          git commit -m "🤖 데이터 업데이트: ${COUNT}개 캠페인"
           git push
