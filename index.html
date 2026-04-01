@@ -508,36 +508,48 @@ async function loadData() {
   statusBar.className = 'data-status-bar loading';
   statusBar.textContent = '⏳ 체험단 데이터를 불러오는 중...';
 
-  try {
-    const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), 10000);
+  // 어떤 경우에도 로딩 완료 보장
+  function finishLoading() {
+    document.getElementById('loadingWrap').style.display = 'none';
+    document.getElementById('cardGrid').style.display = '';
+    filterCards();
+  }
 
-    const res = await fetch(
-      'https://raw.githubusercontent.com/hunterview/hunterview/main/data.json?t=' + Date.now(),
-      { signal: controller.signal }
-    );
-    clearTimeout(timer);
+  try {
+    const DATA_URL = 'https://raw.githubusercontent.com/hunterview/hunterview/main/data.json?t=' + Date.now();
+
+    const res = await Promise.race([
+      fetch(DATA_URL),
+      new Promise((_, reject) => setTimeout(() => reject(new Error('timeout')), 15000))
+    ]);
 
     if (!res.ok) throw new Error('HTTP ' + res.status);
 
-    const data = await res.json();
+    const data = await Promise.race([
+      res.json(),
+      new Promise((_, reject) => setTimeout(() => reject(new Error('json timeout')), 10000))
+    ]);
+
     campaigns = (data.campaigns || []).map(normalizeItem);
     dataLoaded = true;
 
     // 통계 업데이트
     const now = new Date();
-    const todaySites = [...new Set(campaigns.map(c => c.platform))];
+    const platforms = [...new Set(campaigns.map(c => c.platform))];
     const hotCount = campaigns.filter(c => c.dday <= 3 && c.dday >= 0).length;
     document.getElementById('stat-total').textContent = campaigns.length.toLocaleString();
-    document.getElementById('stat-sites').textContent = todaySites.length;
+    document.getElementById('stat-sites').textContent = platforms.length;
     document.getElementById('stat-new').textContent = campaigns.filter(c => c.isNew).length;
     document.getElementById('stat-deadline').textContent = hotCount;
     document.getElementById('hot-count').textContent = hotCount;
 
-    // 업데이트 시간
-    const updated = data.updated ? new Date(data.updated) : now;
-    const ago = Math.round((now - updated) / 60000);
-    const agoText = ago < 60 ? `${ago}분 전` : `${Math.round(ago/60)}시간 전`;
+    // 업데이트 시간 (updated_at 또는 updated 둘 다 지원)
+    const updatedStr = data.updated_at || data.updated || '';
+    let agoText = '방금 전';
+    if (updatedStr) {
+      const diff = Math.round((now - new Date(updatedStr)) / 60000);
+      agoText = diff < 60 ? `${diff}분 전` : `${Math.round(diff/60)}시간 전`;
+    }
     statusBar.className = 'data-status-bar';
     statusBar.innerHTML = `✅ 실시간 데이터 · 마지막 업데이트: ${agoText} · 총 ${campaigns.length}개 캠페인`;
 
@@ -546,20 +558,18 @@ async function loadData() {
     campaigns = SAMPLE_DATA;
     dataLoaded = false;
 
-    document.getElementById('stat-total').textContent = '-';
-    document.getElementById('stat-sites').textContent = sites.filter(s=>s.live).length;
+    const hotCount = SAMPLE_DATA.filter(c => c.dday <= 3).length;
+    document.getElementById('stat-total').textContent = SAMPLE_DATA.length;
+    document.getElementById('stat-sites').textContent = '-';
     document.getElementById('stat-new').textContent = '-';
-    document.getElementById('stat-deadline').textContent = '-';
-    document.getElementById('hot-count').textContent = SAMPLE_DATA.filter(c=>c.dday<=3).length;
+    document.getElementById('stat-deadline').textContent = hotCount;
+    document.getElementById('hot-count').textContent = hotCount;
 
     statusBar.className = 'data-status-bar error';
-    statusBar.innerHTML = '⚠️ 샘플 데이터 표시 중 · 크롤러가 아직 실행 전입니다. GitHub Actions 설정 후 실제 데이터가 표시됩니다.';
+    statusBar.innerHTML = '⚠️ 샘플 데이터 표시 중 (데이터 로드 실패)';
   }
 
-  // 카드 렌더링
-  document.getElementById('loadingWrap').style.display = 'none';
-  document.getElementById('cardGrid').style.display = '';
-  filterCards();
+  finishLoading();
 }
 
 // 데이터 정규화 (crawler → frontend 포맷 맞추기)
