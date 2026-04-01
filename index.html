@@ -461,73 +461,42 @@ let activeFilter = '전체';
 let searchTerm = '';
 let dataLoaded = false;
 
-// ── 데이터 로딩 ──
+// 안전한 getElementById 헬퍼 (없는 요소 접근해도 에러 안남)
+function setEl(id, value) {
+  const el = document.getElementById(id);
+  if (el) el.textContent = value;
+}
+function setElHTML(id, value) {
+  const el = document.getElementById(id);
+  if (el) el.innerHTML = value;
+}
+
+// ── 데이터 로딩 (백그라운드) ──
 async function loadData() {
-  const statusBar = document.getElementById('dataStatusBar');
-  statusBar.className = 'data-status-bar loading';
-  statusBar.textContent = '⏳ 체험단 데이터를 불러오는 중...';
-
-  // 어떤 경우에도 로딩 완료 보장 (백그라운드 로딩 - 화면 변화 없음)
-  function finishLoading() {
-    // 백그라운드에서 데이터만 로드, 화면은 검색 시에만 변경
-  }
-
   try {
-    // Vercel에서 직접 서빙 (GitHub raw보다 훨씬 빠름)
-    const DATA_URL = '/data.json?t=' + Date.now();
-
     const res = await Promise.race([
-      fetch(DATA_URL),
+      fetch('/data.json?t=' + Date.now()),
       new Promise((_, reject) => setTimeout(() => reject(new Error('timeout')), 15000))
     ]);
-
     if (!res.ok) throw new Error('HTTP ' + res.status);
-
-    const data = await Promise.race([
-      res.json(),
-      new Promise((_, reject) => setTimeout(() => reject(new Error('json timeout')), 10000))
-    ]);
+    const data = await res.json();
 
     campaigns = (data.campaigns || []).map(normalizeItem);
     dataLoaded = true;
 
     // 통계 업데이트
-    const now = new Date();
     const platforms = [...new Set(campaigns.map(c => c.platform))];
     const hotCount = campaigns.filter(c => c.dday <= 3 && c.dday >= 0).length;
-    document.getElementById('stat-total').textContent = campaigns.length.toLocaleString();
-    document.getElementById('stat-sites').textContent = platforms.length;
-    document.getElementById('stat-new').textContent = campaigns.filter(c => c.isNew).length;
-    document.getElementById('stat-deadline').textContent = hotCount;
-    document.getElementById('hot-count').textContent = hotCount;
-
-    // 업데이트 시간 (updated_at 또는 updated 둘 다 지원)
-    const updatedStr = data.updated_at || data.updated || '';
-    let agoText = '방금 전';
-    if (updatedStr) {
-      const diff = Math.round((now - new Date(updatedStr)) / 60000);
-      agoText = diff < 60 ? `${diff}분 전` : `${Math.round(diff/60)}시간 전`;
-    }
-    statusBar.className = 'data-status-bar';
-    statusBar.innerHTML = `✅ 실시간 데이터 · 마지막 업데이트: ${agoText} · 총 ${campaigns.length}개 캠페인`;
+    setEl('stat-total', campaigns.length.toLocaleString());
+    setEl('stat-sites', platforms.length);
+    setEl('stat-new', campaigns.filter(c => c.isNew).length);
+    setEl('stat-deadline', hotCount);
 
   } catch (err) {
     console.warn('데이터 로드 실패, 샘플 데이터 사용:', err.message);
     campaigns = SAMPLE_DATA;
-    dataLoaded = false;
-
-    const hotCount = SAMPLE_DATA.filter(c => c.dday <= 3).length;
-    document.getElementById('stat-total').textContent = SAMPLE_DATA.length;
-    document.getElementById('stat-sites').textContent = '-';
-    document.getElementById('stat-new').textContent = '-';
-    document.getElementById('stat-deadline').textContent = hotCount;
-    document.getElementById('hot-count').textContent = hotCount;
-
-    statusBar.className = 'data-status-bar error';
-    statusBar.innerHTML = '⚠️ 샘플 데이터 표시 중 (데이터 로드 실패)';
+    setEl('stat-total', SAMPLE_DATA.length);
   }
-
-  finishLoading();
 }
 
 // 데이터 정규화 (crawler → frontend 포맷 맞추기)
