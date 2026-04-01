@@ -443,47 +443,6 @@ function showPage(name) {
   window.scrollTo(0, 0);
 }
 
-// ── 체험단 사이트 목록 ──
-const sites = [
-  {name:'SSG',url:'https://www.ssg.com',hot:false,live:false},
-  {name:'가보자체험단',url:'#',hot:false,live:false},
-  {name:'강남맛집',url:'https://www.gangnamfood.com',hot:true,live:false},
-  {name:'구구다스',url:'#',hot:false,live:false},
-  {name:'놀러와체험단',url:'#',hot:true,live:false},
-  {name:'다나와',url:'https://www.danawa.com',hot:false,live:false},
-  {name:'데일리뷰',url:'#',hot:true,live:false},
-  {name:'디너의여왕',url:'https://dinnerqueen.net',hot:true,live:false},
-  {name:'똑똑체험단',url:'#',hot:true,live:false},
-  {name:'레뷰',url:'https://www.revu.net',hot:false,live:false},
-  {name:'리뷰스토리',url:'#',hot:false,live:false},
-  {name:'리뷰진',url:'#',hot:true,live:false},
-  {name:'리뷰플레이스',url:'#',hot:true,live:false},
-  {name:'모두의체험단',url:'https://www.modan.kr',hot:false,live:false},
-  {name:'미블',url:'https://www.mrblog.net',hot:false,live:false},
-  {name:'서울오빠',url:'#',hot:true,live:false},
-  {name:'스타일씨',url:'#',hot:true,live:false},
-  {name:'아싸뷰',url:'https://assaview.co.kr',hot:true,live:false},
-  {name:'오마이블로그',url:'#',hot:true,live:false},
-  {name:'이놀자',url:'#',hot:true,live:false},
-  {name:'체험단닷컴',url:'http://chehumdan.com',hot:true,live:false},
-  {name:'태그바이',url:'https://www.tagby.kr',hot:false,live:false},
-  {name:'티블',url:'https://tble.kr',hot:false,live:true},
-  {name:'파블로체험단',url:'https://pavlovu.com',hot:false,live:true},
-  {name:'포포몬',url:'https://popomon.com',hot:false,live:false},
-  {name:'4blog',url:'https://4blog.net',hot:false,live:false},
-];
-
-function renderSiteTags() {
-  const liveSites = sites.filter(s => s.live);
-  const otherSites = sites.filter(s => !s.live);
-  document.getElementById('siteTagList').innerHTML =
-    liveSites.map(s => `<a class="site-tag live" href="${s.url}" target="_blank">✅ ${s.name}</a>`).join('') +
-    otherSites.map(s =>
-      `<a class="site-tag${s.hot?' hot':''}" href="${s.url}" target="_blank" ${s.url==='#'?'onclick="event.preventDefault();alert(\'준비 중!\')"':''}>${s.name}</a>`
-    ).join('');
-  document.getElementById('siteCount').textContent = `${liveSites.length}개 연동 · ${otherSites.length}개 준비중`;
-}
-renderSiteTags();
 
 // ── 샘플 데이터 (fallback) ──
 const SAMPLE_DATA = [
