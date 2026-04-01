@@ -516,7 +516,8 @@ async function loadData() {
   }
 
   try {
-    const DATA_URL = 'https://raw.githubusercontent.com/hunterview/hunterview/main/data.json?t=' + Date.now();
+    // Vercel에서 직접 서빙 (GitHub raw보다 훨씬 빠름)
+    const DATA_URL = '/data.json?t=' + Date.now();
 
     const res = await Promise.race([
       fetch(DATA_URL),
@@ -722,11 +723,8 @@ function filterCards() {
                (c.type || []).some(t => t.includes(activeFilter)) ||
                (c.tags || []).some(t => t.includes(activeFilter)) ||
                (c.location || '').includes(activeFilter);
-    const ms = !searchTerm ||
-               c.title.toLowerCase().includes(searchTerm) ||
-               (c.tags || []).some(t => t.toLowerCase().includes(searchTerm)) ||
-               (c.location || '').toLowerCase().includes(searchTerm) ||
-               (c.platform || '').toLowerCase().includes(searchTerm);
+    const fullText = (c.title + ' ' + (c.reward||'') + ' ' + (c.tags||[]).join(' ') + ' ' + (c.location||'') + ' ' + (c.platform||'')).toLowerCase();
+    const ms = !searchTerm || fullText.includes(searchTerm);
     return mt && ms;
   });
   renderCards(filtered);
