@@ -168,6 +168,8 @@ nav a:hover, nav a.active { background: var(--primary-pale); color: var(--primar
 .comp-fill-low{background:var(--green)} .comp-fill-mid{background:var(--yellow)} .comp-fill-high{background:linear-gradient(to right,var(--primary),#FF9A5C)}
 .no-results { text-align: center; padding: 60px 20px; color: var(--text2); display: none; }
 .no-results h3 { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
+.quick-btn { padding: 10px 20px; border-radius: 20px; border: 1.5px solid var(--border); background: var(--surface); font-size: 14px; cursor: pointer; font-family: inherit; color: var(--text2); transition: all .15s; }
+.quick-btn:hover { border-color: var(--primary); color: var(--primary); background: var(--primary-pale); }
 
 /* ─── 체험단 관리 페이지 ─── */
 .manage-wrap { max-width: 960px; margin: 0 auto; padding: 32px; }
@@ -306,12 +308,24 @@ footer { background: #1A1A1A; color: rgba(255,255,255,.4); text-align: center; p
     <div class="stat"><div class="stat-num" id="stat-total">-</div><div class="stat-label">총 캠페인</div></div>
     <div class="stat"><div class="stat-num" id="stat-sites">-</div><div class="stat-label">연동 사이트</div></div>
     <div class="stat"><div class="stat-num" id="stat-new">-</div><div class="stat-label">오늘 신규</div></div>
-    <div class="stat"><div class="stat-num" id="stat-deadline">-</div><div class="stat-label">마감 임박(3일)</div></div>
+    <div class="stat"><div class="stat-num" id="stat-deadline">-</div><div class="stat-label">마감 임박</div></div>
   </div>
 
-  <!-- 데이터 상태 표시 -->
-  <div class="data-status-bar loading" id="dataStatusBar">
-    ⏳ 데이터를 불러오는 중...
+  <!-- 검색 전 안내 화면 -->
+  <div id="searchGuide" style="text-align:center; padding:80px 32px;">
+    <div style="font-size:52px; margin-bottom:20px;">🔍</div>
+    <h2 style="font-size:22px; font-weight:900; color:var(--text); margin-bottom:12px;">찾고 싶은 체험단을 검색해보세요</h2>
+    <p style="color:var(--text3); font-size:15px; margin-bottom:32px;">키워드, 카테고리, 지역 모두 검색 가능해요</p>
+    <div style="display:flex; gap:10px; justify-content:center; flex-wrap:wrap; max-width:500px; margin:0 auto;">
+      <button class="quick-btn" onclick="quickSearch('이유식')">🍼 이유식</button>
+      <button class="quick-btn" onclick="quickSearch('맛집')">🍽️ 맛집</button>
+      <button class="quick-btn" onclick="quickSearch('뷰티')">💄 뷰티</button>
+      <button class="quick-btn" onclick="quickSearch('배송')">📦 배송</button>
+      <button class="quick-btn" onclick="quickSearch('서울')">📍 서울</button>
+      <button class="quick-btn" onclick="quickSearch('숙박')">🏨 숙박</button>
+      <button class="quick-btn" onclick="quickSearch('반려동물')">🐾 반려동물</button>
+      <button class="quick-btn" onclick="quickSearch('식품')">🥗 식품</button>
+    </div>
   </div>
 
   <!-- 광고 -->
@@ -322,17 +336,10 @@ footer { background: #1A1A1A; color: rgba(255,255,255,.4); text-align: center; p
     <div class="ad-disclaimer">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</div>
   </div>
 
-  <!-- 캠페인 목록 -->
-  <div class="main">
-    <div class="today-banner">
-      <span class="today-badge">🔥 마감 임박</span>
-      <div>
-        <div class="today-text">D-3 이내 마감 캠페인 <strong id="hot-count">-</strong>개</div>
-        <div class="today-sub">경쟁률 낮을 때 빠르게 신청하세요!</div>
-      </div>
-    </div>
+  <!-- 검색 결과 (검색 후에만 표시) -->
+  <div class="main" id="resultsArea" style="display:none">
     <div class="section-header">
-      <div class="section-title">캠페인 <span class="badge-count" id="cardCount">-</span></div>
+      <div class="section-title">"<span id="searchLabel"></span>" 검색결과 <span class="badge-count" id="cardCount">0개</span></div>
       <select class="sort-select" onchange="sortCards(this.value)">
         <option value="latest">최신순</option>
         <option value="deadline">마감 임박순</option>
@@ -340,17 +347,10 @@ footer { background: #1A1A1A; color: rgba(255,255,255,.4); text-align: center; p
         <option value="competition">경쟁률 낮은 순</option>
       </select>
     </div>
-
-    <!-- 로딩 상태 -->
-    <div class="loading-wrap" id="loadingWrap">
-      <div class="spinner"></div>
-      <div class="loading-text">체험단 데이터를 불러오는 중...</div>
-    </div>
-
-    <div class="card-list" id="cardGrid" style="display:none"></div>
-    <div class="no-results" id="noResults"><h3>😅 검색 결과가 없어요</h3><p>다른 키워드나 카테고리를 시도해보세요</p></div>
-
+    <div class="card-list" id="cardGrid"></div>
+    <div class="no-results" id="noResults"><h3>😅 검색 결과가 없어요</h3><p>다른 키워드를 시도해보세요</p></div>
   </div>
+
 </div>
 
 <!-- ══════════════ 체험단 관리 페이지 ══════════════ -->
@@ -467,11 +467,9 @@ async function loadData() {
   statusBar.className = 'data-status-bar loading';
   statusBar.textContent = '⏳ 체험단 데이터를 불러오는 중...';
 
-  // 어떤 경우에도 로딩 완료 보장
+  // 어떤 경우에도 로딩 완료 보장 (백그라운드 로딩 - 화면 변화 없음)
   function finishLoading() {
-    document.getElementById('loadingWrap').style.display = 'none';
-    document.getElementById('cardGrid').style.display = '';
-    filterCards();
+    // 백그라운드에서 데이터만 로드, 화면은 검색 시에만 변경
   }
 
   try {
@@ -675,8 +673,30 @@ function renderCards(list) {
   }).join('');
 }
 
+function quickSearch(keyword) {
+  const input = document.getElementById('searchInput');
+  input.value = keyword;
+  filterCards();
+  input.focus();
+}
+
 function filterCards() {
-  searchTerm = document.getElementById('searchInput').value.toLowerCase();
+  searchTerm = document.getElementById('searchInput').value.trim().toLowerCase();
+  const guide = document.getElementById('searchGuide');
+  const resultsArea = document.getElementById('resultsArea');
+
+  // 검색어 없으면 안내 화면 표시
+  if (!searchTerm && activeFilter === '전체') {
+    guide.style.display = '';
+    resultsArea.style.display = 'none';
+    return;
+  }
+
+  // 검색어 있으면 결과 표시
+  guide.style.display = 'none';
+  resultsArea.style.display = '';
+  document.getElementById('searchLabel').textContent = searchTerm || activeFilter;
+
   const filtered = campaigns.filter(c => {
     const mt = activeFilter === '전체' ||
                (c.type || []).some(t => t.includes(activeFilter)) ||
@@ -693,6 +713,11 @@ function setFilter(f, el) {
   activeFilter = f;
   document.querySelectorAll('.filter-tag').forEach(b => b.classList.remove('active'));
   el.classList.add('active');
+  // 필터 선택 시 검색어 없어도 결과 표시
+  if (f !== '전체') {
+    document.getElementById('searchInput').value = '';
+    searchTerm = '';
+  }
   filterCards();
 }
 
