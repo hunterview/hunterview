@@ -1,0 +1,9 @@
+node_modules/
+.next/
+*.db
+.env
+.env.local
+.DS_Store
+/tmp/
+crawler/crawlers/revuDebug.js
+.claude/
