@@ -4,7 +4,7 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import CampaignCard from '../components/CampaignCard';
 import AdCard from '../components/AdCard';
 
-const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000';
+const API = process.env.NEXT_PUBLIC_API_URL || '';
 const PAGE_SIZE = 60;
 const AD_EVERY  = 5;
 
