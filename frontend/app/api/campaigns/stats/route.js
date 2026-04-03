@@ -4,8 +4,8 @@ import fs from 'fs';
 
 function loadData() {
   const candidates = [
-    path.join(process.cwd(), '..', 'data.json'),
     path.join(process.cwd(), 'data.json'),
+    path.join(process.cwd(), '..', 'data.json'),
   ];
   for (const p of candidates) {
     if (fs.existsSync(p)) {
@@ -16,7 +16,7 @@ function loadData() {
 }
 
 export async function GET() {
-  const data = loadData();
+  const data      = loadData();
   const campaigns = data.campaigns || [];
 
   const sourceMap = {};
@@ -26,9 +26,11 @@ export async function GET() {
   });
 
   return NextResponse.json({
-    ok     : true,
-    total  : campaigns.length,
-    sources: Object.entries(sourceMap).map(([source, n]) => ({ source, n })),
+    ok        : true,
+    total     : campaigns.length,
+    sources   : Object.entries(sourceMap)
+                  .sort((a, b) => b[1] - a[1])
+                  .map(([source, n]) => ({ source, n })),
     updated_at: data.updated_at || data.updated || '',
   });
 }
