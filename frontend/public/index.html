@@ -143,6 +143,7 @@ nav a:hover, nav a.active { background: var(--primary-pale); color: var(--primar
 .platform-dot { width: 6px; height: 6px; border-radius: 50%; }
 .d-orange{background:var(--primary)} .d-coral{background:#FF8C69} .d-teal{background:#00B4A6}
 .d-blue{background:#0066FF} .d-green{background:#00C471} .d-pink{background:#FF6B9D} .d-amber{background:#FFAA00}
+.d-red{background:#ef4444} .d-purple{background:#8b5cf6} .d-cyan{background:#06b6d4}
 .card h3 { font-size: 15px; font-weight: 700; line-height: 1.45; margin-bottom: 10px; }
 .card-meta { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 10px; }
 .meta-item { display: flex; align-items: center; gap: 4px; font-size: 12px; color: var(--text2); }
@@ -267,7 +268,7 @@ footer { background: #1A1A1A; color: rgba(255,255,255,.4); text-align: center; p
 
 <!-- 헤더 -->
 <header>
-  <a class="logo" href="#" onclick="showPage('search')">헌터뷰<span class="logo-dot">.</span></a>
+  <a class="logo" href="#" onclick="goHome()">헌터뷰<span class="logo-dot">.</span></a>
   <nav>
     <a href="#" onclick="showPage('search')" id="nav-search" class="active">🔍 <span>체험단 검색</span></a>
     <a href="#" onclick="showPage('manage')" id="nav-manage">📋 <span>내 체험단 관리</span></a>
@@ -303,6 +304,14 @@ footer { background: #1A1A1A; color: rgba(255,255,255,.4); text-align: center; p
     </div>
   </section>
 
+  <!-- 광고 (통계 위) -->
+  <div class="ad-wrap">
+    <div class="ad-label">Advertisement</div>
+    <script src="https://ads-partners.coupang.com/g.js"></script>
+    <script>new PartnersCoupang.G({"id":976349,"template":"carousel","trackingCode":"AF5506301","width":"1000","height":"140","tsource":""});</script>
+    <div class="ad-disclaimer">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</div>
+  </div>
+
   <!-- 통계 -->
   <div class="stats-bar">
     <div class="stat"><div class="stat-num" id="stat-total">-</div><div class="stat-label">총 캠페인</div></div>
@@ -326,14 +335,6 @@ footer { background: #1A1A1A; color: rgba(255,255,255,.4); text-align: center; p
       <button class="quick-btn" onclick="quickSearch('반려동물')">🐾 반려동물</button>
       <button class="quick-btn" onclick="quickSearch('식품')">🥗 식품</button>
     </div>
-  </div>
-
-  <!-- 광고 -->
-  <div class="ad-wrap">
-    <div class="ad-label">Advertisement</div>
-    <script src="https://ads-partners.coupang.com/g.js"></script>
-    <script>new PartnersCoupang.G({"id":976349,"template":"carousel","trackingCode":"AF5506301","width":"1000","height":"140","tsource":""});</script>
-    <div class="ad-disclaimer">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</div>
   </div>
 
   <!-- 검색 결과 (검색 후에만 표시) -->
@@ -443,6 +444,19 @@ function showPage(name) {
   window.scrollTo(0, 0);
 }
 
+function goHome() {
+  // 검색어·필터 초기화 후 홈으로 이동
+  document.getElementById('searchInput').value = '';
+  searchTerm = '';
+  activeFilter = '전체';
+  document.querySelectorAll('.filter-tag').forEach(b => b.classList.remove('active'));
+  const firstTag = document.querySelector('.filter-tag');
+  if (firstTag) firstTag.classList.add('active');
+  document.getElementById('searchGuide').style.display = '';
+  document.getElementById('resultsArea').style.display = 'none';
+  showPage('search');
+}
+
 
 // ── 샘플 데이터 (fallback) ──
 const SAMPLE_DATA = [
@@ -501,9 +515,25 @@ async function loadData() {
 
 // 데이터 정규화 (crawler → frontend 포맷 맞추기)
 // Python 크롤러(link/image/review_type)와 Node 크롤러(url/thumbnail/type) 모두 지원
+function extractRewardHint(title) {
+  const t = title || '';
+  const m1 = t.match(/(\d[\d,]*)\s*만원/);
+  if (m1) return m1[1].replace(/,/g,'') + '만원 상당';
+  const m2 = t.match(/(\d[\d,]+)\s*원/);
+  if (m2) return m2[1].replace(/,/g,'') + '원 상당';
+  if (/무료/.test(t)) return '무료 체험';
+  if (/협찬/.test(t)) return '제품 협찬';
+  if (/방문/.test(t)) return '방문 체험';
+  if (/배송/.test(t)) return '배송 체험';
+  if (/숙박/.test(t)) return '숙박 체험';
+  return '체험 제공';
+}
+
 function normalizeItem(c) {
   // 필드명 통일
   if (!c.url && c.link) c.url = c.link;
+  if (!c.platform && c.source) c.platform = c.source;
+  if (!c.location && c.region) c.location = c.region;
   if (!c.type && c.review_type) c.type = [c.review_type];
 
   // 이미지 경로 절대경로로 변환
@@ -534,6 +564,9 @@ function normalizeItem(c) {
   // tags 자동 생성
   if (!c.tags || c.tags.length === 0) c.tags = inferTagsFromTitle(c.title || '');
 
+  // reward 파생 (크롤러에 없는 경우 제목에서 추출)
+  if (!c.reward) c.reward = extractRewardHint(c.title || '');
+
   // rewardNum 추출
   if (!c.rewardNum) {
     const text = (c.reward || '') + ' ' + (c.title || '');
@@ -547,7 +580,12 @@ function normalizeItem(c) {
 
   // platform dot 색상
   if (!c.dot) {
-    const dotMap = {'아싸뷰':'d-green','티블':'d-teal','파블로':'d-orange','디너의여왕':'d-coral','미블':'d-blue','모두의체험단':'d-blue','레뷰':'d-amber'};
+    const dotMap = {
+      '아싸뷰':'d-green','티블':'d-teal','파블로':'d-orange','디너의여왕':'d-coral',
+      '미블':'d-blue','모두의체험단':'d-blue','레뷰':'d-amber',
+      '강남맛집체험단':'d-red','모두모여체험단':'d-green','포블로그':'d-purple',
+      '블로그랩':'d-cyan','핌블':'d-pink'
+    };
     c.dot = dotMap[c.platform] || 'd-orange';
   }
 
@@ -631,10 +669,10 @@ function renderCards(list) {
           </div>
           <div class="card-tags">${(c.type||[]).map(typeTag).join('')}${(c.tags||[]).map(t => `<span class="tag tag-cat">${t}</span>`).join('')}</div>
         </div>
-        <div class="card-right">
+        <div class="card-right" onclick="event.preventDefault(); event.stopPropagation()">
           <div class="reward-amount">${c.reward || '-'}</div>
           <div class="reward-sub">체험 혜택</div>
-          <button class="apply-btn" onclick="event.preventDefault();window.open('${c.url || '#'}','_blank')">신청하기 →</button>
+          <button class="apply-btn" onclick="event.stopPropagation();window.open('${c.url || '#'}','_blank')">신청하기 →</button>
         </div>
       </div>
       ${compHtml}
