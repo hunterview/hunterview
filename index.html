@@ -263,6 +263,31 @@ footer { background: #1A1A1A; color: rgba(255,255,255,.4); text-align: center; p
 @keyframes fadeUp { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
 .card { animation: fadeUp .32s ease both; }
 .schedule-card { animation: fadeUp .32s ease both; }
+
+/* ─── 체험단 사이트 페이지 ─── */
+.sites-wrap { max-width: 900px; margin: 0 auto; padding: 40px 24px 60px; }
+.sites-header { text-align: center; margin-bottom: 36px; }
+.sites-header h2 { font-size: 24px; font-weight: 900; color: var(--text); margin-bottom: 8px; }
+.sites-header p  { color: var(--text2); font-size: 14px; }
+.sites-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+.site-card {
+  background: var(--surface); border: 1.5px solid var(--border); border-radius: 16px;
+  padding: 20px; text-decoration: none; color: inherit;
+  transition: box-shadow .2s, border-color .2s, transform .15s;
+  display: flex; flex-direction: column; gap: 10px;
+}
+.site-card:hover { box-shadow: var(--shadow-hover); border-color: var(--primary); transform: translateY(-2px); }
+.site-card-top { display: flex; align-items: center; gap: 10px; }
+.site-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+.site-name { font-size: 15px; font-weight: 800; color: var(--text); }
+.site-url  { font-size: 12px; color: var(--text3); margin-left: auto; }
+.site-desc { font-size: 13px; color: var(--text2); line-height: 1.5; }
+.site-badge-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 2px; }
+.site-badge {
+  font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px;
+  background: var(--primary-pale); color: var(--primary);
+}
+.site-badge.gray { background: #F3F3F3; color: var(--text3); }
 </style>
 </head>
 <body>
@@ -272,6 +297,7 @@ footer { background: #1A1A1A; color: rgba(255,255,255,.4); text-align: center; p
   <a class="logo" href="#" onclick="goHome()">헌터뷰<span class="logo-dot">.</span></a>
   <nav>
     <a href="#" onclick="showPage('search')" id="nav-search" class="active">🔍 <span>체험단 검색</span></a>
+    <a href="#" onclick="showPage('sites')"  id="nav-sites">🌐 <span>체험단 사이트</span></a>
     <a href="#" onclick="showPage('manage')" id="nav-manage">📋 <span>내 체험단 관리</span></a>
   </nav>
   <button class="btn-login" onclick="alert('준비 중인 기능이에요!')">로그인</button>
@@ -353,6 +379,159 @@ footer { background: #1A1A1A; color: rgba(255,255,255,.4); text-align: center; p
     <div class="no-results" id="noResults"><h3>😅 검색 결과가 없어요</h3><p>다른 키워드를 시도해보세요</p></div>
   </div>
 
+</div>
+
+<!-- ══════════════ 체험단 사이트 페이지 ══════════════ -->
+<div class="page" id="page-sites">
+  <div class="sites-wrap">
+    <div class="sites-header">
+      <h2>🌐 연동된 체험단 사이트</h2>
+      <p>헌터뷰가 실시간으로 수집하는 체험단 플랫폼 목록입니다</p>
+    </div>
+    <div class="sites-grid">
+
+      <a class="site-card" href="https://xn--939au0g4vj8sq.net/cp/" target="_blank" rel="noopener">
+        <div class="site-card-top">
+          <span class="site-dot" style="background:#ef4444"></span>
+          <span class="site-name">강남맛집체험단</span>
+          <span class="site-url">강남맛집.net</span>
+        </div>
+        <div class="site-desc">서울·강남 중심 맛집 방문형 체험단 전문 플랫폼</div>
+        <div class="site-badge-row">
+          <span class="site-badge" id="badge-gangnam">252개 캠페인</span>
+          <span class="site-badge">방문형</span>
+          <span class="site-badge">블로그</span>
+        </div>
+      </a>
+
+      <a class="site-card" href="https://pavlovu.com/review_campaign_list.php" target="_blank" rel="noopener">
+        <div class="site-card-top">
+          <span class="site-dot" style="background:#f97316"></span>
+          <span class="site-name">파블로체험단</span>
+          <span class="site-url">pavlovu.com</span>
+        </div>
+        <div class="site-desc">배송형·방문형 다양한 카테고리의 체험단 플랫폼</div>
+        <div class="site-badge-row">
+          <span class="site-badge" id="badge-pavlovu">210개 캠페인</span>
+          <span class="site-badge">배송·방문</span>
+          <span class="site-badge">블로그·인스타</span>
+        </div>
+      </a>
+
+      <a class="site-card" href="https://modootogether.com" target="_blank" rel="noopener">
+        <div class="site-card-top">
+          <span class="site-dot" style="background:#10b981"></span>
+          <span class="site-name">모두모여체험단</span>
+          <span class="site-url">modootogether.com</span>
+        </div>
+        <div class="site-desc">기자단·방문형·배송형 포함 대형 체험단 플랫폼</div>
+        <div class="site-badge-row">
+          <span class="site-badge" id="badge-modoo">200개 캠페인</span>
+          <span class="site-badge">기자단</span>
+          <span class="site-badge">블로그</span>
+        </div>
+      </a>
+
+      <a class="site-card" href="https://4blog.net" target="_blank" rel="noopener">
+        <div class="site-card-top">
+          <span class="site-dot" style="background:#8b5cf6"></span>
+          <span class="site-name">포블로그</span>
+          <span class="site-url">4blog.net</span>
+        </div>
+        <div class="site-desc">블로그·인스타·릴스 다양한 SNS 체험단 플랫폼</div>
+        <div class="site-badge-row">
+          <span class="site-badge" id="badge-four">176개 캠페인</span>
+          <span class="site-badge">블로그·인스타</span>
+          <span class="site-badge">릴스</span>
+        </div>
+      </a>
+
+      <a class="site-card" href="https://dailyview.kr" target="_blank" rel="noopener">
+        <div class="site-card-top">
+          <span class="site-dot" style="background:#f59e0b"></span>
+          <span class="site-name">데일리뷰</span>
+          <span class="site-url">dailyview.kr</span>
+        </div>
+        <div class="site-desc">쇼핑몰·제품 위주의 블로그 체험단 플랫폼</div>
+        <div class="site-badge-row">
+          <span class="site-badge" id="badge-daily">72개 캠페인</span>
+          <span class="site-badge">배송형</span>
+          <span class="site-badge">블로그</span>
+        </div>
+      </a>
+
+      <a class="site-card" href="https://www.ringble.co.kr" target="_blank" rel="noopener">
+        <div class="site-card-top">
+          <span class="site-dot" style="background:#FF8C69"></span>
+          <span class="site-name">링블</span>
+          <span class="site-url">ringble.co.kr</span>
+        </div>
+        <div class="site-desc">식품·생활용품 중심 배송형 체험단 플랫폼</div>
+        <div class="site-badge-row">
+          <span class="site-badge" id="badge-ring">36개 캠페인</span>
+          <span class="site-badge">배송형</span>
+          <span class="site-badge">블로그</span>
+        </div>
+      </a>
+
+      <a class="site-card" href="https://bloglab.kr" target="_blank" rel="noopener">
+        <div class="site-card-top">
+          <span class="site-dot" style="background:#06b6d4"></span>
+          <span class="site-name">블로그랩</span>
+          <span class="site-url">bloglab.kr</span>
+        </div>
+        <div class="site-desc">지역 방문형·배송형 체험단 플랫폼</div>
+        <div class="site-badge-row">
+          <span class="site-badge" id="badge-bloglab">33개 캠페인</span>
+          <span class="site-badge">방문·배송</span>
+          <span class="site-badge">블로그</span>
+        </div>
+      </a>
+
+      <a class="site-card" href="https://www.cometoplay.kr" target="_blank" rel="noopener">
+        <div class="site-card-top">
+          <span class="site-dot" style="background:#0066FF"></span>
+          <span class="site-name">놀러와체험단</span>
+          <span class="site-url">cometoplay.kr</span>
+        </div>
+        <div class="site-desc">지역 맛집·카페 방문형 블로그 체험단 플랫폼</div>
+        <div class="site-badge-row">
+          <span class="site-badge" id="badge-nollawa">32개 캠페인</span>
+          <span class="site-badge">방문형</span>
+          <span class="site-badge">블로그</span>
+        </div>
+      </a>
+
+      <a class="site-card" href="https://reviewplace.co.kr/pr/" target="_blank" rel="noopener">
+        <div class="site-card-top">
+          <span class="site-dot" style="background:#00C471"></span>
+          <span class="site-name">리뷰플레이스</span>
+          <span class="site-url">reviewplace.co.kr</span>
+        </div>
+        <div class="site-desc">스마트스토어·쿠팡 리뷰 체험단 전문 플랫폼</div>
+        <div class="site-badge-row">
+          <span class="site-badge" id="badge-reviewplace">30개 캠페인</span>
+          <span class="site-badge">배송형</span>
+          <span class="site-badge">쇼핑몰 리뷰</span>
+        </div>
+      </a>
+
+      <a class="site-card" href="https://pimble.co.kr" target="_blank" rel="noopener">
+        <div class="site-card-top">
+          <span class="site-dot" style="background:#ec4899"></span>
+          <span class="site-name">핌블</span>
+          <span class="site-url">pimble.co.kr</span>
+        </div>
+        <div class="site-desc">생활·뷰티·식품 제품 배송형 체험단 플랫폼</div>
+        <div class="site-badge-row">
+          <span class="site-badge" id="badge-pimble">23개 캠페인</span>
+          <span class="site-badge">배송형</span>
+          <span class="site-badge">블로그·인스타</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
 </div>
 
 <!-- ══════════════ 체험단 관리 페이지 ══════════════ -->
