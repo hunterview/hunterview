@@ -50,9 +50,11 @@ function parsePage(html) {
   const $     = cheerio.load(html);
   const items = [];
 
-  $('a[href*="campaign.php?cp_id="]').each((_, el) => {
+  // 캠페인 카드 단위: div.box (이미지 링크 + 정보 링크가 형제 구조)
+  $('div.box').each((_, el) => {
     try {
-      const $a    = $(el);
+      const $box  = $(el);
+      const $a    = $box.find('a[href*="campaign.php?cp_id="]').first();
       const href  = $a.attr('href') || '';
       const match = href.match(/cp_id=(\d+)/);
       if (!match) return;
@@ -61,16 +63,17 @@ function parsePage(html) {
       const id   = `pimble_${cpId}`;
       const url  = `${BASE_URL}/campaign.php?cp_id=${cpId}`;
 
-      const title = $a.find('span.it_name').text().trim();
+      const title = $box.find('span.it_name').text().trim();
       if (!title || title.length < 3) return;
 
-      let thumbnail = $a.find('img.it_img').attr('src') || '';
+      // 이미지는 div.thumb > a > img 구조
+      let thumbnail = $box.find('div.thumb img.it_img, img.it_img').attr('src') || '';
       if (thumbnail && !thumbnail.startsWith('http')) {
         thumbnail = `${BASE_URL}/${thumbnail.replace(/^\.\//, '')}`;
       }
 
       // 마감: span.dday → "D-Day 60", "상시모집", "모집마감"
-      const ddayTxt = $a.find('span.dday').text().trim();
+      const ddayTxt = $box.find('span.dday').text().trim();
       let dday = 30;
       if (/상시/.test(ddayTxt))           dday = 99;
       else if (/마감/.test(ddayTxt))      dday = -1;
@@ -81,8 +84,8 @@ function parsePage(html) {
       }
 
       // 타입 배지: .blog, .insta, .naver, .coupang 등
-      const typeText = $a.find('div.top_info span').map((_, e) => $(e).text()).get().join(' ');
-      const descText = $a.find('span.it_description').text();
+      const typeText = $box.find('div.top_info span').map((_, e) => $(e).text()).get().join(' ');
+      const descText = $box.find('span.it_description').text();
       const loc      = inferLocation(title, descText);
 
       items.push({
