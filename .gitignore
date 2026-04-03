@@ -7,3 +7,4 @@ node_modules/
 /tmp/
 crawler/crawlers/revuDebug.js
 .claude/
+.vercel

@@ -10,6 +10,10 @@ const crawlFourblog      = require('./sites/fourblog');
 const crawlPimble        = require('./sites/pimble');
 const crawlBloglab       = require('./sites/bloglab');
 const crawlGangnam       = require('./sites/gangnam');
+const crawlDailyview     = require('./sites/dailyview');
+const crawlCometoplay    = require('./sites/cometoplay');
+const crawlRingble       = require('./sites/ringble');
+const crawlReviewplace   = require('./sites/reviewplace');
 
 // public/data.json → Vercel 정적 파일로 /data.json 서빙 + API routes도 여기서 읽음
 const OUTPUT_PATH = path.join(__dirname, '..', 'frontend', 'public', 'data.json');
@@ -27,6 +31,10 @@ async function main() {
     runCrawler('핌블',          crawlPimble),
     runCrawler('블로그랩',      crawlBloglab),
     runCrawler('강남맛집체험단', crawlGangnam),
+    runCrawler('데일리뷰',      crawlDailyview),
+    runCrawler('놀러와체험단',  crawlCometoplay),
+    runCrawler('링블',          crawlRingble),
+    runCrawler('리뷰플레이스',  crawlReviewplace),
   ]);
 
   const allCampaigns = [];
