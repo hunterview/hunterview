@@ -64,6 +64,10 @@ module.exports = async function crawlModootogether() {
         const tags    = inferTags(title);
         const loc     = inferLocation(title);
 
+        // 혜택: cp_description (※ 로 시작하는 주의사항 제외)
+        const rawDesc = (c.cp_description || '').trim();
+        const benefit = /^[※*]/.test(rawDesc) ? '' : rawDesc;
+
         all.push({
           id,
           title      : cleanTitle(title),
@@ -73,8 +77,7 @@ module.exports = async function crawlModootogether() {
           thumbnail,
           type       : inferTypes(c.cp_type || '', title),
           tags,
-          reward     : c.cp_point ? `${c.cp_point}P` : '',
-          rewardNum  : 0,
+          benefit,
           location   : loc,
           dday,
           applied,

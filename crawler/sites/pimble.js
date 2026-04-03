@@ -85,8 +85,8 @@ function parsePage(html) {
 
       // 타입 배지: .blog, .insta, .naver, .coupang 등
       const typeText = $box.find('div.top_info span').map((_, e) => $(e).text()).get().join(' ');
-      const descText = $box.find('span.it_description').text();
-      const loc      = inferLocation(title, descText);
+      const benefit  = $box.find('span.it_description').text().trim();
+      const loc      = inferLocation(title, benefit);
 
       items.push({
         id       : id,
@@ -97,8 +97,7 @@ function parsePage(html) {
         thumbnail,
         type     : inferTypes(typeText + ' ' + title),
         tags     : inferTags(title),
-        reward   : '',
-        rewardNum: 0,
+        benefit,
         location : loc,
         dday,
         applied  : 0,

@@ -107,6 +107,7 @@ function parsePage(html) {
 
       // 타입: .option2 > span (방문형/배송형/기자단)
       const typeText = $card.find('.option2, .camp_type').text().trim();
+      const benefit  = $card.find('.it_description, span.it_description').text().trim();
       const types = inferTypes(title + ' ' + typeText);
       const tags = inferTags(title);
       const location = inferLocation(title, typeText);
@@ -120,8 +121,7 @@ function parsePage(html) {
         thumbnail,
         type: types,
         tags,
-        reward: '',
-        rewardNum: 0,
+        benefit,
         location,
         dday,
         applied,

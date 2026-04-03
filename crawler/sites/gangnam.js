@@ -113,6 +113,9 @@ function parsePage(html) {
       // 채널: em.blog, em.insta 등
       const chanText = $li.find('span.label em:first-child').text().trim();
 
+      // 혜택 설명: dd.sub_tit (예: "롯데상품권 (30만원)")
+      const benefit = $li.find('dd.sub_tit').first().text().trim();
+
       items.push({
         id       : id,
         title    : cleanTitle(title),
@@ -122,8 +125,7 @@ function parsePage(html) {
         thumbnail,
         type     : inferTypes(typeText + ' ' + chanText),
         tags     : inferTags(title),
-        reward   : '',
-        rewardNum: 0,
+        benefit,
         location : inferLocation(title),
         dday,
         applied,

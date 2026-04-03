@@ -84,7 +84,7 @@ function parsePage(html) {
       }
 
       const typeText = $box.find('div.top_info span').map((_, e) => $(e).text()).get().join(' ');
-      const descText = $box.find('span.it_description').text();
+      const benefit  = $box.find('span.it_description').text().trim();
 
       // 신청/모집 인원
       const nums   = $box.find('b.txt_num').map((_, e) => parseInt($(e).text())).get().filter(n => !isNaN(n));
@@ -100,9 +100,8 @@ function parsePage(html) {
         thumbnail,
         type     : inferTypes(typeText + ' ' + title),
         tags     : inferTags(title),
-        reward   : '',
-        rewardNum: 0,
-        location : inferLocation(title, descText),
+        benefit,
+        location : inferLocation(title, benefit),
         dday,
         applied,
         total,

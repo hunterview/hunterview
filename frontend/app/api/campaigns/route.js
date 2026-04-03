@@ -62,8 +62,9 @@ export async function GET(request) {
     image  : c.image    || c.thumbnail || '',
     region : c.region   || c.location  || '',
     source : c.source   || c.platform  || '',
-    dday   : c.dday     ?? null,      // 숫자형 d-day (새 크롤러)
-    deadline: c.deadline || '',        // 날짜형 (구 크롤러 호환)
+    dday   : c.dday     ?? null,
+    deadline: c.deadline || '',
+    benefit: c.benefit  || '',
   }));
 
   return NextResponse.json({ ok: true, total, campaigns: normalized });
