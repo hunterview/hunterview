@@ -22,7 +22,7 @@ const CATEGORIES = [
   { label: '방문',  q: '방문' },
 ];
 
-const SOURCES = ['전체', '리뷰노트', '아싸뷰', '체험단닷컴'];
+// 소스 목록은 stats API에서 동적으로 로드
 
 export default function Home() {
   // inputValue: 입력창 타이핑 값 — API 호출과 무관
@@ -32,10 +32,11 @@ export default function Home() {
   const [category,    setCategory]    = useState('');
   const [source,      setSource]      = useState('전체');
 
-  const [items,   setItems]   = useState([]);
-  const [dbTotal, setDbTotal] = useState(null);
-  const [loading, setLoading] = useState(false);
-  const [hasMore, setHasMore] = useState(true);
+  const [items,    setItems]    = useState([]);
+  const [dbTotal,  setDbTotal]  = useState(null);
+  const [sources,  setSources]  = useState([]);   // 동적 소스 목록
+  const [loading,  setLoading]  = useState(false);
+  const [hasMore,  setHasMore]  = useState(true);
 
   const offsetRef = useRef(0);
   const loaderRef = useRef(null);
@@ -46,7 +47,12 @@ export default function Home() {
   useEffect(() => {
     fetch(`${API}/campaigns/stats`)
       .then(r => r.json())
-      .then(d => setDbTotal(d.total ?? null))
+      .then(d => {
+        setDbTotal(d.total ?? null);
+        if (d.sources?.length) {
+          setSources(['전체', ...d.sources.map(s => s.source).sort()]);
+        }
+      })
       .catch(() => {});
   }, []);
 
@@ -191,18 +197,18 @@ export default function Home() {
       {/* 소스 필터 */}
       <div className="sticky top-[133px] z-30 bg-gray-50 border-b border-gray-200">
         <div className="max-w-3xl mx-auto px-4">
-          <div className="flex items-center gap-1.5 py-1.5">
-            {SOURCES.map(s => (
+          <div className="flex items-center gap-1.5 py-1.5 overflow-x-auto scrollbar-hide">
+            {(sources.length ? sources : ['전체']).map(s => (
               <button key={s} onClick={() => setSource(s)}
-                className={`text-[11px] px-2.5 py-1 rounded-full font-semibold transition-all ${
+                className={`shrink-0 text-[11px] px-2.5 py-1 rounded-full font-semibold transition-all ${
                   source === s
                     ? 'bg-gray-800 text-white'
                     : 'text-gray-400 hover:text-gray-700'
                 }`}>{s}</button>
             ))}
-            <div className="flex-1" />
-            <span className="text-[10px] text-gray-300 hidden sm:block w-16 text-right">지역</span>
-            <span className="text-[10px] text-gray-300 w-12 text-right">마감</span>
+            <div className="flex-1 shrink-0 min-w-4" />
+            <span className="shrink-0 text-[10px] text-gray-300 hidden sm:block w-16 text-right">지역</span>
+            <span className="shrink-0 text-[10px] text-gray-300 w-12 text-right">마감</span>
           </div>
         </div>
       </div>

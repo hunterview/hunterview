@@ -1,10 +1,12 @@
 const fs = require('fs');
 const path = require('path');
 
-const crawlTble       = require('./sites/tble');
-const crawlPavlovu    = require('./sites/pavlovu');
-const crawlDinnerqueen = require('./sites/dinnerqueen');
-const crawlMrblog     = require('./sites/mrblog');
+const crawlTble          = require('./sites/tble');
+const crawlPavlovu       = require('./sites/pavlovu');
+const crawlDinnerqueen   = require('./sites/dinnerqueen');
+const crawlMrblog        = require('./sites/mrblog');
+const crawlModootogether = require('./sites/modootogether');
+const crawlFourblog      = require('./sites/fourblog');
 
 const OUTPUT_PATH = path.join(__dirname, '..', 'data.json');
 
@@ -12,10 +14,12 @@ async function main() {
   console.log('🔍 헌터뷰 크롤러 시작...\n');
 
   const results = await Promise.allSettled([
-    runCrawler('티블',        crawlTble),
-    runCrawler('파블로',      crawlPavlovu),
-    runCrawler('디너의여왕',  crawlDinnerqueen),
-    runCrawler('미블',        crawlMrblog),
+    runCrawler('티블',          crawlTble),
+    runCrawler('파블로',        crawlPavlovu),
+    runCrawler('디너의여왕',    crawlDinnerqueen),
+    runCrawler('미블',          crawlMrblog),
+    runCrawler('모두모여체험단', crawlModootogether),
+    runCrawler('포블로그',      crawlFourblog),
   ]);
 
   const allCampaigns = [];
