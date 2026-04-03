@@ -9,6 +9,7 @@ const crawlModootogether = require('./sites/modootogether');
 const crawlFourblog      = require('./sites/fourblog');
 const crawlPimble        = require('./sites/pimble');
 const crawlBloglab       = require('./sites/bloglab');
+const crawlGangnam       = require('./sites/gangnam');
 
 const OUTPUT_PATH = path.join(__dirname, '..', 'data.json');
 
@@ -24,6 +25,7 @@ async function main() {
     runCrawler('포블로그',      crawlFourblog),
     runCrawler('핌블',          crawlPimble),
     runCrawler('블로그랩',      crawlBloglab),
+    runCrawler('강남맛집체험단', crawlGangnam),
   ]);
 
   const allCampaigns = [];
