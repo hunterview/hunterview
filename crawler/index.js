@@ -11,8 +11,8 @@ const crawlPimble        = require('./sites/pimble');
 const crawlBloglab       = require('./sites/bloglab');
 const crawlGangnam       = require('./sites/gangnam');
 
-// Vercel rootDirectory=frontend 이므로 frontend/ 안에 저장해야 배포에 포함됨
-const OUTPUT_PATH = path.join(__dirname, '..', 'frontend', 'data.json');
+// public/data.json → Vercel 정적 파일로 /data.json 서빙 + API routes도 여기서 읽음
+const OUTPUT_PATH = path.join(__dirname, '..', 'frontend', 'public', 'data.json');
 
 async function main() {
   console.log('🔍 헌터뷰 크롤러 시작...\n');

@@ -6,8 +6,9 @@ function loadData() {
   // Vercel(rootDirectory=frontend): process.cwd() = /vercel/path0 (= frontend/)
   // 로컬 개발: process.cwd() = frontend/
   const candidates = [
-    path.join(process.cwd(), 'data.json'),          // Vercel / 로컬 (frontend/data.json)
-    path.join(process.cwd(), '..', 'data.json'),    // 구 구조 fallback
+    path.join(process.cwd(), 'public', 'data.json'), // frontend/public/data.json (primary)
+    path.join(process.cwd(), 'data.json'),            // Vercel / 로컬 (frontend/data.json)
+    path.join(process.cwd(), '..', 'data.json'),      // 구 구조 fallback
   ];
   for (const p of candidates) {
     if (fs.existsSync(p)) {

@@ -4,6 +4,7 @@ import fs from 'fs';
 
 function loadData() {
   const candidates = [
+    path.join(process.cwd(), 'public', 'data.json'), // frontend/public/data.json (primary)
     path.join(process.cwd(), 'data.json'),
     path.join(process.cwd(), '..', 'data.json'),
   ];
