@@ -875,7 +875,7 @@ function filterCards() {
                (c.type || []).some(t => t.includes(activeFilter)) ||
                (c.tags || []).some(t => t.includes(activeFilter)) ||
                (c.location || '').includes(activeFilter);
-    const fullText = (c.title + ' ' + (c.tags||[]).join(' ') + ' ' + (c.location||'')).toLowerCase();
+    const fullText = (c.title + ' ' + (c.tags||[]).join(' ') + ' ' + (c.location||'') + ' ' + (c.benefit||'')).toLowerCase();
     const ms = !searchTerm || fullText.includes(searchTerm);
     return mt && ms;
   });
