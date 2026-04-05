@@ -1,42 +1,30 @@
 /**
  * 티블 (tble.kr) 크롤러
- * - 서버사이드 렌더링 → axios + cheerio 사용
- * - URL: https://tble.kr/category.php (전체), ?type=p (배송), ?type=l (지역)
+ * - Node.js SSL DH key 호환 문제로 curl 사용
+ * - URL: https://tble.kr/category.php
  */
 
-const axios = require('axios');
+const { execSync } = require('child_process');
 const cheerio = require('cheerio');
 
 const BASE_URL = 'https://tble.kr';
-const PAGES = [
-  `${BASE_URL}/category.php`,
-  `${BASE_URL}/category.php?type=p`,
-  `${BASE_URL}/category.php?type=l`,
-];
+const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36';
 
-const HEADERS = {
-  'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-  'Accept-Language': 'ko-KR,ko;q=0.9',
-  'Referer': 'https://tble.kr/',
-};
+function fetchWithCurl(url) {
+  const cmd = `curl -s -k --max-time 20 -A "${UA}" -H "Accept-Language: ko-KR,ko;q=0.9" -H "Referer: https://tble.kr/" "${url}"`;
+  return execSync(cmd, { timeout: 25000, maxBuffer: 10 * 1024 * 1024 }).toString();
+}
 
 module.exports = async function crawlTble() {
   const all = [];
   const seenIds = new Set();
 
-  for (const url of PAGES) {
-    try {
-      const { data: html } = await axios.get(url, { headers: HEADERS, timeout: 15000 });
-      const items = parsePage(html);
-      for (const item of items) {
-        if (!seenIds.has(item.id)) {
-          seenIds.add(item.id);
-          all.push(item);
-        }
-      }
-      await sleep(800);
-    } catch (err) {
-      console.error(`  [티블] ${url} 실패: ${err.message}`);
+  const html = fetchWithCurl(`${BASE_URL}/category.php`);
+  const items = parsePage(html);
+  for (const item of items) {
+    if (!seenIds.has(item.id)) {
+      seenIds.add(item.id);
+      all.push(item);
     }
   }
 
@@ -46,9 +34,11 @@ module.exports = async function crawlTble() {
 function parsePage(html) {
   const $ = cheerio.load(html);
   const items = [];
+  const seen = new Set();
 
-  // 캠페인 링크 찾기: href에 view.php?cp_id= 포함
-  $('a[href*="view.php?cp_id="]').each((_, el) => {
+  // 각 캠페인 = a[이미지] + a[텍스트정보] 2개 쌍으로 존재
+  // 텍스트 정보가 있는 링크만 선택 (.t2 포함)
+  $('a[href*="cp_id="]').each((_, el) => {
     try {
       const $el = $(el);
       const href = $el.attr('href') || '';
@@ -56,68 +46,59 @@ function parsePage(html) {
       if (!cpIdMatch) return;
 
       const cpId = cpIdMatch[1];
-      const id = `tble_${cpId}`;
-      const url = href.startsWith('http') ? href : `${BASE_URL}/${href.replace(/^\.\//, '')}`;
 
-      // 이미지
-      const img = $el.find('img').first();
-      let thumbnail = img.attr('src') || '';
+      // 제목: .t2에서 가져옴 (없으면 이미지 카드라 스킵)
+      const title = cleanTitle($el.find('.t2').text().trim());
+      if (!title || title.length < 3) return;
+
+      if (seen.has(cpId)) return;
+      seen.add(cpId);
+
+      const id = `tble_${cpId}`;
+      const rawUrl = href.replace(/^\.\//, '');
+      const url = rawUrl.startsWith('http') ? rawUrl : `${BASE_URL}/${rawUrl}`;
+
+      // 썸네일: 같은 cp_id의 이미지 링크에서
+      const imgLink = $(`a[href*="cp_id=${cpId}"] img`).first();
+      let thumbnail = imgLink.attr('src') || '';
       if (thumbnail && !thumbnail.startsWith('http')) {
         thumbnail = `${BASE_URL}/${thumbnail.replace(/^\.\//, '')}`;
       }
 
-      // 텍스트 전체 수집
       const fullText = $el.text().replace(/\s+/g, ' ').trim();
 
-      // 제목: h3 또는 첫 번째 의미있는 텍스트
-      let title = $el.find('h3, h4, .title, .cp_name').first().text().trim();
-      if (!title) {
-        // 이미지 alt에서 가져오기
-        title = img.attr('alt') || '';
-      }
-      if (!title) {
-        // 텍스트에서 첫 줄 추출
-        const lines = fullText.split(/[\n·|]/).map(s => s.trim()).filter(s => s.length > 3);
-        title = lines[0] || '';
-      }
-      if (!title || title.length < 3) return;
+      // 체험혜택: .t3
+      const benefit = $el.find('.t3').text().trim();
 
-      // 마감일 파싱: "N일 남음", "오늘 마감", "마감"
+      // 마감일: .ps_remain "N일 남음" 또는 "오늘 마감" 또는 "모집 마감"
       let dday = 30;
-      const ddayMatch = fullText.match(/(\d+)일\s*남음/);
-      const todayMatch = fullText.match(/오늘\s*마감/);
-      const closedMatch = fullText.match(/모집\s*마감/);
+      const remainText = $el.find('.ps_remain').text().trim();
+      const ddayMatch = remainText.match(/(\d+)일\s*남음/);
       if (ddayMatch) dday = parseInt(ddayMatch[1]);
-      else if (todayMatch) dday = 0;
-      else if (closedMatch) dday = -1;
+      else if (/오늘\s*마감/.test(remainText)) dday = 0;
+      else if (/모집\s*마감|마감됨/.test(remainText)) dday = -1;
 
-      // 신청 / 모집 인원
+      // 신청/모집 인원
       let applied = 0, total = 0;
-      const memberMatch = fullText.match(/신청\s*(\d+)명\s*\/\s*모집\s*(\d+)명/);
+      const memberMatch = fullText.match(/신청\s*([\d,]+)명\s*\/\s*모집\s*([\d,]+)명/);
       if (memberMatch) {
-        applied = parseInt(memberMatch[1]);
-        total = parseInt(memberMatch[2]);
+        applied = parseInt(memberMatch[1].replace(/,/g, ''));
+        total = parseInt(memberMatch[2].replace(/,/g, ''));
       }
-
-      // 타입 분류 (제목/텍스트 기반)
-      const types = inferTypes(title + ' ' + fullText);
-      const tags = inferTags(title);
-
-      // 위치
-      const location = inferLocation(title, fullText);
 
       items.push({
         id,
-        title: cleanTitle(title),
+        title,
         platform: '티블',
         dot: 'd-teal',
         url,
         thumbnail,
-        type: types,
-        tags,
+        type: inferTypes(title + ' ' + fullText),
+        tags: inferTags(title),
+        benefit,
         reward: '',
         rewardNum: 0,
-        location,
+        location: inferLocation(title, fullText),
         dday,
         applied,
         total,
@@ -125,7 +106,7 @@ function parsePage(html) {
         isNew: dday >= 25,
       });
     } catch (e) {
-      // 개별 아이템 파싱 오류는 무시
+      // skip
     }
   });
 
@@ -157,14 +138,13 @@ function inferTags(title) {
     [/운동|헬스|필라테스|요가|스포츠/, '운동'],
     [/인테리어|가구|생활용품/, '생활'],
   ];
-  for (const [re, tag] of rules) {
-    if (re.test(title)) tags.push(tag);
-  }
+  for (const [re, tag] of rules) if (re.test(title)) tags.push(tag);
   return tags;
 }
 
 function inferLocation(title, text) {
-  const locationRules = [
+  const combined = title + ' ' + text;
+  const rules = [
     [/배송/, '배송형'],
     [/서울/, '서울'],
     [/부산/, '부산'],
@@ -177,16 +157,10 @@ function inferLocation(title, text) {
     [/대전/, '대전'],
     [/광주/, '광주'],
   ];
-  for (const [re, loc] of locationRules) {
-    if (re.test(title) || re.test(text)) return loc;
-  }
+  for (const [re, loc] of rules) if (re.test(combined)) return loc;
   return '전국';
 }
 
 function cleanTitle(title) {
   return title.replace(/\s+/g, ' ').replace(/^[\s\-·|]+|[\s\-·|]+$/g, '').trim();
-}
-
-function sleep(ms) {
-  return new Promise(r => setTimeout(r, ms));
 }

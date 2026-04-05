@@ -1,96 +1,114 @@
 /**
  * 디너의여왕 (dinnerqueen.net) 크롤러
- * - Playwright 사용 (AJAX 렌더링)
+ * - SSR, axios + cheerio 사용
+ * - URL: https://dinnerqueen.net/taste (전체 캠페인 목록)
  */
 
-const { chromium } = require('playwright');
+const axios = require('axios');
+const cheerio = require('cheerio');
 
 const BASE_URL = 'https://dinnerqueen.net';
-const LIST_URL = `${BASE_URL}/campaign/list`;
+const HEADERS = {
+  'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+  'Accept-Language': 'ko-KR,ko;q=0.9',
+  'Referer': 'https://dinnerqueen.net/',
+};
 
 module.exports = async function crawlDinnerqueen() {
-  const browser = await chromium.launch({ headless: true });
-  const context = await browser.newContext({
-    userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36',
-    locale: 'ko-KR',
-  });
-  const page = await context.newPage();
+  const all = [];
+  const seenIds = new Set();
 
-  try {
-    await page.goto(LIST_URL, { waitUntil: 'networkidle', timeout: 30000 });
+  for (let page = 1; page <= 5; page++) {
+    const url = page === 1 ? `${BASE_URL}/taste` : `${BASE_URL}/taste?page=${page}`;
+    try {
+      const { data: html } = await axios.get(url, { headers: HEADERS, timeout: 15000 });
+      const items = parsePage(html);
+      if (items.length === 0) break;
 
-    // 캠페인 카드가 로드될 때까지 대기
-    await page.waitForSelector('a[href*="/campaign/"]', { timeout: 15000 }).catch(() => {});
-
-    const items = await page.evaluate((baseUrl) => {
-      const results = [];
-      const seen = new Set();
-
-      // 캠페인 링크가 있는 모든 앵커 순회
-      document.querySelectorAll('a[href*="/campaign/"]').forEach(el => {
-        const href = el.getAttribute('href') || '';
-        // /campaign/list 자신 또는 /campaign/123 같은 숫자 ID만
-        const idMatch = href.match(/\/campaign\/(\d+)/);
-        if (!idMatch) return;
-
-        const cpId = idMatch[1];
-        const id = `dinnerqueen_${cpId}`;
-        if (seen.has(id)) return;
-        seen.add(id);
-
-        const url = href.startsWith('http') ? href : `${baseUrl}${href}`;
-
-        // 이미지
-        const img = el.querySelector('img');
-        const thumbnail = img ? (img.src || img.dataset.src || '') : '';
-
-        // 제목
-        const titleEl = el.querySelector('h3, h4, .title, .name, [class*="title"], [class*="name"]');
-        let title = titleEl ? titleEl.textContent.trim() : '';
-        if (!title) {
-          title = img ? (img.alt || '') : '';
+      let added = 0;
+      for (const item of items) {
+        if (!seenIds.has(item.id)) {
+          seenIds.add(item.id);
+          all.push(item);
+          added++;
         }
-        if (!title || title.length < 3) return;
+      }
+      if (added === 0) break;
 
-        // 전체 텍스트
-        const fullText = el.textContent.replace(/\s+/g, ' ').trim();
-
-        // 마감일
-        let dday = 30;
-        const ddayMatch = fullText.match(/D-(\d+)|(\d+)일\s*남/);
-        if (ddayMatch) dday = parseInt(ddayMatch[1] || ddayMatch[2]);
-
-        // 인원
-        let applied = 0, total = 0;
-        const memberMatch = fullText.match(/(\d+)\s*\/\s*(\d+)/);
-        if (memberMatch) { applied = parseInt(memberMatch[1]); total = parseInt(memberMatch[2]); }
-
-        results.push({ id, title, url, thumbnail, fullText, dday, applied, total });
-      });
-
-      return results;
-    }, BASE_URL);
-
-    return items.map(item => ({
-      ...item,
-      platform: '디너의여왕',
-      dot: 'd-coral',
-      type: inferTypes(item.title + ' ' + item.fullText),
-      tags: inferTags(item.title),
-      reward: extractReward(item.fullText),
-      rewardNum: 0,
-      location: inferLocation(item.title, item.fullText),
-      site: 'dinnerqueen.net',
-      isNew: item.dday >= 25,
-      fullText: undefined,
-    }));
-
-  } catch (err) {
-    throw new Error(`디너의여왕 크롤링 실패: ${err.message}`);
-  } finally {
-    await browser.close();
+      await sleep(600);
+    } catch (err) {
+      console.error(`  [디너의여왕] page ${page} 실패: ${err.message}`);
+      break;
+    }
   }
+
+  return all;
 };
+
+function parsePage(html) {
+  const $ = cheerio.load(html);
+  const items = [];
+
+  $('.qz-dq-card').each((_, el) => {
+    try {
+      const $el = $(el);
+
+      const link = $el.find('a.qz-dq-card__link').first();
+      const href = link.attr('href') || '';
+      const idMatch = href.match(/\/taste\/(\d+)/);
+      if (!idMatch) return;
+
+      const cpId = idMatch[1];
+      const id = `dinnerqueen_${cpId}`;
+      const url = href.startsWith('http') ? href : `${BASE_URL}${href}`;
+
+      const title = (link.attr('title') || '').replace(/\s*신청하기\s*$/, '').trim();
+      if (!title || title.length < 3) return;
+
+      const img = link.find('img');
+      const thumbnail = img.attr('src') || '';
+
+      const fullText = $el.text().replace(/\s+/g, ' ').trim();
+
+      let dday = 30;
+      const ddayMatch = fullText.match(/D-(\d+)/i);
+      if (ddayMatch) dday = parseInt(ddayMatch[1]);
+      else if (/오늘\s*마감/.test(fullText)) dday = 0;
+      else if (/마감됨|모집\s*완료/.test(fullText)) dday = -1;
+
+      let applied = 0, total = 0;
+      const memberMatch = fullText.match(/신청\s*([\d,]+)\s*\/\s*모집\s*([\d,]+)/);
+      if (memberMatch) {
+        applied = parseInt(memberMatch[1].replace(/,/g, ''));
+        total = parseInt(memberMatch[2].replace(/,/g, ''));
+      }
+
+      items.push({
+        id,
+        title,
+        platform: '디너의여왕',
+        dot: 'd-coral',
+        url,
+        thumbnail,
+        type: inferTypes(title + ' ' + fullText),
+        tags: inferTags(title),
+        benefit: '',
+        reward: '',
+        rewardNum: 0,
+        location: inferLocation(title, fullText),
+        dday,
+        applied,
+        total,
+        site: 'dinnerqueen.net',
+        isNew: dday >= 25,
+      });
+    } catch (e) {
+      // skip
+    }
+  });
+
+  return items;
+}
 
 function inferTypes(text) {
   const types = [];
@@ -98,9 +116,9 @@ function inferTypes(text) {
   if (/방문|지역/.test(text)) types.push('방문');
   if (/블로그|포스팅/.test(text)) types.push('블로그');
   if (/인스타|instagram/i.test(text)) types.push('인스타');
-  if (/릴스|숏폼/.test(text)) types.push('숏폼');
+  if (/릴스|숏폼|클립/.test(text)) types.push('숏폼');
   if (types.length === 0) types.push('블로그');
-  return [...new Set(types)];
+  return types;
 }
 
 function inferTags(title) {
@@ -115,9 +133,7 @@ function inferTags(title) {
     [/식품|간식|음료|커피|과일/, '식품'],
     [/패션|의류|옷|신발/, '패션'],
   ];
-  for (const [re, tag] of rules) {
-    if (re.test(title)) tags.push(tag);
-  }
+  for (const [re, tag] of rules) if (re.test(title)) tags.push(tag);
   return tags;
 }
 
@@ -134,16 +150,12 @@ function inferLocation(title, text) {
     [/인천/, '인천'],
     [/대구/, '대구'],
     [/대전/, '대전'],
+    [/광주/, '광주'],
   ];
-  for (const [re, loc] of rules) {
-    if (re.test(combined)) return loc;
-  }
+  for (const [re, loc] of rules) if (re.test(combined)) return loc;
   return '전국';
 }
 
-function extractReward(text) {
-  const m = text.match(/(\d+(?:\.\d+)?)\s*만원/);
-  if (m) return `${m[1]}만원 상당`;
-  if (/무료|제공/.test(text)) return '무료 제공';
-  return '';
+function sleep(ms) {
+  return new Promise(r => setTimeout(r, ms));
 }
