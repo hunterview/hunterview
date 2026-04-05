@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-05 05:57",
-  "total": 76,
+  "updated_at": "2026-04-05 08:06",
+  "total": 80,
   "campaigns": [
     {
       "title": "청주 지역 도시락으로 해당 지역 배달로만 가능합니다. (아파트/가정집 배달불가)",
@@ -783,12 +783,12 @@
       "id": 60
     },
     {
-      "title": "마이토온 나이아신아마이드 10% EGF 탄력 영양 크림 50g 제공",
+      "title": "이가자연면 메밀소바 136.5g, 8개 제공",
       "reward": "",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=407291",
+      "link": "https://tble.kr/view.php?cp_id=407756",
       "image": "",
-      "deadline": "2026-04-09",
+      "deadline": "2026-04-15",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
@@ -796,12 +796,12 @@
       "id": 61
     },
     {
-      "title": "이가자연면 메밀소바 136.5g, 8개 제공",
+      "title": "마이토온 나이아신아마이드 10% EGF 탄력 영양 크림 50g 제공",
       "reward": "",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=407756",
+      "link": "https://tble.kr/view.php?cp_id=407291",
       "image": "",
-      "deadline": "2026-04-15",
+      "deadline": "2026-04-09",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
@@ -989,6 +989,58 @@
       "applied": 0,
       "total": 10,
       "id": 76
+    },
+    {
+      "title": "마이페이지",
+      "reward": "",
+      "platform": "모두의체험단",
+      "link": "https://www.modan.kr/login?back_url=L3Nob3BfbXlwYWdl&type=mypage",
+      "image": "",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 77
+    },
+    {
+      "title": "로그인이 필요합니다.",
+      "reward": "",
+      "platform": "모두의체험단",
+      "link": "https://www.modan.kr/login?back_url=Lw%3D%3D&used_login_btn=Y",
+      "image": "",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 78
+    },
+    {
+      "title": "로그인이 필요합니다.",
+      "reward": "",
+      "platform": "모두의체험단",
+      "link": "https://www.modan.kr/login?back_url=L21hdHppcA%3D%3D&used_login_btn=Y",
+      "image": "",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 79
+    },
+    {
+      "title": "로그인이 필요합니다.",
+      "reward": "",
+      "platform": "모두의체험단",
+      "link": "https://www.modan.kr/login?back_url=L2RlbGl2ZXJ5&used_login_btn=Y",
+      "image": "",
+      "deadline": "",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 80
     }
   ]
 }
