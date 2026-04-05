@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-05 08:06",
-  "total": 80,
+  "updated_at": "2026-04-05 14:05",
+  "total": 76,
   "campaigns": [
     {
       "title": "청주 지역 도시락으로 해당 지역 배달로만 가능합니다. (아파트/가정집 배달불가)",
@@ -29,32 +29,6 @@
       "id": 2
     },
     {
-      "title": "핑크블러썸 / 화이트엔젤 중 원하는 분위기 선택 (+ 추가 구성품까지 모두 선택) [배송비 포함40,900원]",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1775100982",
-      "image": "./data/campaign/thumb/thumb-1775100982177294608017727723541995116336_etSfW1rl_28462962906334819_1167632820_300x300.jpg",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 3
-    },
-    {
-      "title": "노쇼 또는 당일취소 시 20,000원 청구",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1771844250",
-      "image": "./data/campaign/thumb/thumb-177184425031517582_pOIRF7vq_IMG_2373_300x300.jpg",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 4
-    },
-    {
       "title": "[45,000원 상당] 킹야키토리동(닭다리살덮밥) + 삿포로식 스프카레(야채&닭다리살토핑) + 사이드메뉴 1개 + 주류/음료(맥주/하이볼) 2잔 구성",
       "reward": "수익쉐어 12% 캠페인",
       "platform": "아싸뷰",
@@ -65,7 +39,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 5
+      "id": 3
     },
     {
       "title": "[45,000원 상당] 킹야키토리동(닭다리살덮밥) + 삿포로식 스프카레(야채&닭다리살토핑) + 사이드메뉴 1개 + 주류/음료(맥주/하이볼) 2잔 구성",
@@ -78,7 +52,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 6
+      "id": 4
     },
     {
       "title": "[45,000원 상당] 킹야키토리동(닭다리살덮밥) + 삿포로식 스프카레(야채&닭다리살토핑) + 사이드메뉴 1개 + 주류/음료(맥주/하이볼) 2잔 구성",
@@ -91,7 +65,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 7
+      "id": 5
     },
     {
       "title": "[45,000원 상당] 킹야키토리동(닭다리살덮밥) + 삿포로식 스프카레(야채&닭다리살토핑) + 사이드메뉴 1개 + 주류/음료(맥주/하이볼) 2잔 구성",
@@ -104,7 +78,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 8
+      "id": 6
     },
     {
       "title": "[35,000원 상당] 미니다발(35000원사이즈/컬러선택가능)",
@@ -117,7 +91,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 9
+      "id": 7
     },
     {
       "title": "쿼크브릭 360도 회전 접이식 여행용 비행기 핸드폰 거치대",
@@ -130,7 +104,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 10
+      "id": 8
     },
     {
       "title": "밤쉘 [배송비 포함16,900원]",
@@ -143,7 +117,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 11
+      "id": 9
     },
     {
       "title": "[15,900원 상당] 라덴티 치약 100g 1개",
@@ -156,7 +130,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 12
+      "id": 10
     },
     {
       "title": "끄룸 얼룩제거제 300ml [배송비 포함18,900원]",
@@ -169,7 +143,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 13
+      "id": 11
     },
     {
       "title": "[50,000원 상당] 식사권(전메뉴)",
@@ -182,7 +156,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 14
+      "id": 12
     },
     {
       "title": "[109,000원 상당] 리프팅 레티놀 크림",
@@ -195,7 +169,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 15
+      "id": 13
     },
     {
       "title": "여자분, 기장 중단발 이상, 탈색 안됨,",
@@ -208,7 +182,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 16
+      "id": 14
     },
     {
       "title": "맑은 도자기결 고소리 탄력 세럼 [배송비 포함39,600원]",
@@ -221,7 +195,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 17
+      "id": 15
     },
     {
       "title": "[150,000원 상당] 윤곽관리 (상담 포함 2시간)",
@@ -234,7 +208,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 18
+      "id": 16
     },
     {
       "title": "[40,000원 상당] 안주류만 제공 / 주류는 본인부담 결제 및 필수 주문 필요",
@@ -247,7 +221,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 19
+      "id": 17
     },
     {
       "title": "[경남 거제시] 파라이소 풀빌라 스파펜션",
@@ -255,6 +229,32 @@
       "platform": "아싸뷰",
       "link": "https://assaview.co.kr/campaign.php?cp_id=1775092383",
       "image": "./data/campaign/thumb/thumb-3696071863_I1ErMVpH_Paraiso_EC9DB4EBAFB8ECA780_ED8EB8ECA791_EBAAA8EC9D8C_300x300.png",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 18
+    },
+    {
+      "title": "MIGA 침대 메모리폼 매트리스 10cm 푹신한 접이식 바닥 토퍼 매트리스",
+      "reward": "슈퍼싱글(110*200cm) [배송비 포함69,900원]",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1775010909",
+      "image": "./data/campaign/thumb/thumb-3717927664_GnjtkaoZ_3.18E4B8BBE59BBE_300x300.jpg",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 19
+    },
+    {
+      "title": "[30,000원 상당] 2인 식사권",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1764830596",
+      "image": "./data/campaign/thumb/thumb-2113092610_WNij7rqg_EC82BCED95A9_300x300.jpg",
       "deadline": "",
       "location": "방문형",
       "review_type": "블로그",
@@ -679,12 +679,12 @@
       "id": 52
     },
     {
-      "title": "19,650원 상당의 스텐 주방 가위 제공",
-      "reward": "19,650원 상당",
+      "title": "10,990원 상당의 펄리 뉴 딥클린 9중효소 액상세제 2개 제공",
+      "reward": "10,990원 상당",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=406842",
+      "link": "https://tble.kr/view.php?cp_id=407736",
       "image": "",
-      "deadline": "",
+      "deadline": "2026-04-06",
       "location": "구매형",
       "review_type": "블로그",
       "applied": 0,
@@ -692,12 +692,12 @@
       "id": 53
     },
     {
-      "title": "10,990원 상당의 펄리 뉴 딥클린 9중효소 액상세제 2개 제공",
-      "reward": "10,990원 상당",
+      "title": "19,650원 상당의 스텐 주방 가위 제공",
+      "reward": "19,650원 상당",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=407736",
+      "link": "https://tble.kr/view.php?cp_id=406842",
       "image": "",
-      "deadline": "2026-04-06",
+      "deadline": "",
       "location": "구매형",
       "review_type": "블로그",
       "applied": 0,
@@ -757,32 +757,6 @@
       "id": 58
     },
     {
-      "title": "20,400원 상당의 청연족발 앞다리 통족발 1kg 제공",
-      "reward": "20,400원 상당",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=407055",
-      "image": "",
-      "deadline": "2026-04-08",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 59
-    },
-    {
-      "title": "100만원 상당의 세르프 이용권 제공",
-      "reward": "100만원 상당",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=406964",
-      "image": "",
-      "deadline": "2026-04-06",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 60
-    },
-    {
       "title": "이가자연면 메밀소바 136.5g, 8개 제공",
       "reward": "",
       "platform": "티블",
@@ -793,7 +767,20 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 61
+      "id": 59
+    },
+    {
+      "title": "20,400원 상당의 청연족발 앞다리 통족발 1kg 제공",
+      "reward": "20,400원 상당",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=407055",
+      "image": "",
+      "deadline": "2026-04-08",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 60
     },
     {
       "title": "마이토온 나이아신아마이드 10% EGF 탄력 영양 크림 50g 제공",
@@ -803,6 +790,19 @@
       "image": "",
       "deadline": "2026-04-09",
       "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 61
+    },
+    {
+      "title": "100만원 상당의 세르프 이용권 제공",
+      "reward": "100만원 상당",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=406964",
+      "image": "",
+      "deadline": "2026-04-06",
+      "location": "방문형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
@@ -887,12 +887,12 @@
       "id": 68
     },
     {
-      "title": "아스타토 시그니처 레귤러핏 반팔 티셔츠 제공",
+      "title": "그릭요거트 200g 1개 제공",
       "reward": "",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=407314",
+      "link": "https://tble.kr/view.php?cp_id=407309",
       "image": "",
-      "deadline": "2026-04-08",
+      "deadline": "2026-04-10",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
@@ -900,12 +900,12 @@
       "id": 69
     },
     {
-      "title": "그릭요거트 200g 1개 제공",
+      "title": "아스타토 시그니처 레귤러핏 반팔 티셔츠 제공",
       "reward": "",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=407309",
+      "link": "https://tble.kr/view.php?cp_id=407314",
       "image": "",
-      "deadline": "2026-04-10",
+      "deadline": "2026-04-08",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
@@ -989,58 +989,6 @@
       "applied": 0,
       "total": 10,
       "id": 76
-    },
-    {
-      "title": "마이페이지",
-      "reward": "",
-      "platform": "모두의체험단",
-      "link": "https://www.modan.kr/login?back_url=L3Nob3BfbXlwYWdl&type=mypage",
-      "image": "",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 77
-    },
-    {
-      "title": "로그인이 필요합니다.",
-      "reward": "",
-      "platform": "모두의체험단",
-      "link": "https://www.modan.kr/login?back_url=Lw%3D%3D&used_login_btn=Y",
-      "image": "",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 78
-    },
-    {
-      "title": "로그인이 필요합니다.",
-      "reward": "",
-      "platform": "모두의체험단",
-      "link": "https://www.modan.kr/login?back_url=L21hdHppcA%3D%3D&used_login_btn=Y",
-      "image": "",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 79
-    },
-    {
-      "title": "로그인이 필요합니다.",
-      "reward": "",
-      "platform": "모두의체험단",
-      "link": "https://www.modan.kr/login?back_url=L2RlbGl2ZXJ5&used_login_btn=Y",
-      "image": "",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 80
     }
   ]
 }
