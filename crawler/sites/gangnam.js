@@ -12,7 +12,7 @@ const BASE_URL  = 'https://xn--939au0g4vj8sq.net';
 const LIST_URL  = `${BASE_URL}/cp/`;
 const AJAX_URL  = `${BASE_URL}/theme/go/_list_cmp_tpl.php`;
 const ROW_NUM   = 28;
-const MAX_PAGES = 8; // 최대 ~224개
+const MAX_PAGES = 150; // 최대 ~4200개 (활성 캠페인 전부 수집)
 
 const HEADERS = {
   'User-Agent'     : 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
@@ -59,7 +59,11 @@ module.exports = async function crawlGangnam() {
       for (const item of items) {
         if (!seenIds.has(item.id)) { seenIds.add(item.id); all.push(item); added++; }
       }
-      if (added === 0) break; // 중복만 있으면 종료
+      if (added === 0) break;
+
+      // 페이지 대부분이 마감(-1)이면 이후는 과거 캠페인 → 중단
+      const closedCount = items.filter(i => i.dday < 0).length;
+      if (items.length > 0 && closedCount / items.length > 0.8) break;
     } catch (err) {
       console.error(`  [강남맛집] page ${page} 실패: ${err.message}`);
       break;
@@ -90,15 +94,16 @@ function parsePage(html) {
       let thumbnail = $li.find('img.thumb_img').attr('src') || '';
       if (thumbnail.startsWith('//')) thumbnail = 'https:' + thumbnail;
 
-      // 마감: "N일 남음", "오늘 마감", "마감"
+      // 마감일 파싱
+      // "N일 남음" → N, "오늘 마감" → 0, "마감임박(하루전)" → 1,
+      // "마감임박(오늘)" → 0, "마감" → -1
       const ddayTxt = $li.find('span.dday em.day_c').text().trim();
       let dday = 30;
-      if (/마감/.test(ddayTxt) && !/남음/.test(ddayTxt)) dday = -1;
-      else if (/오늘/.test(ddayTxt))                      dday = 0;
-      else {
-        const m = ddayTxt.match(/(\d+)일\s*남음/);
-        if (m) dday = parseInt(m[1]);
-      }
+      const dayMatch = ddayTxt.match(/(\d+)일\s*남음/);
+      if (dayMatch)                          dday = parseInt(dayMatch[1]);
+      else if (/마감임박\(하루전\)/.test(ddayTxt)) dday = 1;
+      else if (/마감임박\(오늘\)|오늘\s*마감/.test(ddayTxt)) dday = 0;
+      else if (/마감/.test(ddayTxt))         dday = -1;
 
       // 신청/모집 인원
       const numbTxt = $li.find('span.numb').text();
