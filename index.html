@@ -407,9 +407,9 @@ footer { background: #1A1A1A; color: rgba(255,255,255,.4); text-align: center; p
   <nav>
     <a href="#" onclick="showPage('search')" id="nav-search" class="active">🔍 <span>체험단 검색</span></a>
     <a href="#" onclick="showPage('sites')"  id="nav-sites">🌐 <span>체험단 사이트</span></a>
-    <a href="#" onclick="showPage('manage')" id="nav-manage">📋 <span>내 체험단 관리</span></a>
+    <a href="/mypage" id="nav-manage">📋 <span>마이페이지</span></a>
   </nav>
-  <button class="btn-login" onclick="alert('준비 중인 기능이에요!')">로그인</button>
+  <button class="btn-login" id="loginBtn" onclick="handleLoginBtn()">로그인</button>
 </header>
 
 <!-- ══════════════ 검색 페이지 ══════════════ -->
@@ -768,6 +768,130 @@ let activeFilter = '전체';
 let searchTerm = '';
 let dataLoaded = false;
 
+// ── 로그인 / 신청 상태 ──────────────────────────────────────────
+let currentUser = undefined; // undefined=로딩중, null=비로그인, object=로그인
+let appliedSet  = new Set(); // 내가 신청한 campaign_id 목록
+
+// 문자열을 onclick 속성 안에서 안전하게 쓰기 위한 이스케이프
+function escAttr(str) {
+  return (str || '').replace(/\\/g, '\\\\').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+}
+
+// ── 로그인 버튼 클릭 ────────────────────────────────────────────
+function handleLoginBtn() {
+  if (currentUser) {
+    handleLogout();
+  } else {
+    window.location.href = '/login';
+  }
+}
+
+// ── 로그아웃 ────────────────────────────────────────────────────
+async function handleLogout() {
+  try {
+    await fetch('/api/auth/logout', { method: 'POST' });
+  } catch(e) {}
+  currentUser = null;
+  appliedSet  = new Set();
+  updateLoginBtn();
+  // 현재 결과 재렌더 (신청완료 버튼 → 신청하기로 복구)
+  filterCards();
+}
+
+// ── 로그인 버튼 UI 업데이트 ─────────────────────────────────────
+function updateLoginBtn() {
+  const btn = document.getElementById('loginBtn');
+  if (!btn) return;
+  if (currentUser) {
+    const name = currentUser.name || '사용자';
+    btn.textContent = `${name} · 로그아웃`;
+    btn.style.background = '#555';
+  } else {
+    btn.textContent = '로그인';
+    btn.style.background = '';
+  }
+}
+
+// ── 세션 초기화: 페이지 로드 시 1회 호출 ──────────────────────
+async function initAuth() {
+  try {
+    const res = await fetch('/api/auth/session');
+    if (!res.ok) throw new Error();
+    const { user } = await res.json();
+    currentUser = user || null;
+    updateLoginBtn();
+
+    if (currentUser) {
+      // 내가 신청한 campaign_id 목록 로드
+      const appRes = await fetch('/api/applications');
+      if (appRes.ok) {
+        const { applied } = await appRes.json();
+        appliedSet = new Set(applied || []);
+      }
+    }
+  } catch(e) {
+    currentUser = null;
+  }
+}
+
+// ── 신청하기 버튼 클릭 ───────────────────────────────────────────
+async function handleApply(event, campaignId, title, url, platform) {
+  event.preventDefault();
+  event.stopPropagation();
+
+  // 로딩 중이면 잠깐 대기
+  if (currentUser === undefined) {
+    setTimeout(() => handleApply(event, campaignId, title, url, platform), 500);
+    return;
+  }
+
+  // 비로그인 → 로그인 페이지로
+  if (!currentUser) {
+    window.location.href = '/login';
+    return;
+  }
+
+  // 이미 신청함 → 캠페인 페이지 열기
+  if (appliedSet.has(campaignId)) {
+    if (url) window.open(url, '_blank');
+    return;
+  }
+
+  const btn = event.currentTarget;
+  btn.disabled    = true;
+  btn.textContent = '신청 중...';
+
+  try {
+    const res = await fetch('/api/applications', {
+      method : 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body   : JSON.stringify({
+        campaign_id      : campaignId,
+        campaign_title   : title,
+        campaign_link    : url || '',
+        campaign_platform: platform || '',
+      }),
+    });
+
+    if (res.ok || res.status === 409) {
+      // 성공 or 이미 신청 → 신청완료 표시
+      appliedSet.add(campaignId);
+      btn.textContent       = '✓ 신청완료';
+      btn.style.background  = '#00C471';
+      btn.disabled          = false;
+      if (url) setTimeout(() => window.open(url, '_blank'), 300);
+    } else if (res.status === 401) {
+      window.location.href = '/login';
+    } else {
+      btn.textContent = '오류';
+      btn.disabled    = false;
+    }
+  } catch(e) {
+    btn.textContent = '오류';
+    btn.disabled    = false;
+  }
+}
+
 // 안전한 getElementById 헬퍼 (없는 요소 접근해도 에러 안남)
 function setEl(id, value) {
   const el = document.getElementById(id);
@@ -957,7 +1081,11 @@ function makeCardHtml(c, i) {
         <div class="card-tags">${(c.type||[]).map(typeTag).join('')}${(c.tags||[]).map(t => `<span class="tag tag-cat">${t}</span>`).join('')}</div>
       </div>
       <div class="card-right" onclick="event.preventDefault(); event.stopPropagation()">
-        <button class="apply-btn" onclick="event.stopPropagation();window.open('${c.url || '#'}','_blank')">신청하기 →</button>
+        <button
+          class="apply-btn"
+          style="${appliedSet.has(c.id) ? 'background:#00C471' : ''}"
+          onclick="event.stopPropagation();handleApply(event,'${escAttr(c.id)}','${escAttr(c.title)}','${escAttr(c.url||'')}','${escAttr(c.platform||'')}')"
+        >${appliedSet.has(c.id) ? '✓ 신청완료' : '신청하기 →'}</button>
       </div>
     </div>
     ${compHtml}
@@ -1134,6 +1262,7 @@ function addSchedule() {
 // ── 초기화 ──
 renderSchedules();
 loadData();
+initAuth(); // 로그인 세션 확인 (비동기)
 </script>
 </body>
 </html>
