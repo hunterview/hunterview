@@ -249,17 +249,126 @@ nav a:hover, nav a.active { background: var(--primary-pale); color: var(--primar
 footer { background: #1A1A1A; color: rgba(255,255,255,.4); text-align: center; padding: 40px 32px; font-size: 12px; line-height: 2; margin-top: 20px; }
 .footer-logo { font-size: 18px; font-weight: 900; color: var(--primary); display: block; margin-bottom: 8px; }
 
-/* ─── 반응형 ─── */
-@media (max-width: 580px) {
-  header { padding: 0 16px; } nav span { display: none; }
-  .hero { padding: 36px 16px 40px; }
-  .main, .manage-wrap { padding: 20px 16px; }
-  .sites-section { padding: 20px 16px; }
-  .ad-wrap { padding: 14px 16px; }
-  .card-inner, .schedule-card { flex-direction: column; }
-  .card-right { text-align: left; width: 100%; }
-  .card-thumb { width: 100%; height: 160px; }
+/* ─── 쿠팡 인라인 광고 ─── */
+.ad-card-inline {
+  background: var(--surface); border: 1.5px solid #FFD9C8;
+  border-radius: 14px; padding: 14px 18px; position: relative;
 }
+.ad-inline-tag {
+  position: absolute; top: 10px; right: 12px;
+  font-size: 9px; font-weight: 700; color: #bbb;
+  border: 1px solid #e0e0e0; border-radius: 3px;
+  padding: 1px 5px; letter-spacing: .5px;
+}
+.ad-coupang-row {
+  display: flex; align-items: center; gap: 12px;
+  text-decoration: none; color: inherit;
+  background: linear-gradient(135deg, #fff9f6 0%, #fff3ee 100%);
+  border-radius: 10px; padding: 12px 14px; transition: opacity .15s;
+}
+.ad-coupang-row:hover { opacity: .85; }
+.ad-cpg-ico { font-size: 24px; flex-shrink: 0; }
+.ad-cpg-body { flex: 1; min-width: 0; }
+.ad-cpg-title { font-size: 14px; font-weight: 700; color: var(--text); margin-bottom: 3px; }
+.ad-cpg-title strong { color: #e14400; }
+.ad-cpg-sub { font-size: 12px; color: var(--text3); }
+.ad-cpg-btn {
+  background: #e14400; color: #fff; font-size: 12px; font-weight: 700;
+  padding: 7px 14px; border-radius: 8px; flex-shrink: 0; white-space: nowrap;
+}
+.ad-notice-inline { font-size: 10px; color: #ccc; text-align: center; margin-top: 8px; }
+
+/* ─── 반응형 (태블릿) ─── */
+@media (max-width: 768px) {
+  .sites-grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+}
+
+/* ─── 반응형 (모바일) ─── */
+@media (max-width: 580px) {
+  /* 헤더 */
+  header { padding: 0 12px; height: 52px; gap: 4px; }
+  .logo { font-size: 17px; }
+  nav { gap: 0; }
+  nav a { padding: 5px 8px; font-size: 13px; }
+  nav span { display: none; }
+  .btn-login { display: none; }
+
+  /* 히어로 */
+  .hero { padding: 24px 14px 28px; }
+  .hero-badge { font-size: 11px; padding: 4px 12px; margin-bottom: 14px; }
+  .hero h1 { font-size: 22px; letter-spacing: -.5px; margin-bottom: 8px; }
+  .hero p { font-size: 13px; margin-bottom: 22px; }
+  .search-box { border-radius: 10px; }
+  .search-box input { padding: 12px 14px; font-size: 13px; }
+  .search-box button { padding: 0 14px; font-size: 13px; }
+  .filter-row { gap: 6px; margin-top: 14px; }
+  .filter-tag { padding: 5px 12px; font-size: 12px; }
+
+  /* 통계 바 */
+  .stats-bar { flex-wrap: wrap; }
+  .stat { min-width: 50%; max-width: 50%; flex: none; border-right: none; border-bottom: 1px solid var(--border2); padding: 12px 8px; }
+  .stat:nth-child(3), .stat:nth-child(4) { border-bottom: none; }
+  .stat-num { font-size: 18px; }
+  .stat-label { font-size: 11px; }
+
+  /* 광고 바 */
+  .ad-wrap { padding: 10px 12px; }
+
+  /* 메인 컨테이너 */
+  .main, .manage-wrap { padding: 14px 12px; }
+  .sites-section { padding: 14px 12px; }
+
+  /* 검색 안내 */
+  #searchGuide { padding: 48px 16px !important; }
+  #searchGuide h2 { font-size: 18px !important; }
+  #searchGuide p { font-size: 13px !important; }
+  .quick-btn { padding: 8px 14px; font-size: 13px; }
+
+  /* 섹션 헤더 */
+  .section-header { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .sort-select { width: 100%; padding: 9px 12px; font-size: 13px; }
+
+  /* 캠페인 카드 */
+  .card { padding: 14px; border-radius: 12px; }
+  .card-inner { flex-direction: column; gap: 10px; }
+  .card-thumb { width: 100%; height: 140px; border-radius: 8px; }
+  .card-left { width: 100%; }
+  .card-right { text-align: left; width: 100%; }
+  .card h3 { font-size: 14px; margin-bottom: 8px; }
+  .card-top { gap: 6px; margin-bottom: 6px; }
+  .apply-btn { padding: 10px; font-size: 13px; }
+  .platform-badge { font-size: 11px; padding: 3px 9px; }
+
+  /* 인라인 광고 */
+  .ad-card-inline { padding: 10px 12px; border-radius: 12px; }
+  .ad-coupang-row { padding: 10px 12px; gap: 10px; }
+  .ad-cpg-ico { font-size: 20px; }
+  .ad-cpg-title { font-size: 13px; }
+  .ad-cpg-sub { font-size: 11px; }
+  .ad-cpg-btn { padding: 6px 10px; font-size: 11px; border-radius: 6px; }
+
+  /* 사이트 페이지 */
+  .sites-wrap { padding: 20px 12px 40px; }
+  .sites-grid { grid-template-columns: 1fr; gap: 10px; }
+  .sites-header h2 { font-size: 20px; }
+  .site-card { padding: 16px; }
+
+  /* 관리 페이지 */
+  .manage-top { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .manage-title { font-size: 18px; }
+  .schedule-card { padding: 14px; flex-direction: column; gap: 10px; }
+  .sch-meta { flex-wrap: wrap; gap: 8px; }
+  .sch-right { flex-direction: row; align-items: center; gap: 8px; }
+  .sch-title { font-size: 14px; }
+
+  /* 모달 */
+  .modal { padding: 20px 16px; border-radius: 16px; }
+  .form-row { flex-direction: column; gap: 0; }
+
+  /* 푸터 */
+  footer { padding: 30px 16px; }
+}
+
 @keyframes fadeUp { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
 .card { animation: fadeUp .32s ease both; }
 .schedule-card { animation: fadeUp .32s ease both; }
@@ -814,49 +923,70 @@ function getComp(a, t) {
   return { pct: p, cls, rate: (a / t).toFixed(1) };
 }
 
+const COUPANG_AD_HTML = `<div class="ad-card-inline">
+  <span class="ad-inline-tag">광고</span>
+  <a href="https://link.coupang.com/a/AF5506301" target="_blank" rel="noopener sponsored" class="ad-coupang-row">
+    <div class="ad-cpg-ico">🛒</div>
+    <div class="ad-cpg-body">
+      <div class="ad-cpg-title">체험단 신청 전, <strong>쿠팡</strong>에서 가격 비교하세요!</div>
+      <div class="ad-cpg-sub">로켓배송 · 무료반품 · 최저가 보장</div>
+    </div>
+    <div class="ad-cpg-btn">바로가기 →</div>
+  </a>
+  <p class="ad-notice-inline">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
+</div>`;
+
+function makeCardHtml(c, i) {
+  const comp = getComp(c.applied || 0, c.total || 0);
+  const thumbHtml = c.thumbnail
+    ? `<img class="card-thumb" src="${c.thumbnail}" alt="" loading="lazy" onerror="this.style.display='none'">`
+    : '';
+  const compHtml = (c.applied && c.total) ? `
+    <div class="comp-wrap">
+      <div class="comp-row">
+        <span class="comp-text">경쟁률 ${comp.rate}:1 &nbsp;·&nbsp; ${c.applied}/${c.total}명</span>
+        <span class="comp-pct comp-${comp.cls}-t">${Math.round(comp.pct)}%</span>
+      </div>
+      <div class="comp-bar"><div class="comp-fill comp-fill-${comp.cls}" style="width:${comp.pct}%"></div></div>
+    </div>` : '';
+  return `<a class="card" href="${c.url || '#'}" target="_blank" rel="noopener" style="animation-delay:${i * .04}s">
+    <div class="card-inner">
+      ${thumbHtml}
+      <div class="card-left">
+        <div class="card-top">
+          <div class="platform-badge"><span class="platform-dot ${c.dot || 'd-orange'}"></span>${c.platform}</div>
+          ${c.isNew ? '<span class="new-badge">NEW</span>' : ''}
+          ${dlBadge(c.dday)}
+        </div>
+        <h3>${c.title}</h3>
+        <div class="card-meta">
+          ${c.benefit ? `<span class="meta-item meta-benefit"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>${c.benefit}</span>` : ''}
+          <span class="meta-item"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>${c.location || '-'}</span>
+          ${c.total ? `<span class="meta-item"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>${c.applied || 0}/${c.total}명 신청</span>` : ''}
+        </div>
+        <div class="card-tags">${(c.type||[]).map(typeTag).join('')}${(c.tags||[]).map(t => `<span class="tag tag-cat">${t}</span>`).join('')}</div>
+      </div>
+      <div class="card-right" onclick="event.preventDefault(); event.stopPropagation()">
+        <button class="apply-btn" onclick="event.stopPropagation();window.open('${c.url || '#'}','_blank')">신청하기 →</button>
+      </div>
+    </div>
+    ${compHtml}
+  </a>`;
+}
+
 function renderCards(list) {
   const grid = document.getElementById('cardGrid');
   const noRes = document.getElementById('noResults');
   document.getElementById('cardCount').textContent = `${list.length}개`;
   if (!list.length) { grid.innerHTML = ''; noRes.style.display = 'block'; return; }
   noRes.style.display = 'none';
-  grid.innerHTML = list.map((c, i) => {
-    const comp = getComp(c.applied || 0, c.total || 0);
-    const thumbHtml = c.thumbnail
-      ? `<img class="card-thumb" src="${c.thumbnail}" alt="" loading="lazy" onerror="this.style.display='none'">`
-      : '';
-    const compHtml = (c.applied && c.total) ? `
-      <div class="comp-wrap">
-        <div class="comp-row">
-          <span class="comp-text">경쟁률 ${comp.rate}:1 &nbsp;·&nbsp; ${c.applied}/${c.total}명</span>
-          <span class="comp-pct comp-${comp.cls}-t">${Math.round(comp.pct)}%</span>
-        </div>
-        <div class="comp-bar"><div class="comp-fill comp-fill-${comp.cls}" style="width:${comp.pct}%"></div></div>
-      </div>` : '';
-    return `<a class="card" href="${c.url || '#'}" target="_blank" rel="noopener" style="animation-delay:${i * .04}s">
-      <div class="card-inner">
-        ${thumbHtml}
-        <div class="card-left">
-          <div class="card-top">
-            <div class="platform-badge"><span class="platform-dot ${c.dot || 'd-orange'}"></span>${c.platform}</div>
-            ${c.isNew ? '<span class="new-badge">NEW</span>' : ''}
-            ${dlBadge(c.dday)}
-          </div>
-          <h3>${c.title}</h3>
-          <div class="card-meta">
-            ${c.benefit ? `<span class="meta-item meta-benefit"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>${c.benefit}</span>` : ''}
-            <span class="meta-item"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>${c.location || '-'}</span>
-            ${c.total ? `<span class="meta-item"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>${c.applied || 0}/${c.total}명 신청</span>` : ''}
-          </div>
-          <div class="card-tags">${(c.type||[]).map(typeTag).join('')}${(c.tags||[]).map(t => `<span class="tag tag-cat">${t}</span>`).join('')}</div>
-        </div>
-        <div class="card-right" onclick="event.preventDefault(); event.stopPropagation()">
-          <button class="apply-btn" onclick="event.stopPropagation();window.open('${c.url || '#'}','_blank')">신청하기 →</button>
-        </div>
-      </div>
-      ${compHtml}
-    </a>`;
-  }).join('');
+  const AD_INTERVAL = 5;
+  let html = '';
+  list.forEach((c, i) => {
+    if (i > 0 && i % AD_INTERVAL === 0) html += COUPANG_AD_HTML;
+    html += makeCardHtml(c, i);
+  });
+  grid.innerHTML = html;
 }
 
 function quickSearch(keyword) {
