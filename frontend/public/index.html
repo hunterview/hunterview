@@ -143,7 +143,7 @@ nav a:hover, nav a.active { background: var(--primary-pale); color: var(--primar
 .platform-dot { width: 6px; height: 6px; border-radius: 50%; }
 .d-orange{background:var(--primary)} .d-coral{background:#FF8C69} .d-teal{background:#00B4A6}
 .d-blue{background:#0066FF} .d-green{background:#00C471} .d-pink{background:#FF6B9D} .d-amber{background:#FFAA00}
-.d-red{background:#ef4444} .d-purple{background:#8b5cf6} .d-cyan{background:#06b6d4}
+.d-red{background:#ef4444} .d-purple{background:#8b5cf6} .d-cyan{background:#06b6d4} .d-violet{background:#7c3aed}
 .card h3 { font-size: 15px; font-weight: 700; line-height: 1.45; margin-bottom: 10px; }
 .card-meta { display: flex; gap: 8px 14px; flex-wrap: wrap; margin-bottom: 10px; }
 .meta-benefit { width: 100%; }
@@ -530,6 +530,20 @@ footer { background: #1A1A1A; color: rgba(255,255,255,.4); text-align: center; p
         </div>
       </a>
 
+      <a class="site-card" href="https://popomon.com" target="_blank" rel="noopener">
+        <div class="site-card-top">
+          <span class="site-dot" style="background:#7c3aed"></span>
+          <span class="site-name">포포몬</span>
+          <span class="site-url">popomon.com</span>
+        </div>
+        <div class="site-desc">블로그·인스타·숏폼 전 채널 체험단 플랫폼</div>
+        <div class="site-badge-row">
+          <span class="site-badge" id="badge-popomon">411개 캠페인</span>
+          <span class="site-badge">배송형</span>
+          <span class="site-badge">블로그·인스타</span>
+        </div>
+      </a>
+
     </div>
   </div>
 </div>
@@ -750,6 +764,7 @@ function normalizeItem(c) {
       '강남맛집체험단':'d-red','모두모여체험단':'d-green','포블로그':'d-purple',
       '블로그랩':'d-cyan','핌블':'d-pink',
       '데일리뷰':'d-amber','놀러와체험단':'d-blue','링블':'d-coral','리뷰플레이스':'d-green',
+      '포포몬':'d-violet',
     };
     c.dot = dotMap[c.platform] || 'd-orange';
   }
