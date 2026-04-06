@@ -12,7 +12,7 @@ const axios   = require('axios');
 const cheerio = require('cheerio');
 
 const BASE_URL = 'https://www.ringble.co.kr';
-const LIST_URL = `${BASE_URL}/`;
+const MAX_PAGES = 300;
 
 const HEADERS = {
   'User-Agent'     : 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
@@ -24,14 +24,34 @@ module.exports = async function crawlRingble() {
   const all     = [];
   const seenIds = new Set();
 
-  try {
-    const { data: html } = await axios.get(LIST_URL, { headers: HEADERS, timeout: 15000 });
-    const items = parsePage(html);
-    for (const item of items) {
-      if (!seenIds.has(item.id)) { seenIds.add(item.id); all.push(item); }
+  for (let page = 1; page <= MAX_PAGES; page++) {
+    const url = page === 1
+      ? `${BASE_URL}/`
+      : `${BASE_URL}/index.php?page=${page}`;
+    try {
+      const { data: html } = await axios.get(url, { headers: HEADERS, timeout: 30000 });
+      const items = parsePage(html);
+      if (items.length === 0) break;
+
+      let added = 0;
+      for (const item of items) {
+        if (!seenIds.has(item.id)) {
+          seenIds.add(item.id);
+          all.push(item);
+          added++;
+        }
+      }
+      if (added === 0) break;
+
+      // Stop if >80% of page items are closed
+      const closedCount = items.filter(i => i.dday < 0).length;
+      if (items.length > 0 && closedCount / items.length > 0.8) break;
+
+      await sleep(500);
+    } catch (err) {
+      console.error(`  [링블] page ${page} 실패: ${err.message}`);
+      break;
     }
-  } catch (err) {
-    console.error(`  [링블] 실패: ${err.message}`);
   }
 
   return all;
@@ -172,4 +192,8 @@ function inferLocation(title) {
 
 function cleanTitle(title) {
   return title.replace(/\s+/g, ' ').replace(/^[\s\-·|]+|[\s\-·|]+$/g, '').trim();
+}
+
+function sleep(ms) {
+  return new Promise(r => setTimeout(r, ms));
 }

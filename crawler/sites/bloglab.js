@@ -9,11 +9,7 @@ const axios   = require('axios');
 const cheerio = require('cheerio');
 
 const BASE_URL = 'https://bloglab.kr';
-const PAGES    = [
-  `${BASE_URL}/index.php`,
-  `${BASE_URL}/index.php?page=2`,
-  `${BASE_URL}/index.php?page=3`,
-];
+const MAX_PAGES = 300;
 
 const HEADERS = {
   'User-Agent'     : 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
@@ -21,25 +17,27 @@ const HEADERS = {
   'Referer'        : `${BASE_URL}/`,
 };
 
+// 카테고리별 URL: 001A=지역, 002A=배송, 004A=기타
+const CATEGORIES = ['001A', '002A', '004A'];
+
 module.exports = async function crawlBloglab() {
   const all     = [];
   const seenIds = new Set();
 
-  for (const url of PAGES) {
+  for (const cat of CATEGORIES) {
+    const url = `${BASE_URL}/campaign_list.php?category_id=${cat}`;
     try {
       const { data: html } = await axios.get(url, { headers: HEADERS, timeout: 15000 });
       const items = parsePage(html);
-      if (items.length === 0) break;
-
       for (const item of items) {
         if (!seenIds.has(item.id)) {
           seenIds.add(item.id);
           all.push(item);
         }
       }
-      await sleep(700);
+      await sleep(500);
     } catch (err) {
-      console.error(`  [블로그랩] ${url} 실패: ${err.message}`);
+      console.error(`  [블로그랩] ${cat} 실패: ${err.message}`);
     }
   }
 

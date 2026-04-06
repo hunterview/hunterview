@@ -1,18 +1,15 @@
 /**
  * 놀러와체험단 (cometoplay.kr) 크롤러
- * - SSR, pimble과 유사한 PHP 구조
- * - a[href*="item.php?it_id="] > span.it_name / span.it_description / span.txt_num
+ * - item_list.php?category_id=N&page=P 방식으로 전체 수집
+ * - 카테고리: 001(지역), 002(제품), 004(기자단)
  */
 
 const axios   = require('axios');
 const cheerio = require('cheerio');
 
-const BASE_URL = 'https://www.cometoplay.kr';
-const PAGES    = [
-  `${BASE_URL}/`,
-  `${BASE_URL}/index.php?page=2`,
-  `${BASE_URL}/index.php?page=3`,
-];
+const BASE_URL   = 'https://www.cometoplay.kr';
+const CATEGORIES = ['001', '002', '004'];
+const MAX_PAGES  = 30;
 
 const HEADERS = {
   'User-Agent'     : 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
@@ -24,21 +21,34 @@ module.exports = async function crawlCometoplay() {
   const all     = [];
   const seenIds = new Set();
 
-  for (const url of PAGES) {
-    try {
-      const { data: html } = await axios.get(url, { headers: HEADERS, timeout: 15000 });
-      const items = parsePage(html);
-      if (items.length === 0) break;
+  for (const cat of CATEGORIES) {
+    for (let page = 1; page <= MAX_PAGES; page++) {
+      const url = page === 1
+        ? `${BASE_URL}/item_list.php?category_id=${cat}`
+        : `${BASE_URL}/item_list.php?category_id=${cat}&page=${page}`;
+      try {
+        const { data: html } = await axios.get(url, { headers: HEADERS, timeout: 15000 });
+        const items = parsePage(html);
+        if (items.length === 0) break;
 
-      for (const item of items) {
-        if (!seenIds.has(item.id)) {
-          seenIds.add(item.id);
-          all.push(item);
+        let added = 0;
+        for (const item of items) {
+          if (!seenIds.has(item.id)) {
+            seenIds.add(item.id);
+            all.push(item);
+            added++;
+          }
         }
+        if (added === 0) break;
+
+        const closedCount = items.filter(i => i.dday < 0).length;
+        if (items.length > 0 && closedCount / items.length > 0.8) break;
+
+        await sleep(400);
+      } catch (err) {
+        console.error(`  [놀러와체험단] cat=${cat} page ${page} 실패: ${err.message}`);
+        break;
       }
-      await sleep(700);
-    } catch (err) {
-      console.error(`  [놀러와체험단] ${url} 실패: ${err.message}`);
     }
   }
 
