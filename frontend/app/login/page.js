@@ -41,20 +41,32 @@ function LoginContent() {
     const supabase = createClient()
     const next = searchParams.get('next') || '/'
 
-    const { error } = await supabase.auth.signInWithOAuth({
+    // skipBrowserRedirect: true → URL을 먼저 받아서 account_email 스코프 제거 후 리다이렉트
+    const { data, error } = await supabase.auth.signInWithOAuth({
       provider: 'kakao',
       options: {
-        // 인증 완료 후 돌아올 URL (Supabase 대시보드에도 등록 필요)
         redirectTo: `${window.location.origin}/auth/callback?next=${encodeURIComponent(next)}`,
         scopes: 'profile_nickname profile_image',
+        skipBrowserRedirect: true,
       },
     })
 
-    if (error) {
+    if (error || !data?.url) {
       setError('로그인에 실패했습니다. 잠시 후 다시 시도해주세요.')
       setLoading(false)
+      return
     }
-    // 성공 시 카카오 페이지로 리다이렉트 (자동)
+
+    // Supabase가 생성한 URL에서 account_email 제거
+    const kakaoUrl = new URL(data.url)
+    const scope = kakaoUrl.searchParams.get('scope') || ''
+    const cleanScope = scope
+      .split(/[ +]/)
+      .filter(s => s && s !== 'account_email')
+      .join(' ')
+    kakaoUrl.searchParams.set('scope', cleanScope)
+
+    window.location.href = kakaoUrl.toString()
   }
 
   return (
