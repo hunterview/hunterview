@@ -46,7 +46,7 @@ function LoginContent() {
       options: {
         // 인증 완료 후 돌아올 URL (Supabase 대시보드에도 등록 필요)
         redirectTo: `${window.location.origin}/auth/callback?next=${encodeURIComponent(next)}`,
-        scopes: 'profile_nickname profile_image account_email',
+        scopes: 'profile_nickname profile_image',
       },
     })
 
