@@ -1,13 +1,43 @@
 /**
  * 로그아웃 API
  * POST /api/auth/logout
- * 세션 쿠키를 삭제하고 로그아웃 처리합니다.
  */
-import { createClient } from '@/lib/supabase/server'
+import { createServerClient } from '@supabase/ssr'
+import { cookies } from 'next/headers'
 import { NextResponse } from 'next/server'
 
 export async function POST() {
-  const supabase = await createClient()
+  const cookieStore = await cookies()
+
+  const supabase = createServerClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
+    {
+      cookies: {
+        getAll() { return cookieStore.getAll() },
+        setAll(cookiesToSet) {
+          cookiesToSet.forEach(({ name, value, options }) =>
+            cookieStore.set(name, value, options)
+          )
+        },
+      },
+    }
+  )
+
   await supabase.auth.signOut()
-  return NextResponse.json({ success: true })
+
+  // 모든 sb- 쿠키 강제 만료
+  const response = NextResponse.json({ success: true })
+  cookieStore.getAll().forEach(({ name }) => {
+    if (name.startsWith('sb-')) {
+      response.cookies.set(name, '', {
+        maxAge: 0,
+        path: '/',
+        httpOnly: true,
+        secure: true,
+        sameSite: 'lax',
+      })
+    }
+  })
+  return response
 }
