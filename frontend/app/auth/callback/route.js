@@ -1,18 +1,26 @@
 /**
  * 카카오 OAuth 콜백 핸들러
  * Supabase → 카카오 인증 완료 후 이 URL로 리다이렉트됩니다.
- * Supabase 대시보드 > Authentication > URL Configuration > Redirect URLs 에
- * https://your-domain.vercel.app/auth/callback 를 등록해야 합니다.
  */
 import { createServerClient } from '@supabase/ssr'
 import { cookies } from 'next/headers'
 import { NextResponse } from 'next/server'
 
 export async function GET(request) {
-  const { searchParams, origin } = new URL(request.url)
+  const requestUrl = new URL(request.url)
+  const { searchParams, origin } = requestUrl
   const code = searchParams.get('code')
-  // 로그인 후 돌아갈 페이지 (기본값: 홈)
   const next = searchParams.get('next') ?? '/'
+
+  // Kakao/OAuth provider가 에러를 직접 돌려주는 경우
+  const oauthError = searchParams.get('error')
+  const oauthErrorDesc = searchParams.get('error_description')
+  if (oauthError) {
+    console.error('[auth/callback] OAuth error:', oauthError, oauthErrorDesc)
+    return NextResponse.redirect(
+      `${origin}/login?error=oauth_error&msg=${encodeURIComponent(oauthErrorDesc || oauthError)}`
+    )
+  }
 
   if (code) {
     const cookieStore = await cookies()
@@ -34,15 +42,25 @@ export async function GET(request) {
       }
     )
 
-    // 인증 코드 → 세션으로 교환
-    const { error } = await supabase.auth.exchangeCodeForSession(code)
+    const { data, error } = await supabase.auth.exchangeCodeForSession(code)
 
     if (!error) {
-      // 성공: 원래 가려던 페이지로 리다이렉트
+      console.log('[auth/callback] success, user:', data?.user?.id)
       return NextResponse.redirect(`${origin}${next}`)
     }
+
+    // 에러 상세 로깅
+    console.error('[auth/callback] exchangeCodeForSession error:', {
+      message: error.message,
+      code: error.code,
+      status: error.status,
+    })
+    return NextResponse.redirect(
+      `${origin}/login?error=exchange_failed&msg=${encodeURIComponent(error.message)}`
+    )
   }
 
-  // 실패: 에러 파라미터와 함께 로그인 페이지로
-  return NextResponse.redirect(`${origin}/login?error=callback_failed`)
+  // code 파라미터 자체가 없는 경우
+  console.error('[auth/callback] no code param, full url:', request.url)
+  return NextResponse.redirect(`${origin}/login?error=no_code`)
 }
