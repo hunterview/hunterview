@@ -15,6 +15,7 @@ const crawlCometoplay    = require('./sites/cometoplay');
 const crawlRingble       = require('./sites/ringble');
 const crawlReviewplace   = require('./sites/reviewplace');
 const crawlPopomon       = require('./sites/popomon');
+const crawlSeoulouba     = require('./sites/seoulouba');
 
 // public/data.json → Vercel 정적 파일로 /data.json 서빙 + API routes도 여기서 읽음
 const OUTPUT_PATH = path.join(__dirname, '..', 'frontend', 'public', 'data.json');
@@ -37,6 +38,7 @@ async function main() {
     runCrawler('링블',          crawlRingble),
     runCrawler('리뷰플레이스',  crawlReviewplace),
     runCrawler('포포몬',        crawlPopomon),
+    runCrawler('서울오빠',      crawlSeoulouba),
   ]);
 
   const allCampaigns = [];
