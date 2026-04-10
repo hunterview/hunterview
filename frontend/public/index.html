@@ -160,6 +160,21 @@ nav a:hover, nav a.active { background: var(--primary-pale); color: var(--primar
 .apply-btn { display: block; width: 100%; background: var(--primary); color: #fff; border: none; padding: 9px 18px; border-radius: 8px; font-size: 13px; font-weight: 700; cursor: pointer; font-family: inherit; transition: background .2s; text-align: center; }
 .apply-btn:hover { background: var(--primary-dark); }
 .comp-wrap { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--border2); }
+
+/* ─── 쿠팡 광고 카드 ─── */
+.ad-card { background: var(--surface); border: 1.5px solid var(--border); border-radius: 14px; padding: 20px 22px; text-decoration: none; color: inherit; display: block; box-shadow: var(--shadow-sm); transition: all .2s; position: relative; }
+.ad-card:hover { box-shadow: var(--shadow-hover); border-color: #c4b5fd; transform: translateY(-1px); }
+.ad-badge { display: inline-block; font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 4px; background: #f3f0ff; color: #7c3aed; border: 1px solid #ddd6fe; margin-bottom: 8px; }
+.ad-inner { display: flex; align-items: flex-start; gap: 16px; }
+.ad-thumb { width: 80px; height: 80px; border-radius: 10px; object-fit: cover; flex-shrink: 0; background: var(--bg); }
+.ad-left { flex: 1; min-width: 0; }
+.ad-right { flex-shrink: 0; text-align: right; }
+.ad-platform { display: inline-flex; align-items: center; gap: 5px; background: #f3f0ff; border: 1px solid #ddd6fe; color: #7c3aed; font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 6px; margin-bottom: 8px; }
+.ad-title { font-size: 15px; font-weight: 700; line-height: 1.45; margin-bottom: 10px; }
+.ad-price { font-size: 18px; font-weight: 900; color: var(--primary); margin-bottom: 4px; }
+.ad-sub { font-size: 11px; color: var(--text3); margin-bottom: 12px; }
+.ad-btn { display: block; width: 100%; background: #7c3aed; color: #fff; border: none; padding: 9px 18px; border-radius: 8px; font-size: 13px; font-weight: 700; cursor: pointer; font-family: inherit; text-align: center; }
+@media (max-width: 600px) { .ad-card { padding: 14px; border-radius: 12px; } .ad-inner { flex-direction: column; gap: 10px; } .ad-thumb { width: 100%; height: 140px; border-radius: 8px; } .ad-right { text-align: left; width: 100%; } }
 .comp-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px; }
 .comp-text { font-size: 11px; color: var(--text3); }
 .comp-pct { font-size: 11px; font-weight: 700; }
@@ -766,6 +781,75 @@ let activeFilter = '전체';
 let searchTerm = '';
 let dataLoaded = false;
 
+// ── 쿠팡 파트너스 광고 데이터 ───────────────────────────────────
+const COUPANG_ADS = [
+  {
+    title: '뉴트리원 올인원 멀티비타민 미네랄 아연 루테인 오메가3',
+    price: '19,900원',
+    img: 'https://thumbnail8.coupangcdn.com/thumbnails/remote/230x230ex/image/retail/images/2021/07/20/10/0/a67d0a35-f0c6-4b6c-a2d3-c1b94e217de2.jpg',
+    url: 'https://link.coupang.com/a/czIhqg',
+    sub: '로켓배송 · 무료반품',
+  },
+  {
+    title: '다이소 뷰티 마스크팩 베스트 모음 수분 진정 미백',
+    price: '1,000원~',
+    img: 'https://thumbnail10.coupangcdn.com/thumbnails/remote/230x230ex/image/retail/images/2022/03/10/11/0/e9f7c3a2-b5d1-4e88-9c21-3d5f8a7e6b12.jpg',
+    url: 'https://link.coupang.com/a/czIhqg',
+    sub: '로켓배송 · 오늘 출발',
+  },
+  {
+    title: '닥터지 레드 블레미쉬 클리어 수딩 크림 70ml 진정 보습',
+    price: '16,500원',
+    img: 'https://thumbnail7.coupangcdn.com/thumbnails/remote/230x230ex/image/retail/images/2021/04/06/11/6/d2b4f8a1-3c7e-4d9b-b5a2-8f6e1c4d7098.jpg',
+    url: 'https://link.coupang.com/a/czIhqg',
+    sub: '로켓배송 · 무료배송',
+  },
+  {
+    title: '카누 미니 아메리카노 블랙 10T 커피믹스 캡슐커피',
+    price: '7,900원',
+    img: 'https://thumbnail6.coupangcdn.com/thumbnails/remote/230x230ex/image/retail/images/2020/10/12/10/9/e4c2a7b3-9f1d-4e56-8a3c-2b7f5e8d6c41.jpg',
+    url: 'https://link.coupang.com/a/czIhqg',
+    sub: '로켓배송 · 5개 이상 무료배송',
+  },
+  {
+    title: '조이펫 강아지 습식사료 파우치 닭고기&야채 100g x 10개',
+    price: '12,800원',
+    img: 'https://thumbnail9.coupangcdn.com/thumbnails/remote/230x230ex/image/retail/images/2022/01/18/14/3/b3e7f2a1-4c8d-4e9b-a5c2-7d6f8e3b1a54.jpg',
+    url: 'https://link.coupang.com/a/czIhqg',
+    sub: '로켓배송 · 무료배송',
+  },
+  {
+    title: '제주삼다수 그린 2L x 12개 생수 미네랄워터',
+    price: '15,480원',
+    img: 'https://thumbnail10.coupangcdn.com/thumbnails/remote/230x230ex/image/retail/images/2019/08/28/10/7/c5a1b3d2-7e4f-4c8b-9d3a-6f2e8b7c5d91.jpg',
+    url: 'https://link.coupang.com/a/czIhqg',
+    sub: '로켓배송 · 무료배송',
+  },
+];
+
+let adIndex = 0;
+
+function makeAdHtml() {
+  const ad = COUPANG_ADS[adIndex % COUPANG_ADS.length];
+  adIndex++;
+  return `<a class="ad-card" href="${ad.url}" target="_blank" rel="noopener sponsored">
+  <span class="ad-badge">AD</span>
+  <div class="ad-inner">
+    <img class="ad-thumb" src="${ad.img}" alt="${ad.title}" onerror="this.style.display='none'">
+    <div class="ad-left">
+      <div class="ad-platform">🛒 쿠팡 파트너스</div>
+      <div class="ad-title">${ad.title}</div>
+      <div class="ad-price">${ad.price}</div>
+      <div class="ad-sub">${ad.sub}</div>
+    </div>
+    <div class="ad-right">
+      <div class="ad-btn">바로가기 →</div>
+    </div>
+  </div>
+  <div style="font-size:10px;color:var(--text3);margin-top:10px;padding-top:8px;border-top:1px solid var(--border2)">이 포스팅은 쿠팡 파트너스 활동의 일환으로 일정액의 수수료를 제공받습니다.</div>
+</a>`;
+}
+
 // ── 신청 상태 (세션 내 메모리 캐시) ────────────────────────────
 let appliedSet = new Set(); // 내가 신청한 campaign_id 목록
 
@@ -1034,10 +1118,11 @@ function renderCards(list) {
   document.getElementById('cardCount').textContent = `${list.length}개`;
   if (!list.length) { grid.innerHTML = ''; noRes.style.display = 'block'; return; }
   noRes.style.display = 'none';
+  adIndex = 0;
   const AD_INTERVAL = 5;
   let html = '';
   list.forEach((c, i) => {
-    if (i > 0 && i % AD_INTERVAL === 0) html += COUPANG_AD_HTML;
+    if (i > 0 && i % AD_INTERVAL === 0) html += makeAdHtml();
     html += makeCardHtml(c, i);
   });
   grid.innerHTML = html;
