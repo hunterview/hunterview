@@ -1055,20 +1055,62 @@ const TAG_TO_AD_CAT = {
 // 카테고리별 순환 인덱스 (각 카테고리마다 별도 순번)
 const adCatIndex = {};
 
-/// tags 배열로 적합한 광고 선택 (fallback: 기타)
-function getAdForTags(tags) {
-  const arr = Array.isArray(tags) ? tags : [];
+// ── 사용자 관심사 추적 (localStorage) ─────────────────────────
+const INTEREST_KEY = 'hv_interests';
+const INTEREST_DECAY = 0.95;
+
+function loadInterests() {
+  try { return JSON.parse(localStorage.getItem(INTEREST_KEY) || '{}'); } catch { return {}; }
+}
+function saveInterests(obj) {
+  try { localStorage.setItem(INTEREST_KEY, JSON.stringify(obj)); } catch {}
+}
+
+// 현재 화면에 표시된 카드들의 카테고리를 관심사에 누적
+function recordInterests(list) {
+  const interests = loadInterests();
+  // 기존 점수 감쇠 (오래된 관심사 비중 서서히 줄임)
+  Object.keys(interests).forEach(k => {
+    interests[k] = +(interests[k] * INTEREST_DECAY).toFixed(3);
+    if (interests[k] < 0.1) delete interests[k];
+  });
+  list.forEach(c => {
+    const tags = Array.isArray(c.tags) ? c.tags : [];
+    tags.forEach(tag => {
+      const cat = TAG_TO_AD_CAT[tag];
+      if (cat) interests[cat] = (interests[cat] || 0) + 1;
+    });
+  });
+  saveInterests(interests);
+}
+
+// 관심사 점수 기준 상위 카테고리 반환
+function getTopInterestCat() {
+  const interests = loadInterests();
+  if (!Object.keys(interests).length) return null;
+  return Object.entries(interests).sort((a, b) => b[1] - a[1])[0][0];
+}
+
+// 광고 카테고리 결정: 관심사(70%) vs 현재 컨텍스트(30%) 블렌딩
+function pickAdCat(contextTags) {
+  const topCat = getTopInterestCat();
+  const arr = Array.isArray(contextTags) ? contextTags : [];
+  let contextCat = null;
   for (const tag of arr) {
     const cat = TAG_TO_AD_CAT[tag];
-    if (cat && COUPANG_ADS[cat] && COUPANG_ADS[cat].length > 0) {
-      return { cat, ads: COUPANG_ADS[cat] };
-    }
+    if (cat && COUPANG_ADS[cat]) { contextCat = cat; break; }
   }
-  return { cat: '기타', ads: COUPANG_ADS['기타'] };
+  if (!topCat && !contextCat) return '기타';
+  if (!topCat) return contextCat;
+  if (!contextCat) return topCat;
+  if (topCat === contextCat) return topCat;
+  // 70% 관심사, 30% 현재 컨텍스트
+  return Math.random() < 0.7 ? topCat : contextCat;
 }
 
 function makeAdHtml(tags) {
-  const { cat, ads } = getAdForTags(tags);
+  const cat = pickAdCat(tags);
+  const ads = COUPANG_ADS[cat] || COUPANG_ADS['기타'];
   if (!adCatIndex[cat]) adCatIndex[cat] = 0;
   const ad = ads[adCatIndex[cat] % ads.length];
   adCatIndex[cat]++;
@@ -1358,6 +1400,8 @@ function renderCards(list) {
   document.getElementById('cardCount').textContent = `${list.length}개`;
   if (!list.length) { grid.innerHTML = ''; noRes.style.display = 'block'; return; }
   noRes.style.display = 'none';
+  // 사용자 관심사 누적 기록
+  recordInterests(list);
   // 카테고리별 광고 인덱스 초기화
   Object.keys(adCatIndex).forEach(k => { adCatIndex[k] = 0; });
   const AD_INTERVAL = 5;
