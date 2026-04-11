@@ -263,55 +263,50 @@ nav a:hover, nav a.active { background: var(--primary-pale); color: var(--primar
 footer { background: #1A1A1A; color: rgba(255,255,255,.4); text-align: center; padding: 40px 32px; font-size: 12px; line-height: 2; margin-top: 20px; }
 .footer-logo { font-size: 18px; font-weight: 900; color: var(--primary); display: block; margin-bottom: 8px; }
 
-/* ─── 쿠팡 인라인 광고 (상품 카드형) ─── */
-.ad-card-inline {
+/* ─── 쿠팡 네이티브 인라인 광고 ─── */
+.ad-native-card {
   background: var(--surface); border: 1.5px solid var(--border);
-  border-radius: 14px; padding: 16px 18px;
-  box-shadow: var(--shadow-sm);
+  border-radius: 14px; padding: 20px 22px;
+  box-shadow: var(--shadow-sm); text-decoration: none; color: inherit;
+  display: block; transition: all .2s;
 }
-.ad-inline-header {
-  display: flex; align-items: center; gap: 8px;
-  margin-bottom: 12px;
+.ad-native-card:hover { box-shadow: var(--shadow-hover); border-color: #FFD0B5; transform: translateY(-1px); }
+.ad-native-inner { display: flex; align-items: flex-start; gap: 16px; }
+.ad-native-logo-wrap {
+  flex-shrink: 0; width: 72px; display: flex; flex-direction: column;
+  align-items: center; gap: 5px; padding-top: 2px;
 }
-.ad-inline-title {
-  font-size: 13px; font-weight: 700; color: var(--text2); flex: 1;
+.ad-native-logo {
+  font-size: 15px; font-weight: 900; color: #EF3533;
+  letter-spacing: -0.5px; line-height: 1;
 }
-.ad-inline-tag {
-  font-size: 9px; font-weight: 700; color: #aaa;
-  border: 1px solid #e4e4e4; border-radius: 3px;
-  padding: 2px 6px; letter-spacing: .6px; flex-shrink: 0;
-  background: #fafafa;
+.ad-native-date { font-size: 11px; color: var(--text3); }
+.ad-native-body { flex: 1; min-width: 0; }
+.ad-native-title {
+  font-size: 15px; font-weight: 700; color: var(--text);
+  line-height: 1.45; margin-bottom: 8px;
 }
-.ad-prod-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;
+.ad-native-desc {
+  font-size: 13px; color: var(--text2); line-height: 1.6;
+  margin-bottom: 10px;
 }
-.ad-prod-card {
-  display: flex; flex-direction: column; text-decoration: none; color: inherit;
-  border: 1.5px solid var(--border); border-radius: 10px; overflow: hidden;
-  transition: all .2s; cursor: pointer; background: var(--surface);
-  position: relative;
+.ad-native-price { font-size: 13px; color: #e14400; font-weight: 700; }
+.ad-native-right {
+  flex-shrink: 0; display: flex; flex-direction: column;
+  align-items: flex-end; gap: 8px;
 }
-.ad-prod-card:hover { border-color: var(--primary); box-shadow: 0 6px 20px rgba(255,107,53,.16); transform: translateY(-3px); }
-.ad-prod-card-ad-mark {
-  position: absolute; top: 6px; right: 6px;
-  font-size: 8px; font-weight: 700; color: #bbb;
-  background: rgba(255,255,255,.9); border: 1px solid #e4e4e4;
-  border-radius: 3px; padding: 1px 5px; letter-spacing: .4px;
-  backdrop-filter: blur(4px);
+.ad-native-label {
+  font-size: 11px; color: var(--text3);
+  border: 1px solid var(--border); border-radius: 4px;
+  padding: 2px 8px; white-space: nowrap;
 }
-.ad-prod-img {
-  width: 100%; aspect-ratio: 1; object-fit: cover; background: var(--bg); display: block;
+@media (max-width: 580px) {
+  .ad-native-card { padding: 14px; }
+  .ad-native-inner { gap: 12px; }
+  .ad-native-logo-wrap { width: 56px; }
+  .ad-native-logo { font-size: 13px; }
+  .ad-native-title { font-size: 14px; }
 }
-.ad-prod-info { padding: 10px; }
-.ad-prod-name {
-  font-size: 12px; font-weight: 600; color: var(--text);
-  line-height: 1.4; margin-bottom: 6px;
-  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
-}
-.ad-prod-price { font-size: 14px; font-weight: 900; color: #e14400; margin-bottom: 3px; }
-.ad-prod-sub { font-size: 10px; color: var(--text3); }
-.ad-notice-inline { font-size: 10px; color: var(--text3); opacity: .6; text-align: right; margin-top: 10px; }
-@media (max-width: 500px) { .ad-prod-grid { grid-template-columns: repeat(2, 1fr); } }
 
 /* ─── 반응형 (태블릿) ─── */
 @media (max-width: 768px) {
@@ -374,11 +369,7 @@ footer { background: #1A1A1A; color: rgba(255,255,255,.4); text-align: center; p
   .apply-btn { padding: 10px; font-size: 13px; }
   .platform-badge { font-size: 11px; padding: 3px 9px; }
 
-  /* 인라인 광고 */
-  .ad-card-inline { padding: 10px 12px; border-radius: 12px; }
-  .ad-inline-title { font-size: 12px; }
-  .ad-prod-name { font-size: 11px; }
-  .ad-prod-price { font-size: 13px; }
+  /* 인라인 광고 (모바일은 .ad-native-card 내부 @media로 처리) */
 
   /* 사이트 페이지 */
   .sites-wrap { padding: 20px 12px 40px; }
@@ -1130,29 +1121,25 @@ function pickAdCat(contextTags) {
 function makeAdHtml(contextTags) {
   const cat = pickAdCat(contextTags);
   const pool = COUPANG_ADS[cat] || COUPANG_ADS['기타'];
-  // 카테고리별 순환 인덱스
   if (adCatIndex[cat] == null) adCatIndex[cat] = 0;
-  const startIdx = adCatIndex[cat];
-  adCatIndex[cat] = (startIdx + 3) % pool.length;
-  const items = [0, 1, 2].map(offset => pool[(startIdx + offset) % pool.length]);
-  const cardsHtml = items.map(p => `
-    <a href="${p.url}" target="_blank" rel="noopener sponsored" class="ad-prod-card">
-      <span class="ad-prod-card-ad-mark">광고</span>
-      <img class="ad-prod-img" src="${p.img}" alt="${p.title}" loading="lazy" onerror="this.style.background='#f0f0f0';this.style.display='block'">
-      <div class="ad-prod-info">
-        <div class="ad-prod-name">${p.title}</div>
-        <div class="ad-prod-price">${p.price}</div>
-        <div class="ad-prod-sub">${p.sub}</div>
-      </div>
-    </a>`).join('');
-  return `<div class="ad-card-inline">
-  <div class="ad-inline-header">
-    <span class="ad-inline-title">같이 많이 보는 제품</span>
-    <span class="ad-inline-tag">광고</span>
+  const idx = adCatIndex[cat];
+  adCatIndex[cat] = (idx + 1) % pool.length;
+  const p = pool[idx];
+  return `<a href="${p.url}" target="_blank" rel="noopener sponsored" class="ad-native-card">
+  <div class="ad-native-inner">
+    <div class="ad-native-logo-wrap">
+      <span class="ad-native-logo">coupang</span>
+      <span class="ad-native-date">상시</span>
+    </div>
+    <div class="ad-native-body">
+      <div class="ad-native-title">${p.title}</div>
+      <div class="ad-native-desc">■ ${p.sub} &nbsp;·&nbsp; <span class="ad-native-price">${p.price}</span></div>
+    </div>
+    <div class="ad-native-right">
+      <span class="ad-native-label">(광고)</span>
+    </div>
   </div>
-  <div class="ad-prod-grid">${cardsHtml}</div>
-  <p class="ad-notice-inline">쿠팡 파트너스 활동으로 수수료를 제공받습니다.</p>
-</div>`;
+</a>`;
 }
 
 function initAdWidgets() { /* 인라인 광고는 정적 HTML이므로 초기화 불필요 */ }
