@@ -3,6 +3,7 @@
  * cookies()를 통해 세션 쿠키를 읽고 씁니다.
  */
 import { createServerClient } from '@supabase/ssr'
+import { createClient as createSupabaseClient } from '@supabase/supabase-js'
 import { cookies } from 'next/headers'
 
 export async function createClient() {
@@ -27,5 +28,17 @@ export async function createClient() {
         },
       },
     }
+  )
+}
+
+/**
+ * RLS를 우회하는 서비스 롤 클라이언트 (서버 전용)
+ * anon_id 기반 insert 등 인증 없는 DB 작업에 사용
+ */
+export function createAdminClient() {
+  return createSupabaseClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL,
+    process.env.SUPABASE_SERVICE_ROLE_KEY,
+    { auth: { persistSession: false } }
   )
 }

@@ -6,7 +6,7 @@
  * PATCH /api/applications → 상태 변경
  * DELETE /api/applications?id=xxx → 신청 취소
  */
-import { createClient } from '@/lib/supabase/server'
+import { createAdminClient } from '@/lib/supabase/server'
 import { NextResponse } from 'next/server'
 import { cookies } from 'next/headers'
 import { randomUUID } from 'crypto'
@@ -40,7 +40,7 @@ export async function GET() {
     return NextResponse.json({ applied: [], applications: [] })
   }
 
-  const supabase = await createClient()
+  const supabase = createAdminClient()
   const { data, error } = await supabase
     .from('applications')
     .select('id, campaign_id, status')
@@ -75,7 +75,7 @@ export async function POST(request) {
     return NextResponse.json({ error: 'campaign_id, campaign_title 필수' }, { status: 400 })
   }
 
-  const supabase = await createClient()
+  const supabase = createAdminClient()
   const { data, error } = await supabase
     .from('applications')
     .insert({
@@ -115,7 +115,7 @@ export async function PATCH(request) {
     return NextResponse.json({ error: '유효하지 않은 상태값' }, { status: 400 })
   }
 
-  const supabase = await createClient()
+  const supabase = createAdminClient()
   const { error } = await supabase
     .from('applications')
     .update({ status })
@@ -143,7 +143,7 @@ export async function DELETE(request) {
     return NextResponse.json({ error: 'id 필수' }, { status: 400 })
   }
 
-  const supabase = await createClient()
+  const supabase = createAdminClient()
   const { error } = await supabase
     .from('applications')
     .delete()
