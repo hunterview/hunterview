@@ -33,7 +33,7 @@
   --shadow-hover: 0 8px 32px rgba(255,107,53,.15);
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'Noto Sans KR', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; font-size: 14px; line-height: 1.6; }
+body { font-family: 'Noto Sans KR', sans-serif; background: var(--bg); color: var(--text); font-size: 14px; line-height: 1.6; }
 
 /* ─── 헤더 ─── */
 header {
@@ -464,11 +464,13 @@ footer { background: #1A1A1A; color: rgba(255,255,255,.4); text-align: center; p
   </section>
 
   <!-- 광고 (통계 위) -->
-  <div class="ad-wrap">
-    <div class="ad-label">Advertisement</div>
-    <script src="https://ads-partners.coupang.com/g.js"></script>
-    <script>new PartnersCoupang.G({"id":976349,"template":"carousel","trackingCode":"AF5506301","width":"1000","height":"140","tsource":""});</script>
-    <div class="ad-disclaimer">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</div>
+  <div class="ad-wrap" id="adWrapTop" style="min-height:0">
+    <div class="ad-label" id="adLabelTop" style="display:none">Advertisement</div>
+    <script src="https://ads-partners.coupang.com/g.js" onload="
+      document.getElementById('adLabelTop').style.display='';
+      new PartnersCoupang.G({'id':976349,'template':'carousel','trackingCode':'AF5506301','width':'1000','height':'140','tsource':''});
+    "></script>
+    <div class="ad-disclaimer" id="adDisclaimerTop" style="display:none">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</div>
   </div>
 
   <!-- 통계 -->
@@ -692,12 +694,8 @@ footer { background: #1A1A1A; color: rgba(255,255,255,.4); text-align: center; p
   </div>
 </div>
 
-<!-- 광고 하단 -->
-<div class="ad-wrap">
-  <div class="ad-label">Advertisement</div>
-  <script>new PartnersCoupang.G({"id":976349,"template":"carousel","trackingCode":"AF5506301","width":"1000","height":"140","tsource":""});</script>
-  <div class="ad-disclaimer">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</div>
-</div>
+<!-- 광고 하단 (쿠팡 carousel - 로딩 실패 시 빈공간 방지) -->
+<div class="ad-wrap" id="adWrapBottom" style="min-height:0"></div>
 
 <!-- 푸터 -->
 <footer>
@@ -1196,12 +1194,15 @@ async function handleApply(event, campaignId, title, url, platform) {
       btn.style.background = '#00C471';
       btn.disabled         = false;
       if (url) setTimeout(() => window.open(url, '_blank'), 300);
+    } else if (res.status === 401) {
+      // 비로그인 → 로그인 페이지로
+      window.location.href = '/login';
     } else {
-      btn.textContent = '오류';
+      btn.textContent = '오류 (재시도)';
       btn.disabled    = false;
     }
   } catch(e) {
-    btn.textContent = '오류';
+    btn.textContent = '오류 (재시도)';
     btn.disabled    = false;
   }
 }
