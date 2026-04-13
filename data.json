@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-13 16:23",
+  "updated_at": "2026-04-13 20:42",
   "total": 79,
   "campaigns": [
     {
@@ -783,19 +783,6 @@
       "id": 60
     },
     {
-      "title": "100만원 상당의 세르프 이용권 제공",
-      "reward": "100만원 상당",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=407300",
-      "image": "",
-      "deadline": "2026-04-15",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 61
-    },
-    {
       "title": "48,000원 상당의 아베아 아이래쉬 인텐시브 앰플 제공",
       "reward": "48,000원 상당",
       "platform": "티블",
@@ -803,6 +790,19 @@
       "image": "",
       "deadline": "2026-04-22",
       "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 61
+    },
+    {
+      "title": "100만원 상당의 세르프 이용권 제공",
+      "reward": "100만원 상당",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=407300",
+      "image": "",
+      "deadline": "2026-04-15",
+      "location": "방문형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
