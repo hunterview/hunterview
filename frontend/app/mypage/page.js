@@ -1,12 +1,15 @@
 /**
- * 마이페이지 - 내가 신청한 체험단 목록
- * 로그인 없이 anon_id 쿠키 기반으로 신청 내역 관리
+ * 마이페이지
+ * /mypage 에서 접근 가능
+ * 내가 신청한 체험단 목록을 보여주고, 상태 변경 / 신청 취소를 할 수 있습니다.
  */
 'use client'
 
+import { createClient } from '@/lib/supabase/client'
 import { useRouter } from 'next/navigation'
 import { useEffect, useState } from 'react'
 
+// 상태별 스타일
 const STATUS_STYLE = {
   '신청완료' : { bg: '#EEF3FF', color: '#0066FF' },
   '선정됨'   : { bg: '#E6FAF2', color: '#00C471' },
@@ -17,19 +20,43 @@ const STATUS_LIST = ['신청완료', '선정됨', '후기작성중', '완료']
 
 export default function MypagePage() {
   const router = useRouter()
+  const [user,         setUser]         = useState(null)
   const [applications, setApplications] = useState([])
   const [loading,      setLoading]      = useState(true)
   const [filter,       setFilter]       = useState('전체')
 
   useEffect(() => {
-    fetch('/api/applications')
-      .then(r => r.json())
-      .then(({ applications }) => {
-        setApplications(applications || [])
-        setLoading(false)
-      })
-      .catch(() => setLoading(false))
-  }, [])
+    const init = async () => {
+      const supabase = createClient()
+      const { data: { user } } = await supabase.auth.getUser()
+
+      if (!user) {
+        // 로그인 안 된 경우 로그인 페이지로 이동
+        router.replace('/login?next=/mypage')
+        return
+      }
+
+      setUser(user)
+
+      // 신청 내역 조회 (최신순)
+      const { data, error } = await supabase
+        .from('applications')
+        .select('*')
+        .eq('user_id', user.id)
+        .order('applied_at', { ascending: false })
+
+      if (!error) setApplications(data || [])
+      setLoading(false)
+    }
+    init()
+  }, [router])
+
+  // 로그아웃
+  const handleLogout = async () => {
+    const supabase = createClient()
+    await supabase.auth.signOut()
+    router.replace('/')
+  }
 
   // 상태 변경
   const updateStatus = async (id, newStatus) => {
@@ -54,6 +81,7 @@ export default function MypagePage() {
     }
   }
 
+  // 필터 적용
   const filtered = filter === '전체'
     ? applications
     : applications.filter(a => a.status === filter)
@@ -87,13 +115,21 @@ export default function MypagePage() {
         <a href="/" style={{ fontSize: '20px', fontWeight: 900, color: '#1A1A1A', textDecoration: 'none', letterSpacing: '-0.5px' }}>
           헌터뷰<span style={{ color: '#FF6B35' }}>.</span>
         </a>
-        <a href="/" style={{
-          background: 'none', border: '1.5px solid #EBEBEB',
-          borderRadius: '8px', padding: '6px 14px',
-          fontSize: '13px', color: '#555', textDecoration: 'none',
-        }}>
-          ← 메인으로
-        </a>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+          <span style={{ fontSize: '13px', color: '#555' }}>
+            {user?.user_metadata?.full_name || user?.user_metadata?.name || user?.email || ''}
+          </span>
+          <button
+            onClick={handleLogout}
+            style={{
+              background: 'none', border: '1.5px solid #EBEBEB',
+              borderRadius: '8px', padding: '6px 14px',
+              fontSize: '13px', color: '#555', cursor: 'pointer', fontFamily: 'inherit',
+            }}
+          >
+            로그아웃
+          </button>
+        </div>
       </header>
 
       {/* 메인 콘텐츠 */}
@@ -117,7 +153,7 @@ export default function MypagePage() {
               onClick={() => setFilter(s)}
               style={{
                 padding: '6px 16px', borderRadius: '20px', fontSize: '13px',
-                fontWeight: 500, cursor: 'pointer', fontFamily: 'inherit',
+                fontWeight: 500, cursor: 'pointer', fontFamily: 'inherit', border: 'none',
                 background: filter === s ? '#FF6B35' : '#fff',
                 color     : filter === s ? '#fff'    : '#555',
                 border    : filter === s ? 'none'    : '1.5px solid #EBEBEB',
@@ -215,6 +251,7 @@ export default function MypagePage() {
                         padding: '8px', borderRadius: '8px',
                         fontSize: '13px', fontWeight: 700,
                         textDecoration: 'none', textAlign: 'center',
+                        transition: 'background .15s',
                       }}
                     >
                       체험단 페이지 →
@@ -226,7 +263,7 @@ export default function MypagePage() {
                       background: 'none', border: '1.5px solid #EBEBEB',
                       borderRadius: '8px', padding: '8px 14px',
                       fontSize: '13px', color: '#AAAAAA', cursor: 'pointer',
-                      fontFamily: 'inherit',
+                      fontFamily: 'inherit', transition: 'all .15s',
                     }}
                   >
                     삭제
