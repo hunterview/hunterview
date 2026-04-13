@@ -75,30 +75,34 @@ export async function POST(request) {
     return NextResponse.json({ error: 'campaign_id, campaign_title 필수' }, { status: 400 })
   }
 
-  const supabase = createAdminClient()
-  const { data, error } = await supabase
-    .from('applications')
-    .insert({
-      user_id          : anonId,
-      campaign_id,
-      campaign_title,
-      campaign_link    : campaign_link     || '',
-      campaign_platform: campaign_platform || '',
-      status           : '신청완료',
-    })
-    .select()
-    .single()
+  try {
+    const supabase = createAdminClient()
+    const { data, error } = await supabase
+      .from('applications')
+      .insert({
+        user_id          : anonId,
+        campaign_id,
+        campaign_title,
+        campaign_link    : campaign_link     || '',
+        campaign_platform: campaign_platform || '',
+        status           : '신청완료',
+      })
+      .select()
+      .single()
 
-  if (error) {
-    if (error.code === '23505') {
-      return NextResponse.json({ error: 'already_applied' }, { status: 409 })
+    if (error) {
+      if (error.code === '23505') {
+        return NextResponse.json({ error: 'already_applied' }, { status: 409 })
+      }
+      return NextResponse.json({ error: error.message }, { status: 500 })
     }
-    return NextResponse.json({ error: error.message }, { status: 500 })
-  }
 
-  const response = NextResponse.json({ success: true, application: data }, { status: 201 })
-  if (isNew) setAnonCookie(response, anonId)
-  return response
+    const response = NextResponse.json({ success: true, application: data }, { status: 201 })
+    if (isNew) setAnonCookie(response, anonId)
+    return response
+  } catch (e) {
+    return NextResponse.json({ error: e?.message || String(e) }, { status: 500 })
+  }
 }
 
 // ── PATCH: 상태 변경 ───────────────────────────────────────────
