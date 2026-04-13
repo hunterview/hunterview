@@ -33,7 +33,16 @@ function setAnonCookie(response, anonId) {
 }
 
 // ── GET: 내가 신청한 campaign_id 목록 ──────────────────────────
-export async function GET() {
+export async function GET(request) {
+  // 임시 디버그: env var 확인
+  if (new URL(request.url).searchParams.get('debug') === '1') {
+    return NextResponse.json({
+      hasUrl: !!process.env.NEXT_PUBLIC_SUPABASE_URL,
+      hasKey: !!process.env.SUPABASE_SERVICE_ROLE_KEY,
+      keyLen: process.env.SUPABASE_SERVICE_ROLE_KEY?.length ?? 0,
+    })
+  }
+
   const anonId = await getAnonId()
 
   if (!anonId) {
