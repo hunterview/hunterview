@@ -1159,6 +1159,7 @@ function setFilter(f, el) {
 
 function sortCards(by) {
   let list = campaigns.filter(c => {
+    if (c.dday !== undefined && c.dday !== null && c.dday < 0) return false;
     const mt = activeFilter === '전체' || (c.type||[]).some(t=>t.includes(activeFilter)) || (c.tags||[]).some(t=>t.includes(activeFilter));
     const ms = !searchTerm || c.title.toLowerCase().includes(searchTerm) || (c.tags||[]).some(t=>t.includes(searchTerm));
     return mt && ms;
