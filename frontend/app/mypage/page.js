@@ -89,7 +89,7 @@ function AmountField({ label, value, onChange }) {
   )
 }
 
-function ScheduleCard({ s, onDelete }) {
+function ScheduleCard({ s, onDelete, onComplete }) {
   const d  = calcDday(s.deadline)
   const dd = ddayBadge(d)
   return (
@@ -104,14 +104,17 @@ function ScheduleCard({ s, onDelete }) {
         <div style={{ display: 'flex', gap: 5, flexWrap: 'wrap', alignItems: 'center' }}>
           {s.postingType && <span style={{ fontSize: 10, fontWeight: 700, padding: '3px 9px', borderRadius: 20, background: '#F5F6F8', color: '#666' }}>{s.postingType}</span>}
           {s.site && <span style={{ fontSize: 10, fontWeight: 700, padding: '3px 9px', borderRadius: 20, background: '#FFF3EE', color: '#FF6B35' }}>{s.site}</span>}
-          <button onClick={() => onDelete(s.id)} style={{ marginLeft: 'auto', background: 'none', border: '1px solid #EBEBEB', borderRadius: 6, padding: '2px 8px', fontSize: 10, color: '#AAAAAA', cursor: 'pointer', fontFamily: FF }}>삭제</button>
+          <div style={{ marginLeft: 'auto', display: 'flex', gap: 5 }}>
+            <button onClick={() => onComplete(s.id)} style={{ background: '#F0FAF5', border: '1px solid #00C471', borderRadius: 6, padding: '2px 8px', fontSize: 10, color: '#00C471', cursor: 'pointer', fontFamily: FF, fontWeight: 700 }}>완료</button>
+            <button onClick={() => onDelete(s.id)} style={{ background: 'none', border: '1px solid #EBEBEB', borderRadius: 6, padding: '2px 8px', fontSize: 10, color: '#AAAAAA', cursor: 'pointer', fontFamily: FF }}>삭제</button>
+          </div>
         </div>
       </div>
     </div>
   )
 }
 
-function GroupSection({ label, color, items, onDelete }) {
+function GroupSection({ label, color, items, onDelete, onComplete }) {
   if (!items.length) return null
   return (
     <div style={{ padding: '16px 14px 0' }}>
@@ -121,7 +124,7 @@ function GroupSection({ label, color, items, onDelete }) {
         <span style={{ marginLeft: 'auto', fontSize: 10, color: '#AAAAAA', background: '#F5F6F8', borderRadius: 10, padding: '2px 8px', fontWeight: 700 }}>{items.length}건</span>
       </div>
       <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-        {items.map(s => <ScheduleCard key={s.id} s={s} onDelete={onDelete} />)}
+        {items.map(s => <ScheduleCard key={s.id} s={s} onDelete={onDelete} onComplete={onComplete} />)}
       </div>
     </div>
   )
@@ -192,10 +195,15 @@ export default function MypagePage() {
     saveSchedules(schedules.filter(s => s.id !== id))
   }, [schedules, saveSchedules])
 
+  const handleComplete = useCallback((id) => {
+    const updated = schedules.map(s => s.id === id ? { ...s, done: true } : s)
+    saveSchedules(updated)
+  }, [schedules, saveSchedules])
+
   if (loading) return <LoadingScreen />
 
   /* ─ 스케줄 그룹 ─ */
-  const active = schedules.filter(s => { const d = calcDday(s.deadline); return d !== null && d >= 0 })
+  const active = schedules.filter(s => { const d = calcDday(s.deadline); return d !== null && d >= 0 && !s.done })
   const urgent = active.filter(s => calcDday(s.deadline) <= 1)
   const week   = active.filter(s => { const d = calcDday(s.deadline); return d > 1 && d <= 7 })
   const later  = active.filter(s => calcDday(s.deadline) > 7)
@@ -272,9 +280,9 @@ export default function MypagePage() {
             ))}
           </div>
 
-          <GroupSection label="긴급"      color="#FF4040"  items={urgent} onDelete={handleDelete} />
-          <GroupSection label="이번 주"   color="#FF6B35"  items={week}   onDelete={handleDelete} />
-          <GroupSection label="여유 있음"  color="#AAAAAA" items={later}  onDelete={handleDelete} />
+          <GroupSection label="긴급"      color="#FF4040"  items={urgent} onDelete={handleDelete} onComplete={handleComplete} />
+          <GroupSection label="이번 주"   color="#FF6B35"  items={week}   onDelete={handleDelete} onComplete={handleComplete} />
+          <GroupSection label="여유 있음"  color="#AAAAAA" items={later}  onDelete={handleDelete} onComplete={handleComplete} />
 
           {active.length === 0 && (
             <div style={{ textAlign: 'center', padding: '60px 20px', color: '#AAAAAA' }}>
@@ -367,6 +375,15 @@ export default function MypagePage() {
 
       {/* 하단 내비 */}
       <div style={{ position: 'fixed', bottom: 0, left: '50%', transform: 'translateX(-50%)', width: '100%', maxWidth: 430, background: '#fff', borderTop: '1px solid #EBEBEB', display: 'flex', padding: '8px 0 20px', zIndex: 100 }}>
+        {/* 홈 */}
+        <a href="/" style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3, cursor: 'pointer', padding: '4px 0', textDecoration: 'none' }}>
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#AAAAAA" strokeWidth="1.8">
+            <path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H5a1 1 0 01-1-1V9.5z" />
+            <path d="M9 21V12h6v9" />
+          </svg>
+          <span style={{ fontSize: 10, fontWeight: 700, color: '#AAAAAA' }}>홈</span>
+        </a>
+        {/* 협찬스케줄 / 수익 */}
         {[
           { id: 'schedule', label: '협찬스케줄' },
           { id: 'income',   label: '수익' },
