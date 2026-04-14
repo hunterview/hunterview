@@ -904,16 +904,23 @@ function normalizeItem(c) {
   }
   if (!c.type) c.type = ['블로그'];
 
-  // dday 계산
-  if (c.deadline && typeof c.deadline === 'string' && c.deadline.trim()) {
-    // deadline이 있으면 현재 날짜 기준으로 정확히 계산
-    c.dday = Math.ceil((new Date(c.deadline) - new Date()) / 86400000);
+  // ── dday 계산 (한국 시간 KST = UTC+9 기준) ────────────────────
+  // KST 날짜 번호: epoch ms 에 +9h 하여 UTC 날짜 번호와 동일하게 계산
+  const _kstDay = d => Math.floor((d.getTime() + 9 * 3600000) / 86400000);
+  const _todayKST = _kstDay(new Date());
+
+  if (c.dday === 99) {
+    // 상시 캠페인: 마감 없음, 그대로 유지
+  } else if (c.deadline && typeof c.deadline === 'string' && c.deadline.trim()) {
+    // deadline 날짜 문자열이 있는 경우: KST 자정 기준으로 재계산
+    // "YYYY-MM-DD" 형식을 KST 00:00으로 파싱
+    const deadlineKST = _kstDay(new Date(c.deadline.trim() + 'T00:00:00+09:00'));
+    c.dday = deadlineKST - _todayKST;
   } else if (c.dday != null && window._dataUpdatedAt) {
-    // deadline 없이 dday만 있는 경우(티블 등): 크롤러 실행 이후 경과일수 차감
-    // 날짜 단위(자정 기준)로 비교해야 정확함 - Math.floor 사용 시 마감일 오판 발생
-    const today = new Date(); today.setHours(0, 0, 0, 0);
-    const updateDay = new Date(window._dataUpdatedAt); updateDay.setHours(0, 0, 0, 0);
-    const daysPassed = Math.round((today - updateDay) / 86400000);
+    // dday 숫자만 있는 경우(전체 크롤러): KST 기준 경과일 차감
+    // _dataUpdatedAt 이 UTC 문자열이어도 kstDay 변환으로 정확히 처리
+    const updateKST = _kstDay(new Date(window._dataUpdatedAt));
+    const daysPassed = _todayKST - updateKST;
     c.dday = c.dday - daysPassed;
   }
   if (c.dday == null) c.dday = 30;
