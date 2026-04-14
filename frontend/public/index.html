@@ -910,7 +910,10 @@ function normalizeItem(c) {
     c.dday = Math.ceil((new Date(c.deadline) - new Date()) / 86400000);
   } else if (c.dday != null && window._dataUpdatedAt) {
     // deadline 없이 dday만 있는 경우(티블 등): 크롤러 실행 이후 경과일수 차감
-    const daysPassed = Math.floor((Date.now() - window._dataUpdatedAt.getTime()) / 86400000);
+    // 날짜 단위(자정 기준)로 비교해야 정확함 - Math.floor 사용 시 마감일 오판 발생
+    const today = new Date(); today.setHours(0, 0, 0, 0);
+    const updateDay = new Date(window._dataUpdatedAt); updateDay.setHours(0, 0, 0, 0);
+    const daysPassed = Math.round((today - updateDay) / 86400000);
     c.dday = c.dday - daysPassed;
   }
   if (c.dday == null) c.dday = 30;
