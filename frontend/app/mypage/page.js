@@ -42,6 +42,19 @@ function ymLabel(ym) {
   return `${y}년 ${Number(m)}월`
 }
 
+function localDateStr(isoStr) {
+  if (!isoStr) return ''
+  const d = new Date(isoStr)
+  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`
+}
+
+function buildCalendar(ym) {
+  const [y, m] = ym.split('-').map(Number)
+  const firstDay = new Date(y, m - 1, 1).getDay()
+  const daysInMonth = new Date(y, m, 0).getDate()
+  return { firstDay, daysInMonth, year: y, month: m }
+}
+
 const STORAGE_KEY = uid => `hunterview_schedules_${uid}`
 const FF = '-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif'
 const inputStyle = {
@@ -89,11 +102,12 @@ function AmountField({ label, value, onChange }) {
   )
 }
 
-function ScheduleCard({ s, onDelete, onComplete }) {
+function ScheduleCard({ s, onDelete, onComplete, onView }) {
   const d  = calcDday(s.deadline)
   const dd = ddayBadge(d)
   return (
-    <div style={{ background: '#fff', borderRadius: 14, display: 'flex', overflow: 'hidden', boxShadow: '0 1px 6px rgba(0,0,0,.06)' }}>
+    <div onClick={() => onView && onView(s)}
+      style={{ background: '#fff', borderRadius: 14, display: 'flex', overflow: 'hidden', boxShadow: '0 1px 6px rgba(0,0,0,.06)', cursor: onView ? 'pointer' : 'default' }}>
       <div style={{ width: 4, flexShrink: 0, background: stripeColor(d) }} />
       <div style={{ flex: 1, padding: '13px 14px', minWidth: 0 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 7, marginBottom: 6, flexWrap: 'wrap' }}>
@@ -105,8 +119,10 @@ function ScheduleCard({ s, onDelete, onComplete }) {
           {s.postingType && <span style={{ fontSize: 10, fontWeight: 700, padding: '3px 9px', borderRadius: 20, background: '#F5F6F8', color: '#666' }}>{s.postingType}</span>}
           {s.site && <span style={{ fontSize: 10, fontWeight: 700, padding: '3px 9px', borderRadius: 20, background: '#FFF3EE', color: '#FF6B35' }}>{s.site}</span>}
           <div style={{ marginLeft: 'auto', display: 'flex', gap: 5 }}>
-            <button onClick={() => onComplete(s.id)} style={{ background: '#F0FAF5', border: '1px solid #00C471', borderRadius: 6, padding: '2px 8px', fontSize: 10, color: '#00C471', cursor: 'pointer', fontFamily: FF, fontWeight: 700 }}>완료</button>
-            <button onClick={() => onDelete(s.id)} style={{ background: 'none', border: '1px solid #EBEBEB', borderRadius: 6, padding: '2px 8px', fontSize: 10, color: '#AAAAAA', cursor: 'pointer', fontFamily: FF }}>삭제</button>
+            <button onClick={e => { e.stopPropagation(); onComplete(s.id) }}
+              style={{ background: '#F0FAF5', border: '1px solid #00C471', borderRadius: 6, padding: '2px 8px', fontSize: 10, color: '#00C471', cursor: 'pointer', fontFamily: FF, fontWeight: 700 }}>완료</button>
+            <button onClick={e => { e.stopPropagation(); onDelete(s.id) }}
+              style={{ background: 'none', border: '1px solid #EBEBEB', borderRadius: 6, padding: '2px 8px', fontSize: 10, color: '#AAAAAA', cursor: 'pointer', fontFamily: FF }}>삭제</button>
           </div>
         </div>
       </div>
@@ -114,7 +130,7 @@ function ScheduleCard({ s, onDelete, onComplete }) {
   )
 }
 
-function GroupSection({ label, color, items, onDelete, onComplete }) {
+function GroupSection({ label, color, items, onDelete, onComplete, onView }) {
   if (!items.length) return null
   return (
     <div style={{ padding: '16px 14px 0' }}>
@@ -124,21 +140,151 @@ function GroupSection({ label, color, items, onDelete, onComplete }) {
         <span style={{ marginLeft: 'auto', fontSize: 10, color: '#AAAAAA', background: '#F5F6F8', borderRadius: 10, padding: '2px 8px', fontWeight: 700 }}>{items.length}건</span>
       </div>
       <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-        {items.map(s => <ScheduleCard key={s.id} s={s} onDelete={onDelete} onComplete={onComplete} />)}
+        {items.map(s => <ScheduleCard key={s.id} s={s} onDelete={onDelete} onComplete={onComplete} onView={onView} />)}
       </div>
     </div>
   )
 }
 
+function DoneCard({ s, onView }) {
+  const completedDate = s.completedAt ? new Date(s.completedAt) : null
+  const dateStr = completedDate
+    ? `${completedDate.getMonth()+1}월 ${completedDate.getDate()}일 완료`
+    : '완료'
+  const income = (s.sponsorAmount || 0) + (s.fee || 0)
+  return (
+    <div onClick={() => onView(s)}
+      style={{ background: '#fff', borderRadius: 14, display: 'flex', overflow: 'hidden', boxShadow: '0 1px 4px rgba(0,0,0,.04)', cursor: 'pointer' }}>
+      <div style={{ width: 4, flexShrink: 0, background: '#00C471' }} />
+      <div style={{ flex: 1, padding: '12px 14px', minWidth: 0 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 7, marginBottom: 5 }}>
+          <span style={{ fontSize: 10, fontWeight: 800, padding: '2px 8px', borderRadius: 20, background: '#E8F8EF', color: '#00C471', flexShrink: 0 }}>✓ 완료</span>
+          <span style={{ fontSize: 11, color: '#AAAAAA' }}>{dateStr}</span>
+        </div>
+        <div style={{ fontSize: 14, fontWeight: 700, color: '#AAAAAA', lineHeight: 1.4 }}>{s.title}</div>
+        {income > 0 && (
+          <div style={{ fontSize: 11, color: '#FF6B35', marginTop: 4, fontWeight: 700 }}>+{fmt(income)}원</div>
+        )}
+      </div>
+      <div style={{ display: 'flex', alignItems: 'center', padding: '0 14px', color: '#CCCCCC', fontSize: 18 }}>›</div>
+    </div>
+  )
+}
+
+function DetailModal({ s, onClose, onUncomplete, onDelete }) {
+  const completedDate = s.completedAt ? new Date(s.completedAt) : null
+  const completedStr = completedDate
+    ? `${completedDate.getFullYear()}년 ${completedDate.getMonth()+1}월 ${completedDate.getDate()}일`
+    : null
+
+  const infoRows = [
+    s.deadline && { label: '제출 마감일', value: s.deadline.replace(/-/g, '.') },
+    completedStr && { label: '완료일', value: completedStr, valueColor: '#00C471' },
+    s.postingType && { label: '포스팅 종류', value: s.postingType },
+    s.site && { label: '체험단 사이트', value: s.site, valueColor: '#FF6B35' },
+  ].filter(Boolean)
+
+  return (
+    <div onClick={e => { if (e.target === e.currentTarget) onClose() }}
+      style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,.45)', display: 'flex', alignItems: 'flex-end', justifyContent: 'center', zIndex: 300 }}>
+      <div style={{ background: '#fff', borderRadius: '24px 24px 0 0', width: '100%', maxWidth: 430, maxHeight: '88vh', overflowY: 'auto', paddingBottom: 44 }}>
+        {/* 핸들 */}
+        <div style={{ display: 'flex', justifyContent: 'center', padding: '10px 0 2px' }}>
+          <span style={{ width: 36, height: 4, background: '#E0E0E0', borderRadius: 2, display: 'block' }} />
+        </div>
+        {/* 헤더 */}
+        <div style={{ padding: '10px 20px 14px', display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', borderBottom: '1px solid #F5F6F8', gap: 10 }}>
+          <div>
+            {s.done && (
+              <span style={{ display: 'inline-block', fontSize: 10, fontWeight: 800, padding: '2px 8px', borderRadius: 20, background: '#E8F8EF', color: '#00C471', marginBottom: 6 }}>✓ 완료</span>
+            )}
+            <h3 style={{ fontSize: 16, fontWeight: 900, color: '#1A1A1A', lineHeight: 1.4, margin: 0 }}>{s.title}</h3>
+          </div>
+          <button onClick={onClose} style={{ width: 28, height: 28, borderRadius: '50%', background: '#F5F6F8', border: 'none', cursor: 'pointer', fontSize: 13, color: '#666', fontFamily: FF, flexShrink: 0 }}>✕</button>
+        </div>
+
+        {/* 정보 */}
+        <div style={{ padding: '4px 20px 0' }}>
+          {infoRows.map(row => (
+            <div key={row.label} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '11px 0', borderBottom: '1px solid #F5F6F8' }}>
+              <span style={{ fontSize: 12, color: '#AAAAAA', fontWeight: 600 }}>{row.label}</span>
+              <span style={{ fontSize: 13, fontWeight: 700, color: row.valueColor || '#1A1A1A' }}>{row.value}</span>
+            </div>
+          ))}
+        </div>
+
+        {/* 금액 */}
+        {(s.sponsorAmount > 0 || s.fee > 0 || s.expense > 0) && (
+          <div style={{ margin: '14px 20px 0', background: '#F5F6F8', borderRadius: 14, padding: 14 }}>
+            <div style={{ fontSize: 11, fontWeight: 800, color: '#AAAAAA', marginBottom: 10 }}>금액</div>
+            {s.sponsorAmount > 0 && (
+              <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 8 }}>
+                <span style={{ fontSize: 12, color: '#666' }}>협찬 금액</span>
+                <span style={{ fontSize: 13, fontWeight: 800, color: '#FF6B35' }}>+{fmt(s.sponsorAmount)}원</span>
+              </div>
+            )}
+            {s.fee > 0 && (
+              <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: s.expense > 0 ? 8 : 0 }}>
+                <span style={{ fontSize: 12, color: '#666' }}>원고료</span>
+                <span style={{ fontSize: 13, fontWeight: 800, color: '#00C471' }}>+{fmt(s.fee)}원</span>
+              </div>
+            )}
+            {s.expense > 0 && (
+              <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                <span style={{ fontSize: 12, color: '#666' }}>내가 쓴 금액</span>
+                <span style={{ fontSize: 13, fontWeight: 800, color: '#FF4040' }}>−{fmt(s.expense)}원</span>
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* 메모 */}
+        {s.memo && (
+          <div style={{ margin: '14px 20px 0' }}>
+            <div style={{ fontSize: 11, fontWeight: 800, color: '#AAAAAA', marginBottom: 8 }}>메모</div>
+            <div style={{ fontSize: 13, color: '#555', lineHeight: 1.7, background: '#F5F6F8', borderRadius: 12, padding: 14 }}>{s.memo}</div>
+          </div>
+        )}
+
+        {/* 버튼 */}
+        <div style={{ display: 'flex', gap: 8, padding: '20px 20px 0' }}>
+          {s.done ? (
+            <>
+              <button onClick={() => onUncomplete(s.id)}
+                style={{ flex: 1, padding: 13, background: '#E8F8EF', border: 'none', borderRadius: 10, fontSize: 13, fontWeight: 700, color: '#00C471', cursor: 'pointer', fontFamily: FF }}>
+                완료 취소
+              </button>
+              <button onClick={() => onDelete(s.id)}
+                style={{ flex: 1, padding: 13, background: '#FFF0EF', border: 'none', borderRadius: 10, fontSize: 13, fontWeight: 700, color: '#FF4040', cursor: 'pointer', fontFamily: FF }}>
+                삭제
+              </button>
+            </>
+          ) : (
+            <button onClick={onClose}
+              style={{ flex: 1, padding: 13, background: '#F5F6F8', border: 'none', borderRadius: 10, fontSize: 13, fontWeight: 700, color: '#666', cursor: 'pointer', fontFamily: FF }}>
+              닫기
+            </button>
+          )}
+        </div>
+      </div>
+    </div>
+  )
+}
+
+const DAY_LABELS = ['일', '월', '화', '수', '목', '금', '토']
+
 /* ─── 메인 컴포넌트 ─── */
 export default function MypagePage() {
   const router = useRouter()
-  const [user,      setUser]      = useState(null)
-  const [loading,   setLoading]   = useState(true)
-  const [tab,       setTab]       = useState('schedule')
-  const [schedules, setSchedules] = useState([])
-  const [showModal, setShowModal] = useState(false)
+  const [user,         setUser]         = useState(null)
+  const [loading,      setLoading]      = useState(true)
+  const [tab,          setTab]          = useState('schedule')
+  const [schedules,    setSchedules]    = useState([])
+  const [showModal,    setShowModal]    = useState(false)
   const [incomeOffset, setIncomeOffset] = useState(0)
+  const [detailSchedule, setDetailSchedule] = useState(null)
+  const [showDone,     setShowDone]     = useState(false)
+  const [calendarDay,  setCalendarDay]  = useState(null)
   const [form, setForm] = useState({
     title: '', deadline: '', postingType: '', site: '', siteDirect: '',
     sponsorAmount: '', fee: '', expense: '', memo: '',
@@ -193,12 +339,24 @@ export default function MypagePage() {
   const handleDelete = useCallback((id) => {
     if (!confirm('삭제할까요?')) return
     saveSchedules(schedules.filter(s => s.id !== id))
+    setDetailSchedule(d => d?.id === id ? null : d)
   }, [schedules, saveSchedules])
 
   const handleComplete = useCallback((id) => {
-    const updated = schedules.map(s => s.id === id ? { ...s, done: true } : s)
+    const updated = schedules.map(s => s.id === id ? { ...s, done: true, completedAt: new Date().toISOString() } : s)
     saveSchedules(updated)
   }, [schedules, saveSchedules])
+
+  const handleUncomplete = useCallback((id) => {
+    const updated = schedules.map(s => s.id === id ? { ...s, done: false, completedAt: undefined } : s)
+    saveSchedules(updated)
+    setDetailSchedule(null)
+  }, [schedules, saveSchedules])
+
+  const handleOffsetChange = (delta) => {
+    setIncomeOffset(o => o + delta)
+    setCalendarDay(null)
+  }
 
   if (loading) return <LoadingScreen />
 
@@ -207,6 +365,7 @@ export default function MypagePage() {
   const urgent = active.filter(s => calcDday(s.deadline) <= 1)
   const week   = active.filter(s => { const d = calcDday(s.deadline); return d > 1 && d <= 7 })
   const later  = active.filter(s => calcDday(s.deadline) > 7)
+  const done   = schedules.filter(s => s.done)
 
   /* ─ 수익 계산 ─ */
   const incomeYM     = getYM(incomeOffset)
@@ -224,6 +383,24 @@ export default function MypagePage() {
     return { label: `${Number(ym.split('-')[1])}월`, total, isThis: o === 0 }
   })
   const maxBar = Math.max(...barData.map(b => b.total), 1)
+
+  /* ─ 달력 ─ */
+  const { firstDay, daysInMonth, year: calYear, month: calMonth } = buildCalendar(incomeYM)
+  const completedByDay = {}
+  schedules.forEach(s => {
+    if (s.done && s.completedAt) {
+      const key = localDateStr(s.completedAt)
+      if (key.startsWith(incomeYM)) {
+        if (!completedByDay[key]) completedByDay[key] = []
+        completedByDay[key].push(s)
+      }
+    }
+  })
+  const calCells = []
+  for (let i = 0; i < firstDay; i++) calCells.push(null)
+  for (let d = 1; d <= daysInMonth; d++) calCells.push(d)
+  while (calCells.length % 7 !== 0) calCells.push(null)
+  const todayStr = localDateStr(new Date().toISOString())
 
   const selectStyle = { ...inputStyle, paddingRight: 28 }
   const arrowStyle  = { position: 'absolute', right: 12, top: '50%', transform: 'translateY(-30%)', borderLeft: '5px solid transparent', borderRight: '5px solid transparent', borderTop: '6px solid #BBB', pointerEvents: 'none' }
@@ -280,16 +457,38 @@ export default function MypagePage() {
             ))}
           </div>
 
-          <GroupSection label="긴급"      color="#FF4040"  items={urgent} onDelete={handleDelete} onComplete={handleComplete} />
-          <GroupSection label="이번 주"   color="#FF6B35"  items={week}   onDelete={handleDelete} onComplete={handleComplete} />
-          <GroupSection label="여유 있음"  color="#AAAAAA" items={later}  onDelete={handleDelete} onComplete={handleComplete} />
+          <GroupSection label="긴급"      color="#FF4040"  items={urgent} onDelete={handleDelete} onComplete={handleComplete} onView={s => setDetailSchedule(s)} />
+          <GroupSection label="이번 주"   color="#FF6B35"  items={week}   onDelete={handleDelete} onComplete={handleComplete} onView={s => setDetailSchedule(s)} />
+          <GroupSection label="여유 있음"  color="#AAAAAA" items={later}  onDelete={handleDelete} onComplete={handleComplete} onView={s => setDetailSchedule(s)} />
 
-          {active.length === 0 && (
+          {active.length === 0 && done.length === 0 && (
             <div style={{ textAlign: 'center', padding: '60px 20px', color: '#AAAAAA' }}>
               <p style={{ fontSize: 14, fontWeight: 700, color: '#555', marginBottom: 6 }}>등록된 스케줄이 없어요</p>
               <p style={{ fontSize: 12 }}>등록하기 버튼으로 체험단 일정을 추가해보세요</p>
             </div>
           )}
+
+          {/* 완료된 일정 */}
+          {done.length > 0 && (
+            <div style={{ padding: '20px 14px 0' }}>
+              <button onClick={() => setShowDone(v => !v)}
+                style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between', background: '#fff', border: 'none', borderRadius: 14, padding: '13px 16px', cursor: 'pointer', fontFamily: FF, boxShadow: '0 1px 4px rgba(0,0,0,.06)' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                  <div style={{ width: 8, height: 8, borderRadius: '50%', background: '#00C471' }} />
+                  <span style={{ fontSize: 12, fontWeight: 800, color: '#00C471' }}>완료된 일정</span>
+                  <span style={{ fontSize: 10, color: '#AAAAAA', background: '#F5F6F8', borderRadius: 10, padding: '2px 8px', fontWeight: 700 }}>{done.length}건</span>
+                </div>
+                <span style={{ fontSize: 14, color: '#AAAAAA', transform: showDone ? 'rotate(90deg)' : 'rotate(0deg)', transition: 'transform .2s', display: 'inline-block' }}>›</span>
+              </button>
+              {showDone && (
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 8, marginTop: 8 }}>
+                  {done.map(s => <DoneCard key={s.id} s={s} onView={s => setDetailSchedule(s)} />)}
+                </div>
+              )}
+            </div>
+          )}
+
+          <div style={{ height: 20 }} />
         </div>
       )}
 
@@ -300,15 +499,81 @@ export default function MypagePage() {
           {/* 히어로 카드 */}
           <div style={{ background: 'linear-gradient(135deg,#FF6B35 0%,#FF9550 100%)', borderRadius: 18, padding: '20px 20px 18px', margin: '14px 0 12px', color: '#fff', boxShadow: '0 6px 20px rgba(255,107,53,.3)' }}>
             <div style={{ display: 'flex', alignItems: 'center', marginBottom: 12 }}>
-              <button onClick={() => setIncomeOffset(o => o - 1)} style={{ width: 26, height: 26, borderRadius: 8, background: 'rgba(255,255,255,.2)', border: 'none', cursor: 'pointer', color: '#fff', fontSize: 13 }}>‹</button>
+              <button onClick={() => handleOffsetChange(-1)} style={{ width: 26, height: 26, borderRadius: 8, background: 'rgba(255,255,255,.2)', border: 'none', cursor: 'pointer', color: '#fff', fontSize: 13 }}>‹</button>
               <span style={{ fontSize: 14, fontWeight: 900, margin: '0 8px' }}>{ymLabel(incomeYM)}</span>
-              <button onClick={() => setIncomeOffset(o => o + 1)} style={{ width: 26, height: 26, borderRadius: 8, background: 'rgba(255,255,255,.2)', border: 'none', cursor: 'pointer', color: '#fff', fontSize: 13 }}>›</button>
+              <button onClick={() => handleOffsetChange(1)} style={{ width: 26, height: 26, borderRadius: 8, background: 'rgba(255,255,255,.2)', border: 'none', cursor: 'pointer', color: '#fff', fontSize: 13 }}>›</button>
             </div>
             <div style={{ fontSize: 34, fontWeight: 900, letterSpacing: '-1px', marginBottom: 4 }}>{fmt(totalIncome)}원</div>
             <div style={{ fontSize: 11, color: 'rgba(255,255,255,.75)', fontWeight: 600 }}>협찬 + 원고료 − 지출</div>
             <div style={{ display: 'inline-flex', alignItems: 'center', marginTop: 10, background: 'rgba(255,255,255,.2)', borderRadius: 20, padding: '4px 12px', fontSize: 11, fontWeight: 700 }}>
               {monthItems.length}건 등록
             </div>
+          </div>
+
+          {/* 완료 달력 */}
+          <div style={{ background: '#fff', borderRadius: 16, padding: 16, boxShadow: '0 1px 6px rgba(0,0,0,.06)', marginBottom: 10 }}>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 14 }}>
+              <span style={{ fontSize: 12, fontWeight: 800, color: '#666' }}>완료 달력</span>
+              {Object.keys(completedByDay).length > 0 && (
+                <span style={{ fontSize: 10, color: '#FF6B35', fontWeight: 700 }}>● {Object.keys(completedByDay).length}일 완료</span>
+              )}
+            </div>
+            {/* 요일 헤더 */}
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', marginBottom: 6 }}>
+              {DAY_LABELS.map((d, i) => (
+                <div key={d} style={{ textAlign: 'center', fontSize: 10, fontWeight: 700, color: i === 0 ? '#FF6B35' : i === 6 ? '#5B9CF6' : '#AAAAAA', paddingBottom: 4 }}>{d}</div>
+              ))}
+            </div>
+            {/* 날짜 셀 */}
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: '2px 0' }}>
+              {calCells.map((day, i) => {
+                if (!day) return <div key={`e${i}`} />
+                const dateKey = `${calYear}-${String(calMonth).padStart(2,'0')}-${String(day).padStart(2,'0')}`
+                const hasDone = !!completedByDay[dateKey]
+                const isSelected = calendarDay === dateKey
+                const isToday = dateKey === todayStr
+                const col = i % 7
+                const textColor = isSelected ? '#fff' : hasDone ? '#FF6B35' : isToday ? '#FF6B35' : col === 0 ? '#FF9090' : col === 6 ? '#9BB8FF' : '#444'
+                return (
+                  <div key={dateKey} onClick={() => hasDone && setCalendarDay(isSelected ? null : dateKey)}
+                    style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '3px 0', cursor: hasDone ? 'pointer' : 'default' }}>
+                    <div style={{
+                      width: 26, height: 26, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center',
+                      background: isSelected ? '#FF6B35' : isToday && !isSelected ? '#FFF3EE' : 'transparent',
+                      fontSize: 11, fontWeight: hasDone || isToday ? 800 : 400,
+                      color: textColor,
+                      border: isToday && !isSelected ? '1.5px solid #FF6B35' : 'none',
+                    }}>{day}</div>
+                    {hasDone && <div style={{ width: 4, height: 4, borderRadius: '50%', background: isSelected ? '#FF6B35' : '#FFB89A', marginTop: 1 }} />}
+                  </div>
+                )
+              })}
+            </div>
+
+            {/* 선택 날짜 완료 목록 */}
+            {calendarDay && completedByDay[calendarDay] && (
+              <div style={{ marginTop: 14, paddingTop: 14, borderTop: '1px solid #F5F6F8' }}>
+                <div style={{ fontSize: 11, fontWeight: 800, color: '#666', marginBottom: 8 }}>
+                  {Number(calendarDay.split('-')[2])}일 완료 체험단
+                </div>
+                {completedByDay[calendarDay].map(s => {
+                  const income = (s.sponsorAmount || 0) + (s.fee || 0)
+                  return (
+                    <div key={s.id} onClick={() => setDetailSchedule(s)}
+                      style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '9px 0', borderTop: '1px solid #F5F6F8', cursor: 'pointer' }}>
+                      <div style={{ width: 6, height: 6, borderRadius: '50%', background: '#00C471', flexShrink: 0 }} />
+                      <div style={{ flex: 1, fontSize: 13, fontWeight: 700, color: '#1A1A1A', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{s.title}</div>
+                      {income > 0 && <span style={{ fontSize: 12, fontWeight: 800, color: '#FF6B35', whiteSpace: 'nowrap' }}>+{fmt(income)}원</span>}
+                      <span style={{ fontSize: 14, color: '#CCCCCC' }}>›</span>
+                    </div>
+                  )
+                })}
+              </div>
+            )}
+
+            {Object.keys(completedByDay).length === 0 && (
+              <div style={{ textAlign: 'center', padding: '16px 0 4px', color: '#CCCCCC', fontSize: 12 }}>이달 완료한 체험단이 없어요</div>
+            )}
           </div>
 
           {/* 수익 구성 */}
@@ -355,16 +620,20 @@ export default function MypagePage() {
             {monthItems.length === 0 ? (
               <div style={{ textAlign: 'center', padding: '24px 0', color: '#AAAAAA', fontSize: 13 }}>이번 달 등록된 체험단이 없어요</div>
             ) : monthItems.map(s => (
-              <div key={s.id} style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '9px 0', borderTop: '1px solid #F5F6F8' }}>
-                <div style={{ width: 34, height: 34, borderRadius: 10, background: '#FFF3EE', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" strokeWidth="2">
-                    <path d="M20 12v10H4V12" /><path d="M22 7H2v5h20V7z" /><path d="M12 22V7" />
-                    <path d="M12 7H7.5a2.5 2.5 0 010-5C11 2 12 7 12 7z" /><path d="M12 7h4.5a2.5 2.5 0 000-5C13 2 12 7 12 7z" />
-                  </svg>
+              <div key={s.id} onClick={() => setDetailSchedule(s)}
+                style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '9px 0', borderTop: '1px solid #F5F6F8', cursor: 'pointer' }}>
+                <div style={{ width: 34, height: 34, borderRadius: 10, background: s.done ? '#E8F8EF' : '#FFF3EE', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                  {s.done
+                    ? <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00C471" strokeWidth="2.5"><polyline points="20 6 9 17 4 12" /></svg>
+                    : <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" strokeWidth="2">
+                        <path d="M20 12v10H4V12" /><path d="M22 7H2v5h20V7z" /><path d="M12 22V7" />
+                        <path d="M12 7H7.5a2.5 2.5 0 010-5C11 2 12 7 12 7z" /><path d="M12 7h4.5a2.5 2.5 0 000-5C13 2 12 7 12 7z" />
+                      </svg>
+                  }
                 </div>
                 <div style={{ flex: 1, minWidth: 0 }}>
-                  <div style={{ fontSize: 13, fontWeight: 700, color: '#1A1A1A', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{s.title}</div>
-                  <div style={{ fontSize: 10, color: '#AAAAAA', marginTop: 2 }}>{s.site || s.postingType || '체험단'}</div>
+                  <div style={{ fontSize: 13, fontWeight: 700, color: s.done ? '#AAAAAA' : '#1A1A1A', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{s.title}</div>
+                  <div style={{ fontSize: 10, color: '#AAAAAA', marginTop: 2 }}>{s.done ? '완료' : (s.site || s.postingType || '체험단')}</div>
                 </div>
                 <div style={{ fontSize: 14, fontWeight: 900, color: '#FF6B35', whiteSpace: 'nowrap' }}>+{fmt(s.sponsorAmount)}원</div>
               </div>
@@ -375,7 +644,6 @@ export default function MypagePage() {
 
       {/* 하단 내비 */}
       <div style={{ position: 'fixed', bottom: 0, left: '50%', transform: 'translateX(-50%)', width: '100%', maxWidth: 430, background: '#fff', borderTop: '1px solid #EBEBEB', display: 'flex', padding: '8px 0 20px', zIndex: 100 }}>
-        {/* 홈 */}
         <a href="/" style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3, cursor: 'pointer', padding: '4px 0', textDecoration: 'none' }}>
           <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#AAAAAA" strokeWidth="1.8">
             <path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H5a1 1 0 01-1-1V9.5z" />
@@ -383,7 +651,6 @@ export default function MypagePage() {
           </svg>
           <span style={{ fontSize: 10, fontWeight: 700, color: '#AAAAAA' }}>홈</span>
         </a>
-        {/* 협찬스케줄 / 수익 */}
         {[
           { id: 'schedule', label: '협찬스케줄' },
           { id: 'income',   label: '수익' },
@@ -400,7 +667,7 @@ export default function MypagePage() {
         ))}
       </div>
 
-      {/* 모달 */}
+      {/* 스케줄 등록 모달 */}
       {showModal && (
         <div onClick={e => { if (e.target === e.currentTarget) setShowModal(false) }}
           style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,.45)', display: 'flex', alignItems: 'flex-end', justifyContent: 'center', zIndex: 200 }}>
@@ -477,6 +744,16 @@ export default function MypagePage() {
             </div>
           </div>
         </div>
+      )}
+
+      {/* 상세 모달 */}
+      {detailSchedule && (
+        <DetailModal
+          s={detailSchedule}
+          onClose={() => setDetailSchedule(null)}
+          onUncomplete={handleUncomplete}
+          onDelete={handleDelete}
+        />
       )}
     </div>
   )
