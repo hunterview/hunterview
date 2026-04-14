@@ -835,61 +835,10 @@ async function initAuth() {
 }
 
 // ── 신청하기 버튼 클릭 ───────────────────────────────────────────
-async function handleApply(event, campaignId, title, url, platform) {
+function handleApply(event, campaignId, title, url, platform) {
   event.preventDefault();
   event.stopPropagation();
-
-  // 로딩 중이면 잠깐 대기
-  if (currentUser === undefined) {
-    setTimeout(() => handleApply(event, campaignId, title, url, platform), 500);
-    return;
-  }
-
-  // 비로그인 → 로그인 페이지로
-  if (!currentUser) {
-    window.location.href = '/login';
-    return;
-  }
-
-  // 이미 신청함 → 캠페인 페이지 열기
-  if (appliedSet.has(campaignId)) {
-    if (url) window.open(url, '_blank');
-    return;
-  }
-
-  const btn = event.currentTarget;
-  btn.disabled    = true;
-  btn.textContent = '신청 중...';
-
-  try {
-    const res = await fetch('/api/applications', {
-      method : 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body   : JSON.stringify({
-        campaign_id      : campaignId,
-        campaign_title   : title,
-        campaign_link    : url || '',
-        campaign_platform: platform || '',
-      }),
-    });
-
-    if (res.ok || res.status === 409) {
-      // 성공 or 이미 신청 → 신청완료 표시
-      appliedSet.add(campaignId);
-      btn.textContent       = '✓ 신청완료';
-      btn.style.background  = '#00C471';
-      btn.disabled          = false;
-      if (url) setTimeout(() => window.open(url, '_blank'), 300);
-    } else if (res.status === 401) {
-      window.location.href = '/login';
-    } else {
-      btn.textContent = '오류';
-      btn.disabled    = false;
-    }
-  } catch(e) {
-    btn.textContent = '오류';
-    btn.disabled    = false;
-  }
+  if (url) window.open(url, '_blank');
 }
 
 // 안전한 getElementById 헬퍼 (없는 요소 접근해도 에러 안남)
@@ -953,8 +902,8 @@ function normalizeItem(c) {
   }
   if (!c.type) c.type = ['블로그'];
 
-  // dday 계산
-  if (c.deadline && typeof c.deadline === 'string' && c.deadline.trim() && c.dday == null) {
+  // dday 계산 (항상 최신 날짜 기준으로 재계산)
+  if (c.deadline && typeof c.deadline === 'string' && c.deadline.trim()) {
     const diff = Math.ceil((new Date(c.deadline) - new Date()) / 86400000);
     c.dday = diff;
   }
@@ -1037,18 +986,39 @@ function getComp(a, t) {
   return { pct: p, cls, rate: (a / t).toFixed(1) };
 }
 
-const COUPANG_AD_HTML = `<div class="ad-card-inline">
+// ── 쿠팡 파트너스 광고 슬롯 HTML ──────────────────────────────────
+function coupangAdSlotHtml(slotIdx, keyword) {
+  const subId = keyword ? keyword.replace(/\s+/g, '_').substring(0, 50) : null;
+  return `<div class="ad-card-inline">
   <span class="ad-inline-tag">광고</span>
-  <a href="https://link.coupang.com/a/AF5506301" target="_blank" rel="noopener sponsored" class="ad-coupang-row">
-    <div class="ad-cpg-ico">🛒</div>
-    <div class="ad-cpg-body">
-      <div class="ad-cpg-title">체험단 신청 전, <strong>쿠팡</strong>에서 가격 비교하세요!</div>
-      <div class="ad-cpg-sub">로켓배송 · 무료반품 · 최저가 보장</div>
-    </div>
-    <div class="ad-cpg-btn">바로가기 →</div>
-  </a>
+  <div id="cpq-slot-${slotIdx}" class="cpq-slot" data-subid="${subId || ''}"></div>
   <p class="ad-notice-inline">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
 </div>`;
+}
+
+function initCoupangAds() {
+  var slots = document.querySelectorAll('.cpq-slot');
+  if (!slots.length) return;
+  function mountAds() {
+    slots.forEach(function(slot) {
+      if (slot.dataset.mounted) return;
+      slot.dataset.mounted = '1';
+      var subId = slot.dataset.subid || null;
+      var sc = document.createElement('script');
+      sc.textContent = 'new PartnersCoupang.G({"id":976349,"trackingCode":"AF5506301","subId":' + JSON.stringify(subId) + ',"template":"carousel","width":"728","height":"140"});';
+      slot.appendChild(sc);
+    });
+  }
+  if (window.PartnersCoupang) {
+    mountAds();
+  } else if (!window._cpqScriptAdded) {
+    window._cpqScriptAdded = true;
+    var s = document.createElement('script');
+    s.src = 'https://ads-partners.coupang.com/g.js';
+    s.onload = mountAds;
+    document.head.appendChild(s);
+  }
+}
 
 function makeCardHtml(c, i) {
   const comp = getComp(c.applied || 0, c.total || 0);
@@ -1083,9 +1053,8 @@ function makeCardHtml(c, i) {
       <div class="card-right" onclick="event.preventDefault(); event.stopPropagation()">
         <button
           class="apply-btn"
-          style="${appliedSet.has(c.id) ? 'background:#00C471' : ''}"
           onclick="event.stopPropagation();handleApply(event,'${escAttr(c.id)}','${escAttr(c.title)}','${escAttr(c.url||'')}','${escAttr(c.platform||'')}')"
-        >${appliedSet.has(c.id) ? '✓ 신청완료' : '신청하기 →'}</button>
+        >신청하기 →</button>
       </div>
     </div>
     ${compHtml}
@@ -1100,11 +1069,16 @@ function renderCards(list) {
   noRes.style.display = 'none';
   const AD_INTERVAL = 5;
   let html = '';
+  let adIdx = 0;
+  const keyword = searchTerm || (activeFilter !== '전체' ? activeFilter : null);
   list.forEach((c, i) => {
-    if (i > 0 && i % AD_INTERVAL === 0) html += COUPANG_AD_HTML;
+    if (i > 0 && i % AD_INTERVAL === 0) {
+      html += coupangAdSlotHtml(adIdx++, keyword);
+    }
     html += makeCardHtml(c, i);
   });
   grid.innerHTML = html;
+  initCoupangAds();
 }
 
 function quickSearch(keyword) {
