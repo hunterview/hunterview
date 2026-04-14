@@ -396,10 +396,19 @@ export default function MypagePage() {
       }
     }
   })
+  // 이전달 말일 / 다음달 1일 포함한 전체 셀
+  const prevMonthDays = new Date(calYear, calMonth - 1, 0).getDate()
   const calCells = []
-  for (let i = 0; i < firstDay; i++) calCells.push(null)
-  for (let d = 1; d <= daysInMonth; d++) calCells.push(d)
-  while (calCells.length % 7 !== 0) calCells.push(null)
+  for (let i = 0; i < firstDay; i++) {
+    calCells.push({ day: prevMonthDays - firstDay + 1 + i, type: 'prev' })
+  }
+  for (let d = 1; d <= daysInMonth; d++) {
+    calCells.push({ day: d, type: 'cur' })
+  }
+  let next = 1
+  while (calCells.length % 7 !== 0) {
+    calCells.push({ day: next++, type: 'next' })
+  }
   const todayStr = localDateStr(new Date().toISOString())
 
   const selectStyle = { ...inputStyle, paddingRight: 28 }
@@ -511,51 +520,78 @@ export default function MypagePage() {
           </div>
 
           {/* 완료 달력 */}
-          <div style={{ background: '#fff', borderRadius: 16, padding: 16, boxShadow: '0 1px 6px rgba(0,0,0,.06)', marginBottom: 10 }}>
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 14 }}>
-              <span style={{ fontSize: 12, fontWeight: 800, color: '#666' }}>완료 달력</span>
-              {Object.keys(completedByDay).length > 0 && (
-                <span style={{ fontSize: 10, color: '#FF6B35', fontWeight: 700 }}>● {Object.keys(completedByDay).length}일 완료</span>
-              )}
+          <div style={{ background: '#fff', borderRadius: 16, padding: '18px 16px', boxShadow: '0 1px 6px rgba(0,0,0,.06)', marginBottom: 10 }}>
+            {/* 헤더 */}
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 18 }}>
+              <span style={{ fontSize: 14, fontWeight: 900, color: '#1A1A1A' }}>{ymLabel(incomeYM)} 콜라보 내역</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#AAAAAA" strokeWidth="1.8">
+                <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" />
+              </svg>
             </div>
+
+            {/* 월 네비 */}
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 16, marginBottom: 16 }}>
+              <button onClick={() => handleOffsetChange(-1)} style={{ width: 28, height: 28, borderRadius: '50%', background: 'none', border: 'none', cursor: 'pointer', color: '#888', fontSize: 18, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FF }}>‹</button>
+              <span style={{ fontSize: 15, fontWeight: 900, color: '#1A1A1A', minWidth: 90, textAlign: 'center' }}>
+                {String(calMonth).padStart(2,'0')}월, {calYear}
+              </span>
+              <button onClick={() => handleOffsetChange(1)} style={{ width: 28, height: 28, borderRadius: '50%', background: 'none', border: 'none', cursor: 'pointer', color: '#888', fontSize: 18, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FF }}>›</button>
+            </div>
+
             {/* 요일 헤더 */}
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', marginBottom: 6 }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', marginBottom: 4 }}>
               {DAY_LABELS.map((d, i) => (
-                <div key={d} style={{ textAlign: 'center', fontSize: 10, fontWeight: 700, color: i === 0 ? '#FF6B35' : i === 6 ? '#5B9CF6' : '#AAAAAA', paddingBottom: 4 }}>{d}</div>
+                <div key={d} style={{ textAlign: 'center', fontSize: 11, fontWeight: 700, color: i === 0 ? '#FF9090' : i === 6 ? '#9BB8FF' : '#BBBBBB', padding: '4px 0 8px' }}>{d}</div>
               ))}
             </div>
+
             {/* 날짜 셀 */}
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: '2px 0' }}>
-              {calCells.map((day, i) => {
-                if (!day) return <div key={`e${i}`} />
-                const dateKey = `${calYear}-${String(calMonth).padStart(2,'0')}-${String(day).padStart(2,'0')}`
-                const hasDone = !!completedByDay[dateKey]
-                const isSelected = calendarDay === dateKey
-                const isToday = dateKey === todayStr
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)' }}>
+              {calCells.map((cell, i) => {
+                const { day, type } = cell
+                const isCur = type === 'cur'
+                const dateKey = isCur
+                  ? `${calYear}-${String(calMonth).padStart(2,'0')}-${String(day).padStart(2,'0')}`
+                  : null
+                const hasDone = isCur && !!completedByDay[dateKey]
+                const isSelected = isCur && calendarDay === dateKey
+                const isToday = isCur && dateKey === todayStr
                 const col = i % 7
-                const textColor = isSelected ? '#fff' : hasDone ? '#FF6B35' : isToday ? '#FF6B35' : col === 0 ? '#FF9090' : col === 6 ? '#9BB8FF' : '#444'
+
+                const dayColor = !isCur ? '#DDDDDD'
+                  : isToday ? '#1A1A1A'
+                  : hasDone ? '#1A1A1A'
+                  : col === 0 ? '#FFAAAA' : col === 6 ? '#AACCFF' : '#444'
+
                 const dayIncome = hasDone
                   ? completedByDay[dateKey].reduce((a, s) => a + (s.sponsorAmount || 0) + (s.fee || 0), 0)
                   : 0
-                const incomeLabel = dayIncome >= 10000
-                  ? `+${Math.floor(dayIncome / 10000)}만`
-                  : dayIncome > 0 ? `+${dayIncome}` : '✓'
+
                 return (
-                  <div key={dateKey} onClick={() => hasDone && setCalendarDay(isSelected ? null : dateKey)}
-                    style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '3px 0', cursor: hasDone ? 'pointer' : 'default' }}>
+                  <div key={i}
+                    onClick={() => hasDone && setCalendarDay(isSelected ? null : dateKey)}
+                    style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '6px 2px 10px', cursor: hasDone ? 'pointer' : 'default', minHeight: 56 }}>
+                    {/* 날짜 숫자 */}
                     <div style={{
-                      width: 26, height: 26, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center',
-                      background: isSelected ? '#FF6B35' : isToday && !isSelected ? '#FFF3EE' : 'transparent',
-                      fontSize: 11, fontWeight: hasDone || isToday ? 800 : 400,
-                      color: textColor,
+                      width: 30, height: 30, borderRadius: '50%',
+                      display: 'flex', alignItems: 'center', justifyContent: 'center',
+                      background: isSelected ? '#FF6B35' : isToday ? '#FFF3EE' : 'transparent',
                       border: isToday && !isSelected ? '1.5px solid #FF6B35' : 'none',
+                      fontSize: 13,
+                      fontWeight: hasDone || isToday ? 800 : 400,
+                      color: isSelected ? '#fff' : dayColor,
                     }}>{day}</div>
-                    {hasDone && (
+                    {/* 금액 */}
+                    {hasDone && dayIncome > 0 && (
                       <span style={{
-                        fontSize: 7, fontWeight: 800, marginTop: 1, lineHeight: 1,
-                        color: isSelected ? '#FF6B35' : '#FF9870',
+                        fontSize: 9, fontWeight: 700, marginTop: 3, lineHeight: 1.2,
+                        color: isSelected ? '#FF6B35' : '#FF8C5A',
+                        textAlign: 'center',
                         whiteSpace: 'nowrap',
-                      }}>{incomeLabel}</span>
+                      }}>+ {fmt(dayIncome)}</span>
+                    )}
+                    {hasDone && dayIncome === 0 && (
+                      <span style={{ fontSize: 9, fontWeight: 700, marginTop: 3, color: '#00C471' }}>✓</span>
                     )}
                   </div>
                 )
@@ -564,7 +600,7 @@ export default function MypagePage() {
 
             {/* 선택 날짜 완료 목록 */}
             {calendarDay && completedByDay[calendarDay] && (
-              <div style={{ marginTop: 14, paddingTop: 14, borderTop: '1px solid #F5F6F8' }}>
+              <div style={{ marginTop: 8, paddingTop: 14, borderTop: '1px solid #F5F6F8' }}>
                 <div style={{ fontSize: 11, fontWeight: 800, color: '#666', marginBottom: 8 }}>
                   {Number(calendarDay.split('-')[2])}일 완료 체험단
                 </div>
@@ -584,7 +620,7 @@ export default function MypagePage() {
             )}
 
             {Object.keys(completedByDay).length === 0 && (
-              <div style={{ textAlign: 'center', padding: '16px 0 4px', color: '#CCCCCC', fontSize: 12 }}>이달 완료한 체험단이 없어요</div>
+              <div style={{ textAlign: 'center', padding: '12px 0 4px', color: '#CCCCCC', fontSize: 12 }}>이달 완료한 체험단이 없어요</div>
             )}
           </div>
 
