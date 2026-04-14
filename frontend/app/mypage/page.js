@@ -534,6 +534,12 @@ export default function MypagePage() {
                 const isToday = dateKey === todayStr
                 const col = i % 7
                 const textColor = isSelected ? '#fff' : hasDone ? '#FF6B35' : isToday ? '#FF6B35' : col === 0 ? '#FF9090' : col === 6 ? '#9BB8FF' : '#444'
+                const dayIncome = hasDone
+                  ? completedByDay[dateKey].reduce((a, s) => a + (s.sponsorAmount || 0) + (s.fee || 0), 0)
+                  : 0
+                const incomeLabel = dayIncome >= 10000
+                  ? `+${Math.floor(dayIncome / 10000)}만`
+                  : dayIncome > 0 ? `+${dayIncome}` : '✓'
                 return (
                   <div key={dateKey} onClick={() => hasDone && setCalendarDay(isSelected ? null : dateKey)}
                     style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '3px 0', cursor: hasDone ? 'pointer' : 'default' }}>
@@ -544,7 +550,13 @@ export default function MypagePage() {
                       color: textColor,
                       border: isToday && !isSelected ? '1.5px solid #FF6B35' : 'none',
                     }}>{day}</div>
-                    {hasDone && <div style={{ width: 4, height: 4, borderRadius: '50%', background: isSelected ? '#FF6B35' : '#FFB89A', marginTop: 1 }} />}
+                    {hasDone && (
+                      <span style={{
+                        fontSize: 7, fontWeight: 800, marginTop: 1, lineHeight: 1,
+                        color: isSelected ? '#FF6B35' : '#FF9870',
+                        whiteSpace: 'nowrap',
+                      }}>{incomeLabel}</span>
+                    )}
                   </div>
                 )
               })}
