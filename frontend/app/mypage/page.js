@@ -42,18 +42,6 @@ function ymLabel(ym) {
   return `${y}년 ${Number(m)}월`
 }
 
-function localDateStr(isoStr) {
-  if (!isoStr) return ''
-  const d = new Date(isoStr)
-  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`
-}
-
-function buildCalendar(ym) {
-  const [y, m] = ym.split('-').map(Number)
-  const firstDay = new Date(y, m - 1, 1).getDay()
-  const daysInMonth = new Date(y, m, 0).getDate()
-  return { firstDay, daysInMonth, year: y, month: m }
-}
 
 const STORAGE_KEY = uid => `hunterview_schedules_${uid}`
 const FF = '-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif'
@@ -271,7 +259,6 @@ function DetailModal({ s, onClose, onUncomplete, onDelete }) {
   )
 }
 
-const DAY_LABELS = ['일', '월', '화', '수', '목', '금', '토']
 
 /* ─── 메인 컴포넌트 ─── */
 export default function MypagePage() {
@@ -284,7 +271,6 @@ export default function MypagePage() {
   const [incomeOffset, setIncomeOffset] = useState(0)
   const [detailSchedule, setDetailSchedule] = useState(null)
   const [showDone,     setShowDone]     = useState(false)
-  const [calendarDay,  setCalendarDay]  = useState(null)
   const [form, setForm] = useState({
     title: '', deadline: '', postingType: '', site: '', siteDirect: '',
     sponsorAmount: '', fee: '', expense: '', memo: '',
@@ -355,7 +341,6 @@ export default function MypagePage() {
 
   const handleOffsetChange = (delta) => {
     setIncomeOffset(o => o + delta)
-    setCalendarDay(null)
   }
 
   if (loading) return <LoadingScreen />
@@ -384,32 +369,6 @@ export default function MypagePage() {
   })
   const maxBar = Math.max(...barData.map(b => b.total), 1)
 
-  /* ─ 달력 ─ */
-  const { firstDay, daysInMonth, year: calYear, month: calMonth } = buildCalendar(incomeYM)
-  const completedByDay = {}
-  schedules.forEach(s => {
-    if (s.done && s.completedAt) {
-      const key = localDateStr(s.completedAt)
-      if (key.startsWith(incomeYM)) {
-        if (!completedByDay[key]) completedByDay[key] = []
-        completedByDay[key].push(s)
-      }
-    }
-  })
-  // 이전달 말일 / 다음달 1일 포함한 전체 셀
-  const prevMonthDays = new Date(calYear, calMonth - 1, 0).getDate()
-  const calCells = []
-  for (let i = 0; i < firstDay; i++) {
-    calCells.push({ day: prevMonthDays - firstDay + 1 + i, type: 'prev' })
-  }
-  for (let d = 1; d <= daysInMonth; d++) {
-    calCells.push({ day: d, type: 'cur' })
-  }
-  let next = 1
-  while (calCells.length % 7 !== 0) {
-    calCells.push({ day: next++, type: 'next' })
-  }
-  const todayStr = localDateStr(new Date().toISOString())
 
   const selectStyle = { ...inputStyle, paddingRight: 28 }
   const arrowStyle  = { position: 'absolute', right: 12, top: '50%', transform: 'translateY(-30%)', borderLeft: '5px solid transparent', borderRight: '5px solid transparent', borderTop: '6px solid #BBB', pointerEvents: 'none' }
@@ -517,111 +476,6 @@ export default function MypagePage() {
             <div style={{ display: 'inline-flex', alignItems: 'center', marginTop: 10, background: 'rgba(255,255,255,.2)', borderRadius: 20, padding: '4px 12px', fontSize: 11, fontWeight: 700 }}>
               {monthItems.length}건 등록
             </div>
-          </div>
-
-          {/* 완료 달력 */}
-          <div style={{ background: '#fff', borderRadius: 16, padding: '18px 16px', boxShadow: '0 1px 6px rgba(0,0,0,.06)', marginBottom: 10 }}>
-            {/* 헤더 */}
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 18 }}>
-              <span style={{ fontSize: 14, fontWeight: 900, color: '#1A1A1A' }}>{ymLabel(incomeYM)} 콜라보 내역</span>
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#AAAAAA" strokeWidth="1.8">
-                <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" />
-              </svg>
-            </div>
-
-            {/* 월 네비 */}
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 16, marginBottom: 16 }}>
-              <button onClick={() => handleOffsetChange(-1)} style={{ width: 28, height: 28, borderRadius: '50%', background: 'none', border: 'none', cursor: 'pointer', color: '#888', fontSize: 18, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FF }}>‹</button>
-              <span style={{ fontSize: 15, fontWeight: 900, color: '#1A1A1A', minWidth: 90, textAlign: 'center' }}>
-                {String(calMonth).padStart(2,'0')}월, {calYear}
-              </span>
-              <button onClick={() => handleOffsetChange(1)} style={{ width: 28, height: 28, borderRadius: '50%', background: 'none', border: 'none', cursor: 'pointer', color: '#888', fontSize: 18, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FF }}>›</button>
-            </div>
-
-            {/* 요일 헤더 */}
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', marginBottom: 4 }}>
-              {DAY_LABELS.map((d, i) => (
-                <div key={d} style={{ textAlign: 'center', fontSize: 11, fontWeight: 700, color: i === 0 ? '#FF9090' : i === 6 ? '#9BB8FF' : '#BBBBBB', padding: '4px 0 8px' }}>{d}</div>
-              ))}
-            </div>
-
-            {/* 날짜 셀 */}
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)' }}>
-              {calCells.map((cell, i) => {
-                const { day, type } = cell
-                const isCur = type === 'cur'
-                const dateKey = isCur
-                  ? `${calYear}-${String(calMonth).padStart(2,'0')}-${String(day).padStart(2,'0')}`
-                  : null
-                const hasDone = isCur && !!completedByDay[dateKey]
-                const isSelected = isCur && calendarDay === dateKey
-                const isToday = isCur && dateKey === todayStr
-                const col = i % 7
-
-                const dayColor = !isCur ? '#DDDDDD'
-                  : isToday ? '#1A1A1A'
-                  : hasDone ? '#1A1A1A'
-                  : col === 0 ? '#FFAAAA' : col === 6 ? '#AACCFF' : '#444'
-
-                const dayIncome = hasDone
-                  ? completedByDay[dateKey].reduce((a, s) => a + (s.sponsorAmount || 0) + (s.fee || 0), 0)
-                  : 0
-
-                return (
-                  <div key={i}
-                    onClick={() => hasDone && setCalendarDay(isSelected ? null : dateKey)}
-                    style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '6px 2px 10px', cursor: hasDone ? 'pointer' : 'default', minHeight: 56 }}>
-                    {/* 날짜 숫자 */}
-                    <div style={{
-                      width: 30, height: 30, borderRadius: '50%',
-                      display: 'flex', alignItems: 'center', justifyContent: 'center',
-                      background: isSelected ? '#FF6B35' : isToday ? '#FFF3EE' : 'transparent',
-                      border: isToday && !isSelected ? '1.5px solid #FF6B35' : 'none',
-                      fontSize: 13,
-                      fontWeight: hasDone || isToday ? 800 : 400,
-                      color: isSelected ? '#fff' : dayColor,
-                    }}>{day}</div>
-                    {/* 금액 */}
-                    {hasDone && dayIncome > 0 && (
-                      <span style={{
-                        fontSize: 9, fontWeight: 700, marginTop: 3, lineHeight: 1.2,
-                        color: isSelected ? '#FF6B35' : '#FF8C5A',
-                        textAlign: 'center',
-                        whiteSpace: 'nowrap',
-                      }}>+ {fmt(dayIncome)}</span>
-                    )}
-                    {hasDone && dayIncome === 0 && (
-                      <span style={{ fontSize: 9, fontWeight: 700, marginTop: 3, color: '#00C471' }}>✓</span>
-                    )}
-                  </div>
-                )
-              })}
-            </div>
-
-            {/* 선택 날짜 완료 목록 */}
-            {calendarDay && completedByDay[calendarDay] && (
-              <div style={{ marginTop: 8, paddingTop: 14, borderTop: '1px solid #F5F6F8' }}>
-                <div style={{ fontSize: 11, fontWeight: 800, color: '#666', marginBottom: 8 }}>
-                  {Number(calendarDay.split('-')[2])}일 완료 체험단
-                </div>
-                {completedByDay[calendarDay].map(s => {
-                  const income = (s.sponsorAmount || 0) + (s.fee || 0)
-                  return (
-                    <div key={s.id} onClick={() => setDetailSchedule(s)}
-                      style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '9px 0', borderTop: '1px solid #F5F6F8', cursor: 'pointer' }}>
-                      <div style={{ width: 6, height: 6, borderRadius: '50%', background: '#00C471', flexShrink: 0 }} />
-                      <div style={{ flex: 1, fontSize: 13, fontWeight: 700, color: '#1A1A1A', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{s.title}</div>
-                      {income > 0 && <span style={{ fontSize: 12, fontWeight: 800, color: '#FF6B35', whiteSpace: 'nowrap' }}>+{fmt(income)}원</span>}
-                      <span style={{ fontSize: 14, color: '#CCCCCC' }}>›</span>
-                    </div>
-                  )
-                })}
-              </div>
-            )}
-
-            {Object.keys(completedByDay).length === 0 && (
-              <div style={{ textAlign: 'center', padding: '12px 0 4px', color: '#CCCCCC', fontSize: 12 }}>이달 완료한 체험단이 없어요</div>
-            )}
           </div>
 
           {/* 수익 구성 */}
