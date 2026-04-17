@@ -377,7 +377,7 @@ footer { background: #1A1A1A; color: rgba(255,255,255,.4); text-align: center; p
   <!-- 검색 결과 (검색 후에만 표시) -->
   <div class="main" id="resultsArea" style="display:none">
     <div class="section-header">
-      <div class="section-title">"<span id="searchLabel"></span>" 검색결과 <span class="badge-count" id="cardCount">0개</span></div>
+      <div class="section-title">"<span id="searchLabel"></span>" 검색결과 <span id="platformFilterBadge" onclick="clearPlatformFilter()" style="display:none;background:#ede9fe;color:#7c3aed;border-radius:12px;padding:2px 10px;font-size:12px;font-weight:700;margin:0 4px;cursor:pointer;vertical-align:middle"></span><span class="badge-count" id="cardCount">0개</span></div>
       <select class="sort-select" onchange="sortCards(this.value)">
         <option value="latest">최신순</option>
         <option value="deadline">마감 임박순</option>
@@ -400,7 +400,7 @@ footer { background: #1A1A1A; color: rgba(255,255,255,.4); text-align: center; p
     </div>
     <div class="sites-grid">
 
-      <a class="site-card" href="https://xn--939au0g4vj8sq.net/cp/" target="_blank" rel="noopener">
+      <div class="site-card" onclick="goToPlatformSearch('강남맛집체험단')" style="cursor:pointer">
         <div class="site-card-top">
           <span class="site-dot" style="background:#ef4444"></span>
           <span class="site-name">강남맛집체험단</span>
@@ -411,10 +411,11 @@ footer { background: #1A1A1A; color: rgba(255,255,255,.4); text-align: center; p
           <span class="site-badge" id="badge-gangnam">252개 캠페인</span>
           <span class="site-badge">방문형</span>
           <span class="site-badge">블로그</span>
+          <a href="https://xn--939au0g4vj8sq.net/cp/" target="_blank" rel="noopener" onclick="event.stopPropagation()" class="site-badge site-ext-link" style="margin-left:auto;color:#666;text-decoration:none">사이트 →</a>
         </div>
-      </a>
+      </div>
 
-      <a class="site-card" href="https://pavlovu.com/review_campaign_list.php" target="_blank" rel="noopener">
+      <div class="site-card" onclick="goToPlatformSearch('파블로체험단')" style="cursor:pointer">
         <div class="site-card-top">
           <span class="site-dot" style="background:#f97316"></span>
           <span class="site-name">파블로체험단</span>
@@ -425,10 +426,11 @@ footer { background: #1A1A1A; color: rgba(255,255,255,.4); text-align: center; p
           <span class="site-badge" id="badge-pavlovu">210개 캠페인</span>
           <span class="site-badge">배송·방문</span>
           <span class="site-badge">블로그·인스타</span>
+          <a href="https://pavlovu.com/review_campaign_list.php" target="_blank" rel="noopener" onclick="event.stopPropagation()" class="site-badge site-ext-link" style="margin-left:auto;color:#666;text-decoration:none">사이트 →</a>
         </div>
-      </a>
+      </div>
 
-      <a class="site-card" href="https://modootogether.com" target="_blank" rel="noopener">
+      <div class="site-card" onclick="goToPlatformSearch('모두모여체험단')" style="cursor:pointer">
         <div class="site-card-top">
           <span class="site-dot" style="background:#10b981"></span>
           <span class="site-name">모두모여체험단</span>
@@ -439,10 +441,11 @@ footer { background: #1A1A1A; color: rgba(255,255,255,.4); text-align: center; p
           <span class="site-badge" id="badge-modoo">200개 캠페인</span>
           <span class="site-badge">기자단</span>
           <span class="site-badge">블로그</span>
+          <a href="https://modootogether.com" target="_blank" rel="noopener" onclick="event.stopPropagation()" class="site-badge site-ext-link" style="margin-left:auto;color:#666;text-decoration:none">사이트 →</a>
         </div>
-      </a>
+      </div>
 
-      <a class="site-card" href="https://4blog.net" target="_blank" rel="noopener">
+      <div class="site-card" onclick="goToPlatformSearch('포블로그')" style="cursor:pointer">
         <div class="site-card-top">
           <span class="site-dot" style="background:#8b5cf6"></span>
           <span class="site-name">포블로그</span>
@@ -453,10 +456,11 @@ footer { background: #1A1A1A; color: rgba(255,255,255,.4); text-align: center; p
           <span class="site-badge" id="badge-four">176개 캠페인</span>
           <span class="site-badge">블로그·인스타</span>
           <span class="site-badge">릴스</span>
+          <a href="https://4blog.net" target="_blank" rel="noopener" onclick="event.stopPropagation()" class="site-badge site-ext-link" style="margin-left:auto;color:#666;text-decoration:none">사이트 →</a>
         </div>
-      </a>
+      </div>
 
-      <a class="site-card" href="https://dailyview.kr" target="_blank" rel="noopener">
+      <div class="site-card" onclick="goToPlatformSearch('데일리뷰')" style="cursor:pointer">
         <div class="site-card-top">
           <span class="site-dot" style="background:#f59e0b"></span>
           <span class="site-name">데일리뷰</span>
@@ -467,10 +471,11 @@ footer { background: #1A1A1A; color: rgba(255,255,255,.4); text-align: center; p
           <span class="site-badge" id="badge-daily">72개 캠페인</span>
           <span class="site-badge">배송형</span>
           <span class="site-badge">블로그</span>
+          <a href="https://dailyview.kr" target="_blank" rel="noopener" onclick="event.stopPropagation()" class="site-badge site-ext-link" style="margin-left:auto;color:#666;text-decoration:none">사이트 →</a>
         </div>
-      </a>
+      </div>
 
-      <a class="site-card" href="https://www.ringble.co.kr" target="_blank" rel="noopener">
+      <div class="site-card" onclick="goToPlatformSearch('링블')" style="cursor:pointer">
         <div class="site-card-top">
           <span class="site-dot" style="background:#FF8C69"></span>
           <span class="site-name">링블</span>
@@ -481,10 +486,11 @@ footer { background: #1A1A1A; color: rgba(255,255,255,.4); text-align: center; p
           <span class="site-badge" id="badge-ring">36개 캠페인</span>
           <span class="site-badge">배송형</span>
           <span class="site-badge">블로그</span>
+          <a href="https://www.ringble.co.kr" target="_blank" rel="noopener" onclick="event.stopPropagation()" class="site-badge site-ext-link" style="margin-left:auto;color:#666;text-decoration:none">사이트 →</a>
         </div>
-      </a>
+      </div>
 
-      <a class="site-card" href="https://bloglab.kr" target="_blank" rel="noopener">
+      <div class="site-card" onclick="goToPlatformSearch('블로그랩')" style="cursor:pointer">
         <div class="site-card-top">
           <span class="site-dot" style="background:#06b6d4"></span>
           <span class="site-name">블로그랩</span>
@@ -495,10 +501,11 @@ footer { background: #1A1A1A; color: rgba(255,255,255,.4); text-align: center; p
           <span class="site-badge" id="badge-bloglab">33개 캠페인</span>
           <span class="site-badge">방문·배송</span>
           <span class="site-badge">블로그</span>
+          <a href="https://bloglab.kr" target="_blank" rel="noopener" onclick="event.stopPropagation()" class="site-badge site-ext-link" style="margin-left:auto;color:#666;text-decoration:none">사이트 →</a>
         </div>
-      </a>
+      </div>
 
-      <a class="site-card" href="https://www.cometoplay.kr" target="_blank" rel="noopener">
+      <div class="site-card" onclick="goToPlatformSearch('놀러와체험단')" style="cursor:pointer">
         <div class="site-card-top">
           <span class="site-dot" style="background:#0066FF"></span>
           <span class="site-name">놀러와체험단</span>
@@ -509,10 +516,11 @@ footer { background: #1A1A1A; color: rgba(255,255,255,.4); text-align: center; p
           <span class="site-badge" id="badge-nollawa">32개 캠페인</span>
           <span class="site-badge">방문형</span>
           <span class="site-badge">블로그</span>
+          <a href="https://www.cometoplay.kr" target="_blank" rel="noopener" onclick="event.stopPropagation()" class="site-badge site-ext-link" style="margin-left:auto;color:#666;text-decoration:none">사이트 →</a>
         </div>
-      </a>
+      </div>
 
-      <a class="site-card" href="https://reviewplace.co.kr/pr/" target="_blank" rel="noopener">
+      <div class="site-card" onclick="goToPlatformSearch('리뷰플레이스')" style="cursor:pointer">
         <div class="site-card-top">
           <span class="site-dot" style="background:#00C471"></span>
           <span class="site-name">리뷰플레이스</span>
@@ -523,10 +531,11 @@ footer { background: #1A1A1A; color: rgba(255,255,255,.4); text-align: center; p
           <span class="site-badge" id="badge-reviewplace">30개 캠페인</span>
           <span class="site-badge">배송형</span>
           <span class="site-badge">쇼핑몰 리뷰</span>
+          <a href="https://reviewplace.co.kr/pr/" target="_blank" rel="noopener" onclick="event.stopPropagation()" class="site-badge site-ext-link" style="margin-left:auto;color:#666;text-decoration:none">사이트 →</a>
         </div>
-      </a>
+      </div>
 
-      <a class="site-card" href="https://pimble.co.kr" target="_blank" rel="noopener">
+      <div class="site-card" onclick="goToPlatformSearch('핌블')" style="cursor:pointer">
         <div class="site-card-top">
           <span class="site-dot" style="background:#ec4899"></span>
           <span class="site-name">핌블</span>
@@ -537,10 +546,11 @@ footer { background: #1A1A1A; color: rgba(255,255,255,.4); text-align: center; p
           <span class="site-badge" id="badge-pimble">23개 캠페인</span>
           <span class="site-badge">배송형</span>
           <span class="site-badge">블로그·인스타</span>
+          <a href="https://pimble.co.kr" target="_blank" rel="noopener" onclick="event.stopPropagation()" class="site-badge site-ext-link" style="margin-left:auto;color:#666;text-decoration:none">사이트 →</a>
         </div>
-      </a>
+      </div>
 
-      <a class="site-card" href="https://popomon.com" target="_blank" rel="noopener">
+      <div class="site-card" onclick="goToPlatformSearch('포포몬')" style="cursor:pointer">
         <div class="site-card-top">
           <span class="site-dot" style="background:#7c3aed"></span>
           <span class="site-name">포포몬</span>
@@ -551,8 +561,9 @@ footer { background: #1A1A1A; color: rgba(255,255,255,.4); text-align: center; p
           <span class="site-badge" id="badge-popomon">411개 캠페인</span>
           <span class="site-badge">배송형</span>
           <span class="site-badge">블로그·인스타</span>
+          <a href="https://popomon.com/next/campaign" target="_blank" rel="noopener" onclick="event.stopPropagation()" class="site-badge site-ext-link" style="margin-left:auto;color:#666;text-decoration:none">사이트 →</a>
         </div>
-      </a>
+      </div>
 
     </div>
   </div>
@@ -589,12 +600,25 @@ function goHome() {
   document.getElementById('searchInput').value = '';
   searchTerm = '';
   activeFilter = '전체';
+  platformFilter = '';
   document.querySelectorAll('.filter-tag').forEach(b => b.classList.remove('active'));
   const firstTag = document.querySelector('.filter-tag');
   if (firstTag) firstTag.classList.add('active');
   document.getElementById('searchGuide').style.display = '';
   document.getElementById('resultsArea').style.display = 'none';
   showPage('search');
+}
+
+// 사이트 탭에서 플랫폼 카드 클릭 → 헌터뷰 내 해당 플랫폼 결과만 표시
+function goToPlatformSearch(name) {
+  platformFilter = name;
+  showPage('search');
+  filterCards();
+}
+
+function clearPlatformFilter() {
+  platformFilter = '';
+  filterCards();
 }
 
 
@@ -613,6 +637,7 @@ const SAMPLE_DATA = [
 let campaigns = [];
 let activeFilter = '전체';
 let searchTerm = '';
+let platformFilter = ''; // 사이트 탭에서 플랫폼 클릭 시 설정
 let dataLoaded = false;
 
 // ── 로그인 / 신청 상태 ──────────────────────────────────────────
@@ -939,17 +964,34 @@ function filterCards() {
   const guide = document.getElementById('searchGuide');
   const resultsArea = document.getElementById('resultsArea');
 
-  // 검색어 없으면 안내 화면 표시
-  if (!searchTerm && activeFilter === '전체') {
+  // 검색어·플랫폼필터 모두 없으면 안내 화면 표시
+  if (!searchTerm && activeFilter === '전체' && !platformFilter) {
     guide.style.display = '';
     resultsArea.style.display = 'none';
     return;
   }
 
-  // 검색어 있으면 결과 표시
+  // 결과 표시
   guide.style.display = 'none';
   resultsArea.style.display = '';
-  document.getElementById('searchLabel').textContent = searchTerm || activeFilter;
+
+  // 검색 레이블
+  if (platformFilter && searchTerm) {
+    document.getElementById('searchLabel').textContent = searchTerm;
+  } else if (platformFilter) {
+    document.getElementById('searchLabel').textContent = platformFilter;
+  } else {
+    document.getElementById('searchLabel').textContent = searchTerm || activeFilter;
+  }
+
+  // 플랫폼 필터 배지
+  const pfBadge = document.getElementById('platformFilterBadge');
+  if (platformFilter) {
+    pfBadge.style.display = '';
+    pfBadge.textContent = platformFilter + '만 ×';
+  } else {
+    pfBadge.style.display = 'none';
+  }
 
   const filtered = campaigns.filter(c => {
     // 마감된 캠페인 제외
@@ -960,7 +1002,8 @@ function filterCards() {
                (c.location || '').includes(activeFilter);
     const fullText = (c.title + ' ' + (c.tags||[]).join(' ') + ' ' + (c.location||'') + ' ' + (c.benefit||'')).toLowerCase();
     const ms = !searchTerm || fullText.includes(searchTerm);
-    return mt && ms;
+    const mp = !platformFilter || (c.platform || '') === platformFilter;
+    return mt && ms && mp;
   });
   renderCards(filtered);
 }
@@ -982,7 +1025,8 @@ function sortCards(by) {
     if (c.dday !== undefined && c.dday !== null && c.dday < 0) return false;
     const mt = activeFilter === '전체' || (c.type||[]).some(t=>t.includes(activeFilter)) || (c.tags||[]).some(t=>t.includes(activeFilter));
     const ms = !searchTerm || c.title.toLowerCase().includes(searchTerm) || (c.tags||[]).some(t=>t.includes(searchTerm));
-    return mt && ms;
+    const mp = !platformFilter || (c.platform || '') === platformFilter;
+    return mt && ms && mp;
   });
   if (by === 'deadline') list.sort((a, b) => (a.dday ?? 999) - (b.dday ?? 999));
   else if (by === 'reward') list.sort((a, b) => (b.rewardNum || 0) - (a.rewardNum || 0));
