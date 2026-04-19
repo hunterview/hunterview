@@ -609,8 +609,47 @@ function goHome() {
   showPage('search');
 }
 
-// 사이트 탭에서 플랫폼 카드 클릭 → 헌터뷰 내 해당 플랫폼 결과만 표시
+// 플랫폼별 외부 검색 URL 패턴
+const PLATFORM_SEARCH_URL = {
+  '포포몬'      : kw => `https://popomon.com/next/search/result?keyword=${encodeURIComponent(kw)}`,
+  '파블로체험단' : kw => `https://pavlovu.com/review_campaign_list.php?keyword=${encodeURIComponent(kw)}`,
+  '모두모여체험단': kw => `https://modootogether.com/search?keyword=${encodeURIComponent(kw)}`,
+  '포블로그'    : kw => `https://4blog.net/board/list.html?search=${encodeURIComponent(kw)}`,
+  '데일리뷰'    : kw => `https://dailyview.kr/pr/?keyword=${encodeURIComponent(kw)}`,
+  '링블'        : kw => `https://www.ringble.co.kr/search?keyword=${encodeURIComponent(kw)}`,
+  '블로그랩'    : kw => `https://bloglab.kr/?s=${encodeURIComponent(kw)}`,
+  '놀러와체험단' : kw => `https://www.cometoplay.kr/search?keyword=${encodeURIComponent(kw)}`,
+  '리뷰플레이스' : kw => `https://reviewplace.co.kr/pr/?keyword=${encodeURIComponent(kw)}`,
+  '핌블'        : kw => `https://pimble.co.kr/search?keyword=${encodeURIComponent(kw)}`,
+  '강남맛집체험단': kw => `https://xn--939au0g4vj8sq.net/cp/?keyword=${encodeURIComponent(kw)}`,
+};
+
+// 플랫폼 기본 URL (검색어 없을 때)
+const PLATFORM_BASE_URL = {
+  '포포몬'      : 'https://popomon.com/next/campaign',
+  '파블로체험단' : 'https://pavlovu.com/review_campaign_list.php',
+  '모두모여체험단': 'https://modootogether.com',
+  '포블로그'    : 'https://4blog.net',
+  '데일리뷰'    : 'https://dailyview.kr',
+  '링블'        : 'https://www.ringble.co.kr',
+  '블로그랩'    : 'https://bloglab.kr',
+  '놀러와체험단' : 'https://www.cometoplay.kr',
+  '리뷰플레이스' : 'https://reviewplace.co.kr/pr/',
+  '핌블'        : 'https://pimble.co.kr',
+  '강남맛집체험단': 'https://xn--939au0g4vj8sq.net/cp/',
+};
+
+// 사이트 탭에서 플랫폼 카드 클릭
+// - 검색어 있으면 해당 플랫폼 사이트의 검색 결과로 이동 (새 탭)
+// - 헌터뷰 내에서도 해당 플랫폼 결과 필터링
 function goToPlatformSearch(name) {
+  const kw = searchTerm || document.getElementById('searchInput').value.trim();
+  const urlBuilder = PLATFORM_SEARCH_URL[name];
+  const baseUrl    = PLATFORM_BASE_URL[name];
+  const target = (kw && urlBuilder) ? urlBuilder(kw) : baseUrl;
+  if (target) window.open(target, '_blank');
+
+  // 헌터뷰 내 플랫폼 필터도 적용
   platformFilter = name;
   showPage('search');
   filterCards();
