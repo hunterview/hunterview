@@ -45,11 +45,11 @@ module.exports = async function crawlGugudas() {
         timeout: 15000,
       });
 
-      // 응답 검증
-      if (!res || res.result !== 'Y') break;
+      // 응답 검증 (API는 result 필드 없이 tagId/page/list/type 반환)
+      if (!res || !Array.isArray(res.list)) break;
 
       const items = res.list;
-      if (!Array.isArray(items) || items.length === 0) break;
+      if (items.length === 0) break;
 
       let added = 0;
       for (const c of items) {
@@ -69,8 +69,9 @@ module.exports = async function crawlGugudas() {
           ? (imgPath.startsWith('http') ? imgPath : `${IMG_CDN}/${imgPath.replace(/^\//, '')}`)
           : '';
 
-        // 마감일 파싱 (recrtEnDyTxt: "2026.04.30" 형태 또는 "D-7")
-        const dday = parseDday(c.recrtEnDyTxt || c.RECRT_EN_DY_TXT || '');
+        // 마감일 파싱
+        // recrtEnDy: "20260426" (YYYYMMDD), recrtEnDyTxt: "6일 남음"
+        const dday = parseDday(c.recrtEnDy || '', c.recrtEnDyTxt || '');
 
         // 혜택
         const benefit = (c.oferBrekdn || c.OFER_BREKDN || '').trim();
@@ -78,8 +79,8 @@ module.exports = async function crawlGugudas() {
         // 금액
         const rewardNum = parseAmount(c.realAmtTxt || c.REAL_AMT_TXT || '');
 
-        // 타입 (subChnnlNm: "인스타그램", "블로그", "유튜브" 등)
-        const chnnl = (c.subChnnlNm || c.SUB_CHNNL_NM || '').toLowerCase();
+        // 타입 (chnnlNm: "스마트스토어", "인스타그램", "블로그" 등)
+        const chnnl = ((c.chnnlNm || c.subChnnlNm || '')).toLowerCase();
         const type  = inferTypes(chnnl, title);
 
         // 신청/모집
@@ -110,9 +111,8 @@ module.exports = async function crawlGugudas() {
 
       if (added === 0 && page > 1) break;
 
-      // 더 이상 페이지가 없는 경우 (총 페이지 정보)
-      const totalPage = parseInt(res.page || '0');
-      if (totalPage > 0 && page >= totalPage) break;
+      // 마지막 페이지: 반환 항목이 PAGE_SIZE 미만이면 종료
+      if (items.length < PAGE_SIZE) break;
 
       await sleep(400);
     } catch (err) {
@@ -126,28 +126,27 @@ module.exports = async function crawlGugudas() {
 
 /**
  * 마감일 → D-day 정수
- * 입력: "2026.04.30", "D-7", "07", "2026-04-30" 등
+ * @param {string} enDy   - "20260426" (YYYYMMDD) 형식
+ * @param {string} enTxt  - "6일 남음" | "오늘마감" | "마감" 형식
  */
-function parseDday(raw) {
-  if (!raw) return 30;
-
-  const s = raw.trim();
-
-  // D-N 형태
-  const dm = s.match(/D[-]?(\d+)/i);
-  if (dm) return parseInt(dm[1]);
-
-  // YYYY.MM.DD 또는 YYYY-MM-DD
-  const dm2 = s.match(/(\d{4})[.\-](\d{1,2})[.\-](\d{1,2})/);
-  if (dm2) {
-    const end  = new Date(`${dm2[1]}-${dm2[2].padStart(2,'0')}-${dm2[3].padStart(2,'0')}`);
-    const now  = new Date();
+function parseDday(enDy, enTxt) {
+  // YYYYMMDD 형식 우선 처리
+  if (enDy && /^\d{8}$/.test(enDy.trim())) {
+    const s = enDy.trim();
+    const dateStr = `${s.slice(0,4)}-${s.slice(4,6)}-${s.slice(6,8)}`;
+    const end = new Date(dateStr + 'T23:59:59+09:00');
+    const now = new Date();
     return Math.ceil((end - now) / (1000 * 60 * 60 * 24));
   }
 
-  // 순수 숫자 (일수로 간주)
-  const dn = s.match(/^(\d+)$/);
-  if (dn) return parseInt(dn[1]);
+  // "N일 남음" 텍스트 파싱
+  if (enTxt) {
+    const t = enTxt.trim();
+    if (/마감/.test(t) && !/남음/.test(t)) return -1;
+    if (/오늘/.test(t)) return 0;
+    const m = t.match(/(\d+)일\s*남음/);
+    if (m) return parseInt(m[1]);
+  }
 
   return 30;
 }
