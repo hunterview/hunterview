@@ -565,6 +565,21 @@ footer { background: #1A1A1A; color: rgba(255,255,255,.4); text-align: center; p
         </div>
       </div>
 
+      <div class="site-card" onclick="goToPlatformSearch('구구다스')" style="cursor:pointer">
+        <div class="site-card-top">
+          <span class="site-dot" style="background:#f97316"></span>
+          <span class="site-name">구구다스</span>
+          <span class="site-url">99das.com</span>
+        </div>
+        <div class="site-desc">블로그·인스타·유튜브 다채널 체험단 플랫폼</div>
+        <div class="site-badge-row">
+          <span class="site-badge" id="badge-gugudas">캠페인 수집중</span>
+          <span class="site-badge">배송형</span>
+          <span class="site-badge">블로그·인스타</span>
+          <a href="https://99das.com/amz/cmpn/amzCmpnList.do" target="_blank" rel="noopener" onclick="event.stopPropagation()" class="site-badge site-ext-link" style="margin-left:auto;color:#666;text-decoration:none">사이트 →</a>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
@@ -622,6 +637,7 @@ const PLATFORM_SEARCH_URL = {
   '리뷰플레이스' : kw => `https://reviewplace.co.kr/pr/?keyword=${encodeURIComponent(kw)}`,
   '핌블'        : kw => `https://pimble.co.kr/search?keyword=${encodeURIComponent(kw)}`,
   '강남맛집체험단': kw => `https://xn--939au0g4vj8sq.net/cp/?keyword=${encodeURIComponent(kw)}`,
+  '구구다스'      : kw => `https://99das.com/amz/cmpn/amzCmpnList.do?srchKwd=${encodeURIComponent(kw)}`,
 };
 
 // 플랫폼 기본 URL (검색어 없을 때)
@@ -637,6 +653,7 @@ const PLATFORM_BASE_URL = {
   '리뷰플레이스' : 'https://reviewplace.co.kr/pr/',
   '핌블'        : 'https://pimble.co.kr',
   '강남맛집체험단': 'https://xn--939au0g4vj8sq.net/cp/',
+  '구구다스'      : 'https://99das.com/amz/cmpn/amzCmpnList.do',
 };
 
 // 사이트 탭에서 플랫폼 카드 클릭
@@ -864,6 +881,7 @@ function normalizeItem(c) {
       '블로그랩':'d-cyan','핌블':'d-pink',
       '데일리뷰':'d-amber','놀러와체험단':'d-blue','링블':'d-coral','리뷰플레이스':'d-green',
       '포포몬':'d-violet',
+      '구구다스':'d-orange',
     };
     c.dot = dotMap[c.platform] || 'd-orange';
   }

@@ -18,6 +18,7 @@ const crawlPopomon       = require('./sites/popomon');
 const crawlSeoulouba     = require('./sites/seoulouba');
 const crawlGaboja        = require('./sites/gaboja');
 const crawlStylec        = require('./sites/stylec');
+const crawlGugudas       = require('./sites/gugudas');
 
 // public/data.json → Vercel 정적 파일로 /data.json 서빙 + API routes도 여기서 읽음
 const OUTPUT_PATH = path.join(__dirname, '..', 'frontend', 'public', 'data.json');
@@ -43,6 +44,7 @@ async function main() {
     runCrawler('서울오빠',      crawlSeoulouba),
     runCrawler('가보자',        crawlGaboja),
     runCrawler('스타일씨',      crawlStylec),
+    runCrawler('구구다스',      crawlGugudas),
   ]);
 
   const allCampaigns = [];
