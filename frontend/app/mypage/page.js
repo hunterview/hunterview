@@ -42,8 +42,25 @@ function ymLabel(ym) {
   return `${y}년 ${Number(m)}월`
 }
 
+// DB row(snake_case) → JS 객체(camelCase)
+function rowToSchedule(row) {
+  return {
+    id           : row.id,
+    title        : row.title,
+    deadline     : row.deadline     || '',
+    postingType  : row.posting_type || '',
+    site         : row.site         || '',
+    sponsorAmount: row.sponsor_amount || 0,
+    fee          : row.fee          || 0,
+    expense      : row.expense      || 0,
+    memo         : row.memo         || '',
+    month        : row.month        || '',
+    done         : row.done         || false,
+    completedAt  : row.completed_at || null,
+    createdAt    : row.created_at   || null,
+  }
+}
 
-const STORAGE_KEY = uid => `hunterview_schedules_${uid}`
 const FF = '-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif'
 const inputStyle = {
   width: '100%', padding: '11px 14px',
@@ -176,11 +193,9 @@ function DetailModal({ s, onClose, onUncomplete, onDelete }) {
     <div onClick={e => { if (e.target === e.currentTarget) onClose() }}
       style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,.45)', display: 'flex', alignItems: 'flex-end', justifyContent: 'center', zIndex: 300 }}>
       <div style={{ background: '#fff', borderRadius: '24px 24px 0 0', width: '100%', maxWidth: 430, maxHeight: '88vh', overflowY: 'auto', paddingBottom: 44 }}>
-        {/* 핸들 */}
         <div style={{ display: 'flex', justifyContent: 'center', padding: '10px 0 2px' }}>
           <span style={{ width: 36, height: 4, background: '#E0E0E0', borderRadius: 2, display: 'block' }} />
         </div>
-        {/* 헤더 */}
         <div style={{ padding: '10px 20px 14px', display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', borderBottom: '1px solid #F5F6F8', gap: 10 }}>
           <div>
             {s.done && (
@@ -191,7 +206,6 @@ function DetailModal({ s, onClose, onUncomplete, onDelete }) {
           <button onClick={onClose} style={{ width: 28, height: 28, borderRadius: '50%', background: '#F5F6F8', border: 'none', cursor: 'pointer', fontSize: 13, color: '#666', fontFamily: FF, flexShrink: 0 }}>✕</button>
         </div>
 
-        {/* 정보 */}
         <div style={{ padding: '4px 20px 0' }}>
           {infoRows.map(row => (
             <div key={row.label} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '11px 0', borderBottom: '1px solid #F5F6F8' }}>
@@ -201,7 +215,6 @@ function DetailModal({ s, onClose, onUncomplete, onDelete }) {
           ))}
         </div>
 
-        {/* 금액 */}
         {(s.sponsorAmount > 0 || s.fee > 0 || s.expense > 0) && (
           <div style={{ margin: '14px 20px 0', background: '#F5F6F8', borderRadius: 14, padding: 14 }}>
             <div style={{ fontSize: 11, fontWeight: 800, color: '#AAAAAA', marginBottom: 10 }}>금액</div>
@@ -226,7 +239,6 @@ function DetailModal({ s, onClose, onUncomplete, onDelete }) {
           </div>
         )}
 
-        {/* 메모 */}
         {s.memo && (
           <div style={{ margin: '14px 20px 0' }}>
             <div style={{ fontSize: 11, fontWeight: 800, color: '#AAAAAA', marginBottom: 8 }}>메모</div>
@@ -234,7 +246,6 @@ function DetailModal({ s, onClose, onUncomplete, onDelete }) {
           </div>
         )}
 
-        {/* 버튼 */}
         <div style={{ display: 'flex', gap: 8, padding: '20px 20px 0' }}>
           {s.done ? (
             <>
@@ -263,85 +274,100 @@ function DetailModal({ s, onClose, onUncomplete, onDelete }) {
 /* ─── 메인 컴포넌트 ─── */
 export default function MypagePage() {
   const router = useRouter()
-  const [user,         setUser]         = useState(null)
-  const [loading,      setLoading]      = useState(true)
-  const [tab,          setTab]          = useState('schedule')
-  const [schedules,    setSchedules]    = useState([])
-  const [showModal,    setShowModal]    = useState(false)
-  const [incomeOffset, setIncomeOffset] = useState(0)
+  const supabase = createClient()
+
+  const [user,           setUser]           = useState(null)
+  const [loading,        setLoading]        = useState(true)
+  const [saving,         setSaving]         = useState(false)
+  const [tab,            setTab]            = useState('schedule')
+  const [schedules,      setSchedules]      = useState([])
+  const [showModal,      setShowModal]      = useState(false)
+  const [incomeOffset,   setIncomeOffset]   = useState(0)
   const [detailSchedule, setDetailSchedule] = useState(null)
-  const [showDone,     setShowDone]     = useState(false)
+  const [showDone,       setShowDone]       = useState(false)
   const [form, setForm] = useState({
     title: '', deadline: '', postingType: '', site: '', siteDirect: '',
     sponsorAmount: '', fee: '', expense: '', memo: '',
   })
 
+  // ── 초기 로드 ──────────────────────────────────────────────
   useEffect(() => {
     const init = async () => {
-      const supabase = createClient()
       const { data: { user } } = await supabase.auth.getUser()
       if (!user) { router.replace('/login?next=/mypage'); return }
       setUser(user)
-      try {
-        const stored = localStorage.getItem(STORAGE_KEY(user.id))
-        if (stored) setSchedules(JSON.parse(stored))
-      } catch {}
+
+      const { data, error } = await supabase
+        .from('schedules')
+        .select('*')
+        .eq('user_id', user.id)
+        .order('created_at', { ascending: false })
+
+      if (!error && data) {
+        setSchedules(data.map(rowToSchedule))
+      }
       setLoading(false)
     }
     init()
-  }, [router])
-
-  const saveSchedules = useCallback((list) => {
-    setSchedules(list)
-    if (user) localStorage.setItem(STORAGE_KEY(user.id), JSON.stringify(list))
-  }, [user])
+  }, []) // eslint-disable-line
 
   const handleLogout = async () => {
-    const supabase = createClient()
     await supabase.auth.signOut()
     router.replace('/')
   }
 
-  const handleAdd = () => {
+  // ── 등록 ───────────────────────────────────────────────────
+  const handleAdd = async () => {
     if (!form.title || !form.deadline) { alert('제목과 마감일은 필수입니다.'); return }
+    setSaving(true)
     const site = form.site === '__direct__' ? form.siteDirect.trim() : form.site
-    saveSchedules([{
-      id: Date.now().toString(),
-      title: form.title,
-      deadline: form.deadline,
-      postingType: form.postingType,
+    const newItem = {
+      id            : Date.now().toString(),
+      user_id       : user.id,
+      title         : form.title,
+      deadline      : form.deadline,
+      posting_type  : form.postingType,
       site,
-      sponsorAmount: Number(form.sponsorAmount) || 0,
-      fee: Number(form.fee) || 0,
-      expense: Number(form.expense) || 0,
-      memo: form.memo,
-      month: form.deadline.slice(0, 7),
-      createdAt: new Date().toISOString(),
-    }, ...schedules])
+      sponsor_amount: Number(form.sponsorAmount) || 0,
+      fee           : Number(form.fee) || 0,
+      expense       : Number(form.expense) || 0,
+      memo          : form.memo,
+      month         : form.deadline.slice(0, 7),
+      done          : false,
+      completed_at  : null,
+    }
+    const { data, error } = await supabase.from('schedules').insert(newItem).select().single()
+    if (!error && data) {
+      setSchedules(prev => [rowToSchedule(data), ...prev])
+    }
+    setSaving(false)
     setShowModal(false)
     setForm({ title: '', deadline: '', postingType: '', site: '', siteDirect: '', sponsorAmount: '', fee: '', expense: '', memo: '' })
   }
 
-  const handleDelete = useCallback((id) => {
+  // ── 삭제 ───────────────────────────────────────────────────
+  const handleDelete = useCallback(async (id) => {
     if (!confirm('삭제할까요?')) return
-    saveSchedules(schedules.filter(s => s.id !== id))
+    await supabase.from('schedules').delete().eq('id', id)
+    setSchedules(prev => prev.filter(s => s.id !== id))
     setDetailSchedule(d => d?.id === id ? null : d)
-  }, [schedules, saveSchedules])
+  }, [supabase])
 
-  const handleComplete = useCallback((id) => {
-    const updated = schedules.map(s => s.id === id ? { ...s, done: true, completedAt: new Date().toISOString() } : s)
-    saveSchedules(updated)
-  }, [schedules, saveSchedules])
+  // ── 완료 처리 ──────────────────────────────────────────────
+  const handleComplete = useCallback(async (id) => {
+    const completedAt = new Date().toISOString()
+    await supabase.from('schedules').update({ done: true, completed_at: completedAt }).eq('id', id)
+    setSchedules(prev => prev.map(s => s.id === id ? { ...s, done: true, completedAt } : s))
+  }, [supabase])
 
-  const handleUncomplete = useCallback((id) => {
-    const updated = schedules.map(s => s.id === id ? { ...s, done: false, completedAt: undefined } : s)
-    saveSchedules(updated)
+  // ── 완료 취소 ──────────────────────────────────────────────
+  const handleUncomplete = useCallback(async (id) => {
+    await supabase.from('schedules').update({ done: false, completed_at: null }).eq('id', id)
+    setSchedules(prev => prev.map(s => s.id === id ? { ...s, done: false, completedAt: null } : s))
     setDetailSchedule(null)
-  }, [schedules, saveSchedules])
+  }, [supabase])
 
-  const handleOffsetChange = (delta) => {
-    setIncomeOffset(o => o + delta)
-  }
+  const handleOffsetChange = (delta) => setIncomeOffset(o => o + delta)
 
   if (loading) return <LoadingScreen />
 
@@ -368,7 +394,6 @@ export default function MypagePage() {
     return { label: `${Number(ym.split('-')[1])}월`, total, isThis: o === 0 }
   })
   const maxBar = Math.max(...barData.map(b => b.total), 1)
-
 
   const selectStyle = { ...inputStyle, paddingRight: 28 }
   const arrowStyle  = { position: 'absolute', right: 12, top: '50%', transform: 'translateY(-30%)', borderLeft: '5px solid transparent', borderRight: '5px solid transparent', borderTop: '6px solid #BBB', pointerEvents: 'none' }
@@ -436,7 +461,6 @@ export default function MypagePage() {
             </div>
           )}
 
-          {/* 완료된 일정 */}
           {done.length > 0 && (
             <div style={{ padding: '20px 14px 0' }}>
               <button onClick={() => setShowDone(v => !v)}
@@ -463,8 +487,6 @@ export default function MypagePage() {
       {/* ══ 수익 탭 ══ */}
       {tab === 'income' && (
         <div style={{ padding: '0 14px 100px' }}>
-
-          {/* 히어로 카드 */}
           <div style={{ background: 'linear-gradient(135deg,#FF6B35 0%,#FF9550 100%)', borderRadius: 18, padding: '20px 20px 18px', margin: '14px 0 12px', color: '#fff', boxShadow: '0 6px 20px rgba(255,107,53,.3)' }}>
             <div style={{ display: 'flex', alignItems: 'center', marginBottom: 12 }}>
               <button onClick={() => handleOffsetChange(-1)} style={{ width: 26, height: 26, borderRadius: 8, background: 'rgba(255,255,255,.2)', border: 'none', cursor: 'pointer', color: '#fff', fontSize: 13 }}>‹</button>
@@ -478,7 +500,6 @@ export default function MypagePage() {
             </div>
           </div>
 
-          {/* 수익 구성 */}
           <div style={{ background: '#fff', borderRadius: 16, padding: 16, boxShadow: '0 1px 6px rgba(0,0,0,.06)', marginBottom: 10 }}>
             <div style={{ fontSize: 12, fontWeight: 800, color: '#666', marginBottom: 14 }}>수익 구성</div>
             {[
@@ -501,7 +522,6 @@ export default function MypagePage() {
             ))}
           </div>
 
-          {/* 월별 바 차트 */}
           <div style={{ background: '#fff', borderRadius: 16, padding: 16, boxShadow: '0 1px 6px rgba(0,0,0,.06)', marginBottom: 10 }}>
             <div style={{ fontSize: 12, fontWeight: 800, color: '#666', marginBottom: 16 }}>월별 수익 추이</div>
             <div style={{ display: 'flex', alignItems: 'flex-end', gap: 6, height: 80 }}>
@@ -516,7 +536,6 @@ export default function MypagePage() {
             <div style={{ textAlign: 'center', fontSize: 9, color: '#AAAAAA', marginTop: 6 }}>단위: 만원</div>
           </div>
 
-          {/* 내역 */}
           <div style={{ background: '#fff', borderRadius: 16, padding: 16, boxShadow: '0 1px 6px rgba(0,0,0,.06)' }}>
             <div style={{ fontSize: 13, fontWeight: 900, marginBottom: 14 }}>{ymLabel(incomeYM)} 내역</div>
             {monthItems.length === 0 ? (
@@ -605,7 +624,7 @@ export default function MypagePage() {
                   <div style={{ position: 'relative' }}>
                     <select value={form.site} onChange={e => setForm(f => ({ ...f, site: e.target.value, siteDirect: '' }))} style={selectStyle}>
                       <option value="">선택</option>
-                      {['티블', '파블로체험단', '디너의여왕', '포블로그', '데일리뷰', '링블', '블로그랩', '놀러와체험단', '리뷰플레이스', '핌블', '포포몬'].map(v => <option key={v}>{v}</option>)}
+                      {['티블', '파블로체험단', '디너의여왕', '포블로그', '데일리뷰', '링블', '블로그랩', '놀러와체험단', '리뷰플레이스', '핌블', '포포몬', '강남맛집체험단', '구구다스'].map(v => <option key={v}>{v}</option>)}
                       <option value="__direct__">직접 입력</option>
                     </select>
                     <div style={arrowStyle} />
@@ -642,7 +661,10 @@ export default function MypagePage() {
 
             <div style={{ display: 'flex', gap: 8, padding: '16px 20px 0' }}>
               <button onClick={() => setShowModal(false)} style={{ flex: 1, padding: 13, background: '#F5F6F8', border: 'none', borderRadius: 10, fontSize: 13, fontWeight: 700, color: '#AAAAAA', cursor: 'pointer', fontFamily: FF }}>취소</button>
-              <button onClick={handleAdd}                 style={{ flex: 2, padding: 13, background: '#FF6B35', border: 'none', borderRadius: 10, fontSize: 13, fontWeight: 800, color: '#fff', cursor: 'pointer', fontFamily: FF, boxShadow: '0 4px 12px rgba(255,107,53,.25)' }}>저장</button>
+              <button onClick={handleAdd} disabled={saving}
+                style={{ flex: 2, padding: 13, background: saving ? '#FFB899' : '#FF6B35', border: 'none', borderRadius: 10, fontSize: 13, fontWeight: 800, color: '#fff', cursor: saving ? 'default' : 'pointer', fontFamily: FF, boxShadow: '0 4px 12px rgba(255,107,53,.25)' }}>
+                {saving ? '저장 중...' : '저장'}
+              </button>
             </div>
           </div>
         </div>
