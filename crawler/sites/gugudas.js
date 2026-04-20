@@ -1,43 +1,77 @@
 /**
  * 구구다스 (99das.com) 크롤러
+ * - Puppeteer로 JSESSIONID 쿠키 획득 후 axios로 전체 수집
  * - API: POST https://99das.com/amz/list/cmpnList.do
  * - 페이지당 10개, pageNum 으로 페이지네이션
  * - 이미지 CDN: https://d26jvdwwu11rjl.cloudfront.net/{mainImgPath}
  */
 
-const axios = require('axios');
+const axios     = require('axios');
+const puppeteer = require('puppeteer');
 
 const BASE_URL  = 'https://99das.com';
 const API_URL   = `${BASE_URL}/amz/list/cmpnList.do`;
 const IMG_CDN   = 'https://d26jvdwwu11rjl.cloudfront.net';
 const PAGE_SIZE = 10;
-const MAX_PAGES = 200;
-
-const HEADERS = {
-  'User-Agent'  : 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-  'Accept'      : 'application/json, text/javascript, */*; q=0.01',
-  'Accept-Language': 'ko-KR,ko;q=0.9',
-  'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
-  'Referer'     : `${BASE_URL}/amz/cmpn/amzCmpnList.do`,
-  'Origin'      : BASE_URL,
-  'X-Requested-With': 'XMLHttpRequest',
-};
+const MAX_PAGES = 300;
 
 module.exports = async function crawlGugudas() {
+  // ── 1. Puppeteer로 세션 쿠키 획득 ──────────────────────────
+  let sessionCookie = '';
+  let browser;
+  try {
+    browser = await puppeteer.launch({
+      headless: 'new',
+      args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage'],
+    });
+    const page = await browser.newPage();
+    await page.setUserAgent(
+      'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    );
+    await page.goto(`${BASE_URL}/amz/cmpn/amzCmpnList.do`, {
+      waitUntil: 'networkidle2',
+      timeout  : 40000,
+    });
+    const cookies = await page.cookies();
+    sessionCookie = cookies.map(c => `${c.name}=${c.value}`).join('; ');
+    console.log('  [구구다스] 세션 쿠키 획득 완료');
+  } catch (err) {
+    console.error(`  [구구다스] 세션 획득 실패: ${err.message}`);
+    return [];
+  } finally {
+    if (browser) await browser.close();
+  }
+
+  if (!sessionCookie) return [];
+
+  // ── 2. 쿠키 사용해 axios로 전체 페이지 수집 ──────────────
+  const HEADERS = {
+    'User-Agent'      : 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    'Accept'          : 'application/json, text/javascript, */*; q=0.01',
+    'Accept-Language' : 'ko-KR,ko;q=0.9',
+    'Content-Type'    : 'application/x-www-form-urlencoded; charset=UTF-8',
+    'Referer'         : `${BASE_URL}/amz/cmpn/amzCmpnList.do`,
+    'Origin'          : BASE_URL,
+    'X-Requested-With': 'XMLHttpRequest',
+    'Cookie'          : sessionCookie,
+  };
+
   const all     = [];
   const seenIds = new Set();
 
   for (let page = 1; page <= MAX_PAGES; page++) {
     try {
       const body = new URLSearchParams({
-        area    : '',
-        cate    : '',
-        sns     : '',
-        orderby : 'new',
-        pageNum : String(page),
-        pageSize: String(PAGE_SIZE),
-        type    : 'cmpnList',
-        tagId   : 'cmpnList',
+        cmpnDcd   : 'AMZ027.001',
+        cmpnKindDcd: '',
+        area      : '',
+        cate      : '',
+        sns       : '',
+        orderby   : 'new',
+        pageNum   : String(page),
+        pageSize  : String(PAGE_SIZE),
+        type      : 'cmpnList',
+        tagId     : 'cmpnList',
       }).toString();
 
       const { data: res } = await axios.post(API_URL, body, {
@@ -45,7 +79,6 @@ module.exports = async function crawlGugudas() {
         timeout: 15000,
       });
 
-      // 응답 검증 (API는 result 필드 없이 tagId/page/list/type 반환)
       if (!res || !Array.isArray(res.list)) break;
 
       const items = res.list;
@@ -53,39 +86,34 @@ module.exports = async function crawlGugudas() {
 
       let added = 0;
       for (const c of items) {
-        const cmpnId = c.cmpnId || c.CMPN_ID;
+        const cmpnId = c.cmpnId;
         if (!cmpnId) continue;
 
         const id = `gugudas_${cmpnId}`;
         if (seenIds.has(id)) continue;
         seenIds.add(id);
 
-        const title = (c.cmpnNm || c.CMPN_NM || '').trim();
+        const title = (c.cmpnNm || '').trim();
         if (!title || title.length < 2) continue;
 
         // 썸네일
-        const imgPath = c.mainImgPath || c.MAIN_IMG_PATH || '';
+        const imgPath  = c.mainImgPath || '';
         const thumbnail = imgPath
           ? (imgPath.startsWith('http') ? imgPath : `${IMG_CDN}/${imgPath.replace(/^\//, '')}`)
           : '';
 
-        // 마감일 파싱
-        // recrtEnDy: "20260426" (YYYYMMDD), recrtEnDyTxt: "6일 남음"
+        // 마감일 (recrtEnDy: "20260426" YYYYMMDD)
         const dday = parseDday(c.recrtEnDy || '', c.recrtEnDyTxt || '');
 
         // 혜택
-        const benefit = (c.oferBrekdn || c.OFER_BREKDN || '').trim();
+        const benefit = (c.oferBrekdn || '').trim();
 
         // 금액
-        const rewardNum = parseAmount(c.realAmtTxt || c.REAL_AMT_TXT || '');
+        const rewardNum = parseAmount(c.realAmtTxt || '');
 
         // 타입 (chnnlNm: "스마트스토어", "인스타그램", "블로그" 등)
-        const chnnl = ((c.chnnlNm || c.subChnnlNm || '')).toLowerCase();
+        const chnnl = (c.chnnlNm || c.subChnnlNm || '').toLowerCase();
         const type  = inferTypes(chnnl, title);
-
-        // 신청/모집
-        const applied = parseInt(c.aplyCnt  || c.APL_CNT  || '0') || 0;
-        const total   = parseInt(c.recrtCnt || c.RECRT_CNT || '0') || 0;
 
         all.push({
           id,
@@ -97,12 +125,12 @@ module.exports = async function crawlGugudas() {
           type,
           tags     : inferTags(title + ' ' + benefit),
           benefit,
-          reward   : benefit || rewardNum ? `${rewardNum.toLocaleString()}원` : '',
+          reward   : benefit || (rewardNum ? `${rewardNum.toLocaleString()}원` : ''),
           rewardNum,
           location : inferLocation(title),
           dday,
-          applied,
-          total,
+          applied  : parseInt(c.aplyCnt  || '0') || 0,
+          total    : parseInt(c.recrtCnt || '0') || 0,
           site     : '99das.com',
           isNew    : dday >= 25,
         });
@@ -110,11 +138,9 @@ module.exports = async function crawlGugudas() {
       }
 
       if (added === 0 && page > 1) break;
-
-      // 마지막 페이지: 반환 항목이 PAGE_SIZE 미만이면 종료
       if (items.length < PAGE_SIZE) break;
 
-      await sleep(400);
+      await sleep(300);
     } catch (err) {
       console.error(`  [구구다스] page ${page} 실패: ${err.message}`);
       break;
@@ -124,13 +150,9 @@ module.exports = async function crawlGugudas() {
   return all;
 };
 
-/**
- * 마감일 → D-day 정수
- * @param {string} enDy   - "20260426" (YYYYMMDD) 형식
- * @param {string} enTxt  - "6일 남음" | "오늘마감" | "마감" 형식
- */
+// ── 유틸 ────────────────────────────────────────────────────
+
 function parseDday(enDy, enTxt) {
-  // YYYYMMDD 형식 우선 처리
   if (enDy && /^\d{8}$/.test(enDy.trim())) {
     const s = enDy.trim();
     const dateStr = `${s.slice(0,4)}-${s.slice(4,6)}-${s.slice(6,8)}`;
@@ -138,8 +160,6 @@ function parseDday(enDy, enTxt) {
     const now = new Date();
     return Math.ceil((end - now) / (1000 * 60 * 60 * 24));
   }
-
-  // "N일 남음" 텍스트 파싱
   if (enTxt) {
     const t = enTxt.trim();
     if (/마감/.test(t) && !/남음/.test(t)) return -1;
@@ -147,32 +167,28 @@ function parseDday(enDy, enTxt) {
     const m = t.match(/(\d+)일\s*남음/);
     if (m) return parseInt(m[1]);
   }
-
   return 30;
 }
 
-/**
- * "20,000원" → 20000
- */
 function parseAmount(raw) {
   if (!raw) return 0;
   return parseInt(raw.replace(/[^0-9]/g, '')) || 0;
 }
 
 function inferTypes(chnnl, title) {
+  const s = chnnl + ' ' + title;
   const types = [];
-  if (/insta|instagram|인스타/.test(chnnl + title))  types.push('인스타');
-  if (/youtube|유튜브/.test(chnnl + title))           types.push('유튜브');
-  if (/shorts|reels|숏폼|쇼츠|릴스/.test(chnnl + title)) types.push('숏폼');
-  if (/blog|블로그|naver|네이버/.test(chnnl + title)) types.push('블로그');
-  if (/배송/.test(title))                             types.push('배송');
-  if (/방문|체험|지역/.test(title))                   types.push('방문');
+  if (/insta|instagram|인스타/.test(s))      types.push('인스타');
+  if (/youtube|유튜브/.test(s))               types.push('유튜브');
+  if (/shorts|reels|숏폼|쇼츠|릴스/.test(s)) types.push('숏폼');
+  if (/blog|블로그|naver|네이버/.test(s))    types.push('블로그');
+  if (/배송/.test(title))                     types.push('배송');
+  if (/방문|체험|지역/.test(title))           types.push('방문');
   if (types.length === 0) types.push('블로그');
   return [...new Set(types)];
 }
 
 function inferTags(text) {
-  const tags  = [];
   const rules = [
     [/이유식|아기|유아|육아/,                    '육아'],
     [/맛집|레스토랑|카페|식당|음식|요리|브런치|오마카세/, '맛집'],
@@ -186,6 +202,7 @@ function inferTags(text) {
     [/인테리어|가구|생활용품/,                  '생활'],
     [/네일|헤어|마사지|스파/,                   '뷰티'],
   ];
+  const tags = [];
   for (const [re, tag] of rules) if (re.test(text)) tags.push(tag);
   return tags;
 }
