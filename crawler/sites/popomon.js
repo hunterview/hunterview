@@ -65,7 +65,7 @@ module.exports = async function crawlPopomon() {
           title    : cleanTitle(title),
           platform : '포포몬',
           dot      : 'd-violet',
-          url      : `${BASE_URL}/next/campaign/detail?cidx=${c.C_idx}`,
+          url      : `${BASE_URL}/next/campaign/${c.C_idx}`,
           thumbnail,
           type,
           tags     : inferTags(title + ' ' + benefit),
