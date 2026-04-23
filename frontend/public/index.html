@@ -33,7 +33,7 @@
   --shadow-hover: 0 8px 32px rgba(255,107,53,.15);
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'Noto Sans KR', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; font-size: 14px; line-height: 1.6; }
+body { font-family: 'Noto Sans KR', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; font-size: 14px; line-height: 1.6; overflow-x: hidden; }
 
 /* ─── 헤더 ─── */
 header {
@@ -51,7 +51,7 @@ nav a:hover, nav a.active { background: var(--primary-pale); color: var(--primar
 
 /* ─── 탭 페이지 ─── */
 .page { display: none; }
-.page.active { display: block; }
+.page.active { display: block; overflow-x: hidden; width: 100%; }
 
 /* ─── 히어로 ─── */
 .hero {
@@ -89,7 +89,7 @@ nav a:hover, nav a.active { background: var(--primary-pale); color: var(--primar
 .data-status-bar.loading { background: #F0F4FF; border-bottom-color: #C5D5FF; color: #3355AA; }
 
 /* ─── 광고 ─── */
-.ad-wrap { background: var(--surface); border-bottom: 1px solid var(--border); padding: 16px 32px; text-align: center; }
+.ad-wrap { background: var(--surface); border-bottom: 1px solid var(--border); padding: 16px 32px; text-align: center; overflow: hidden; max-width: 100vw; width: 100%; box-sizing: border-box; }
 .ad-inline { background: var(--surface); border: 1.5px solid var(--border); border-radius: 12px; padding: 18px; text-align: center; margin-bottom: 32px; }
 .ad-label { font-size: 10px; color: var(--text3); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
 .ad-disclaimer { font-size: 11px; color: var(--text3); margin-top: 8px; }
@@ -175,7 +175,7 @@ nav a:hover, nav a.active { background: var(--primary-pale); color: var(--primar
 
 
 /* ─── 푸터 ─── */
-footer { background: #1A1A1A; color: rgba(255,255,255,.4); text-align: center; padding: 40px 32px; font-size: 12px; line-height: 2; margin-top: 20px; }
+footer { background: #1A1A1A; color: rgba(255,255,255,.4); text-align: center; padding: 40px 32px; font-size: 12px; line-height: 2; margin-top: 20px; width: 100%; box-sizing: border-box; }
 .footer-logo { font-size: 18px; font-weight: 900; color: var(--primary); display: block; margin-bottom: 8px; }
 
 /* ─── 쿠팡 인라인 광고 ─── */
@@ -248,9 +248,10 @@ footer { background: #1A1A1A; color: rgba(255,255,255,.4); text-align: center; p
   .sites-section { padding: 14px 12px; }
 
   /* 검색 안내 */
-  #searchGuide { padding: 48px 16px !important; }
+  #searchGuide { padding: 28px 16px !important; }
   #searchGuide h2 { font-size: 18px !important; }
   #searchGuide p { font-size: 13px !important; }
+  #searchGuide > div:first-child { font-size: 36px !important; margin-bottom: 12px !important; }
   .quick-btn { padding: 8px 14px; font-size: 13px; }
 
   /* 섹션 헤더 */
@@ -355,7 +356,7 @@ footer { background: #1A1A1A; color: rgba(255,255,255,.4); text-align: center; p
   <div class="ad-wrap">
     <div class="ad-label">Advertisement</div>
     <script src="https://ads-partners.coupang.com/g.js"></script>
-    <script>new PartnersCoupang.G({"id":976349,"template":"carousel","trackingCode":"AF5506301","width":"1000","height":"140","tsource":""});</script>
+    <script>(function(){var _w=Math.min(1000,document.documentElement.clientWidth||390);new PartnersCoupang.G({"id":976349,"template":"carousel","trackingCode":"AF5506301","width":String(_w),"height":"140","tsource":""});})();</script>
     <div class="ad-disclaimer">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</div>
   </div>
 
@@ -368,9 +369,9 @@ footer { background: #1A1A1A; color: rgba(255,255,255,.4); text-align: center; p
   </div>
 
   <!-- 검색 전 안내 화면 -->
-  <div id="searchGuide" style="text-align:center; padding:80px 32px;">
-    <div style="font-size:52px; margin-bottom:20px;">🔍</div>
-    <h2 style="font-size:22px; font-weight:900; color:var(--text); margin-bottom:12px;">찾고 싶은 체험단을 검색해보세요</h2>
+  <div id="searchGuide" style="text-align:center; padding:48px 32px;">
+    <div style="font-size:48px; margin-bottom:14px;">🔍</div>
+    <h2 style="font-size:22px; font-weight:900; color:var(--text); margin-bottom:10px;">찾고 싶은 체험단을 검색해보세요</h2>
     <p style="color:var(--text3); font-size:15px;">키워드, 카테고리, 지역 모두 검색 가능해요</p>
   </div>
 
