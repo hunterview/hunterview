@@ -48,6 +48,11 @@ module.exports = async function crawlPopomon() {
           ? c.C_regi_end_date_count
           : calcDday(c.C_regi_end_date);
 
+        // deadline 날짜 문자열: API가 직접 날짜를 제공하면 그대로 사용 (YYYY-MM-DD)
+        const deadline = c.C_regi_end_date
+          ? c.C_regi_end_date.slice(0, 10)
+          : (dday >= 0 ? calcDeadlineStr(dday) : null);
+
         const title = (c.C_title || '').trim();
         if (!title || title.length < 2) continue;
 
@@ -74,6 +79,7 @@ module.exports = async function crawlPopomon() {
           rewardNum: parseInt(c.C_provision_price) || 0,
           location : inferLocation(title),
           dday,
+          deadline,
           applied  : parseInt(c.C_volunteer_count) || 0,
           total    : parseInt(c.C_choice_count) || 0,
           site     : 'popomon.com',
@@ -99,6 +105,14 @@ function calcDday(endDateStr) {
   const now  = new Date();
   const diff = Math.ceil((end - now) / (1000 * 60 * 60 * 24));
   return diff;
+}
+
+// KST 기준 오늘 날짜에 dday를 더한 마감일을 "YYYY-MM-DD" 문자열로 반환
+function calcDeadlineStr(dday) {
+  const kstNow = new Date(Date.now() + 9 * 3600 * 1000);
+  kstNow.setUTCHours(0, 0, 0, 0);
+  kstNow.setUTCDate(kstNow.getUTCDate() + dday);
+  return kstNow.toISOString().slice(0, 10);
 }
 
 function inferTypes(recruitType, csType, title) {

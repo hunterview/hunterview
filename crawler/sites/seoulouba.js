@@ -99,6 +99,10 @@ function parsePage(html) {
         if (m) dday = parseInt(m[1]);
       }
 
+      // deadline 날짜 문자열 계산 (KST 기준 YYYY-MM-DD)
+      // dday 숫자로부터 실제 마감일을 계산해두면, 나중에 stale 데이터도 정확히 보정 가능
+      const deadline = dday >= 0 ? calcDeadlineStr(dday) : null;
+
       // 신청/모집 인원: "신청 131 / 모집 50"
       let applied = 0, total = 0;
       const applyM  = dpText.match(/신청\s*([\d,]+)/);
@@ -121,6 +125,7 @@ function parsePage(html) {
         benefit,
         location : inferLocation(title, typeText),
         dday,
+        deadline,
         applied,
         total,
         site     : 'seoulouba.co.kr',
@@ -185,6 +190,17 @@ function inferLocation(title, typeText) {
 
 function cleanTitle(title) {
   return title.replace(/\s+/g, ' ').replace(/^[\s\-·|]+|[\s\-·|]+$/g, '').trim();
+}
+
+// KST 기준 오늘 날짜에 dday를 더한 마감일을 "YYYY-MM-DD" 문자열로 반환
+function calcDeadlineStr(dday) {
+  // 현재 시각을 KST로 변환 (UTC+9)
+  const kstNow = new Date(Date.now() + 9 * 3600 * 1000);
+  // KST 자정으로 맞추기
+  kstNow.setUTCHours(0, 0, 0, 0);
+  // dday 일수 추가
+  kstNow.setUTCDate(kstNow.getUTCDate() + dday);
+  return kstNow.toISOString().slice(0, 10); // "YYYY-MM-DD"
 }
 
 function sleep(ms) {
