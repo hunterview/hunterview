@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-24 15:55",
-  "total": 80,
+  "updated_at": "2026-04-24 20:07",
+  "total": 76,
   "campaigns": [
     {
       "title": "매장 식사는 불가하며, 테이크아웃 패키징 제품입니다.",
@@ -848,10 +848,10 @@
       "id": 65
     },
     {
-      "title": "통영 토종 흑염소 진액 100ml 10포",
-      "reward": "",
+      "title": "86,000원 상당의 파이브센스 트리트먼트 + 셀프리페어 제공",
+      "reward": "86,000원 상당",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=408758",
+      "link": "https://tble.kr/view.php?cp_id=409292",
       "image": "",
       "deadline": "2026-04-27",
       "location": "배송형",
@@ -861,10 +861,10 @@
       "id": 66
     },
     {
-      "title": "86,000원 상당의 파이브센스 트리트먼트 + 셀프리페어 제공",
-      "reward": "86,000원 상당",
+      "title": "통영 토종 흑염소 진액 100ml 10포",
+      "reward": "",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=409292",
+      "link": "https://tble.kr/view.php?cp_id=408758",
       "image": "",
       "deadline": "2026-04-27",
       "location": "배송형",
@@ -989,58 +989,6 @@
       "applied": 0,
       "total": 10,
       "id": 76
-    },
-    {
-      "title": "마이페이지",
-      "reward": "",
-      "platform": "모두의체험단",
-      "link": "https://www.modan.kr/login?back_url=L3Nob3BfbXlwYWdl&type=mypage",
-      "image": "",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 77
-    },
-    {
-      "title": "로그인이 필요합니다.",
-      "reward": "",
-      "platform": "모두의체험단",
-      "link": "https://www.modan.kr/login?back_url=Lw%3D%3D&used_login_btn=Y",
-      "image": "",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 78
-    },
-    {
-      "title": "로그인이 필요합니다.",
-      "reward": "",
-      "platform": "모두의체험단",
-      "link": "https://www.modan.kr/login?back_url=L21hdHppcA%3D%3D&used_login_btn=Y",
-      "image": "",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 79
-    },
-    {
-      "title": "로그인이 필요합니다.",
-      "reward": "",
-      "platform": "모두의체험단",
-      "link": "https://www.modan.kr/login?back_url=L2RlbGl2ZXJ5&used_login_btn=Y",
-      "image": "",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 80
     }
   ]
 }
