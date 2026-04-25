@@ -1,20 +1,7 @@
 {
-  "updated_at": "2026-04-25 06:07",
-  "total": 76,
+  "updated_at": "2026-04-25 14:30",
+  "total": 75,
   "campaigns": [
-    {
-      "title": "레드에셋 실리콘 틈새 문풍지 창문 현관문 틈새막이",
-      "reward": "35mm 2개 [배송비 포함6,900원]",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1777011399",
-      "image": "./data/campaign/thumb/thumb-2040370257_kxgpe71A_EC8AA4ED81ACEBA6B0EC83B7_2026-04-24_151707_300x300.png",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 1
-    },
     {
       "title": "매장 식사는 불가하며, 테이크아웃 패키징 제품입니다.",
       "reward": "",
@@ -26,7 +13,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 2
+      "id": 1
     },
     {
       "title": "5월 3일 (일) / 9시 50분 방문 필요",
@@ -39,7 +26,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 3
+      "id": 2
     },
     {
       "title": "5월 9일(토) / 11시 20분 방문 필요",
@@ -52,7 +39,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 4
+      "id": 3
     },
     {
       "title": "5월 9일(토) / 10시 50분 방문 필요",
@@ -65,7 +52,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 5
+      "id": 4
     },
     {
       "title": "5/16(토) 11시 50분 방문 필요",
@@ -78,7 +65,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 6
+      "id": 5
     },
     {
       "title": "5월 16일 (토) / 9시 50분 방문필요",
@@ -91,7 +78,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 7
+      "id": 6
     },
     {
       "title": "5월 17일 (일) / 9시 50분 방문필요",
@@ -104,7 +91,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 8
+      "id": 7
     },
     {
       "title": "5월 23일 (토) / 9시 50분 방문필요",
@@ -117,7 +104,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 9
+      "id": 8
     },
     {
       "title": "5월 30일 (토) / 10시 50분 방문필요",
@@ -130,7 +117,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 10
+      "id": 9
     },
     {
       "title": "5월 30일 (토) / 10시 50분 방문필요",
@@ -143,7 +130,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 11
+      "id": 10
     },
     {
       "title": "[36,900원 상당] 야채즙 100ml x x60팩 구성 한박스",
@@ -156,7 +143,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 12
+      "id": 11
     },
     {
       "title": "5월2일/3일 5월9일/10일 5월16일/17일 토요일,일요일 오전10시30분 방문 가능",
@@ -169,7 +156,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 13
+      "id": 12
     },
     {
       "title": "[20,000원 상당] 2인 식사권",
@@ -182,7 +169,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 14
+      "id": 13
     },
     {
       "title": "[40,000원 상당] 조말론 차량방향제 리필 진블랑 센트투고 / 라임바질만다린",
@@ -195,7 +182,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 15
+      "id": 14
     },
     {
       "title": "9,000 P",
@@ -208,7 +195,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 16
+      "id": 15
     },
     {
       "title": "[29,000원 상당] 텐션 업 리얼 핏 마스크팩",
@@ -221,7 +208,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 17
+      "id": 16
     },
     {
       "title": "[49,000원 상당] 트리플 리부트 스킨 부스터 세럼",
@@ -234,7 +221,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 18
+      "id": 17
     },
     {
       "title": "[17,500원 상당] 핑거훅 1개 (화이트,블랙,그레이 중 택 1)",
@@ -247,7 +234,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 19
+      "id": 18
     },
     {
       "title": "[서울 서초구] 차홍룸반포점",
@@ -258,6 +245,19 @@
       "deadline": "",
       "location": "방문형",
       "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 19
+    },
+    {
+      "title": "릴스 콘텐츠를 제작하신 경험이 있으신 분(퀄리티 및 기획에 약한 분은 지양하겠습니다.)",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1776303384",
+      "image": "./data/campaign/thumb/thumb-3699368856_LoNBnZp2_1_300x300.png",
+      "deadline": "",
+      "location": "배송형",
+      "review_type": "숏폼",
       "applied": 0,
       "total": 10,
       "id": 20
@@ -835,23 +835,23 @@
       "id": 64
     },
     {
-      "title": "5,240원 상당의 아크릴 액자형 화병 제공",
-      "reward": "5,240원 상당",
+      "title": "86,000원 상당의 파이브센스 트리트먼트 + 셀프리페어 제공",
+      "reward": "86,000원 상당",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=408882",
+      "link": "https://tble.kr/view.php?cp_id=409292",
       "image": "",
-      "deadline": "2026-04-29",
-      "location": "구매형",
+      "deadline": "2026-04-28",
+      "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
       "id": 65
     },
     {
-      "title": "86,000원 상당의 파이브센스 트리트먼트 + 셀프리페어 제공",
-      "reward": "86,000원 상당",
+      "title": "480,000원 상당의 천기녹진단 제공",
+      "reward": "480,000원 상당",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=409292",
+      "link": "https://tble.kr/view.php?cp_id=409260",
       "image": "",
       "deadline": "2026-04-28",
       "location": "배송형",
@@ -874,19 +874,6 @@
       "id": 67
     },
     {
-      "title": "480,000원 상당의 천기녹진단 제공",
-      "reward": "480,000원 상당",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=409260",
-      "image": "",
-      "deadline": "2026-04-28",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 68
-    },
-    {
       "title": "[배송] 유니즈쇼핑 - 손발톱 영양제",
       "reward": "",
       "platform": "티블",
@@ -897,7 +884,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 69
+      "id": 68
     },
     {
       "title": "528,000원 상당의 경희한약 아로나토골드 1박스 제공",
@@ -910,7 +897,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 70
+      "id": 69
     },
     {
       "title": "[배송] choostory 츄스토리",
@@ -923,7 +910,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 71
+      "id": 70
     },
     {
       "title": "328,000원 상당의 누보셀 비듬 탈모샴푸 500ml 제공",
@@ -936,7 +923,7 @@
       "review_type": "인스타",
       "applied": 0,
       "total": 10,
-      "id": 72
+      "id": 71
     },
     {
       "title": "[배송] 유니즈쇼핑 - 메이레브 화이트닝 집중케어 크림",
@@ -949,7 +936,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 73
+      "id": 72
     },
     {
       "title": "장어즙 진액 엑기스 100ml 10포",
@@ -962,7 +949,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 74
+      "id": 73
     },
     {
       "title": "[배송] 승승장구컴퍼니 - 통증완화용 스포츠겔 스포쿨 ( 500ml )",
@@ -975,7 +962,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 75
+      "id": 74
     },
     {
       "title": "일산/덕양/파주",
@@ -988,7 +975,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 76
+      "id": 75
     }
   ]
 }
