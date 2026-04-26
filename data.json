@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-04-26 06:30",
-  "total": 78,
+  "updated_at": "2026-04-26 14:30",
+  "total": 74,
   "campaigns": [
     {
-      "title": "레드에셋 실리콘 틈새 문풍지 창문 현관문 틈새막이",
-      "reward": "35mm 2개 [배송비 포함6,900원]",
+      "title": "[150,000원 상당] 주류",
+      "reward": "",
       "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1777011399",
-      "image": "./data/campaign/thumb/thumb-2040370257_kxgpe71A_EC8AA4ED81ACEBA6B0EC83B7_2026-04-24_151707_300x300.png",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1773195429",
+      "image": "./data/campaign/thumb/thumb-1773195429243979142_3kWGIj4P_KakaoTalk_20250929_214622942_03_300x300.jpg",
       "deadline": "",
-      "location": "구매형",
+      "location": "방문형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
@@ -250,14 +250,14 @@
       "id": 19
     },
     {
-      "title": "[서울 서초구] 차홍룸반포점",
-      "reward": "4월 방문 가능하신분만",
+      "title": "릴스 콘텐츠를 제작하신 경험이 있으신 분(퀄리티 및 기획에 약한 분은 지양하겠습니다.)",
+      "reward": "",
       "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1777000490",
-      "image": "./data/campaign/thumb/thumb-1777000490177306477917704705282943726688_KJsR7BAl_IMG_3345_300x300.jpg",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1776303384",
+      "image": "./data/campaign/thumb/thumb-3699368856_LoNBnZp2_1_300x300.png",
       "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
+      "location": "배송형",
+      "review_type": "숏폼",
       "applied": 0,
       "total": 10,
       "id": 20
@@ -640,19 +640,6 @@
       "id": 49
     },
     {
-      "title": "328,000원 상당의 누보셀 비듬 탈모샴푸 500ml 제공",
-      "reward": "328,000원 상당",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=408869",
-      "image": "",
-      "deadline": "2026-04-29",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 50
-    },
-    {
       "title": "10,990원 상당의 펄리 뉴 딥클린 9중효소 액상세제 2개 제공",
       "reward": "10,990원 상당",
       "platform": "티블",
@@ -663,16 +650,29 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
+      "id": 50
+    },
+    {
+      "title": "328,000원 상당의 누보셀 비듬 탈모샴푸 500ml 제공",
+      "reward": "328,000원 상당",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=408869",
+      "image": "",
+      "deadline": "2026-04-29",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
       "id": 51
     },
     {
-      "title": "[배송] EXOGENIX - 엑소제닉스 바이오 포텐트 셀 앰플",
-      "reward": "14만원 상당",
+      "title": "12900원 상당의 글로리 뉴 10IN1 딥클린 코튼캔디 캡슐 세탁세제 제공",
+      "reward": "12900원 상당",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=408840",
+      "link": "https://tble.kr/view.php?cp_id=409294",
       "image": "",
-      "deadline": "2026-04-28",
-      "location": "배송형",
+      "deadline": "2026-05-05",
+      "location": "구매형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
@@ -692,30 +692,17 @@
       "id": 53
     },
     {
-      "title": "12900원 상당의 글로리 뉴 10IN1 딥클린 코튼캔디 캡슐 세탁세제 제공",
-      "reward": "12900원 상당",
+      "title": "[배송] EXOGENIX - 엑소제닉스 바이오 포텐트 셀 앰플",
+      "reward": "14만원 상당",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=409294",
+      "link": "https://tble.kr/view.php?cp_id=408840",
       "image": "",
-      "deadline": "2026-05-05",
-      "location": "구매형",
+      "deadline": "2026-04-28",
+      "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
       "id": 54
-    },
-    {
-      "title": "[인스타/릴스] 리안모어 - 소금 후추 전동그라인더",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=407606",
-      "image": "",
-      "deadline": "2026-04-27",
-      "location": "방문형",
-      "review_type": "숏폼",
-      "applied": 0,
-      "total": 10,
-      "id": 55
     },
     {
       "title": "100만원 상당의 세르프 이용권 제공",
@@ -726,6 +713,19 @@
       "deadline": "",
       "location": "방문형",
       "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 55
+    },
+    {
+      "title": "[인스타/릴스] 리안모어 - 소금 후추 전동그라인더",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=407606",
+      "image": "",
+      "deadline": "2026-04-27",
+      "location": "방문형",
+      "review_type": "숏폼",
       "applied": 0,
       "total": 10,
       "id": 56
@@ -770,6 +770,19 @@
       "id": 59
     },
     {
+      "title": "86,000원 상당의 파이브센스 트리트먼트 + 셀프리페어 제공",
+      "reward": "86,000원 상당",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=409292",
+      "image": "",
+      "deadline": "2026-04-28",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 60
+    },
+    {
       "title": "신청 122명 / 모집 15명",
       "reward": "",
       "platform": "티블",
@@ -780,7 +793,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 60
+      "id": 61
     },
     {
       "title": "8,500원 상당의 어린이집 생일 답례품 과자 선물세트 3개 제공",
@@ -793,20 +806,20 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 61
+      "id": 62
     },
     {
-      "title": "86,000원 상당의 파이브센스 트리트먼트 + 셀프리페어 제공",
-      "reward": "86,000원 상당",
+      "title": "480,000원 상당의 천기녹진단 제공",
+      "reward": "480,000원 상당",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=409292",
+      "link": "https://tble.kr/view.php?cp_id=409260",
       "image": "",
       "deadline": "2026-04-28",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 62
+      "id": 63
     },
     {
       "title": "69,720원 상당의 올드 로고 남녀공용 파이핑 바람막이 점퍼 제공",
@@ -819,7 +832,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 63
+      "id": 64
     },
     {
       "title": "[배송] 오하브코스메틱 -오하브 마일드 앤 퓨리파잉 포밍 클렌져",
@@ -828,19 +841,6 @@
       "link": "https://tble.kr/view.php?cp_id=408545",
       "image": "",
       "deadline": "2026-04-27",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 64
-    },
-    {
-      "title": "480,000원 상당의 천기녹진단 제공",
-      "reward": "480,000원 상당",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=409260",
-      "image": "",
-      "deadline": "2026-04-28",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
@@ -939,12 +939,12 @@
       "id": 72
     },
     {
-      "title": "[배송] 승승장구컴퍼니 - 통증완화용 스포츠겔 스포쿨 ( 500ml )",
-      "reward": "",
+      "title": "19,400원 상당 헤어토닉 두피영양제 1개",
+      "reward": "19,400원 상당",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=408962",
+      "link": "https://tble.kr/view.php?cp_id=409403",
       "image": "",
-      "deadline": "2026-04-30",
+      "deadline": "2026-05-07",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
@@ -963,58 +963,6 @@
       "applied": 0,
       "total": 10,
       "id": 74
-    },
-    {
-      "title": "마이페이지",
-      "reward": "",
-      "platform": "모두의체험단",
-      "link": "https://www.modan.kr/login?back_url=L3Nob3BfbXlwYWdl&type=mypage",
-      "image": "",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 75
-    },
-    {
-      "title": "로그인이 필요합니다.",
-      "reward": "",
-      "platform": "모두의체험단",
-      "link": "https://www.modan.kr/login?back_url=Lw%3D%3D&used_login_btn=Y",
-      "image": "",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 76
-    },
-    {
-      "title": "로그인이 필요합니다.",
-      "reward": "",
-      "platform": "모두의체험단",
-      "link": "https://www.modan.kr/login?back_url=L21hdHppcA%3D%3D&used_login_btn=Y",
-      "image": "",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 77
-    },
-    {
-      "title": "로그인이 필요합니다.",
-      "reward": "",
-      "platform": "모두의체험단",
-      "link": "https://www.modan.kr/login?back_url=L2RlbGl2ZXJ5&used_login_btn=Y",
-      "image": "",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 78
     }
   ]
 }
