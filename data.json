@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-27 17:12",
+  "updated_at": "2026-04-27 21:37",
   "total": 82,
   "campaigns": [
     {
@@ -627,19 +627,6 @@
       "id": 48
     },
     {
-      "title": "[배송] EXOGENIX - 엑소제닉스 바이오 메리스템셀 앰플",
-      "reward": "149,000원 상당",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=408841",
-      "image": "",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 49
-    },
-    {
       "title": "12900원 상당의 글로리 뉴 10IN1 딥클린 코튼캔디 캡슐 세탁세제 제공",
       "reward": "12900원 상당",
       "platform": "티블",
@@ -647,6 +634,19 @@
       "image": "",
       "deadline": "2026-05-04",
       "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 49
+    },
+    {
+      "title": "[배송] EXOGENIX - 엑소제닉스 바이오 메리스템셀 앰플",
+      "reward": "149,000원 상당",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=408841",
+      "image": "",
+      "deadline": "",
+      "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
@@ -861,12 +861,12 @@
       "id": 66
     },
     {
-      "title": "우복당 영양 갈비탕 700g 2개 제공",
+      "title": "프리미엄 수제 카페 바스크 치즈 케이크",
       "reward": "",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=409572",
+      "link": "https://tble.kr/view.php?cp_id=409595",
       "image": "",
-      "deadline": "2026-05-09",
+      "deadline": "2026-05-08",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
@@ -874,12 +874,12 @@
       "id": 67
     },
     {
-      "title": "19,400원 상당 헤어토닉 두피영양제 1개",
-      "reward": "19,400원 상당",
+      "title": "우복당 영양 갈비탕 700g 2개 제공",
+      "reward": "",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=409403",
+      "link": "https://tble.kr/view.php?cp_id=409572",
       "image": "",
-      "deadline": "2026-05-06",
+      "deadline": "2026-05-09",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
@@ -900,12 +900,12 @@
       "id": 69
     },
     {
-      "title": "프리미엄 수제 카페 바스크 치즈 케이크",
-      "reward": "",
+      "title": "19,400원 상당 헤어토닉 두피영양제 1개",
+      "reward": "19,400원 상당",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=409595",
+      "link": "https://tble.kr/view.php?cp_id=409403",
       "image": "",
-      "deadline": "2026-05-08",
+      "deadline": "2026-05-06",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
