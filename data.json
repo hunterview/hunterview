@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-14 08:30",
-  "total": 83,
+  "updated_at": "2026-05-14 13:49",
+  "total": 82,
   "campaigns": [
     {
       "title": "블랙 2XL(28-30),블랙 4XL(32-34),화이트 2XL(28-30), 화이트 4XL(32-34) 중 택 1 [배송비 포함14,900원]",
@@ -666,12 +666,12 @@
       "id": 51
     },
     {
-      "title": "신청 196명 / 모집 30명",
+      "title": "우복당 영양 갈비탕 700g 2개 제공",
       "reward": "",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=409951",
+      "link": "https://tble.kr/view.php?cp_id=410298",
       "image": "",
-      "deadline": "2026-05-17",
+      "deadline": "2026-05-24",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
@@ -679,12 +679,12 @@
       "id": 52
     },
     {
-      "title": "우복당 영양 갈비탕 700g 2개 제공",
+      "title": "신청 202명 / 모집 30명",
       "reward": "",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=410298",
+      "link": "https://tble.kr/view.php?cp_id=409951",
       "image": "",
-      "deadline": "2026-05-24",
+      "deadline": "2026-05-17",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
@@ -718,7 +718,7 @@
       "id": 55
     },
     {
-      "title": "신청 157명 / 모집 10명",
+      "title": "신청 161명 / 모집 10명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=410213",
@@ -731,7 +731,7 @@
       "id": 56
     },
     {
-      "title": "신청 143명 / 모집 15명",
+      "title": "신청 145명 / 모집 15명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=406242",
@@ -770,7 +770,7 @@
       "id": 59
     },
     {
-      "title": "신청 121명 / 모집 1명",
+      "title": "신청 122명 / 모집 1명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=407696",
@@ -783,7 +783,7 @@
       "id": 60
     },
     {
-      "title": "신청 116명 / 모집 1명",
+      "title": "신청 117명 / 모집 1명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=406915",
@@ -822,19 +822,6 @@
       "id": 63
     },
     {
-      "title": "얼굴 or 바디 or 이너뷰티 중 택 1",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=410171",
-      "image": "",
-      "deadline": "2026-05-22",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 64
-    },
-    {
       "title": "100만원 상당의 세르프 이용권 제공",
       "reward": "100만원 상당",
       "platform": "티블",
@@ -845,7 +832,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 65
+      "id": 64
     },
     {
       "title": "여름 커브드 워싱 면 여성 바지 제공",
@@ -858,7 +845,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 66
+      "id": 65
     },
     {
       "title": "백금촉매 플래티넘 실리콘도마 제공",
@@ -871,7 +858,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 67
+      "id": 66
     },
     {
       "title": "[배송] 오하브코스메틱 -오하브 마일드 앤 퓨리파잉 포밍 클렌져",
@@ -884,7 +871,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 68
+      "id": 67
     },
     {
       "title": "[배송] 유니즈쇼핑 - 메이레브 화이트닝 집중케어 크림",
@@ -897,7 +884,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 69
+      "id": 68
     },
     {
       "title": "[배송] 미즈허브- 아베아 비타-C리포풀러렌크림",
@@ -910,7 +897,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 70
+      "id": 69
     },
     {
       "title": "[인스타/릴스] 햇살의료기 - 후끈후끈 물 없이하는 건식 족욕기",
@@ -923,7 +910,7 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 71
+      "id": 70
     },
     {
       "title": "[배송] 피앙세포토 - 웨딩 사진 아크릴 액자 세트",
@@ -936,7 +923,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 72
+      "id": 71
     },
     {
       "title": "[인스타/릴스] 무등산호랭이떡 - 단호박 인절미",
@@ -949,7 +936,7 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 73
+      "id": 72
     },
     {
       "title": "[인스타/릴스] 무등산호랭이떡 - 쑥 인절미",
@@ -962,7 +949,7 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 74
+      "id": 73
     },
     {
       "title": "일산/덕양/파주",
@@ -975,7 +962,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 75
+      "id": 74
     },
     {
       "title": "🍽️ 맛집",
@@ -988,7 +975,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 76
+      "id": 75
     },
     {
       "title": "🛍️ 제품·서비스",
@@ -1001,7 +988,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 77
+      "id": 76
     },
     {
       "title": "🎭 문화·스포츠",
@@ -1014,7 +1001,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 78
+      "id": 77
     },
     {
       "title": "📰 기자단",
@@ -1027,7 +1014,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 79
+      "id": 78
     },
     {
       "title": "📸 촬영단",
@@ -1040,7 +1027,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 80
+      "id": 79
     },
     {
       "title": "⏰ 마감임박",
@@ -1053,7 +1040,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 81
+      "id": 80
     },
     {
       "title": "✨ AI 추천픽",
@@ -1066,7 +1053,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 82
+      "id": 81
     },
     {
       "title": "⭐ 체험 후기",
@@ -1079,7 +1066,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 83
+      "id": 82
     }
   ]
 }
