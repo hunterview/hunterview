@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-28 15:32",
+  "updated_at": "2026-05-28 20:08",
   "total": 84,
   "campaigns": [
     {
@@ -588,7 +588,7 @@
       "id": 45
     },
     {
-      "title": "신청 587명 / 모집 10명",
+      "title": "신청 594명 / 모집 10명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=411178",
@@ -666,7 +666,7 @@
       "id": 51
     },
     {
-      "title": "신청 134명 / 모집 1명",
+      "title": "신청 135명 / 모집 1명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=406915",
@@ -692,12 +692,12 @@
       "id": 53
     },
     {
-      "title": "신청 118명 / 모집 10명",
+      "title": "우복당 영양 갈비탕 700g 2개 제공",
       "reward": "",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=411102",
+      "link": "https://tble.kr/view.php?cp_id=411305",
       "image": "",
-      "deadline": "2026-06-03",
+      "deadline": "2026-06-09",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
@@ -705,12 +705,12 @@
       "id": 54
     },
     {
-      "title": "우복당 영양 갈비탕 700g 2개 제공",
+      "title": "신청 120명 / 모집 10명",
       "reward": "",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=411305",
+      "link": "https://tble.kr/view.php?cp_id=411102",
       "image": "",
-      "deadline": "2026-06-09",
+      "deadline": "2026-06-03",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
@@ -939,6 +939,19 @@
       "id": 72
     },
     {
+      "title": "[사진 제공] 허밍테라피 - 레그패치",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=411370",
+      "image": "",
+      "deadline": "2026-06-08",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 73
+    },
+    {
       "title": "[배송] 그로홈 - 그로홈 툴스 프로 커버링 테이프",
       "reward": "",
       "platform": "티블",
@@ -949,7 +962,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 73
+      "id": 74
     },
     {
       "title": "한음채 국립박물관 뮷즈, 1인 잔세트 (64,000원 상당)",
@@ -958,19 +971,6 @@
       "link": "https://tble.kr/view.php?cp_id=411033",
       "image": "",
       "deadline": "2026-06-02",
-      "location": "방문형",
-      "review_type": "숏폼",
-      "applied": 0,
-      "total": 10,
-      "id": 74
-    },
-    {
-      "title": "[인스타/릴스] 브리넬 - 메이크업가방(블랙골드)",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=410951",
-      "image": "",
-      "deadline": "2026-06-01",
       "location": "방문형",
       "review_type": "숏폼",
       "applied": 0,
