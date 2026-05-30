@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-30 08:19",
+  "updated_at": "2026-05-30 13:07",
   "total": 85,
   "campaigns": [
     {
@@ -159,6 +159,19 @@
       "id": 12
     },
     {
+      "title": "Free × 2개 [배송비 포함7,900원]",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1780017263",
+      "image": "./data/campaign/thumb/thumb-178001726317744890223068516390_sGBfrakd_ChatGPT_Image_2026EB8584_3EC9B94_4EC9DBC_EC98A4ECA084_03_16_32_300x300.jpg",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 13
+    },
+    {
       "title": "30g 1개 [배송비 포함13,500원]",
       "reward": "",
       "platform": "아싸뷰",
@@ -169,7 +182,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 13
+      "id": 14
     },
     {
       "title": "MIGA 무음 침대 매트리스 독립 포켓스프링 바닥 매트리스",
@@ -182,7 +195,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 14
+      "id": 15
     },
     {
       "title": "[38,660원 상당] 어스빌 프랑스해안송 껍질 추출물 500mg 60캡슐",
@@ -195,7 +208,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 15
+      "id": 16
     },
     {
       "title": "[35,980원 상당] 어스빌 그린 아세로라 60캡슐",
@@ -208,7 +221,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 16
+      "id": 17
     },
     {
       "title": "속바지 일체형 골프스타킹 1개 [배송비 포함12,890원]",
@@ -221,7 +234,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 17
+      "id": 18
     },
     {
       "title": "광주 커피머신 , 업소용 주방기구 업체 소개",
@@ -234,7 +247,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 18
+      "id": 19
     },
     {
       "title": "널담 고단백 저당 쫀득쿠키 2종",
@@ -242,19 +255,6 @@
       "platform": "아싸뷰",
       "link": "https://assaview.co.kr/campaign.php?cp_id=1780013798",
       "image": "./data/campaign/thumb/thumb-178001379817760653342948931083_gl83kj9V_E1848DE185A9E186ABE18483E185B3E186A8E1848FE185AEE1848FE185B5_E18482E185A6E1848BE185B5E18487E185A5_E1848AE185A5E186B7E18482E185A6E1848BE185B5E186AF1_300x300.png",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 19
-    },
-    {
-      "title": "널담 고단백 저당 포카치아",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1780013861",
-      "image": "./data/campaign/thumb/thumb-178001386117760658242948931083_uhjgiGHx_image_28429_300x300.png",
       "deadline": "",
       "location": "배송형",
       "review_type": "블로그",
@@ -588,7 +588,7 @@
       "id": 45
     },
     {
-      "title": "신청 675명 / 모집 10명",
+      "title": "신청 685명 / 모집 10명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=411178",
@@ -731,7 +731,7 @@
       "id": 56
     },
     {
-      "title": "신청 140명 / 모집 10명",
+      "title": "신청 143명 / 모집 10명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=411102",
@@ -744,19 +744,6 @@
       "id": 57
     },
     {
-      "title": "신청 135명 / 모집 1명",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=406915",
-      "image": "",
-      "deadline": "2026-06-01",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 58
-    },
-    {
       "title": "8,990원 상당의 글로리 뉴 10IN1 딥클린 코튼캔디 캡슐 세탁세제 제공",
       "reward": "8,990원 상당",
       "platform": "티블",
@@ -764,6 +751,19 @@
       "image": "",
       "deadline": "2026-06-14",
       "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 58
+    },
+    {
+      "title": "신청 135명 / 모집 1명",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=406915",
+      "image": "",
+      "deadline": "2026-06-01",
+      "location": "방문형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
@@ -874,19 +874,6 @@
       "id": 67
     },
     {
-      "title": "[배송] 피앙세포토 - 웨딩 사진 아크릴 액자 세트",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=410824",
-      "image": "",
-      "deadline": "2026-06-01",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 68
-    },
-    {
       "title": "마라홈 원더풀 텐셀모달100 사계절 차렵이불 Q사이즈 1장 + 베개커버 2장 + 패드 1장 제공",
       "reward": "",
       "platform": "티블",
@@ -895,6 +882,19 @@
       "deadline": "2026-06-08",
       "location": "방문형",
       "review_type": "숏폼",
+      "applied": 0,
+      "total": 10,
+      "id": 68
+    },
+    {
+      "title": "[배송] 피앙세포토 - 웨딩 사진 아크릴 액자 세트",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=410824",
+      "image": "",
+      "deadline": "2026-06-01",
+      "location": "배송형",
+      "review_type": "블로그",
       "applied": 0,
       "total": 10,
       "id": 69
@@ -978,7 +978,7 @@
       "id": 75
     },
     {
-      "title": "신청 47명 / 모집 10명",
+      "title": "신청 48명 / 모집 10명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=411425",
