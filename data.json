@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-04 09:45",
-  "total": 80,
+  "updated_at": "2026-06-04 14:39",
+  "total": 79,
   "campaigns": [
     {
       "title": "더릭스홈 코오롱 포르페 롱앤쿨 냉감패드 아이스 쿨링 쿨매트 여름 이불패드",
@@ -640,6 +640,19 @@
       "id": 49
     },
     {
+      "title": "신청 278명 / 모집 10명",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=411625",
+      "image": "",
+      "deadline": "2026-06-14",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 50
+    },
+    {
       "title": "8,990원 상당의 글로리 뉴 10IN1 딥클린 코튼캔디 캡슐 세탁세제 제공",
       "reward": "8,990원 상당",
       "platform": "티블",
@@ -650,23 +663,10 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 50
-    },
-    {
-      "title": "신청 254명 / 모집 10명",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=411625",
-      "image": "",
-      "deadline": "2026-06-14",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
       "id": 51
     },
     {
-      "title": "신청 232명 / 모집 10명",
+      "title": "신청 240명 / 모집 10명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=411102",
@@ -705,6 +705,19 @@
       "id": 54
     },
     {
+      "title": "이가자연면 동치미 동동냉면 480g x 12인분 제공",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=411744",
+      "image": "",
+      "deadline": "2026-06-15",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 55
+    },
+    {
       "title": "신청 144명 / 모집 1명",
       "reward": "",
       "platform": "티블",
@@ -715,7 +728,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 55
+      "id": 56
     },
     {
       "title": "신청 143명 / 모집 5명",
@@ -728,23 +741,10 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 56
-    },
-    {
-      "title": "이가자연면 동치미 동동냉면 480g x 12인분 제공",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=411744",
-      "image": "",
-      "deadline": "2026-06-15",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
       "id": 57
     },
     {
-      "title": "신청 125명 / 모집 10명",
+      "title": "신청 133명 / 모집 10명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=411425",
@@ -770,14 +770,14 @@
       "id": 59
     },
     {
-      "title": "마라홈 원더풀 텐셀모달100 사계절 차렵이불 Q사이즈 1장 + 베개커버 2장 + 패드 1장 제공",
+      "title": "이가자연면 서리태 콩국수 160g x 6인분 제공",
       "reward": "",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=411280",
+      "link": "https://tble.kr/view.php?cp_id=411745",
       "image": "",
-      "deadline": "2026-06-08",
-      "location": "방문형",
-      "review_type": "숏폼",
+      "deadline": "2026-06-15",
+      "location": "배송형",
+      "review_type": "블로그",
       "applied": 0,
       "total": 10,
       "id": 60
@@ -796,14 +796,14 @@
       "id": 61
     },
     {
-      "title": "이가자연면 서리태 콩국수 160g x 6인분 제공",
+      "title": "마라홈 원더풀 텐셀모달100 사계절 차렵이불 Q사이즈 1장 + 베개커버 2장 + 패드 1장 제공",
       "reward": "",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=411745",
+      "link": "https://tble.kr/view.php?cp_id=411280",
       "image": "",
-      "deadline": "2026-06-15",
-      "location": "배송형",
-      "review_type": "블로그",
+      "deadline": "2026-06-08",
+      "location": "방문형",
+      "review_type": "숏폼",
       "applied": 0,
       "total": 10,
       "id": 62
@@ -848,7 +848,7 @@
       "id": 65
     },
     {
-      "title": "신청 82명 / 모집 10명",
+      "title": "신청 89명 / 모집 10명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=411346",
@@ -926,19 +926,6 @@
       "id": 71
     },
     {
-      "title": "일산/덕양/파주",
-      "reward": "",
-      "platform": "포블로그",
-      "link": "https://4blog.net/list/all/local/ggbb/1san",
-      "image": "",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 72
-    },
-    {
       "title": "🍽️ 맛집",
       "reward": "",
       "platform": "모두의체험단",
@@ -949,7 +936,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 73
+      "id": 72
     },
     {
       "title": "🛍️ 제품·서비스",
@@ -962,7 +949,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 74
+      "id": 73
     },
     {
       "title": "🎭 문화·스포츠",
@@ -975,7 +962,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 75
+      "id": 74
     },
     {
       "title": "📰 기자단",
@@ -988,7 +975,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 76
+      "id": 75
     },
     {
       "title": "📸 촬영단",
@@ -1001,7 +988,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 77
+      "id": 76
     },
     {
       "title": "⏰ 마감임박",
@@ -1014,7 +1001,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 78
+      "id": 77
     },
     {
       "title": "✨ AI 추천픽",
@@ -1027,7 +1014,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 79
+      "id": 78
     },
     {
       "title": "⭐ 체험 후기",
@@ -1040,7 +1027,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 80
+      "id": 79
     }
   ]
 }
