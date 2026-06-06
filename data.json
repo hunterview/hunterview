@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-06 08:26",
+  "updated_at": "2026-06-06 13:11",
   "total": 81,
   "campaigns": [
     {
@@ -94,19 +94,6 @@
       "id": 7
     },
     {
-      "title": "세플로 옷걸이형 의류 벨트압축 수납팩, 대형, 핑크, 1개",
-      "reward": "핑크 [배송비 포함9,600원]",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1780632802",
-      "image": "./data/campaign/thumb/thumb-2039637491_WAYOHy94_ED9591ED81AC_300x300.png",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 8
-    },
-    {
       "title": "[25,000원 상당] 2인 식사",
       "reward": "",
       "platform": "아싸뷰",
@@ -117,33 +104,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 9
-    },
-    {
-      "title": "세플로 강력고정 원터치 송풍구 차량용 핸드폰거치대",
-      "reward": "단일옵션 [배송비 포함8,600원]",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1780625192",
-      "image": "./data/campaign/thumb/thumb-2039637491_x76ZApug_ECA09CEBAAA9EC9D84-EC9E85EBA0A5ED95B4ECA3BCEC84B8EC9A94_-053_28129_300x300.png",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 10
-    },
-    {
-      "title": "세플로 듀얼 지압 풋롤러 발마사지기",
-      "reward": "핑크색상 [배송비 포함8,300원]",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1780628085",
-      "image": "./data/campaign/thumb/thumb-2039637491_weKoEWbG_3b6ec21e-be04-4daa-97e0-fc65f643ed70_300x300.png",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 11
+      "id": 8
     },
     {
       "title": "세플로 스티커 제거 안심 스크래퍼, 본품, 1개 + 리필, 10개",
@@ -156,7 +117,20 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 12
+      "id": 9
+    },
+    {
+      "title": "그레이색상 [배송비 포함8,300원]",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1780629041",
+      "image": "./data/campaign/thumb/thumb-2039637491_jL85qEAn_bc9ff412-378b-44a8-ac5c-d26e1677493b_300x300.png",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 10
     },
     {
       "title": "속눈썹이 너무 짧은 분 체험단으로 모시기 어렵습니다",
@@ -169,7 +143,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 13
+      "id": 11
     },
     {
       "title": "속눈썹이 짧은 분은 체험단으로 모시기 어렵습니다쌍커풀 있는 분 우선",
@@ -182,7 +156,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 14
+      "id": 12
     },
     {
       "title": "세플로 헤어 집게 올블랙 볼륨, 블랙, 3종, 1세트",
@@ -195,7 +169,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 15
+      "id": 13
     },
     {
       "title": "세플로 헤어 집게 러블리 볼륨, 핑크, 3종, 1세트",
@@ -208,7 +182,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 16
+      "id": 14
     },
     {
       "title": "세플로 헤어 뿌리 볼륨 집게 2종, 베이지, 1세트",
@@ -221,7 +195,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 17
+      "id": 15
     },
     {
       "title": "[30,000원 상당] 식사권",
@@ -234,7 +208,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 18
+      "id": 16
     },
     {
       "title": "지엘리 락토 콜라겐 뿌리는 마스크팩 80ml 레드 에디션",
@@ -247,7 +221,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 19
+      "id": 17
     },
     {
       "title": "지엘리 락토 콜라겐 뿌리는 마스크팩 80ml 레드 에디션",
@@ -255,6 +229,32 @@
       "platform": "아싸뷰",
       "link": "https://assaview.co.kr/campaign.php?cp_id=1778827235",
       "image": "./data/campaign/thumb/thumb-3660778690_DtigFPvT_EB9DBCED86A0EAB290_ECBD9CEB9DBCEAB290_EBA788EC8AA4ED81ACED8CA9_28429_300x300.png",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 18
+    },
+    {
+      "title": "지엘리 트루프 리에이지 글로리 쿠션 시즌4 본품 15g SPF50+ PA+++",
+      "reward": "21호 or 23호 택 [배송비 포함33,000원]",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1778826934",
+      "image": "./data/campaign/thumb/thumb-3660778690_JYs4EXuT_ED8AB8EBA3A8ED9484_ECBFA0EC8598_ED8C8CEC9AB4EB8DB0EC9DB4EC8598_EBA994EC9DB4ED81AC_ED9994EC9EA5ED9288_1_300x300.jpg",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 19
+    },
+    {
+      "title": "지엘리 쿠션 시즌5 멜라제로샷 앰플 쿠션 내추럴 본품",
+      "reward": "21호 OR 23호 [배송비 포함36,000원]",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1778825641",
+      "image": "./data/campaign/thumb/thumb-3660778690_ON9JXvTV_ECBFA0EC8598_ED8CA9ED8AB8_ED8C8CEC9AB4EB8DB0EC9DB4EC8598_ECBBA4EBB284EBA0A5ECA28BEC9D80_28629_300x300.jpg",
       "deadline": "",
       "location": "구매형",
       "review_type": "블로그",
@@ -627,6 +627,19 @@
       "id": 48
     },
     {
+      "title": "신청 376명 / 모집 10명",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=411625",
+      "image": "",
+      "deadline": "2026-06-14",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 49
+    },
+    {
       "title": "10,990원 상당의 펄리 뉴 딥클린 9중효소 액상세제 2개 제공",
       "reward": "10,990원 상당",
       "platform": "티블",
@@ -634,19 +647,6 @@
       "image": "",
       "deadline": "2026-06-14",
       "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 49
-    },
-    {
-      "title": "신청 370명 / 모집 10명",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=411625",
-      "image": "",
-      "deadline": "2026-06-14",
-      "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
@@ -705,7 +705,7 @@
       "id": 54
     },
     {
-      "title": "신청 156명 / 모집 10명",
+      "title": "신청 161명 / 모집 10명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=411425",
@@ -731,7 +731,7 @@
       "id": 56
     },
     {
-      "title": "신청 145명 / 모집 5명",
+      "title": "신청 146명 / 모집 5명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=409483",
@@ -744,7 +744,7 @@
       "id": 57
     },
     {
-      "title": "신청 144명 / 모집 1명",
+      "title": "신청 145명 / 모집 1명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=406915",
@@ -887,19 +887,6 @@
       "id": 68
     },
     {
-      "title": "[인스타/릴스] 아리네하누 - 한돈 오마카세",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=411461",
-      "image": "",
-      "deadline": "2026-06-10",
-      "location": "방문형",
-      "review_type": "숏폼",
-      "applied": 0,
-      "total": 10,
-      "id": 69
-    },
-    {
       "title": "[배송] 유니즈쇼핑 - 닥터쥬 병풀 카밍 클렌징 티슈",
       "reward": "",
       "platform": "티블",
@@ -908,6 +895,19 @@
       "deadline": "2026-06-11",
       "location": "배송형",
       "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 69
+    },
+    {
+      "title": "[인스타/릴스] 아리네하누 - 한돈 오마카세",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=411461",
+      "image": "",
+      "deadline": "2026-06-10",
+      "location": "방문형",
+      "review_type": "숏폼",
       "applied": 0,
       "total": 10,
       "id": 70
