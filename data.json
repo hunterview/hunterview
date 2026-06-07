@@ -1,7 +1,20 @@
 {
-  "updated_at": "2026-06-07 02:43",
+  "updated_at": "2026-06-07 08:47",
   "total": 81,
   "campaigns": [
+    {
+      "title": "수분펌 / 클래식 연장 / 마스카라연장 / 애니메 연장 중 선택 가능",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1779261096",
+      "image": "./data/campaign/thumb/thumb-177926109617792608731938430038_MaPiKX3m_EB8BA8EB9DBD_ED858DEC8AA4ED8AB8_28929_300x300.png",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 1
+    },
     {
       "title": "[150,000원 상당] 남자일반펌,여성셋팅펌(C컬S컬,허쉬,빌드펌),전체염색(뿌리염색,탈색불가) 중 택 1/ 대리시술불가",
       "reward": "",
@@ -13,7 +26,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 1
+      "id": 2
     },
     {
       "title": "[200,000원 상당] 여성 염색 모델 구합니다! 탈색없이 비싼 약으로 애쉬브라운, 토프브라운, 매트브라운, 카키브라운 등 시술합니다! 어두운 톤다운 염색 이력 있으신분, 블랙염색 이력있으신분 탈색 후 뿌리 많이 자라신분 문의 X",
@@ -26,7 +39,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 2
+      "id": 3
     },
     {
       "title": "[30,000원 상당] 젓갈제품",
@@ -39,7 +52,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 3
+      "id": 4
     },
     {
       "title": "단일 (아이보리) [배송비 포함59,000원]",
@@ -52,7 +65,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 4
+      "id": 5
     },
     {
       "title": "[경남 거제시] 파라이소 풀빌라 스파펜션",
@@ -65,7 +78,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 5
+      "id": 6
     },
     {
       "title": "세라믹 식탁, 유메 수납장",
@@ -78,7 +91,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 6
+      "id": 7
     },
     {
       "title": "3~18개월 사이의 아이를 키우시는분",
@@ -91,7 +104,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 7
+      "id": 8
     },
     {
       "title": "고야드 생루이백 pm 방수 나일론 이너백",
@@ -104,7 +117,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 8
+      "id": 9
     },
     {
       "title": "[25,000원 상당] 2인 식사",
@@ -114,19 +127,6 @@
       "image": "./data/campaign/thumb/thumb-2040675526_VnH2Lz3g_ED81B4EB9DBCEC9AB0EB939C_300x300.jpg",
       "deadline": "",
       "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 9
-    },
-    {
-      "title": "세플로 스티커 제거 안심 스크래퍼, 본품, 1개 + 리필, 10개",
-      "reward": "1세트 [배송비 포함7,700원]",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1780628618",
-      "image": "./data/campaign/thumb/thumb-17806286182039637491_QdGa8gFo_ECA09CEBAAA9EC9D84_EC9E85EBA0A5ED95B4ECA3BCEC84B8EC9A94._300x300.png",
-      "deadline": "",
-      "location": "구매형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
@@ -627,7 +627,7 @@
       "id": 48
     },
     {
-      "title": "신청 389명 / 모집 10명",
+      "title": "신청 398명 / 모집 10명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=411625",
@@ -731,7 +731,7 @@
       "id": 56
     },
     {
-      "title": "신청 146명 / 모집 5명",
+      "title": "신청 148명 / 모집 5명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=409483",
@@ -848,7 +848,7 @@
       "id": 65
     },
     {
-      "title": "신청 104명 / 모집 10명",
+      "title": "신청 105명 / 모집 10명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=411346",
