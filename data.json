@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-07 08:47",
+  "updated_at": "2026-06-07 13:25",
   "total": 81,
   "campaigns": [
     {
@@ -601,19 +601,6 @@
       "id": 46
     },
     {
-      "title": "우복당 영양 갈비탕 700g 2개 제공",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=411305",
-      "image": "",
-      "deadline": "2026-06-10",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 47
-    },
-    {
       "title": "김민기 홍윤화 부부의 홍뎅 치즈철철카츠",
       "reward": "",
       "platform": "티블",
@@ -624,10 +611,23 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
+      "id": 47
+    },
+    {
+      "title": "우복당 영양 갈비탕 700g 2개 제공",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=411305",
+      "image": "",
+      "deadline": "2026-06-10",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
       "id": 48
     },
     {
-      "title": "신청 398명 / 모집 10명",
+      "title": "신청 412명 / 모집 10명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=411625",
@@ -705,7 +705,7 @@
       "id": 54
     },
     {
-      "title": "신청 163명 / 모집 10명",
+      "title": "신청 164명 / 모집 10명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=411425",
@@ -731,7 +731,7 @@
       "id": 56
     },
     {
-      "title": "신청 148명 / 모집 5명",
+      "title": "신청 150명 / 모집 5명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=409483",
@@ -744,7 +744,7 @@
       "id": 57
     },
     {
-      "title": "신청 145명 / 모집 1명",
+      "title": "신청 146명 / 모집 1명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=406915",
