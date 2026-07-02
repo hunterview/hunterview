@@ -1,7 +1,20 @@
 {
-  "updated_at": "2026-07-02 08:44",
+  "updated_at": "2026-07-02 13:41",
   "total": 85,
   "campaigns": [
+    {
+      "title": "진실게임사이트 소개",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1782976544",
+      "image": "./data/campaign/thumb/thumb-2113504937_t1xmPrHZ_KakaoTalk_20260630_150132456_300x300.jpg",
+      "deadline": "",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 1
+    },
     {
       "title": "딥그린, 1세트 [배송비 포함6,800원]",
       "reward": "",
@@ -13,7 +26,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 1
+      "id": 2
     },
     {
       "title": "일동생활건강 아이케어 루테인 지아잔틴 미니 [배송비 포함9,300원]",
@@ -26,7 +39,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 2
+      "id": 3
     },
     {
       "title": "[30,000원 상당] 석류담다 팩밸런스 포뮬러",
@@ -39,7 +52,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 3
+      "id": 4
     },
     {
       "title": "7월 13일 오전 11시 일괄 선정 예정 (라이브 방송 참여 가능하신분만 선정)",
@@ -52,7 +65,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 4
+      "id": 5
     },
     {
       "title": "옐로우(단호박&당근)135ml x 5개, 그린(브로콜리&고구마)135ml x 5개, 혼합세트(옐로우3+그린2)135ml x 5개, 중 택1 [배송비 포함27,500원]",
@@ -65,7 +78,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 5
+      "id": 6
     },
     {
       "title": "[25,900원 상당] 고메온 두바이 쫀득 찹쌀떡 360g",
@@ -78,7 +91,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 6
+      "id": 7
     },
     {
       "title": "[45,000원 상당] 포어 매트릭스 바이오 셀룰로오스 마스크 팩 - 1개 (★가이드 확인 필요★)",
@@ -91,7 +104,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 7
+      "id": 8
     },
     {
       "title": "[53,000원 상당] 스위프트 이펙트 스팟 팩 듀오 - 1개 (★가이드 확인 필요★)",
@@ -104,7 +117,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 8
+      "id": 9
     },
     {
       "title": "[45,000원 상당] 어센틱 엘릭서 쿨링 워시오프 팩 - 1개 (★가이드 확인 필요★)",
@@ -117,7 +130,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 9
+      "id": 10
     },
     {
       "title": "7월17토 , 7월25토, 8월1토 만 방문가능하신분만가능합니다",
@@ -130,7 +143,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 10
+      "id": 11
     },
     {
       "title": "[79,000원 상당] 젠큠 ( NMN + 레스베라트롤, 특허 배합 포뮬러 )",
@@ -143,7 +156,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 11
+      "id": 12
     },
     {
       "title": "[23,000원 상당] 이너백 1개(사이즈: 스몰, 미디움, 라지 / 색상: 베이지, 블랙 중 선택)",
@@ -156,7 +169,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 12
+      "id": 13
     },
     {
       "title": "[41,900원 상당] 저스트컷 1박스",
@@ -169,7 +182,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 13
+      "id": 14
     },
     {
       "title": "비빔낙지 250g [배송비 포함15,000원]",
@@ -182,7 +195,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 14
+      "id": 15
     },
     {
       "title": "[2차]존스블랜드 프래그런스 젤 캔 차량용 방향제 화이트머스크",
@@ -195,7 +208,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 15
+      "id": 16
     },
     {
       "title": "[30,000원 상당] 2인 식사권 (토마토고추장 파스타 보울, 유자쌈장 파스타 보울) + 음료 (제로 콜라, 사이다)",
@@ -208,7 +221,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 16
+      "id": 17
     },
     {
       "title": "일렌 하이드로 마스크 워시 130g [배송비 포함19,900원]",
@@ -221,7 +234,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 17
+      "id": 18
     },
     {
       "title": "일렌 클라리티 마스크 워시 130g [배송비 포함19,900원]",
@@ -234,7 +247,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 18
+      "id": 19
     },
     {
       "title": "고메온 두바이 쫀득 찹쌀떡 360g",
@@ -244,19 +257,6 @@
       "image": "./data/campaign/thumb/thumb-238402361_sQLy7d5k_EAB3A0EBA994EC98A8_EB9190EBB094EC9DB4ECAB80EB939DECB0B9EC8C80EB96A1_360g_EB9190ECAB80EB96A1_ECB0B9EC8C80_EBAAA8ECB08C_28829_300x300.jpg",
       "deadline": "",
       "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 19
-    },
-    {
-      "title": "커피브라운 0.9x2m (★제품 설치가 필요합니다★) [배송비 포함11,800원]",
-      "reward": "펜스, 울타리 등 설치 가능하신 분만",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1782812521",
-      "image": "./data/campaign/thumb/thumb-17828125212040675526_8CJq4lAy_EC8AA4ED81ACEBA6B0EC83B7_2026-05-12_101854_300x300.png",
-      "deadline": "",
-      "location": "구매형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
@@ -900,19 +900,6 @@
       "id": 69
     },
     {
-      "title": "반건조 오징어 5마리 1팩",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=413506",
-      "image": "",
-      "deadline": "2026-07-12",
-      "location": "방문형",
-      "review_type": "인스타",
-      "applied": 0,
-      "total": 10,
-      "id": 70
-    },
-    {
       "title": "비건 설거지바 주방세제 세트 제공",
       "reward": "",
       "platform": "티블",
@@ -923,20 +910,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 71
-    },
-    {
-      "title": "[후기 작성X/사진 제공] 아치큐 마그핏 (36)",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=412913",
-      "image": "",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 72
+      "id": 70
     },
     {
       "title": "[배송] 유니즈쇼핑 - 닥터쥬 병풀 카밍 클렌징 티슈",
@@ -946,6 +920,32 @@
       "image": "",
       "deadline": "2026-07-09",
       "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 71
+    },
+    {
+      "title": "반건조 오징어 5마리 1팩",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=413506",
+      "image": "",
+      "deadline": "2026-07-12",
+      "location": "방문형",
+      "review_type": "인스타",
+      "applied": 0,
+      "total": 10,
+      "id": 72
+    },
+    {
+      "title": "[후기 작성X/사진 제공] 아치큐 마그핏 (36)",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=412913",
+      "image": "",
+      "deadline": "",
+      "location": "방문형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
