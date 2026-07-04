@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-04 08:26",
+  "updated_at": "2026-07-04 13:03",
   "total": 84,
   "campaigns": [
     {
@@ -653,19 +653,6 @@
       "id": 50
     },
     {
-      "title": "신청 207명 / 모집 5명",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=409483",
-      "image": "",
-      "deadline": "2026-07-06",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 51
-    },
-    {
       "title": "[배송] 철가방요리사의 밀키트 - 짬짜면",
       "reward": "",
       "platform": "티블",
@@ -673,6 +660,19 @@
       "image": "",
       "deadline": "2026-07-06",
       "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 51
+    },
+    {
+      "title": "신청 208명 / 모집 5명",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=409483",
+      "image": "",
+      "deadline": "2026-07-06",
+      "location": "방문형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
@@ -796,19 +796,6 @@
       "id": 61
     },
     {
-      "title": "[인스타][배송] 아리울떡공방",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=413356",
-      "image": "",
-      "deadline": "2026-07-09",
-      "location": "배송형",
-      "review_type": "인스타",
-      "applied": 0,
-      "total": 10,
-      "id": 62
-    },
-    {
       "title": "이가자연면 동치미 동동냉면 480g x 12인분 제공",
       "reward": "",
       "platform": "티블",
@@ -817,6 +804,19 @@
       "deadline": "2026-07-14",
       "location": "배송형",
       "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 62
+    },
+    {
+      "title": "[인스타][배송] 아리울떡공방",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=413356",
+      "image": "",
+      "deadline": "2026-07-09",
+      "location": "배송형",
+      "review_type": "인스타",
       "applied": 0,
       "total": 10,
       "id": 63
@@ -874,19 +874,6 @@
       "id": 67
     },
     {
-      "title": "[배송] 유니즈쇼핑 - 손발톱 영양제",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=413231",
-      "image": "",
-      "deadline": "2026-07-07",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 68
-    },
-    {
       "title": "반건조 오징어 5마리 1팩",
       "reward": "",
       "platform": "티블",
@@ -895,6 +882,19 @@
       "deadline": "2026-07-12",
       "location": "방문형",
       "review_type": "인스타",
+      "applied": 0,
+      "total": 10,
+      "id": 68
+    },
+    {
+      "title": "[배송] 유니즈쇼핑 - 손발톱 영양제",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=413231",
+      "image": "",
+      "deadline": "2026-07-07",
+      "location": "배송형",
+      "review_type": "블로그",
       "applied": 0,
       "total": 10,
       "id": 69
