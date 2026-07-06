@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-06 15:15",
+  "updated_at": "2026-07-06 19:45",
   "total": 86,
   "campaigns": [
     {
@@ -731,19 +731,6 @@
       "id": 56
     },
     {
-      "title": "17,000원 상당의 오메가생선 농어트릿 세트(쿠팡)",
-      "reward": "17,000원 상당",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=411524",
-      "image": "",
-      "deadline": "2026-07-09",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 57
-    },
-    {
       "title": "[배송] JW생활건강- 듀크레이 네옵타이드 엑스퍼트 두피앰플 2개",
       "reward": "",
       "platform": "티블",
@@ -751,6 +738,19 @@
       "image": "",
       "deadline": "",
       "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 57
+    },
+    {
+      "title": "17,000원 상당의 오메가생선 농어트릿 세트(쿠팡)",
+      "reward": "17,000원 상당",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=411524",
+      "image": "",
+      "deadline": "2026-07-09",
+      "location": "구매형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
@@ -822,19 +822,6 @@
       "id": 63
     },
     {
-      "title": "천연유래 생약 함유 잇몸 케어 닥터더블유 치약 1개 제공",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=413300",
-      "image": "",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 64
-    },
-    {
       "title": "반건조 오징어 5마리 1팩",
       "reward": "",
       "platform": "티블",
@@ -843,6 +830,19 @@
       "deadline": "2026-07-11",
       "location": "방문형",
       "review_type": "인스타",
+      "applied": 0,
+      "total": 10,
+      "id": 64
+    },
+    {
+      "title": "천연유래 생약 함유 잇몸 케어 닥터더블유 치약 1개 제공",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=413300",
+      "image": "",
+      "deadline": "",
+      "location": "배송형",
+      "review_type": "블로그",
       "applied": 0,
       "total": 10,
       "id": 65
@@ -887,7 +887,7 @@
       "id": 68
     },
     {
-      "title": "신청 68명 / 모집 10명",
+      "title": "신청 70명 / 모집 10명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=413833",
