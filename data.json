@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-11 07:42",
+  "updated_at": "2026-07-11 12:58",
   "total": 86,
   "campaigns": [
     {
@@ -16,6 +16,19 @@
       "id": 1
     },
     {
+      "title": "오앤오 전좌석 올인원 자외선차단 차량용 햇빛가리개 4개 세트",
+      "reward": "1세트 [배송비 포함3,000원]",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1783659528",
+      "image": "./data/campaign/thumb/thumb-3731096617_2IMjrRBN_EC8DB8_300x300.png",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 2
+    },
+    {
       "title": "차량용(가솔린,디젤,LPG,하이브리드) 고기능 엔진코팅제 엔진첨가제 200ml [배송비 포함29,900원]",
       "reward": "",
       "platform": "아싸뷰",
@@ -26,7 +39,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 2
+      "id": 3
     },
     {
       "title": "[40,000원 상당] 40,000원 금액권",
@@ -39,7 +52,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 3
+      "id": 4
     },
     {
       "title": "[30,000원 상당] 30,000원 금액권",
@@ -52,7 +65,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 4
+      "id": 5
     },
     {
       "title": "[30,000원 상당] 등갈비+기본메밀전 1장 1개",
@@ -62,19 +75,6 @@
       "image": "./data/campaign/thumb/thumb-1781569967_4da2ffd3_300x300.jpg",
       "deadline": "",
       "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 5
-    },
-    {
-      "title": "진심 온 젤리 (20g 젤리스틱 14포 입) 1케이스 [배송비 포함18,450원]",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1780298368",
-      "image": "./data/campaign/thumb/thumb-1893714358_HFiZqRLJ_KakaoTalk_20260601_123210565_300x300.jpg",
-      "deadline": "",
-      "location": "구매형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
@@ -666,7 +666,7 @@
       "id": 51
     },
     {
-      "title": "신청 138명 / 모집 10명",
+      "title": "신청 139명 / 모집 10명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=413833",
@@ -705,6 +705,19 @@
       "id": 54
     },
     {
+      "title": "480,000원 상당의 천기녹진단 제공",
+      "reward": "480,000원 상당",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=414030",
+      "image": "",
+      "deadline": "2026-07-13",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 55
+    },
+    {
       "title": "36,800원 상당의 나이아신아마이드 부스팅 탄력앰플 항산화 EGF 피지 진정 주름 앰플 30ml 제공",
       "reward": "36,800원 상당",
       "platform": "티블",
@@ -715,7 +728,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 55
+      "id": 56
     },
     {
       "title": "[배송] Julia-J - 투웨이 여름 지퍼 치마바지 반바지",
@@ -724,19 +737,6 @@
       "link": "https://tble.kr/view.php?cp_id=414028",
       "image": "",
       "deadline": "2026-07-16",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 56
-    },
-    {
-      "title": "480,000원 상당의 천기녹진단 제공",
-      "reward": "480,000원 상당",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=414030",
-      "image": "",
-      "deadline": "2026-07-13",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
@@ -822,19 +822,6 @@
       "id": 63
     },
     {
-      "title": "16,000원 상당의 바삭바삭 간식타임 세트(마켓컬리) 제공",
-      "reward": "16,000원 상당",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=411516",
-      "image": "",
-      "deadline": "2026-07-17",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 64
-    },
-    {
       "title": "328,000원 상당의 누보셀 비듬 탈모샴푸 500ml 제공",
       "reward": "328,000원 상당",
       "platform": "티블",
@@ -842,6 +829,19 @@
       "image": "",
       "deadline": "2026-07-20",
       "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 64
+    },
+    {
+      "title": "16,000원 상당의 바삭바삭 간식타임 세트(마켓컬리) 제공",
+      "reward": "16,000원 상당",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=411516",
+      "image": "",
+      "deadline": "2026-07-17",
+      "location": "구매형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
