@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-25 07:53",
+  "updated_at": "2026-07-25 13:04",
   "total": 85,
   "campaigns": [
     {
@@ -627,19 +627,6 @@
       "id": 48
     },
     {
-      "title": "신청 243명 / 모집 5명",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=409483",
-      "image": "",
-      "deadline": "2026-07-28",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 49
-    },
-    {
       "title": "19,900원 상당의 대도수산 간장 왕새우장 450g 제공",
       "reward": "19,900원 상당",
       "platform": "티블",
@@ -647,6 +634,19 @@
       "image": "",
       "deadline": "2026-08-03",
       "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 49
+    },
+    {
+      "title": "신청 243명 / 모집 5명",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=409483",
+      "image": "",
+      "deadline": "2026-07-28",
+      "location": "방문형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
@@ -692,7 +692,7 @@
       "id": 53
     },
     {
-      "title": "신청 124명 / 모집 10명",
+      "title": "신청 126명 / 모집 10명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=414714",
@@ -757,7 +757,7 @@
       "id": 58
     },
     {
-      "title": "[서울 압구정] 슈링크 1회",
+      "title": "신청 101명 / 모집 10명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=414535",
@@ -770,19 +770,6 @@
       "id": 59
     },
     {
-      "title": "18,000원 상당의 오메가 가득 한상 세트(마켓컬리) 제공",
-      "reward": "18,000원 상당",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=411517",
-      "image": "",
-      "deadline": "2026-07-27",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 60
-    },
-    {
       "title": "[배송] 닥터코어런 - 압박스타킹",
       "reward": "",
       "platform": "티블",
@@ -790,6 +777,19 @@
       "image": "",
       "deadline": "2026-07-29",
       "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 60
+    },
+    {
+      "title": "18,000원 상당의 오메가 가득 한상 세트(마켓컬리) 제공",
+      "reward": "18,000원 상당",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=411517",
+      "image": "",
+      "deadline": "2026-07-27",
+      "location": "구매형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
@@ -939,7 +939,7 @@
       "id": 72
     },
     {
-      "title": "신청 34명 / 모집 30명",
+      "title": "신청 40명 / 모집 30명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=415293",
