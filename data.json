@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-01 08:06",
+  "updated_at": "2026-08-01 12:59",
   "total": 86,
   "campaigns": [
     {
@@ -666,7 +666,7 @@
       "id": 51
     },
     {
-      "title": "신청 232명 / 모집 30명",
+      "title": "신청 237명 / 모집 30명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=415293",
@@ -692,7 +692,7 @@
       "id": 53
     },
     {
-      "title": "신청 141명 / 모집 2명",
+      "title": "신청 142명 / 모집 2명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=415512",
@@ -705,7 +705,7 @@
       "id": 54
     },
     {
-      "title": "신청 129명 / 모집 3명",
+      "title": "신청 130명 / 모집 3명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=414987",
@@ -731,7 +731,7 @@
       "id": 56
     },
     {
-      "title": "신청 105명 / 모집 10명",
+      "title": "신청 107명 / 모집 10명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=415455",
@@ -952,19 +952,6 @@
       "id": 73
     },
     {
-      "title": "맛한가득 청방 김치 700g 제공",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=415115",
-      "image": "",
-      "deadline": "2026-08-04",
-      "location": "배송형",
-      "review_type": "인스타",
-      "applied": 0,
-      "total": 10,
-      "id": 74
-    },
-    {
       "title": "[배송] 유니즈쇼핑 - 손발톱 영양제",
       "reward": "",
       "platform": "티블",
@@ -973,6 +960,19 @@
       "deadline": "2026-08-04",
       "location": "배송형",
       "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 74
+    },
+    {
+      "title": "맛한가득 청방 김치 700g 제공",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=415115",
+      "image": "",
+      "deadline": "2026-08-04",
+      "location": "배송형",
+      "review_type": "인스타",
       "applied": 0,
       "total": 10,
       "id": 75
