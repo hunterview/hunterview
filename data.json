@@ -1,7 +1,20 @@
 {
-  "updated_at": "2026-08-05 08:21",
+  "updated_at": "2026-08-05 13:46",
   "total": 82,
   "campaigns": [
+    {
+      "title": "가머 모이스처 탈모 샴푸 (GAMUR Moisture Anti Hair Loss Shampoo)",
+      "reward": "촬영한 사진과 동영상은 2차 마케팅용도로 사용될 예정/ 촬영본은 담당자 메일로 전달 필수",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1785914388",
+      "image": "./data/campaign/thumb/thumb-1890056734_ZVoBSbUO_th02_300x300.jpg",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 1
+    },
     {
       "title": "슬림미 발바닥 쿠션 양말 족저근막염 충격 흡수 덧신 3개",
       "reward": "원하시는옵션 [배송비 포함13,800원]",
@@ -13,7 +26,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 1
+      "id": 2
     },
     {
       "title": "[26,000원 상당] 이너백 1개(색상: 베이지, 블랙 중 선택)",
@@ -26,7 +39,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 2
+      "id": 3
     },
     {
       "title": "+9,000 P",
@@ -39,7 +52,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 3
+      "id": 4
     },
     {
       "title": "[28,000원 상당] 스무아디 마린-테카 B5 리커버리 세럼 30ml",
@@ -52,7 +65,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 4
+      "id": 5
     },
     {
       "title": "펜터렉트/ 1박스 [배송비 포함39,800원]",
@@ -65,7 +78,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 5
+      "id": 6
     },
     {
       "title": "저스트컷/ 1박스 [배송비 포함38,900원]",
@@ -78,7 +91,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 6
+      "id": 7
     },
     {
       "title": "키로커트/ 1박스 [배송비 포함38,500원]",
@@ -91,7 +104,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 7
+      "id": 8
     },
     {
       "title": "베드컷/ 1박스 [배송비 포함28,900원]",
@@ -104,7 +117,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 8
+      "id": 9
     },
     {
       "title": "휴대용 선글라스 케이스 여행용 가죽 파우치 홀더 보관함 안경집",
@@ -117,7 +130,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 9
+      "id": 10
     },
     {
       "title": "[53,000원 상당] 레디바이옴 리부트샷 1박스",
@@ -130,7 +143,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 10
+      "id": 11
     },
     {
       "title": "[12원 상당] 여자열펌, 여자염색,남자컷+다운펌",
@@ -143,7 +156,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 11
+      "id": 12
     },
     {
       "title": "실제 운동 시(헬스, 크로스핏, 클라이밍, 유도, 골프 등) 사용 및 사진 촬영 가능한 분",
@@ -156,7 +169,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 12
+      "id": 13
     },
     {
       "title": "실제 작업(목공, 디자인, 인테리어 등)에 사용 후 사진 촬영 가능하신 분",
@@ -169,7 +182,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 13
+      "id": 14
     },
     {
       "title": "실제 부착 후 사진 촬영 가능하신 분, 실 사용 사진 필수입니다.",
@@ -182,7 +195,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 14
+      "id": 15
     },
     {
       "title": "실제 사용 후 사진 촬영 가능하신 분, 실 사용 사진 필수입니다.",
@@ -195,7 +208,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 15
+      "id": 16
     },
     {
       "title": "직접 자전거에 설치 후 사진 촬영 가능하신 분, 실 장착 사진 필수입니다.",
@@ -208,7 +221,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 16
+      "id": 17
     },
     {
       "title": "[30,000원 상당] 풍기 인삼",
@@ -221,7 +234,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 17
+      "id": 18
     },
     {
       "title": "[26,000원 상당] 에퓨놀삼푸 (바이옴샴푸 또는 탈모샴푸)",
@@ -234,7 +247,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 18
+      "id": 19
     },
     {
       "title": "[26,000원 상당] 에퓨놀삼푸 (바이옴샴푸 또는 탈모샴푸)",
@@ -242,19 +255,6 @@
       "platform": "아싸뷰",
       "link": "https://assaview.co.kr/campaign.php?cp_id=1785845295",
       "image": "./data/campaign/thumb/thumb-17858452953698968279_X4Bonzxk_EC9790ED93A8EB8680_EBB094EC9DB4EC98B4EC83B4ED93A8_300x300.jpg",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 19
-    },
-    {
-      "title": "강아지 또는 고양이 키우시는분 (피드에 내용들이 들어간분)",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1785845958",
-      "image": "./data/campaign/thumb/thumb-3698968279_fm3hIOMi_EB9FB0EBA7A4ED8AB8__EBA994EC9DB8_300x300.png",
       "deadline": "",
       "location": "배송형",
       "review_type": "블로그",
@@ -601,7 +601,7 @@
       "id": 46
     },
     {
-      "title": "신청 328명 / 모집 30명",
+      "title": "신청 335명 / 모집 30명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=415293",
@@ -614,7 +614,7 @@
       "id": 47
     },
     {
-      "title": "신청 217명 / 모집 2명",
+      "title": "신청 225명 / 모집 2명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=415512",
@@ -640,7 +640,7 @@
       "id": 49
     },
     {
-      "title": "신청 164명 / 모집 10명",
+      "title": "신청 174명 / 모집 10명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=415455",
@@ -653,6 +653,19 @@
       "id": 50
     },
     {
+      "title": "[배송] 이가자연면 - 누룽제비 오리지널",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=416043",
+      "image": "",
+      "deadline": "2026-08-16",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 51
+    },
+    {
       "title": "올리디아 스킨부스터2cc or 입술필러 1cc(국산) or 바디온다 60kj(팔뚝 or 복부) 중 택 1제공",
       "reward": "",
       "platform": "티블",
@@ -663,7 +676,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 51
+      "id": 52
     },
     {
       "title": "퍼센트로 탄력 마스크 1 BOX",
@@ -676,7 +689,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 52
+      "id": 53
     },
     {
       "title": "[배송] Julia-J - 여름 반팔 트위드자켓",
@@ -685,19 +698,6 @@
       "link": "https://tble.kr/view.php?cp_id=415804",
       "image": "",
       "deadline": "2026-08-10",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 53
-    },
-    {
-      "title": "[배송] 이가자연면 - 누룽제비 오리지널",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=416043",
-      "image": "",
-      "deadline": "2026-08-16",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
@@ -744,19 +744,6 @@
       "id": 57
     },
     {
-      "title": "18,000원 상당의 오메가 가득 한상 세트(마켓컬리) 제공",
-      "reward": "18,000원 상당",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=411517",
-      "image": "",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 58
-    },
-    {
       "title": "플루메리아3개, 바다비누2개, 데이지꽃비누2개, 조개비누2개, 아이스아메리카노 비누2개, 복주머니 비누2개, 한복 비누2개",
       "reward": "",
       "platform": "티블",
@@ -767,13 +754,26 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 59
+      "id": 58
     },
     {
       "title": "53,300원 상당의 산리오 랜덤스쿱 스쿱마켓 랜덤박스선물 L사이즈 제공",
       "reward": "53,300원 상당",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=415326",
+      "image": "",
+      "deadline": "2026-08-06",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 59
+    },
+    {
+      "title": "18,000원 상당의 오메가 가득 한상 세트(마켓컬리) 제공",
+      "reward": "18,000원 상당",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=411517",
       "image": "",
       "deadline": "2026-08-06",
       "location": "구매형",
@@ -822,19 +822,6 @@
       "id": 63
     },
     {
-      "title": "100만원 상당의 세르프 이용권",
-      "reward": "100만원 상당",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=415706",
-      "image": "",
-      "deadline": "2026-08-11",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 64
-    },
-    {
       "title": "[배송] EMBRYONISM 엠브리오니즘 - 에그 비피 셀 스노우 골드 에디션",
       "reward": "",
       "platform": "티블",
@@ -842,6 +829,19 @@
       "image": "",
       "deadline": "2026-08-12",
       "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 64
+    },
+    {
+      "title": "100만원 상당의 세르프 이용권",
+      "reward": "100만원 상당",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=415706",
+      "image": "",
+      "deadline": "2026-08-11",
+      "location": "방문형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
@@ -861,12 +861,12 @@
       "id": 66
     },
     {
-      "title": "천연유래 생약 함유 잇몸 케어 닥터더블유 치약 1개 제공",
+      "title": "신청 75명 / 모집 10명",
       "reward": "",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=415178",
+      "link": "https://tble.kr/view.php?cp_id=415810",
       "image": "",
-      "deadline": "",
+      "deadline": "2026-08-13",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
@@ -874,12 +874,12 @@
       "id": 67
     },
     {
-      "title": "신청 73명 / 모집 10명",
+      "title": "천연유래 생약 함유 잇몸 케어 닥터더블유 치약 1개 제공",
       "reward": "",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=415810",
+      "link": "https://tble.kr/view.php?cp_id=415178",
       "image": "",
-      "deadline": "2026-08-13",
+      "deadline": "",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
