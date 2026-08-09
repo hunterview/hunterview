@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-08-09 06:40",
-  "total": 81,
+  "updated_at": "2026-08-09 12:31",
+  "total": 80,
   "campaigns": [
     {
       "title": "[충청 아산시] 심야오뎅 아산탕정점",
@@ -601,7 +601,7 @@
       "id": 46
     },
     {
-      "title": "신청 306명 / 모집 2명",
+      "title": "신청 314명 / 모집 2명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=415512",
@@ -653,7 +653,7 @@
       "id": 50
     },
     {
-      "title": "신청 234명 / 모집 10명",
+      "title": "신청 238명 / 모집 10명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=415455",
@@ -744,7 +744,7 @@
       "id": 57
     },
     {
-      "title": "신청 109명 / 모집 10명",
+      "title": "신청 115명 / 모집 10명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=415810",
@@ -783,19 +783,6 @@
       "id": 60
     },
     {
-      "title": "[배송] 오하브코스메틱 -오하브 마일드 앤 퓨리파잉 포밍 클렌져",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=415175",
-      "image": "",
-      "deadline": "2026-08-10",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 61
-    },
-    {
       "title": "[배송] OVACO 오바코 - 하이드레이트 앤 글로우 스킨케어 3종 세트",
       "reward": "",
       "platform": "티블",
@@ -806,33 +793,20 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 62
+      "id": 61
     },
     {
-      "title": "[배송] 보스티나- 모발의힘 HEEM",
+      "title": "[배송] 오하브코스메틱 -오하브 마일드 앤 퓨리파잉 포밍 클렌져",
       "reward": "",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=415962",
+      "link": "https://tble.kr/view.php?cp_id=415175",
       "image": "",
       "deadline": "2026-08-10",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 63
-    },
-    {
-      "title": "100만원 상당의 세르프 이용권 제공",
-      "reward": "100만원 상당",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=415530",
-      "image": "",
-      "deadline": "2026-08-10",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 64
+      "id": 62
     },
     {
       "title": "반건조 오징어 5마리 1팩",
@@ -845,7 +819,20 @@
       "review_type": "인스타",
       "applied": 0,
       "total": 10,
-      "id": 65
+      "id": 63
+    },
+    {
+      "title": "[배송] 보스티나- 모발의힘 HEEM",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=415962",
+      "image": "",
+      "deadline": "2026-08-10",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 64
     },
     {
       "title": "백금촉매 플래티넘 실리콘도마 제공",
@@ -858,7 +845,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 66
+      "id": 65
     },
     {
       "title": "누보셀 저자극 약산성 폼클렌징 여드름완화 기능성 150ML",
@@ -871,7 +858,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 67
+      "id": 66
     },
     {
       "title": "[배송] Julia-J - 로맨틱 린넨코튼 레이스 프릴블라우스",
@@ -884,7 +871,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 68
+      "id": 67
     },
     {
       "title": "맛한가득 쪽파 김치 500g 제공",
@@ -897,10 +884,10 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 69
+      "id": 68
     },
     {
-      "title": "신청 59명 / 모집 5명",
+      "title": "신청 64명 / 모집 5명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=416234",
@@ -910,7 +897,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 70
+      "id": 69
     },
     {
       "title": "일산/덕양/파주",
@@ -923,7 +910,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 71
+      "id": 70
     },
     {
       "title": "🍽️ 맛집",
@@ -936,7 +923,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 72
+      "id": 71
     },
     {
       "title": "🛍️ 제품·서비스",
@@ -949,7 +936,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 73
+      "id": 72
     },
     {
       "title": "🎭 문화·스포츠",
@@ -962,7 +949,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 74
+      "id": 73
     },
     {
       "title": "📰 기자단",
@@ -975,7 +962,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 75
+      "id": 74
     },
     {
       "title": "📸 촬영단",
@@ -988,7 +975,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 76
+      "id": 75
     },
     {
       "title": "⏰ 마감임박",
@@ -1001,7 +988,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 77
+      "id": 76
     },
     {
       "title": "✨ AI 추천픽",
@@ -1014,7 +1001,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 78
+      "id": 77
     },
     {
       "title": "⭐ 체험 후기",
@@ -1027,7 +1014,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 79
+      "id": 78
     },
     {
       "title": "🧰 블로거도구",
@@ -1040,7 +1027,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 80
+      "id": 79
     },
     {
       "title": "📚 커뮤니티",
@@ -1053,7 +1040,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 81
+      "id": 80
     }
   ]
 }
