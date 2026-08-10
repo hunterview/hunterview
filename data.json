@@ -1,7 +1,59 @@
 {
-  "updated_at": "2026-08-10 07:14",
-  "total": 82,
+  "updated_at": "2026-08-10 12:47",
+  "total": 56,
   "campaigns": [
+    {
+      "title": "6세 이상 위튼버그 잉글리쉬 교재 6권 이상 (사전에 연락 후 아이 수준에 맞춰 발송)",
+      "reward": "[5원 상당] 위튼버그 교재",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1785035331",
+      "image": "./data/campaign/thumb/thumb-17850353311782106065177589248617698552281766826302176603223517447121931743052630173916206617345730473731734404_pJON2bDt_KakaoTalk_20241212_135402106_300x300.jpg",
+      "deadline": "",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 1
+    },
+    {
+      "title": "[49,000원 상당] 무료시술",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1779064668",
+      "image": "./data/campaign/thumb/thumb-3555374423_2hWw4cBa_1610678918062_300x300.jpg",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 2
+    },
+    {
+      "title": "PediaVit MULTI drops 영유아 멀티비타민 건강기능식품",
+      "reward": "[23,000원 상당] PediaVit MULTI drops",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1786334881",
+      "image": "./data/campaign/thumb/thumb-17863348811794450101_JMBHdcI2_8_300x300.jpg",
+      "deadline": "",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 3
+    },
+    {
+      "title": "PediaFer(페디아퍼)_리포좀 액상 철분제_소아용 딸기맛 리포좀 액상철분 _1일 1ml로 7mg 철분 보충 건강기능식품",
+      "reward": "[28,000원 상당] PediaFer",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1786335474",
+      "image": "./data/campaign/thumb/thumb-17863354741794450101_mlNKgTbJ_KakaoTalk_20260529_115956867_300x300.jpg",
+      "deadline": "",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 4
+    },
     {
       "title": "방문 가능 시간 : 금요일, 토요일 저녁 10시 30분 이후",
       "reward": "[70,000원 상당] 식사권",
@@ -13,7 +65,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 1
+      "id": 5
     },
     {
       "title": "[110,000원 상당] 4:1 소그룹 레슨",
@@ -26,7 +78,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 2
+      "id": 6
     },
     {
       "title": "45,000원 자유이용권(통갑짬뽕1개필수)",
@@ -39,7 +91,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 3
+      "id": 7
     },
     {
       "title": "[서울 영등포구] 온도 여의도 2호점",
@@ -52,7 +104,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 4
+      "id": 8
     },
     {
       "title": "[80,000원 상당] 1:1 개인 필라테스 이용 및 AI 체형검사",
@@ -65,7 +117,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 5
+      "id": 9
     },
     {
       "title": "[35,000원 상당] 3:1 소그룹 체험",
@@ -78,7 +130,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 6
+      "id": 10
     },
     {
       "title": "[30,000원 상당] 1인 방문 - 파이 1종류 + 음료 1잔 / 2인 방문 - 파이 2종류 + 음료 2잔 / 포장 - 파이 1종류 + 음료 1잔",
@@ -91,7 +143,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 7
+      "id": 11
     },
     {
       "title": "[30,000원 상당] 1인 방문 - 파이 1종류 + 음료 1잔 / 2인 방문 - 파이 2종류 + 음료 2잔 / 포장 - 파이 1종류 + 음료 1잔",
@@ -104,7 +156,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 8
+      "id": 12
     },
     {
       "title": "1인 방문 - 파이 1종류 + 음료 1잔 / 2인 방문 - 파이 2종류 + 음료 2잔 / 포장 - 파이 1종류 + 음료 1잔",
@@ -117,7 +169,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 9
+      "id": 13
     },
     {
       "title": "[인천 남동구] 인천 내린천추어탕",
@@ -130,7 +182,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 10
+      "id": 14
     },
     {
       "title": "[60,000원 상당] 그룹(필라테스 or 바레) 1회 수업",
@@ -143,7 +195,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 11
+      "id": 15
     },
     {
       "title": "그룹(필라테스 or 요가) 1회 수업",
@@ -156,7 +208,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 12
+      "id": 16
     },
     {
       "title": "[121,000원 상당] 통증관리/산전마사지/산후마사지",
@@ -169,7 +221,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 13
+      "id": 17
     },
     {
       "title": "남성용 청결 패드 드라이메이트(DryMate) 체험단 모집합니다.",
@@ -182,7 +234,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 14
+      "id": 18
     },
     {
       "title": "남성용 청결 패드 드라이메이트(DryMate) 체험단 모집합니다.",
@@ -195,7 +247,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 15
+      "id": 19
     },
     {
       "title": "노키즈존입니다. 블로그글및 영수증리뷰 한건 리뷰충족 요건.",
@@ -203,58 +255,6 @@
       "platform": "아싸뷰",
       "link": "https://assaview.co.kr/campaign.php?cp_id=1786261931",
       "image": "./data/campaign/thumb/thumb-3024222495_lMqSndct_image_300x300.jpg",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 16
-    },
-    {
-      "title": "[200,000원 상당] 여성 긴머리 염색 [ 탈색 x , 블랙 x ] , 새치염색이력 X 톤다운이력X, 탈색없는 애쉬브라운, 올리브브라운, 매트브라운, 토프브라운 해드립니다",
-      "reward": "단발 중단발 x 가슴선정도 되는 긴머리만 받아요 주말은 안됩니다 문의도 사양합니다",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1786318815",
-      "image": "./data/campaign/thumb/thumb-3698978397_7Enh5ra1_IMG_0128_300x300.jpg",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 17
-    },
-    {
-      "title": "색상 임의 선택 불가 / 지원 및 선정 된 색상으로 구매 부탁드립니다. 제출 기한 엄수!",
-      "reward": "크림 핑크 3개 [배송비 포함13,900원]",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1786322902",
-      "image": "./data/campaign/thumb/thumb-1786322902988160941_RaX7yBQz_EC8DB81_300x300.png",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 18
-    },
-    {
-      "title": "[서울 성동구] 결이다른Therapy",
-      "reward": "집중케어 50분 관리",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1786323438",
-      "image": "./data/campaign/thumb/thumb-1786323438238341284_XJS3bOMc_20260308_094003_300x300.jpg",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 19
-    },
-    {
-      "title": "[200,000원 상당] 여성 염색 모델 구합니다! 탈색없이 비싼 약으로 애쉬브라운, 토프브라운, 매트브라운, 카키브라운 등 시술합니다! 어두운 톤다운 염색 이력 있으신분, 블랙염색 이력있으신분 탈색 후 뿌리 많이 자라신분 문의 X",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1764596905",
-      "image": "./data/campaign/thumb/thumb-176459690517616284881785037162_r2lfAUGg_EBB095EC9584ED9884_300x300.jpg",
       "deadline": "",
       "location": "방문형",
       "review_type": "블로그",
@@ -588,344 +588,6 @@
       "id": 45
     },
     {
-      "title": "우복당 영양 갈비탕 700g 2개 제공",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=414236",
-      "image": "",
-      "deadline": "2026-08-18",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 46
-    },
-    {
-      "title": "[배송] 이가자연면 - 누룽제비 오리지널",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=416043",
-      "image": "",
-      "deadline": "2026-08-16",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 47
-    },
-    {
-      "title": "[배송] 이가자연면 - 얼큰 누룽제비",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=416042",
-      "image": "",
-      "deadline": "2026-08-16",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 48
-    },
-    {
-      "title": "신청 327명 / 모집 2명",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=415512",
-      "image": "",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 49
-    },
-    {
-      "title": "프리미엄 수제 카페 바스크 치즈 케이크",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=416005",
-      "image": "",
-      "deadline": "2026-08-16",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 50
-    },
-    {
-      "title": "[배송] Julia-J - 여름 반팔 트위드자켓",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=415804",
-      "image": "",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 51
-    },
-    {
-      "title": "퍼센트로 탄력 마스크 1 BOX",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=415518",
-      "image": "",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 52
-    },
-    {
-      "title": "[배송] EMBRYONISM 엠브리오니즘 - 에그 비피 셀 스노우 골드 에디션",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=416040",
-      "image": "",
-      "deadline": "2026-08-12",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 53
-    },
-    {
-      "title": "[구매평/블로그] 구운계란 중란 30구",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=415908",
-      "image": "",
-      "deadline": "2026-08-13",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 54
-    },
-    {
-      "title": "플루메리아3개, 바다비누2개, 데이지꽃비누2개, 조개비누2개, 아이스아메리카노 비누2개, 복주머니 비누2개, 한복 비누2개",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=415285",
-      "image": "",
-      "deadline": "2026-08-11",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 55
-    },
-    {
-      "title": "100만원 상당의 세르프 이용권",
-      "reward": "100만원 상당",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=415706",
-      "image": "",
-      "deadline": "2026-08-11",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 56
-    },
-    {
-      "title": "신청 121명 / 모집 10명",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=415810",
-      "image": "",
-      "deadline": "2026-08-13",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 57
-    },
-    {
-      "title": "[배송] OVACO 오바코 - 하이드레이트 앤 글로우 스킨케어 3종 세트",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=416041",
-      "image": "",
-      "deadline": "2026-08-12",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 58
-    },
-    {
-      "title": "100만원 상당의 세르프 이용권 제공",
-      "reward": "100만원 상당",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=415682",
-      "image": "",
-      "deadline": "2026-08-11",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 59
-    },
-    {
-      "title": "18,000원 상당의 오메가 가득 한상 세트(마켓컬리) 제공",
-      "reward": "18,000원 상당",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=411517",
-      "image": "",
-      "deadline": "2026-08-11",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 60
-    },
-    {
-      "title": "[배송] 보스티나- 모발의힘 HEEM",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=415962",
-      "image": "",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 61
-    },
-    {
-      "title": "[배송] 오하브코스메틱 -오하브 마일드 앤 퓨리파잉 포밍 클렌져",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=415175",
-      "image": "",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 62
-    },
-    {
-      "title": "100만원 상당의 세르프 이용권 제공",
-      "reward": "100만원 상당",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=415530",
-      "image": "",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 63
-    },
-    {
-      "title": "누보셀 저자극 약산성 폼클렌징 여드름완화 기능성 150ML",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=416006",
-      "image": "",
-      "deadline": "2026-08-13",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 64
-    },
-    {
-      "title": "[구매평] 숨쉬는 위생장갑 100매 (쿠팡)",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=416078",
-      "image": "",
-      "deadline": "2026-08-18",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 65
-    },
-    {
-      "title": "백금촉매 플래티넘 실리콘도마 제공",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=415767",
-      "image": "",
-      "deadline": "2026-08-19",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 66
-    },
-    {
-      "title": "맛한가득 쪽파 김치 500g 제공",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=416266",
-      "image": "",
-      "deadline": "2026-08-20",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 67
-    },
-    {
-      "title": "[배송] Julia-J - 로맨틱 린넨코튼 레이스 프릴블라우스",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=415803",
-      "image": "",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 68
-    },
-    {
-      "title": "신청 78명 / 모집 5명",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=416234",
-      "image": "",
-      "deadline": "2026-08-19",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 69
-    },
-    {
-      "title": "39,900원 상당의 씹어먹는 파인애플맛 효소 제공",
-      "reward": "39,900원 상당",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=415625",
-      "image": "",
-      "deadline": "2026-08-12",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 70
-    },
-    {
-      "title": "피클볼 패들 글룩스 제타 ZETA-1 입문자 세트 제공",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=415532",
-      "image": "",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 71
-    },
-    {
       "title": "일산/덕양/파주",
       "reward": "",
       "platform": "포블로그",
@@ -936,7 +598,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 72
+      "id": 46
     },
     {
       "title": "🍽️ 맛집",
@@ -949,7 +611,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 73
+      "id": 47
     },
     {
       "title": "🛍️ 제품·서비스",
@@ -962,7 +624,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 74
+      "id": 48
     },
     {
       "title": "🎭 문화·스포츠",
@@ -975,7 +637,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 75
+      "id": 49
     },
     {
       "title": "📰 기자단",
@@ -988,7 +650,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 76
+      "id": 50
     },
     {
       "title": "📸 촬영단",
@@ -1001,7 +663,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 77
+      "id": 51
     },
     {
       "title": "⏰ 마감임박",
@@ -1014,7 +676,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 78
+      "id": 52
     },
     {
       "title": "✨ AI 추천픽",
@@ -1027,7 +689,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 79
+      "id": 53
     },
     {
       "title": "⭐ 체험 후기",
@@ -1040,7 +702,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 80
+      "id": 54
     },
     {
       "title": "🧰 블로거도구",
@@ -1053,7 +715,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 81
+      "id": 55
     },
     {
       "title": "📚 커뮤니티",
@@ -1066,7 +728,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 82
+      "id": 56
     }
   ]
 }
