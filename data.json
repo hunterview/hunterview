@@ -1,7 +1,176 @@
 {
-  "updated_at": "2026-08-12 01:10",
-  "total": 83,
+  "updated_at": "2026-08-12 07:11",
+  "total": 82,
   "campaigns": [
+    {
+      "title": "[경기 수원시] 수원 로테이션 소개팅",
+      "reward": "로테이션 소개팅 참여권(식음료 제공)",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1780397438",
+      "image": "./data/campaign/thumb/thumb-974997875_LmbIhR6u_KakaoTalk_20260708_171159557_02_300x300.png",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 1
+    },
+    {
+      "title": "모어그로우 이펙티브 데일리 스칼프 팩샴푸 (1,000원 할인쿠폰 적용 금지) /릴스 미션입니다. [배송비 포함58,000원]",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1786346170",
+      "image": "./data/campaign/thumb/thumb-17863461701766374838982996539_kC8ZeSVm_Black_Friday_Sale_300x300.jpg",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "숏폼",
+      "applied": 0,
+      "total": 10,
+      "id": 2
+    },
+    {
+      "title": "모어그로우 이펙티브 데일리 스칼프 팩샴푸 [배송비 포함58,000원]",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1786347207",
+      "image": "./data/campaign/thumb/thumb-982996539_4W3s1lI5_37_300x300.png",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 3
+    },
+    {
+      "title": "두피보습제 앰플 탈모영양제 두피스케일링 헤어토닉 쿨링스프레이 미스트 두피클리닉 [배송비 포함55,000원]",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1786347775",
+      "image": "./data/campaign/thumb/thumb-982996539_B0cQNFdh_ECA09CEBAAA9_EC9786EB8A94_EB9494EC9E90EC9DB8_300x300.png",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 4
+    },
+    {
+      "title": "[240,000원 상당] 1개월 회원권 및 장비 지급",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1786497539",
+      "image": "./data/campaign/thumb/thumb-178649753917763098222944391473_fsem16zD_KakaoTalk_20251005_205959490_01_300x300.jpg",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 5
+    },
+    {
+      "title": "밀레또 통밀깜빠뉴 호두 건포도 100% 국산 발아통밀, 1개, 210g",
+      "reward": "1개, 210g [배송비 포함12,400원]",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1786448377",
+      "image": "./data/campaign/thumb/thumb-178644837717859231903690912132_kKlsB4ue_1EC8DB8EB84A4EC9DBC_ED98B8EB9190EAB99CEBB9A0EB89B4_EBB3B4ECA095-crop4_300x300.jpg",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 6
+    },
+    {
+      "title": "밀레또 통밀식빵 100% 국산 발아통밀, 1개, 450g",
+      "reward": "450g 1개 [배송비 포함12,900원]",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1786449000",
+      "image": "./data/campaign/thumb/thumb-178644900017859221343690912132_vjxI35pP_1.2EC8DB8EB84A4EC9DBC_ED86B5EBB080EC8B9DEBB9B5EBAFB8EB8B88_EBB3B4ECA095-crop2_300x300.jpg",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 7
+    },
+    {
+      "title": "루이비통 스피디 25 30 35 이너백",
+      "reward": "[25,000원 상당] 이너백 1개",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1786498443",
+      "image": "./data/campaign/thumb/thumb-1786498443177311290117640364142009698013_crefQXsU_EC8AA4ED94BCEB9494_EBA994EC9DB8_300x300.jpg",
+      "deadline": "",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 8
+    },
+    {
+      "title": "베드컷/ 1박스 [배송비 포함28,900원]",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1784521938",
+      "image": "./data/campaign/thumb/thumb-2105842212_2jbAmea8_EC868CEC859C_300x300.png",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 9
+    },
+    {
+      "title": "키로커트/ 1박스 [배송비 포함38,500원]",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1784521789",
+      "image": "./data/campaign/thumb/thumb-2105842212_lKY26Trk_ECA09CEBAAA9-EC9786EC9D8C-1_300x300.png",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 10
+    },
+    {
+      "title": "저스트컷/ 1박스 [배송비 포함38,900원]",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1784521397",
+      "image": "./data/campaign/thumb/thumb-2105842212_sqoFENCR_cacc_300x300.png",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 11
+    },
+    {
+      "title": "펜터렉트/ 1박스 [배송비 포함39,800원]",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1784178152",
+      "image": "./data/campaign/thumb/thumb-2105842212_B7LT0Jfo_500_3_300x300.png",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 12
+    },
+    {
+      "title": "기초화장품 3종세트 [배송비 포함45,600원]",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1786495260",
+      "image": "./data/campaign/thumb/thumb-17864952602040675526_GqUkx2IR_farderma1_300x300.jpg",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 13
+    },
     {
       "title": "[10,000원 상당] 10,000원 금액권",
       "reward": "",
@@ -13,7 +182,7 @@
       "review_type": "블로그",
       "applied": 2,
       "total": 10,
-      "id": 1
+      "id": 14
     },
     {
       "title": "[150,000원 상당] 열펌 /히피펌 /매직셋팅",
@@ -26,7 +195,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 2
+      "id": 15
     },
     {
       "title": "[70,000원 상당] 수기 50분 혹은 발관리 50분",
@@ -39,7 +208,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 3
+      "id": 16
     },
     {
       "title": "100개입 x 100g x 1박스 [배송비 포함15,900원]",
@@ -52,7 +221,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 4
+      "id": 17
     },
     {
       "title": "[50,000원 상당] 기구필라테스 그룹수업 1회",
@@ -65,7 +234,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 5
+      "id": 18
     },
     {
       "title": "[36,900원 상당] 도킹형 보조배터리 5000mAh",
@@ -78,7 +247,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 6
+      "id": 19
     },
     {
       "title": "식사권 제공 (비용 초과 시, 추가금 결제가 필요합니다)",
@@ -88,175 +257,6 @@
       "image": "./data/campaign/thumb/thumb-1786415635178071378917725291561761111764175488303217502452963554821918_dLzYnJDu_1747287109117_300x300.jpg",
       "deadline": "",
       "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 7
-    },
-    {
-      "title": "증명사진,여권사진,컬러증명사진,일반취업사진 중 택1 무료촬영 (고화질파일메일전송, 증명사진6장,반명함 6장, 포켓사진1매, 미니액자1개",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1786415491",
-      "image": "./data/campaign/thumb/thumb-2042244670_wymKr8QJ_Untitled-1_300x300.jpg",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 8
-    },
-    {
-      "title": "[70,000원 상당] 본인 등경락ㆍ스포츠 마사지 중택1 / 동반관리 50% 할인",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1775537382",
-      "image": "./data/campaign/thumb/thumb-2009347559_TZveuOUL_2026-04-07_133B523B33_300x300.png",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 9
-    },
-    {
-      "title": "모로카나 지중해 올리브오일/ 1박스",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1786411274",
-      "image": "./data/campaign/thumb/thumb-17864112742105842212_pKHvQ1PX_EBAAA8EBA19CECB9B4EB8298_300x300.png",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 10
-    },
-    {
-      "title": "펜터렉트 1박스",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1786411393",
-      "image": "./data/campaign/thumb/thumb-17864113932105842212_K9nD13pS_ED8E9CED84B0EBA089ED8AB8_300x300.png",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 11
-    },
-    {
-      "title": "키로커트 1박스",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1786411437",
-      "image": "./data/campaign/thumb/thumb-17864114372105842212_qDk5OLpV_ED82A4EBA19CECBBA4ED8AB8_300x300.png",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 12
-    },
-    {
-      "title": "저스트컷 1박스",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1786411468",
-      "image": "./data/campaign/thumb/thumb-17864114682105842212_vqItEdnw_ECA080EC8AA4ED8AB8ECBBB7_300x300.png",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 13
-    },
-    {
-      "title": "베드컷 1박스",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1786411499",
-      "image": "./data/campaign/thumb/thumb-17864114992105842212_JdZxi8mz_EBB2A0EB939CECBBB7_300x300.png",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 14
-    },
-    {
-      "title": "치톱 1박스",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1786411530",
-      "image": "./data/campaign/thumb/thumb-178641153017833946452105842212_oY0xtMB5_ECB998ED86B1_300x300.png",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 15
-    },
-    {
-      "title": "[25,000원 상당] 달리프 글램 원스텝 톤 블리치",
-      "reward": "밝은 색의 머리로 염색하신 분 (필수X)",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1785913082",
-      "image": "./data/campaign/thumb/thumb-1028930658_0GcQlRkX_daleaf_insta_01_300x300.png",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 16
-    },
-    {
-      "title": "실리콘 싱크대앞 물막이 설거지 물튀김 방지 가드",
-      "reward": "아이보리 1개 [배송비 포함4,800원]",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1786349870",
-      "image": "./data/campaign/thumb/thumb-2009401442_B7tizWaD_KakaoTalk_20260803_122716053_300x300.jpg",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 17
-    },
-    {
-      "title": "오렌지레드 × 3세트 [배송비 포함3,900원]",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1786350023",
-      "image": "./data/campaign/thumb/thumb-2009401442_hmpxwePG_ED8B88EC8388ECB2ADEC868CEBB88CEB9FACEC8B9C_EB8C80ED919CEC8DB8EB84A4EC9DBC_01_300x300.png",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 18
-    },
-    {
-      "title": "블랙 × FREE × 4개 [배송비 포함3,000원]",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1786350226",
-      "image": "./data/campaign/thumb/thumb-2009401442_ZLy3eJMQ_KakaoTalk_20260803_124816394_300x300.jpg",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 19
-    },
-    {
-      "title": "투명 × 2M × 1개 [배송비 포함3,000원]",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1786350523",
-      "image": "./data/campaign/thumb/thumb-2009401442_BQjgxslv_KakaoTalk_20260803_124350479_300x300.jpg",
-      "deadline": "",
-      "location": "구매형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
@@ -666,7 +666,7 @@
       "id": 51
     },
     {
-      "title": "신청 149명 / 모집 10명",
+      "title": "신청 155명 / 모집 10명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=415810",
@@ -718,13 +718,13 @@
       "id": 55
     },
     {
-      "title": "18,000원 상당의 오메가 가득 한상 세트(마켓컬리) 제공",
-      "reward": "18,000원 상당",
+      "title": "신청 109명 / 모집 5명",
+      "reward": "",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=411517",
+      "link": "https://tble.kr/view.php?cp_id=416234",
       "image": "",
-      "deadline": "",
-      "location": "구매형",
+      "deadline": "2026-08-19",
+      "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
@@ -744,13 +744,13 @@
       "id": 57
     },
     {
-      "title": "신청 104명 / 모집 5명",
-      "reward": "",
+      "title": "18,000원 상당의 오메가 가득 한상 세트(마켓컬리) 제공",
+      "reward": "18,000원 상당",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=416234",
+      "link": "https://tble.kr/view.php?cp_id=411517",
       "image": "",
-      "deadline": "2026-08-19",
-      "location": "배송형",
+      "deadline": "",
+      "location": "구매형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
@@ -783,32 +783,6 @@
       "id": 60
     },
     {
-      "title": "17,000원 상당의 처음 만나는 펫프레시 세트(마켓컬리) 제공",
-      "reward": "17,000원 상당",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=411514",
-      "image": "",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 61
-    },
-    {
-      "title": "17,000원 상당의 하루 한잔 우유 + 야채 세트(마켓컬리) 제공",
-      "reward": "17,000원 상당",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=411515",
-      "image": "",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 62
-    },
-    {
       "title": "맛한가득 청방 김치 700g 제공",
       "reward": "",
       "platform": "티블",
@@ -819,7 +793,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 63
+      "id": 61
     },
     {
       "title": "100만원 상당의 세르프 이용권 제공",
@@ -832,7 +806,20 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 64
+      "id": 62
+    },
+    {
+      "title": "17,000원 상당의 처음 만나는 펫프레시 세트(마켓컬리) 제공",
+      "reward": "17,000원 상당",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=411514",
+      "image": "",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 63
     },
     {
       "title": "39,900원 상당의 씹어먹는 파인애플맛 효소 제공",
@@ -845,20 +832,20 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 65
+      "id": 64
     },
     {
-      "title": "신청 69명 / 모집 30명",
-      "reward": "",
+      "title": "17,000원 상당의 하루 한잔 우유 + 야채 세트(마켓컬리) 제공",
+      "reward": "17,000원 상당",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=416139",
+      "link": "https://tble.kr/view.php?cp_id=411515",
       "image": "",
-      "deadline": "2026-08-19",
-      "location": "배송형",
+      "deadline": "",
+      "location": "구매형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 66
+      "id": 65
     },
     {
       "title": "반건조 오징어 5마리 1팩",
@@ -867,6 +854,19 @@
       "link": "https://tble.kr/view.php?cp_id=416436",
       "image": "",
       "deadline": "2026-08-23",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 66
+    },
+    {
+      "title": "신청 75명 / 모집 30명",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=416139",
+      "image": "",
+      "deadline": "2026-08-19",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
@@ -939,19 +939,6 @@
       "id": 72
     },
     {
-      "title": "일산/덕양/파주",
-      "reward": "",
-      "platform": "포블로그",
-      "link": "https://4blog.net/list/all/local/ggbb/1san",
-      "image": "",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 73
-    },
-    {
       "title": "🍽️ 맛집",
       "reward": "",
       "platform": "모두의체험단",
@@ -962,7 +949,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 74
+      "id": 73
     },
     {
       "title": "🛍️ 제품·서비스",
@@ -975,7 +962,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 75
+      "id": 74
     },
     {
       "title": "🎭 문화·스포츠",
@@ -988,7 +975,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 76
+      "id": 75
     },
     {
       "title": "📰 기자단",
@@ -1001,7 +988,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 77
+      "id": 76
     },
     {
       "title": "📸 촬영단",
@@ -1014,7 +1001,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 78
+      "id": 77
     },
     {
       "title": "⏰ 마감임박",
@@ -1027,7 +1014,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 79
+      "id": 78
     },
     {
       "title": "✨ AI 추천픽",
@@ -1040,7 +1027,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 80
+      "id": 79
     },
     {
       "title": "⭐ 체험 후기",
@@ -1053,7 +1040,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 81
+      "id": 80
     },
     {
       "title": "🧰 블로거도구",
@@ -1066,7 +1053,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 82
+      "id": 81
     },
     {
       "title": "📚 커뮤니티",
@@ -1079,7 +1066,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 83
+      "id": 82
     }
   ]
 }
