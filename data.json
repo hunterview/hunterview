@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-15 06:22",
+  "updated_at": "2026-08-15 12:20",
   "total": 85,
   "campaigns": [
     {
@@ -237,24 +237,24 @@
       "id": 18
     },
     {
-      "title": "단일상품 [배송비 포함3,000원]",
+      "title": "[53,000원 상당] 레디바이옴 리부트샷 1박스",
       "reward": "",
       "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1786635983",
-      "image": "./data/campaign/thumb/thumb-2038676662_R86rPJaF_EC8DB8EB84A4EC9DBC_283729_300x300.png",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1785914051",
+      "image": "./data/campaign/thumb/thumb-1028743242_UE0Amo29_EBA088EB9494EBB094EC9DB4EC98B4_EC9E90EC82ACEBAAB0_EC8DB8EB84A4EC9DBC_300x300.jpg",
       "deadline": "",
-      "location": "구매형",
+      "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
       "id": 19
     },
     {
-      "title": "[53,000원 상당] 레디바이옴 리부트샷 1박스",
+      "title": "[220,000원 상당] 중앙미생물연구소 캐치콜 라이트 1박스",
       "reward": "",
       "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1785914051",
-      "image": "./data/campaign/thumb/thumb-1028743242_UE0Amo29_EBA088EB9494EBB094EC9DB4EC98B4_EC9E90EC82ACEBAAB0_EC8DB8EB84A4EC9DBC_300x300.jpg",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1785913996",
+      "image": "./data/campaign/thumb/thumb-17859139961028743242_xEuw9SRl_EC9E90EC82ACEBAAB0_EC8DB8EB84A4EC9DBC_300x300.jpg",
       "deadline": "",
       "location": "배송형",
       "review_type": "블로그",
@@ -653,7 +653,7 @@
       "id": 50
     },
     {
-      "title": "신청 188명 / 모집 5명",
+      "title": "신청 193명 / 모집 5명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=416436",
@@ -679,7 +679,7 @@
       "id": 52
     },
     {
-      "title": "신청 158명 / 모집 5명",
+      "title": "신청 164명 / 모집 5명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=416234",
@@ -744,12 +744,12 @@
       "id": 57
     },
     {
-      "title": "[기자단] 김포뉴리틀야구단",
-      "reward": "",
+      "title": "100만원 상당의 세르프 이용권 제공",
+      "reward": "100만원 상당",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=412622",
+      "link": "https://tble.kr/view.php?cp_id=416216",
       "image": "",
-      "deadline": "2026-08-25",
+      "deadline": "2026-08-19",
       "location": "방문형",
       "review_type": "블로그",
       "applied": 0,
@@ -757,7 +757,7 @@
       "id": 58
     },
     {
-      "title": "신청 94명 / 모집 30명",
+      "title": "신청 96명 / 모집 30명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=416139",
@@ -770,30 +770,17 @@
       "id": 59
     },
     {
-      "title": "100만원 상당의 세르프 이용권 제공",
-      "reward": "100만원 상당",
+      "title": "[기자단] 김포뉴리틀야구단",
+      "reward": "",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=416216",
+      "link": "https://tble.kr/view.php?cp_id=412622",
       "image": "",
-      "deadline": "2026-08-19",
+      "deadline": "2026-08-25",
       "location": "방문형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
       "id": 60
-    },
-    {
-      "title": "신청 89명 / 모집 35명",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=416506",
-      "image": "",
-      "deadline": "2026-08-18",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 61
     },
     {
       "title": "스킨부탁 XOXO 바디컬렉션 바디클렌저 바디로션 2종 세트",
@@ -806,7 +793,33 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
+      "id": 61
+    },
+    {
+      "title": "신청 90명 / 모집 35명",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=416506",
+      "image": "",
+      "deadline": "2026-08-18",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
       "id": 62
+    },
+    {
+      "title": "신청 80명 / 모집 5명",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=415075",
+      "image": "",
+      "deadline": "2026-08-18",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 63
     },
     {
       "title": "17,000원 상당의 처음 만나는 펫프레시 세트(마켓컬리) 제공",
@@ -816,19 +829,6 @@
       "image": "",
       "deadline": "2026-08-18",
       "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 63
-    },
-    {
-      "title": "신청 79명 / 모집 5명",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=415075",
-      "image": "",
-      "deadline": "2026-08-18",
-      "location": "방문형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
@@ -861,19 +861,6 @@
       "id": 66
     },
     {
-      "title": "[후기 작성X/촬영 파일 제공]세이노스 코지스팟 (6)",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=416193",
-      "image": "",
-      "deadline": "2026-08-19",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 67
-    },
-    {
       "title": "[배송] 싱글룸 - 친환경 선물세트 (아란)",
       "reward": "",
       "platform": "티블",
@@ -884,10 +871,23 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
+      "id": 67
+    },
+    {
+      "title": "[후기 작성X/촬영 파일 제공]세이노스 코지스팟 (6)",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=416193",
+      "image": "",
+      "deadline": "2026-08-19",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
       "id": 68
     },
     {
-      "title": "신청 56명 / 모집 30명",
+      "title": "신청 57명 / 모집 30명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=416140",
@@ -926,19 +926,6 @@
       "id": 71
     },
     {
-      "title": "[배송] 유니즈쇼핑 - 닥터쥬 병풀 카밍 클렌징 티슈",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=416279",
-      "image": "",
-      "deadline": "2026-08-20",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 72
-    },
-    {
       "title": "[배송] 유니즈쇼핑 - 메이레브 화이트닝 집중케어 크림",
       "reward": "",
       "platform": "티블",
@@ -949,10 +936,23 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
+      "id": 72
+    },
+    {
+      "title": "[배송] 유니즈쇼핑 - 닥터쥬 병풀 카밍 클렌징 티슈",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=416279",
+      "image": "",
+      "deadline": "2026-08-20",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
       "id": 73
     },
     {
-      "title": "신청 32명 / 모집 5명",
+      "title": "신청 33명 / 모집 5명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=416535",
