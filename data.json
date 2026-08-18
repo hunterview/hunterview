@@ -1,7 +1,46 @@
 {
-  "updated_at": "2026-08-18 06:28",
+  "updated_at": "2026-08-18 12:37",
   "total": 86,
   "campaigns": [
+    {
+      "title": "충주 여행 상품 홍보",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1787039368",
+      "image": "./data/campaign/thumb/thumb-1794264747_ld7wYRmP_EC8381EC84B8ED8E98EC9DB4ECA780_00_300x300.jpg",
+      "deadline": "",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 1
+    },
+    {
+      "title": "[50,000원 상당] 사주상담",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1787034323",
+      "image": "./data/campaign/thumb/thumb-2039066181_Yx2WGJq3_ED9994EBA9B4_ECBAA1ECB298_2026-08-18_152832_300x300.png",
+      "deadline": "",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 2
+    },
+    {
+      "title": "그린워크 향수 100mL [배송비 포함48,590원]",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1787023408",
+      "image": "./data/campaign/thumb/thumb-32729403_MiUx9GkN_EAB7B8EBA6B0EC9B8CED81AC_final_300x300.png",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 3
+    },
     {
       "title": "[12원 상당] 여자열펌, 여자염색,남자컷+다운펌",
       "reward": "",
@@ -13,7 +52,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 1
+      "id": 4
     },
     {
       "title": "[20,000원 상당] 키펀 호호바 모이스쳐 아기로션 1개",
@@ -26,7 +65,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 2
+      "id": 5
     },
     {
       "title": "블랙 [배송비 포함20,700원]",
@@ -39,7 +78,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 3
+      "id": 6
     },
     {
       "title": "[200,000원 상당] 20만원 할인권",
@@ -52,7 +91,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 4
+      "id": 7
     },
     {
       "title": "[130,000원 상당] 20만원 할인권",
@@ -65,7 +104,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 5
+      "id": 8
     },
     {
       "title": "[전남 북구] 아이세이버안경 각화점",
@@ -78,33 +117,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 6
-    },
-    {
-      "title": "칫솔 치약 깔끔정리 욕실정리함, 스텐, 1개",
-      "reward": "스텐, 1 [배송비 포함7,900원]",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1786867723",
-      "image": "./data/campaign/thumb/thumb-1889010197_BpnRrToq_1_300x300.png",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 7
-    },
-    {
-      "title": "세플로 원터치 길이조절 서랍칸막이, 화이트, 1개",
-      "reward": "품절 [배송비 포함6,900원]",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1786868381",
-      "image": "./data/campaign/thumb/thumb-17868683811889010197_t4uGkDl2_1_300x300.png",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 8
+      "id": 9
     },
     {
       "title": "세플로 얼굴 괄사 두피 괄사 마사지 2종세트, 러블리핑크, 2세트",
@@ -117,7 +130,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 9
+      "id": 10
     },
     {
       "title": "[55,000원 상당] 드레스 피팅",
@@ -130,7 +143,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 10
+      "id": 11
     },
     {
       "title": "[200,000원 상당] 여성 긴머리 염색 [ 탈색 x , 블랙 x ] , 새치염색이력 X 톤다운이력X, 탈색없는 애쉬브라운, 올리브브라운, 매트브라운, 토프브라운 해드립니다",
@@ -143,7 +156,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 11
+      "id": 12
     },
     {
       "title": "[121,000원 상당] 통증관리/산전마사지/산후마사지",
@@ -156,7 +169,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 12
+      "id": 13
     },
     {
       "title": "[35,000원 상당] 3:1 소그룹 체험",
@@ -169,7 +182,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 13
+      "id": 14
     },
     {
       "title": "[147,000원 상당] 포레덤 비타민C15 항산화 앰플20ml(본품) + EGF리바이탈 리프트 크림 50ml(본품)",
@@ -182,7 +195,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 14
+      "id": 15
     },
     {
       "title": "[서울 양천구] 화우로",
@@ -195,7 +208,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 15
+      "id": 16
     },
     {
       "title": "가머 모이스처 탈모 샴푸 (GAMUR Moisture Anti Hair Loss Shampoo)",
@@ -208,7 +221,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 16
+      "id": 17
     },
     {
       "title": "어린이 캔디라서 아이 꼭 나와야 해요! (3세 ~ 7세 아이가 캔디를 먹는 컨텐츠)",
@@ -221,7 +234,7 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 17
+      "id": 18
     },
     {
       "title": "[69,900원 상당] ]우마주모둠 한상 500g -2인분 분량 - 갈비살,보석살,등심,LA갈비,부채 각100g + 한우육회80g + 된장찌개",
@@ -234,7 +247,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 18
+      "id": 19
     },
     {
       "title": "화이트 톤업 바디 세럼 80ml 기획세트 - 인스타그램 체험단",
@@ -245,19 +258,6 @@
       "deadline": "",
       "location": "배송형",
       "review_type": "인스타",
-      "applied": 0,
-      "total": 10,
-      "id": 19
-    },
-    {
-      "title": "화이트 톤업 바디 세럼 80ml 기획세트 - 블로그 체험단",
-      "reward": "화이트 톤업 바디 세럼 80ml 기획세트 1개",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1786604788",
-      "image": "./data/campaign/thumb/thumb-237500760_onYged8w_ED9994EBA9B4_ECBAA1ECB298_2026-08-13_160744_300x300.jpg",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
       "applied": 0,
       "total": 10,
       "id": 20
@@ -614,7 +614,7 @@
       "id": 47
     },
     {
-      "title": "신청 249명 / 모집 5명",
+      "title": "신청 270명 / 모집 5명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=416436",
@@ -627,7 +627,7 @@
       "id": 48
     },
     {
-      "title": "신청 204명 / 모집 5명",
+      "title": "신청 215명 / 모집 5명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=416234",
@@ -705,7 +705,20 @@
       "id": 54
     },
     {
-      "title": "신청 119명 / 모집 30명",
+      "title": "신청 123명 / 모집 35명",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=416506",
+      "image": "",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 55
+    },
+    {
+      "title": "신청 123명 / 모집 30명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=416139",
@@ -715,7 +728,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 55
+      "id": 56
     },
     {
       "title": "100만원 상당의 세르프 이용권 제공",
@@ -728,19 +741,6 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 56
-    },
-    {
-      "title": "신청 112명 / 모집 35명",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=416506",
-      "image": "",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
       "id": 57
     },
     {
@@ -749,7 +749,7 @@
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=411517",
       "image": "",
-      "deadline": "",
+      "deadline": "2026-08-20",
       "location": "구매형",
       "review_type": "블로그",
       "applied": 0,
@@ -757,7 +757,7 @@
       "id": 58
     },
     {
-      "title": "신청 101명 / 모집 4명",
+      "title": "신청 102명 / 모집 4명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=412622",
@@ -796,13 +796,13 @@
       "id": 61
     },
     {
-      "title": "신청 89명 / 모집 5명",
-      "reward": "",
+      "title": "16,900원 상당의 오마이스킨 비타민 20장+알로에 20장 총40장 마스크팩 시트 제공",
+      "reward": "16,900원 상당",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=415075",
+      "link": "https://tble.kr/view.php?cp_id=416158",
       "image": "",
       "deadline": "",
-      "location": "방문형",
+      "location": "구매형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
@@ -822,13 +822,13 @@
       "id": 63
     },
     {
-      "title": "16,900원 상당의 오마이스킨 비타민 20장+알로에 20장 총40장 마스크팩 시트 제공",
-      "reward": "16,900원 상당",
+      "title": "신청 91명 / 모집 5명",
+      "reward": "",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=416158",
+      "link": "https://tble.kr/view.php?cp_id=415075",
       "image": "",
       "deadline": "",
-      "location": "구매형",
+      "location": "방문형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
@@ -952,7 +952,20 @@
       "id": 73
     },
     {
-      "title": "신청 42명 / 모집 5명",
+      "title": "[배송] 그로홈 - 헤라퍼티",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=416547",
+      "image": "",
+      "deadline": "2026-08-24",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 74
+    },
+    {
+      "title": "신청 43명 / 모집 5명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=416535",
@@ -960,19 +973,6 @@
       "deadline": "2026-08-24",
       "location": "배송형",
       "review_type": "인스타",
-      "applied": 0,
-      "total": 10,
-      "id": 74
-    },
-    {
-      "title": "[배송] 오하브코스메틱 -오하브 마일드 앤 퓨리파잉 포밍 클렌져",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=416500",
-      "image": "",
-      "deadline": "2026-08-25",
-      "location": "배송형",
-      "review_type": "블로그",
       "applied": 0,
       "total": 10,
       "id": 75
