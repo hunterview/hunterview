@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-04 15:29",
+  "updated_at": "2026-09-04 20:04",
   "total": 87,
   "campaigns": [
     {
@@ -627,7 +627,7 @@
       "id": 48
     },
     {
-      "title": "신청 168명 / 모집 30명",
+      "title": "신청 171명 / 모집 30명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=417147",
@@ -679,12 +679,12 @@
       "id": 52
     },
     {
-      "title": "100만원 상당의 세르프 이용권 제공",
-      "reward": "100만원 상당",
+      "title": "[후기 작성X/사진 제공] 허밍테라피 - 라이트 레그패치 (12)",
+      "reward": "",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=417210",
+      "link": "https://tble.kr/view.php?cp_id=417219",
       "image": "",
-      "deadline": "2026-09-06",
+      "deadline": "2026-09-07",
       "location": "방문형",
       "review_type": "블로그",
       "applied": 0,
@@ -692,12 +692,12 @@
       "id": 53
     },
     {
-      "title": "[후기 작성X/사진 제공] 허밍테라피 - 라이트 레그패치 (12)",
-      "reward": "",
+      "title": "100만원 상당의 세르프 이용권 제공",
+      "reward": "100만원 상당",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=417219",
+      "link": "https://tble.kr/view.php?cp_id=417210",
       "image": "",
-      "deadline": "2026-09-07",
+      "deadline": "2026-09-06",
       "location": "방문형",
       "review_type": "블로그",
       "applied": 0,
@@ -809,7 +809,7 @@
       "id": 62
     },
     {
-      "title": "신청 93명 / 모집 4명",
+      "title": "신청 94명 / 모집 4명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=415717",
