@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-06 02:04",
+  "updated_at": "2026-09-06 09:57",
   "total": 86,
   "campaigns": [
     {
@@ -627,7 +627,7 @@
       "id": 48
     },
     {
-      "title": "신청 179명 / 모집 30명",
+      "title": "신청 184명 / 모집 30명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=417147",
@@ -666,19 +666,6 @@
       "id": 51
     },
     {
-      "title": "호주산 gf 최상급 LA 꽃 갈비 추석 명절 선물세트 2kg",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=417343",
-      "image": "",
-      "deadline": "2026-09-07",
-      "location": "방문형",
-      "review_type": "숏폼",
-      "applied": 0,
-      "total": 10,
-      "id": 52
-    },
-    {
       "title": "바디온다 40kj or 얼굴 트윙클 주사 3cc 중 택 1 제공",
       "reward": "",
       "platform": "티블",
@@ -687,6 +674,19 @@
       "deadline": "2026-09-07",
       "location": "방문형",
       "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 52
+    },
+    {
+      "title": "호주산 gf 최상급 LA 꽃 갈비 추석 명절 선물세트 2kg",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=417343",
+      "image": "",
+      "deadline": "2026-09-07",
+      "location": "방문형",
+      "review_type": "숏폼",
       "applied": 0,
       "total": 10,
       "id": 53
@@ -718,19 +718,6 @@
       "id": 55
     },
     {
-      "title": "[배송] Julia-J - 에스라인 오버핏 블레이저 여성 봄가을 자켓",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=417406",
-      "image": "",
-      "deadline": "2026-09-14",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 56
-    },
-    {
       "title": "100만원 상당의 세르프 이용권 제공",
       "reward": "100만원 상당",
       "platform": "티블",
@@ -738,6 +725,19 @@
       "image": "",
       "deadline": "2026-09-08",
       "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 56
+    },
+    {
+      "title": "[배송] Julia-J - 에스라인 오버핏 블레이저 여성 봄가을 자켓",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=417406",
+      "image": "",
+      "deadline": "2026-09-14",
+      "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
@@ -809,12 +809,12 @@
       "id": 62
     },
     {
-      "title": "신청 94명 / 모집 4명",
+      "title": "[서울 청담] 콜라레쥬(스킨부스터)",
       "reward": "",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=415717",
+      "link": "https://tble.kr/view.php?cp_id=417152",
       "image": "",
-      "deadline": "2026-09-08",
+      "deadline": "2026-09-07",
       "location": "방문형",
       "review_type": "블로그",
       "applied": 0,
@@ -822,12 +822,12 @@
       "id": 63
     },
     {
-      "title": "[서울 청담] 콜라레쥬(스킨부스터)",
+      "title": "신청 94명 / 모집 4명",
       "reward": "",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=417152",
+      "link": "https://tble.kr/view.php?cp_id=415717",
       "image": "",
-      "deadline": "2026-09-07",
+      "deadline": "2026-09-08",
       "location": "방문형",
       "review_type": "블로그",
       "applied": 0,
