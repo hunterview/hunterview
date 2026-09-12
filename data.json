@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-12 02:17",
+  "updated_at": "2026-09-12 09:51",
   "total": 85,
   "campaigns": [
     {
@@ -159,6 +159,19 @@
       "id": 12
     },
     {
+      "title": "누센 시그니처 퍼퓸 샤쉐 옷장 차량용 방향제 22g, 밤쉘, 1개",
+      "reward": "밤쉘 [배송비 포함3,000원]",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1789005000",
+      "image": "./data/campaign/thumb/thumb-17890050002072898589_nL7Gf35R_DSC00445_300x300.jpg",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 13
+    },
+    {
       "title": "속눈썹펌지원 하시는분은 속눈썹길이가 있으시고 쌍커플있으신분만 가능",
       "reward": "",
       "platform": "아싸뷰",
@@ -169,7 +182,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 13
+      "id": 14
     },
     {
       "title": "[강원 강릉시] 기와옥초당순두부 강릉본점",
@@ -182,7 +195,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 14
+      "id": 15
     },
     {
       "title": "오늘은핑퐁 탁구 이용권 1시간-1시30분",
@@ -195,7 +208,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 15
+      "id": 16
     },
     {
       "title": "[서울 영등포구] 오늘은핑퐁문래점",
@@ -208,7 +221,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 16
+      "id": 17
     },
     {
       "title": "[47,000원 상당] 한돈떡갈비, 한우떡갈비, 흑마늘장아찌",
@@ -221,7 +234,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 17
+      "id": 18
     },
     {
       "title": "[47,000원 상당] 한돈떡갈비, 한우떡갈비, 흑마늘장아찌",
@@ -234,7 +247,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 18
+      "id": 19
     },
     {
       "title": "슈닝 홈페이지 내 1688 사이트 주문을 통해 50,000원 내에서 상품 자유롭게 구매 ★배송비 포함, 추가 비용은 본인 부담★ [배송비 포함55,000원]",
@@ -242,19 +255,6 @@
       "platform": "아싸뷰",
       "link": "https://assaview.co.kr/campaign.php?cp_id=1789009542",
       "image": "./data/campaign/thumb/thumb-2040675526_ynm2jFVY_EC8A88EB8B9D_300x300.jpg",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 19
-    },
-    {
-      "title": "오르카 Orka 미드체어 미드센츄리 허리편한 인테리어 디자인 식탁 카페 원목 예쁜 의자",
-      "reward": "미들그레이 [배송비 포함84,800원]",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1789009678",
-      "image": "./data/campaign/thumb/thumb-178900967817888336001786067310990762335_vADRiWGl_E18489E185B3E1848FE185B3E18485E185B5E186ABE18489E185A3E186BA_2026-02-09_E1848BE185A9E1848CE185A5E186AB_7.08.04_300x300.png",
       "deadline": "",
       "location": "구매형",
       "review_type": "블로그",
@@ -705,7 +705,7 @@
       "id": 54
     },
     {
-      "title": "신청 115명 / 모집 10명",
+      "title": "신청 118명 / 모집 10명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=417561",
@@ -757,6 +757,19 @@
       "id": 58
     },
     {
+      "title": "신청 95명 / 모집 30명",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=417709",
+      "image": "",
+      "deadline": "2026-09-14",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 59
+    },
+    {
       "title": "신청 95명 / 모집 10명",
       "reward": "",
       "platform": "티블",
@@ -764,19 +777,6 @@
       "image": "",
       "deadline": "2026-09-13",
       "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 59
-    },
-    {
-      "title": "신청 93명 / 모집 30명",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=417709",
-      "image": "",
-      "deadline": "2026-09-14",
-      "location": "구매형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
