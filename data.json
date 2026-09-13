@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-13 02:14",
-  "total": 85,
+  "updated_at": "2026-09-13 10:50",
+  "total": 84,
   "campaigns": [
     {
       "title": "[4,900원 상당] 루멘에듀 통합 이용권 1회 (생기부 제외)",
@@ -172,6 +172,19 @@
       "id": 13
     },
     {
+      "title": "누센 시그니처 퍼퓸 샤쉐 옷장 차량용 방향제 22g, 밤쉘, 1개",
+      "reward": "밤쉘 [배송비 포함3,000원]",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1789005000",
+      "image": "./data/campaign/thumb/thumb-17890050002072898589_nL7Gf35R_DSC00445_300x300.jpg",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 14
+    },
+    {
       "title": "속눈썹펌지원 하시는분은 속눈썹길이가 있으시고 쌍커플있으신분만 가능",
       "reward": "",
       "platform": "아싸뷰",
@@ -182,7 +195,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 14
+      "id": 15
     },
     {
       "title": "[강원 강릉시] 기와옥초당순두부 강릉본점",
@@ -195,7 +208,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 15
+      "id": 16
     },
     {
       "title": "오늘은핑퐁 탁구 이용권 1시간-1시30분",
@@ -208,7 +221,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 16
+      "id": 17
     },
     {
       "title": "[서울 영등포구] 오늘은핑퐁문래점",
@@ -221,7 +234,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 17
+      "id": 18
     },
     {
       "title": "[47,000원 상당] 한돈떡갈비, 한우떡갈비, 흑마늘장아찌",
@@ -234,7 +247,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 18
+      "id": 19
     },
     {
       "title": "[47,000원 상당] 한돈떡갈비, 한우떡갈비, 흑마늘장아찌",
@@ -244,19 +257,6 @@
       "image": "./data/campaign/thumb/thumb-178827353217882480762070919091_M6wemKkn_EB9190EB82A8EC9E90EB96A1EAB088EBB984_EC9DB4EBB2A4ED8AB8_300x300.png",
       "deadline": "",
       "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 19
-    },
-    {
-      "title": "슈닝 홈페이지 내 1688 사이트 주문을 통해 50,000원 내에서 상품 자유롭게 구매 ★배송비 포함, 추가 비용은 본인 부담★ [배송비 포함55,000원]",
-      "reward": "사업자 분들께서 진행이 가능합니다.",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1789009542",
-      "image": "./data/campaign/thumb/thumb-2040675526_ynm2jFVY_EC8A88EB8B9D_300x300.jpg",
-      "deadline": "",
-      "location": "구매형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
@@ -627,19 +627,6 @@
       "id": 48
     },
     {
-      "title": "[후기 작성X/사진 제공] 럼버트 (16)",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=417408",
-      "image": "",
-      "deadline": "2026-09-14",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 49
-    },
-    {
       "title": "[배송] 이가자연면 - 우리밀 메밀소바",
       "reward": "",
       "platform": "티블",
@@ -650,7 +637,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 50
+      "id": 49
     },
     {
       "title": "[배송] 이가자연면 - 우리밀 감자수제비",
@@ -660,6 +647,19 @@
       "image": "",
       "deadline": "",
       "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 50
+    },
+    {
+      "title": "[후기 작성X/사진 제공] 럼버트 (16)",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=417408",
+      "image": "",
+      "deadline": "2026-09-14",
+      "location": "방문형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
@@ -692,6 +692,19 @@
       "id": 53
     },
     {
+      "title": "신청 126명 / 모집 10명",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=417561",
+      "image": "",
+      "deadline": "2026-09-16",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 54
+    },
+    {
       "title": "[구매평] 스페인산 옛날 냉삼 구이용 10mm",
       "reward": "",
       "platform": "티블",
@@ -702,33 +715,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 54
-    },
-    {
-      "title": "신청 122명 / 모집 10명",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=417561",
-      "image": "",
-      "deadline": "2026-09-16",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
       "id": 55
-    },
-    {
-      "title": "상체관리(60분) or 발몽(안티에이징) 얼굴관리90분 중 택 1",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=417407",
-      "image": "",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 56
     },
     {
       "title": "32,500원 상당 다이어트 원조 방탄커피 1개",
@@ -741,10 +728,23 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
+      "id": 56
+    },
+    {
+      "title": "상체관리(60분) or 발몽(안티에이징) 얼굴관리90분 중 택 1",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=417407",
+      "image": "",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
       "id": 57
     },
     {
-      "title": "신청 104명 / 모집 4명",
+      "title": "신청 105명 / 모집 4명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=415717",
@@ -757,7 +757,7 @@
       "id": 58
     },
     {
-      "title": "신청 100명 / 모집 30명",
+      "title": "신청 103명 / 모집 30명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=417709",
@@ -770,7 +770,7 @@
       "id": 59
     },
     {
-      "title": "신청 96명 / 모집 10명",
+      "title": "신청 100명 / 모집 10명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=417378",
@@ -835,19 +835,6 @@
       "id": 64
     },
     {
-      "title": "신청 71명 / 모집 5명",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=417610",
-      "image": "",
-      "deadline": "2026-09-17",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 65
-    },
-    {
       "title": "OVACO 오바코 모노칩셀 그린티 세럼 50ml 제공",
       "reward": "",
       "platform": "티블",
@@ -858,7 +845,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 66
+      "id": 65
     },
     {
       "title": "[배송] OVACO 오바코 - 모노칩셀 뱀부 슈트 세럼",
@@ -871,7 +858,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 67
+      "id": 66
     },
     {
       "title": "[후기 작성X/사진 제공] 단한정 (19)",
@@ -884,7 +871,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 68
+      "id": 67
     },
     {
       "title": "비건 설거지바 주방세제 세트 제공",
@@ -897,7 +884,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 69
+      "id": 68
     },
     {
       "title": "[배송] 유니즈쇼핑 - 닥터쥬 병풀 카밍 클렌징 티슈",
@@ -910,7 +897,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 70
+      "id": 69
     },
     {
       "title": "[배송] 오하브코스메틱 -오하브 마일드 앤 퓨리파잉 포밍 클렌져",
@@ -923,7 +910,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 71
+      "id": 70
     },
     {
       "title": "[배송] 유니즈쇼핑 - 손발톱 영양제",
@@ -936,10 +923,10 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 72
+      "id": 71
     },
     {
-      "title": "신청 36명 / 모집 5명",
+      "title": "신청 37명 / 모집 5명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=417611",
@@ -949,7 +936,7 @@
       "review_type": "인스타",
       "applied": 0,
       "total": 10,
-      "id": 73
+      "id": 72
     },
     {
       "title": "[후기 작성X/사진 제공] 필로지 흑마늘 고체즙97 (17)",
@@ -962,7 +949,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 74
+      "id": 73
     },
     {
       "title": "호주 두잇 터프 핸즈 핸드크림",
@@ -975,7 +962,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 75
+      "id": 74
     },
     {
       "title": "일산/덕양/파주",
@@ -988,7 +975,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 76
+      "id": 75
     },
     {
       "title": "모단비즈센터",
@@ -1001,7 +988,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 77
+      "id": 76
     },
     {
       "title": "🍽️ 맛집",
@@ -1014,7 +1001,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 78
+      "id": 77
     },
     {
       "title": "🛍️ 제품·서비스",
@@ -1027,7 +1014,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 79
+      "id": 78
     },
     {
       "title": "🎭 문화·스포츠",
@@ -1040,7 +1027,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 80
+      "id": 79
     },
     {
       "title": "📰 기자단",
@@ -1053,7 +1040,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 81
+      "id": 80
     },
     {
       "title": "📸 촬영단",
@@ -1066,7 +1053,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 82
+      "id": 81
     },
     {
       "title": "⏰ 마감임박",
@@ -1079,7 +1066,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 83
+      "id": 82
     },
     {
       "title": "✨ AI 추천픽",
@@ -1092,7 +1079,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 84
+      "id": 83
     },
     {
       "title": "⭐ 체험 후기",
@@ -1105,7 +1092,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 85
+      "id": 84
     }
   ]
 }
