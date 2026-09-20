@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-20 02:32",
-  "total": 91,
+  "updated_at": "2026-09-20 10:20",
+  "total": 89,
   "campaigns": [
     {
       "title": "[4,900원 상당] 루멘에듀 통합 이용권 1회 (생기부 제외)",
@@ -705,19 +705,6 @@
       "id": 54
     },
     {
-      "title": "100만원 상당의 세르프 이용권 제공",
-      "reward": "100만원 상당",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=417725",
-      "image": "",
-      "deadline": "2026-09-21",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 55
-    },
-    {
       "title": "29,920원 상당의 컬러 필터샤워기 헤드 (쿠팡)",
       "reward": "29,920원 상당",
       "platform": "티블",
@@ -725,6 +712,19 @@
       "image": "",
       "deadline": "2026-09-25",
       "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 55
+    },
+    {
+      "title": "100만원 상당의 세르프 이용권 제공",
+      "reward": "100만원 상당",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=417725",
+      "image": "",
+      "deadline": "2026-09-21",
+      "location": "방문형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
@@ -744,7 +744,7 @@
       "id": 57
     },
     {
-      "title": "신청 85명 / 모집 5명",
+      "title": "신청 86명 / 모집 5명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=416957",
@@ -770,84 +770,6 @@
       "id": 59
     },
     {
-      "title": "100만원 상당의 세르프 이용권 제공",
-      "reward": "100만원 상당",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=417820",
-      "image": "",
-      "deadline": "2026-09-23",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 60
-    },
-    {
-      "title": "[서울 교대] 스킨이펙터 풀페이스",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=417888",
-      "image": "",
-      "deadline": "2026-09-27",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 61
-    },
-    {
-      "title": "신청 70명 / 모집 2명",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=417292",
-      "image": "",
-      "deadline": "2026-09-21",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 62
-    },
-    {
-      "title": "[배송] 오하브코스메틱 -오하브 마일드 앤 퓨리파잉 포밍 클렌져",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=417652",
-      "image": "",
-      "deadline": "2026-09-21",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 63
-    },
-    {
-      "title": "100만원 상당의 세르프(얼굴) 이용권 제공",
-      "reward": "100만원 상당",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=417754",
-      "image": "",
-      "deadline": "2026-09-22",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 64
-    },
-    {
-      "title": "[기자단] 김해화물익스프레스",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=417022",
-      "image": "",
-      "deadline": "2026-09-21",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 65
-    },
-    {
       "title": "[배송] 아리울떡공방 -백미",
       "reward": "",
       "platform": "티블",
@@ -858,7 +780,20 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 66
+      "id": 60
+    },
+    {
+      "title": "100만원 상당의 세르프 이용권 제공",
+      "reward": "100만원 상당",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=417820",
+      "image": "",
+      "deadline": "2026-09-23",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 61
     },
     {
       "title": "[배송] 아리울떡공방 - 쑥",
@@ -871,7 +806,46 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 67
+      "id": 62
+    },
+    {
+      "title": "[서울 교대] 스킨이펙터 풀페이스",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=417888",
+      "image": "",
+      "deadline": "2026-09-27",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 63
+    },
+    {
+      "title": "신청 71명 / 모집 2명",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=417292",
+      "image": "",
+      "deadline": "2026-09-21",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 64
+    },
+    {
+      "title": "[배송] 오하브코스메틱 -오하브 마일드 앤 퓨리파잉 포밍 클렌져",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=417652",
+      "image": "",
+      "deadline": "2026-09-21",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 65
     },
     {
       "title": "[배송] 닥터코어런 - 팔뚝압박밴드",
@@ -884,7 +858,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 68
+      "id": 66
     },
     {
       "title": "[배송] OVACO 오바코 - 더마일루맥스 그로우 에센스",
@@ -897,7 +871,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 69
+      "id": 67
     },
     {
       "title": "미미엔부 민티부 1450ppm 고불소어린이치약 1개 제공",
@@ -910,7 +884,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 70
+      "id": 68
     },
     {
       "title": "[배송] 그로홈 - 헤라퍼티",
@@ -923,7 +897,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 71
+      "id": 69
     },
     {
       "title": "[배송] 피앙세포토 - 웨딩 사진 아크릴 액자 세트",
@@ -932,6 +906,32 @@
       "link": "https://tble.kr/view.php?cp_id=417733",
       "image": "",
       "deadline": "2026-09-21",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 70
+    },
+    {
+      "title": "[배송] SRC - 퍼센트로 GEN 패치",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=417999",
+      "image": "",
+      "deadline": "2026-09-30",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 71
+    },
+    {
+      "title": "퍼센트로 링클 알이디 마스크 1 BOX",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=417997",
+      "image": "",
+      "deadline": "2026-09-30",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
@@ -952,10 +952,10 @@
       "id": 73
     },
     {
-      "title": "[배송] SRC - 퍼센트로 GEN 패치",
+      "title": "[배송] Julia-J - 가을 블레이저 아워글래스 자켓",
       "reward": "",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=417999",
+      "link": "https://tble.kr/view.php?cp_id=418098",
       "image": "",
       "deadline": "2026-09-30",
       "location": "배송형",
@@ -963,19 +963,6 @@
       "applied": 0,
       "total": 10,
       "id": 74
-    },
-    {
-      "title": "퍼센트로 링클 알이디 마스크 1 BOX",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=417997",
-      "image": "",
-      "deadline": "2026-09-30",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 75
     },
     {
       "title": "식사대용 선식 산마한끼 2달치(60포)",
@@ -988,7 +975,7 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 76
+      "id": 75
     },
     {
       "title": "22,400원 상당의 오브렌 노워시 단백질 트리트먼트 제공",
@@ -1001,20 +988,7 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 77
-    },
-    {
-      "title": "[배송] Julia-J - 가을 블레이저 아워글래스 자켓",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=418098",
-      "image": "",
-      "deadline": "2026-09-30",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 78
+      "id": 76
     },
     {
       "title": "한음채 국립박물관 뮷즈, 1인 잔세트 (64,000원 상당)",
@@ -1027,7 +1001,7 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 79
+      "id": 77
     },
     {
       "title": "[인스타/릴스] 와이엘사이언스 - QCY BARAM 블루투스 헤드셋",
@@ -1040,7 +1014,7 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 80
+      "id": 78
     },
     {
       "title": "신청 21명 / 모집 5명",
@@ -1053,7 +1027,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 81
+      "id": 79
     },
     {
       "title": "일산/덕양/파주",
@@ -1066,7 +1040,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 82
+      "id": 80
     },
     {
       "title": "모단비즈센터",
@@ -1079,7 +1053,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 83
+      "id": 81
     },
     {
       "title": "🍽️ 맛집",
@@ -1092,7 +1066,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 84
+      "id": 82
     },
     {
       "title": "🛍️ 제품·서비스",
@@ -1105,7 +1079,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 85
+      "id": 83
     },
     {
       "title": "🎭 문화·스포츠",
@@ -1118,7 +1092,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 86
+      "id": 84
     },
     {
       "title": "📰 기자단",
@@ -1131,7 +1105,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 87
+      "id": 85
     },
     {
       "title": "📸 촬영단",
@@ -1144,7 +1118,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 88
+      "id": 86
     },
     {
       "title": "⏰ 마감임박",
@@ -1157,7 +1131,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 89
+      "id": 87
     },
     {
       "title": "✨ AI 추천픽",
@@ -1170,7 +1144,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 90
+      "id": 88
     },
     {
       "title": "⭐ 체험 후기",
@@ -1183,7 +1157,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 91
+      "id": 89
     }
   ]
 }
