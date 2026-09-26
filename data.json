@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26 15:26",
+  "updated_at": "2026-09-26 20:25",
   "total": 83,
   "campaigns": [
     {
@@ -601,7 +601,7 @@
       "id": 46
     },
     {
-      "title": "신청 289명 / 모집 30명",
+      "title": "신청 292명 / 모집 30명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=418056",
@@ -640,7 +640,7 @@
       "id": 49
     },
     {
-      "title": "신청 251명 / 모집 30명",
+      "title": "신청 254명 / 모집 30명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=418057",
@@ -705,19 +705,6 @@
       "id": 54
     },
     {
-      "title": "[배송] SRC - 퍼센트로 GEN 패치",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=417999",
-      "image": "",
-      "deadline": "2026-09-29",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 55
-    },
-    {
       "title": "퍼센트로 링클 알이디 마스크 1 BOX",
       "reward": "",
       "platform": "티블",
@@ -728,13 +715,26 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 56
+      "id": 55
     },
     {
       "title": "[배송] Julia-J - 헤링본 오버핏 가을 블레이저자켓",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=418099",
+      "image": "",
+      "deadline": "2026-09-29",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 56
+    },
+    {
+      "title": "[배송] SRC - 퍼센트로 GEN 패치",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=417999",
       "image": "",
       "deadline": "2026-09-29",
       "location": "배송형",
@@ -913,19 +913,6 @@
       "id": 70
     },
     {
-      "title": "신청 42명 / 모집 5명",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=418029",
-      "image": "",
-      "deadline": "2026-09-29",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 71
-    },
-    {
       "title": "[인스타/릴스] 와이엘사이언스 - QCY BARAM 블루투스 헤드셋",
       "reward": "",
       "platform": "티블",
@@ -934,6 +921,19 @@
       "deadline": "",
       "location": "방문형",
       "review_type": "숏폼",
+      "applied": 0,
+      "total": 10,
+      "id": 71
+    },
+    {
+      "title": "신청 42명 / 모집 5명",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=418029",
+      "image": "",
+      "deadline": "2026-09-29",
+      "location": "배송형",
+      "review_type": "블로그",
       "applied": 0,
       "total": 10,
       "id": 72
