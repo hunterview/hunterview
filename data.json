@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-30 17:18",
+  "updated_at": "2026-09-30 21:42",
   "total": 86,
   "campaigns": [
     {
@@ -627,7 +627,7 @@
       "id": 48
     },
     {
-      "title": "신청 382명 / 모집 30명",
+      "title": "신청 383명 / 모집 30명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=418057",
@@ -796,19 +796,6 @@
       "id": 61
     },
     {
-      "title": "우복당 영양 갈비탕 700g 2개 제공",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=418373",
-      "image": "",
-      "deadline": "2026-11-07",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 62
-    },
-    {
       "title": "100만원 상당의 세르프 이용권 제공",
       "reward": "100만원 상당",
       "platform": "티블",
@@ -816,6 +803,19 @@
       "image": "",
       "deadline": "2026-10-06",
       "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 62
+    },
+    {
+      "title": "우복당 영양 갈비탕 700g 2개 제공",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=418373",
+      "image": "",
+      "deadline": "2026-11-07",
+      "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
@@ -835,13 +835,13 @@
       "id": 64
     },
     {
-      "title": "신청 61명 / 모집 5명",
-      "reward": "",
+      "title": "100만원 상당의 세르프 이용권 제공",
+      "reward": "100만원 상당",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=418216",
+      "link": "https://tble.kr/view.php?cp_id=418264",
       "image": "",
-      "deadline": "2026-10-06",
-      "location": "구매형",
+      "deadline": "2026-10-07",
+      "location": "방문형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
@@ -926,19 +926,6 @@
       "id": 71
     },
     {
-      "title": "식사대용 선식 산마한끼 2달치(60포)",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=418259",
-      "image": "",
-      "deadline": "2026-10-06",
-      "location": "방문형",
-      "review_type": "숏폼",
-      "applied": 0,
-      "total": 10,
-      "id": 72
-    },
-    {
       "title": "[배송] 박남매농장 - 생강차",
       "reward": "",
       "platform": "티블",
@@ -947,6 +934,19 @@
       "deadline": "2026-10-11",
       "location": "배송형",
       "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 72
+    },
+    {
+      "title": "식사대용 선식 산마한끼 2달치(60포)",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=418259",
+      "image": "",
+      "deadline": "2026-10-06",
+      "location": "방문형",
+      "review_type": "숏폼",
       "applied": 0,
       "total": 10,
       "id": 73
