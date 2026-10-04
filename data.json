@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-04 16:13",
+  "updated_at": "2026-10-04 20:41",
   "total": 88,
   "campaigns": [
     {
@@ -796,19 +796,6 @@
       "id": 61
     },
     {
-      "title": "신청 79명 / 모집 5명",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=418216",
-      "image": "",
-      "deadline": "2026-10-06",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 62
-    },
-    {
       "title": "비건 설거지바 주방세제 세트 제공",
       "reward": "",
       "platform": "티블",
@@ -816,6 +803,19 @@
       "image": "",
       "deadline": "",
       "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 62
+    },
+    {
+      "title": "신청 79명 / 모집 5명",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=418216",
+      "image": "",
+      "deadline": "2026-10-06",
+      "location": "구매형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
@@ -926,12 +926,12 @@
       "id": 71
     },
     {
-      "title": "[배송] 박남매농장 - 생강차",
+      "title": "미미엔부 민티부 1450ppm 고불소어린이치약 1개 제공",
       "reward": "",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=418368",
+      "link": "https://tble.kr/view.php?cp_id=418246",
       "image": "",
-      "deadline": "2026-10-11",
+      "deadline": "2026-10-06",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
@@ -939,12 +939,12 @@
       "id": 72
     },
     {
-      "title": "미미엔부 민티부 1450ppm 고불소어린이치약 1개 제공",
+      "title": "[배송] 박남매농장 - 생강차",
       "reward": "",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=418246",
+      "link": "https://tble.kr/view.php?cp_id=418368",
       "image": "",
-      "deadline": "2026-10-06",
+      "deadline": "2026-10-11",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
