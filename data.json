@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-11 17:05",
+  "updated_at": "2026-10-11 21:17",
   "total": 81,
   "campaigns": [
     {
@@ -887,19 +887,6 @@
       "id": 68
     },
     {
-      "title": "신청 54명 / 모집 10명",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=418670",
-      "image": "",
-      "deadline": "2026-10-19",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 69
-    },
-    {
       "title": "식사대용 선식 산마한끼 2달치(60포)",
       "reward": "",
       "platform": "티블",
@@ -910,17 +897,30 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
+      "id": 69
+    },
+    {
+      "title": "신청 54명 / 모집 10명",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=418670",
+      "image": "",
+      "deadline": "2026-10-19",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
       "id": 70
     },
     {
-      "title": "[인스타/릴스] 순백유 프리미엄 컬러샤워기 + 샤워호스",
+      "title": "[배송] 박남매농장 - 녹용 흑염소진액",
       "reward": "",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=418398",
+      "link": "https://tble.kr/view.php?cp_id=418420",
       "image": "",
-      "deadline": "2026-10-13",
-      "location": "방문형",
-      "review_type": "숏폼",
+      "deadline": "2026-10-12",
+      "location": "배송형",
+      "review_type": "블로그",
       "applied": 0,
       "total": 10,
       "id": 71
