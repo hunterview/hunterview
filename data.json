@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-16 15:49",
-  "total": 84,
+  "updated_at": "2026-10-16 20:18",
+  "total": 85,
   "campaigns": [
     {
       "title": "[200,000원 상당] 개인 바바틀 및 무료 입장",
@@ -809,19 +809,6 @@
       "id": 62
     },
     {
-      "title": "[배송] Hyalferrin - 바이오젠 포어 그랩 샴푸",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=418845",
-      "image": "",
-      "deadline": "2026-10-26",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 63
-    },
-    {
       "title": "[구매평/블로그] 도킹형 미니 보조배터리",
       "reward": "",
       "platform": "티블",
@@ -832,7 +819,33 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
+      "id": 63
+    },
+    {
+      "title": "[배송] Hyalferrin - 바이오젠 포어 그랩 샴푸",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=418845",
+      "image": "",
+      "deadline": "2026-10-26",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
       "id": 64
+    },
+    {
+      "title": "[기자단] 김해화물익스프레스",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=418165",
+      "image": "",
+      "deadline": "2026-10-17",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 65
     },
     {
       "title": "[배송] 리즈LIIZ공식스토어 - 크림",
@@ -845,7 +858,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 65
+      "id": 66
     },
     {
       "title": "[배송] 리즈LIIZ공식스토어 - 토너",
@@ -858,7 +871,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 66
+      "id": 67
     },
     {
       "title": "[배송] Hyalferrin - 히알페린 퍼멘트 폼 프롬 오일 클렌저",
@@ -871,7 +884,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 67
+      "id": 68
     },
     {
       "title": "미미엔부 민티부 1450ppm 고불소어린이치약 1개 제공",
@@ -884,7 +897,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 68
+      "id": 69
     },
     {
       "title": "[배송] SRC - 와사비건 릴리프 클렌저",
@@ -897,7 +910,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 69
+      "id": 70
     },
     {
       "title": "[배송] OVACO 오바코 - 오바코 에그 뉴럴셀 글로우스 업",
@@ -910,7 +923,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 70
+      "id": 71
     },
     {
       "title": "비건 설거지바 주방세제 세트 제공",
@@ -923,7 +936,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 71
+      "id": 72
     },
     {
       "title": "[인스타/릴스] 리비아레나 - 나그랑 기모 맨투맨",
@@ -936,7 +949,7 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 72
+      "id": 73
     },
     {
       "title": "아이워크 도킹형 미니 보조배터리 듀얼커넥터 5000mAh",
@@ -949,7 +962,7 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 73
+      "id": 74
     },
     {
       "title": "[배송] OVACO 오바코 - 더마일루맥스 그로우 에센스",
@@ -962,7 +975,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 74
+      "id": 75
     },
     {
       "title": "일산/덕양/파주",
@@ -975,7 +988,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 75
+      "id": 76
     },
     {
       "title": "모단비즈센터",
@@ -988,7 +1001,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 76
+      "id": 77
     },
     {
       "title": "🍽️ 맛집",
@@ -1001,7 +1014,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 77
+      "id": 78
     },
     {
       "title": "🛍️ 제품·서비스",
@@ -1014,7 +1027,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 78
+      "id": 79
     },
     {
       "title": "🎭 문화·스포츠",
@@ -1027,7 +1040,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 79
+      "id": 80
     },
     {
       "title": "📰 기자단",
@@ -1040,7 +1053,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 80
+      "id": 81
     },
     {
       "title": "📸 촬영단",
@@ -1053,7 +1066,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 81
+      "id": 82
     },
     {
       "title": "⏰ 마감임박",
@@ -1066,7 +1079,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 82
+      "id": 83
     },
     {
       "title": "✨ AI 추천픽",
@@ -1079,7 +1092,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 83
+      "id": 84
     },
     {
       "title": "⭐ 체험 후기",
@@ -1092,7 +1105,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 84
+      "id": 85
     }
   ]
 }
