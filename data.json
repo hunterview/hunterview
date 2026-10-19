@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-19 18:00",
-  "total": 81,
+  "updated_at": "2026-10-19 22:07",
+  "total": 80,
   "campaigns": [
     {
       "title": "수제 쇼콜라 초코 바게트 [3개입]",
@@ -679,7 +679,7 @@
       "id": 52
     },
     {
-      "title": "신청 134명 / 모집 10명",
+      "title": "신청 135명 / 모집 10명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=418670",
@@ -744,19 +744,6 @@
       "id": 57
     },
     {
-      "title": "식사대용 선식 산마한끼 2달치(60포)",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=418259",
-      "image": "",
-      "deadline": "2026-10-20",
-      "location": "방문형",
-      "review_type": "숏폼",
-      "applied": 0,
-      "total": 10,
-      "id": 58
-    },
-    {
       "title": "[배송] 리즈LIIZ공식스토어 - 크림",
       "reward": "",
       "platform": "티블",
@@ -767,20 +754,20 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 59
+      "id": 58
     },
     {
-      "title": "[구매평/블로그] 도킹형 미니 보조배터리 듀얼커넥터",
+      "title": "식사대용 선식 산마한끼 2달치(60포)",
       "reward": "",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=418749",
+      "link": "https://tble.kr/view.php?cp_id=418259",
       "image": "",
       "deadline": "2026-10-20",
-      "location": "구매형",
-      "review_type": "블로그",
+      "location": "방문형",
+      "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 60
+      "id": 59
     },
     {
       "title": "[배송] Hyalferrin - 히알페린 퍼멘트 폼 프롬 오일 클렌저",
@@ -793,20 +780,20 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 61
+      "id": 60
     },
     {
-      "title": "[배송] 리즈LIIZ공식스토어 - 토너",
+      "title": "[구매평/블로그] 도킹형 미니 보조배터리 듀얼커넥터",
       "reward": "",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=418875",
+      "link": "https://tble.kr/view.php?cp_id=418749",
       "image": "",
-      "deadline": "2026-10-26",
-      "location": "배송형",
+      "deadline": "2026-10-20",
+      "location": "구매형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 62
+      "id": 61
     },
     {
       "title": "[배송] SRC - 와사비건 릴리프 클렌저",
@@ -815,6 +802,19 @@
       "link": "https://tble.kr/view.php?cp_id=418885",
       "image": "",
       "deadline": "2026-10-28",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 62
+    },
+    {
+      "title": "[배송] 리즈LIIZ공식스토어 - 토너",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=418875",
+      "image": "",
+      "deadline": "2026-10-26",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
@@ -835,19 +835,6 @@
       "id": 64
     },
     {
-      "title": "[구매평/블로그] 휴대용 무선 빗고데기",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=418821",
-      "image": "",
-      "deadline": "2026-10-25",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 65
-    },
-    {
       "title": "[배송] OVACO 오바코 - 더마일루맥스 그로우 에센스",
       "reward": "",
       "platform": "티블",
@@ -858,7 +845,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 66
+      "id": 65
     },
     {
       "title": "비건 설거지바 주방세제 세트 제공",
@@ -871,7 +858,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 67
+      "id": 66
     },
     {
       "title": "미미엔부 민티부 1450ppm 고불소어린이치약 1개 제공",
@@ -884,7 +871,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 68
+      "id": 67
     },
     {
       "title": "[배송] 메디트리 - 포켓 칙칙 프로폴리스 스프레이",
@@ -897,7 +884,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 69
+      "id": 68
     },
     {
       "title": "[배송] 닥터코어런 - 허벅지 압박 밴드",
@@ -910,7 +897,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 70
+      "id": 69
     },
     {
       "title": "[배송] 메디트리 - 맛있는 파워업 에너지젤",
@@ -923,7 +910,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 71
+      "id": 70
     },
     {
       "title": "일산/덕양/파주",
@@ -936,7 +923,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 72
+      "id": 71
     },
     {
       "title": "모단비즈센터",
@@ -949,7 +936,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 73
+      "id": 72
     },
     {
       "title": "🍽️ 맛집",
@@ -962,7 +949,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 74
+      "id": 73
     },
     {
       "title": "🛍️ 제품·서비스",
@@ -975,7 +962,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 75
+      "id": 74
     },
     {
       "title": "🎭 문화·스포츠",
@@ -988,7 +975,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 76
+      "id": 75
     },
     {
       "title": "📰 기자단",
@@ -1001,7 +988,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 77
+      "id": 76
     },
     {
       "title": "📸 촬영단",
@@ -1014,7 +1001,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 78
+      "id": 77
     },
     {
       "title": "⏰ 마감임박",
@@ -1027,7 +1014,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 79
+      "id": 78
     },
     {
       "title": "✨ AI 추천픽",
@@ -1040,7 +1027,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 80
+      "id": 79
     },
     {
       "title": "⭐ 체험 후기",
@@ -1053,7 +1040,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 81
+      "id": 80
     }
   ]
 }
