@@ -1,7 +1,46 @@
 {
-  "updated_at": "2026-10-19 22:07",
+  "updated_at": "2026-10-20 02:44",
   "total": 80,
   "campaigns": [
+    {
+      "title": "[300,000원 상당] 화이트태닝 10회+전용로션",
+      "reward": "당일취소 시 아싸뷰 패널티 부여 예정",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1791251823",
+      "image": "./data/campaign/thumb/thumb-17912518232039085906_Wl1mcKNY_1790817622022_300x300.jpg",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 1
+    },
+    {
+      "title": "리보아 전기매트 전자파없는 탄소매트 1인용 전기요 세탁가능",
+      "reward": "그레이/180*100 [배송비 포함47,800원]",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1792116797",
+      "image": "./data/campaign/thumb/thumb-2281764510_nSlTczvR_2_300x300.jpg",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 2
+    },
+    {
+      "title": "쿼크브릭 접이식 휴대용 옷걸이 여행용 바지집게 길이 확장형",
+      "reward": "크림 핑크 3개 [배송비 포함12,900원]",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1792454910",
+      "image": "./data/campaign/thumb/thumb-988160941_etDjAgOi_EC8DB81_300x300.png",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 3
+    },
     {
       "title": "수제 쇼콜라 초코 바게트 [3개입]",
       "reward": "오븐 조리 가능 하신 분 만",
@@ -13,7 +52,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 1
+      "id": 4
     },
     {
       "title": "실제 운동 시(헬스, 크로스핏, 클라이밍, 유도, 골프 등) 사용 및 사진 촬영 가능한 분",
@@ -26,7 +65,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 2
+      "id": 5
     },
     {
       "title": "실제 작업(목공, 디자인, 인테리어 등)에 사용 후 사진 촬영 가능하신 분",
@@ -39,7 +78,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 3
+      "id": 6
     },
     {
       "title": "실제 부착 후 사진 촬영 가능하신 분, 실 사용 사진 필수입니다.",
@@ -52,7 +91,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 4
+      "id": 7
     },
     {
       "title": "직접 자전거에 설치 후 사진 촬영 가능하신 분, 실 장착 사진 필수입니다.",
@@ -65,7 +104,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 5
+      "id": 8
     },
     {
       "title": "직접 자전거에 설치 후 사진 촬영 가능하신 분, 실 장착 사진 필수입니다.",
@@ -78,7 +117,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 6
+      "id": 9
     },
     {
       "title": "실제 사용 사진 촬영 가능하신 분, 실 사용 사진 필수입니다.",
@@ -91,7 +130,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 7
+      "id": 10
     },
     {
       "title": "유니정원 미니장미 10송이 꽃다발 생화택배 스프레이한다발",
@@ -104,7 +143,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 8
+      "id": 11
     },
     {
       "title": "[39,900원 상당] 이어폰",
@@ -117,7 +156,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 9
+      "id": 12
     },
     {
       "title": "맛병아리콩 20g / 80개 [배송비 포함29,410원]",
@@ -130,20 +169,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 10
-    },
-    {
-      "title": "비회원결제 불가 회원가입 후 결제 필요 / 비회원일 시 리뷰 작성이 불가할 수 있으며, 이러한 이유로 리뷰 작성 불가의 경우 취소사유입니다. 이 경우 결제금액 페이백 불가합니다.",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1792389814",
-      "image": "./data/campaign/thumb/thumb-3696839881_oA8bwWxZ_ECB2ADEB8F84ED998DEC8B9C_EAB080ECA095EC9AA92.5kg_EC8DB8EB84A4EC9DBC_300x300.jpg",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 11
+      "id": 13
     },
     {
       "title": "등산 또는 러닝 중 제품 직접 착용하고 사용해 주세요. 사진/영상 제공 요청드립니다.",
@@ -156,7 +182,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 12
+      "id": 14
     },
     {
       "title": "더릭스홈 3단 접이식 극세사 푹신탄탄한 매트리스 15cm 퀸 차콜 [배송비 포함215,100원]",
@@ -169,7 +195,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 13
+      "id": 15
     },
     {
       "title": "[100,000원 상당] 컷,펌,염색,크리닉,드라이 중 선택 (10만원 상당 무료, 추가금액 50% 할인)",
@@ -182,7 +208,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 14
+      "id": 16
     },
     {
       "title": "[제주 제주시] 주제 혼술바",
@@ -195,7 +221,7 @@
       "review_type": "블로그",
       "applied": 1,
       "total": 10,
-      "id": 15
+      "id": 17
     },
     {
       "title": "[3차]존스블랜드 프래그런스 젤 캔 차량용 방향제 화이트머스크",
@@ -208,7 +234,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 16
+      "id": 18
     },
     {
       "title": "[35,000원 상당] 3:1 소그룹 체험",
@@ -221,7 +247,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 17
+      "id": 19
     },
     {
       "title": "[58,500원 상당] 핍스 스탠다드 더플백 (블랙) 1개 제공",
@@ -234,33 +260,20 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 18
-    },
-    {
-      "title": "[프루티하우스] 비정제 사탕수수당으로 만든 수제 과일잼 3종 체험단 모집",
-      "reward": "[46,500원 상당] 사과잼/애플시나몬잼/방울토마토잼",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1792248872",
-      "image": "./data/campaign/thumb/thumb-3732477588_MYr7GEso_ChatGPT_Image_2026EB8584_10EC9B94_18EC9DBC_EC98A4ECA084_12_01_37_300x300.png",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 19
-    },
-    {
-      "title": "트라세드 천연올인원 바디워시 500ml 2개 [배송비 포함29,800원]",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1791355643",
-      "image": "./data/campaign/thumb/thumb-1791355643178909253517859961971785201937178296622717810797691781079426178107900217794277661778206261177561283517737367411772587813177061742417697385781768981483176837492617683725593076951255_JKlR0xGd_01_300x300.jpg",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
       "id": 20
+    },
+    {
+      "title": "원고료 5만원",
+      "reward": "",
+      "platform": "파블로체험단",
+      "link": "https://pavlovu.com/review_campaign.php?cp_id=1792455176",
+      "image": "",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 21
     },
     {
       "title": "캐스퍼 EV 수납함",
@@ -273,7 +286,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 21
+      "id": 22
     },
     {
       "title": "캐스퍼 EV 수납함",
@@ -286,7 +299,7 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 22
+      "id": 23
     },
     {
       "title": "캐스퍼 EV 수납함",
@@ -299,7 +312,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 23
+      "id": 24
     },
     {
       "title": "오늘 마감",
@@ -312,7 +325,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 24
+      "id": 25
     },
     {
       "title": "5,000포인트",
@@ -325,7 +338,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 25
+      "id": 26
     },
     {
       "title": "3,000포인트",
@@ -338,7 +351,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 26
+      "id": 27
     },
     {
       "title": "5,000포인트",
@@ -351,7 +364,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 27
+      "id": 28
     },
     {
       "title": "5,000포인트",
@@ -364,7 +377,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 28
+      "id": 29
     },
     {
       "title": "음료 2잔+디저트 1개",
@@ -377,7 +390,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 29
+      "id": 30
     },
     {
       "title": "음료 2잔+디저트 1개",
@@ -390,7 +403,7 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 30
+      "id": 31
     },
     {
       "title": "음료 2잔+디저트 1개",
@@ -403,7 +416,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 31
+      "id": 32
     },
     {
       "title": "현엘릭서 30ml",
@@ -416,7 +429,7 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 32
+      "id": 33
     },
     {
       "title": "현엘릭서 30ml",
@@ -429,7 +442,7 @@
       "review_type": "인스타",
       "applied": 0,
       "total": 10,
-      "id": 33
+      "id": 34
     },
     {
       "title": "마우스패드+포인트 지급",
@@ -442,7 +455,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 34
+      "id": 35
     },
     {
       "title": "2.5만원 이용권",
@@ -455,7 +468,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 35
+      "id": 36
     },
     {
       "title": "2.5만원 이용권",
@@ -468,7 +481,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 36
+      "id": 37
     },
     {
       "title": "2.5만원 이용권",
@@ -481,7 +494,7 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 37
+      "id": 38
     },
     {
       "title": "2.5만원 이용권",
@@ -494,7 +507,7 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 38
+      "id": 39
     },
     {
       "title": "2.5만원 이용권",
@@ -507,7 +520,7 @@
       "review_type": "인스타",
       "applied": 0,
       "total": 10,
-      "id": 39
+      "id": 40
     },
     {
       "title": "2.5만원 이용권",
@@ -520,7 +533,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 40
+      "id": 41
     },
     {
       "title": "강서/양천 · 맛집",
@@ -533,7 +546,7 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 41
+      "id": 42
     },
     {
       "title": "강서/양천 · 맛집",
@@ -546,7 +559,7 @@
       "review_type": "인스타",
       "applied": 0,
       "total": 10,
-      "id": 42
+      "id": 43
     },
     {
       "title": "강서/양천 · 맛집",
@@ -559,7 +572,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 43
+      "id": 44
     },
     {
       "title": "강서/양천 · 맛집",
@@ -572,19 +585,6 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 44
-    },
-    {
-      "title": "온라인소개팅 이용권",
-      "reward": "",
-      "platform": "파블로체험단",
-      "link": "https://pavlovu.com/review_campaign.php?cp_id=1790844407",
-      "image": "",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "인스타",
-      "applied": 0,
-      "total": 10,
       "id": 45
     },
     {
@@ -593,7 +593,7 @@
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=418373",
       "image": "",
-      "deadline": "2026-11-07",
+      "deadline": "2026-11-08",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
@@ -619,7 +619,7 @@
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=418880",
       "image": "",
-      "deadline": "2026-10-25",
+      "deadline": "2026-10-26",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
@@ -632,7 +632,7 @@
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=418877",
       "image": "",
-      "deadline": "2026-10-25",
+      "deadline": "2026-10-26",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
@@ -697,7 +697,7 @@
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=418742",
       "image": "",
-      "deadline": "2026-10-21",
+      "deadline": "2026-10-22",
       "location": "방문형",
       "review_type": "블로그",
       "applied": 0,
@@ -710,7 +710,7 @@
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=418849",
       "image": "",
-      "deadline": "2026-10-26",
+      "deadline": "2026-10-27",
       "location": "구매형",
       "review_type": "블로그",
       "applied": 0,
@@ -723,7 +723,7 @@
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=418845",
       "image": "",
-      "deadline": "2026-10-26",
+      "deadline": "2026-10-27",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
@@ -736,7 +736,7 @@
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=418940",
       "image": "",
-      "deadline": "2026-10-27",
+      "deadline": "2026-10-28",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
@@ -749,7 +749,7 @@
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=418876",
       "image": "",
-      "deadline": "2026-10-26",
+      "deadline": "2026-10-27",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
@@ -757,30 +757,17 @@
       "id": 58
     },
     {
-      "title": "식사대용 선식 산마한끼 2달치(60포)",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=418259",
-      "image": "",
-      "deadline": "2026-10-20",
-      "location": "방문형",
-      "review_type": "숏폼",
-      "applied": 0,
-      "total": 10,
-      "id": 59
-    },
-    {
       "title": "[배송] Hyalferrin - 히알페린 퍼멘트 폼 프롬 오일 클렌저",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=418844",
       "image": "",
-      "deadline": "2026-10-26",
+      "deadline": "2026-10-27",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 60
+      "id": 59
     },
     {
       "title": "[구매평/블로그] 도킹형 미니 보조배터리 듀얼커넥터",
@@ -788,9 +775,22 @@
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=418749",
       "image": "",
-      "deadline": "2026-10-20",
+      "deadline": "2026-10-21",
       "location": "구매형",
       "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 60
+    },
+    {
+      "title": "식사대용 선식 산마한끼 2달치(60포)",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=418259",
+      "image": "",
+      "deadline": "2026-10-21",
+      "location": "방문형",
+      "review_type": "숏폼",
       "applied": 0,
       "total": 10,
       "id": 61
@@ -801,7 +801,7 @@
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=418885",
       "image": "",
-      "deadline": "2026-10-28",
+      "deadline": "2026-10-29",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
@@ -814,7 +814,7 @@
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=418875",
       "image": "",
-      "deadline": "2026-10-26",
+      "deadline": "2026-10-27",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
@@ -822,26 +822,26 @@
       "id": 63
     },
     {
-      "title": "[구매평/블로그] 도킹형 미니 보조배터리",
+      "title": "[배송] OVACO 오바코 - 더마일루맥스 그로우 에센스",
       "reward": "",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=418746",
+      "link": "https://tble.kr/view.php?cp_id=418939",
       "image": "",
-      "deadline": "2026-10-20",
-      "location": "구매형",
+      "deadline": "2026-10-28",
+      "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
       "id": 64
     },
     {
-      "title": "[배송] OVACO 오바코 - 더마일루맥스 그로우 에센스",
+      "title": "[구매평/블로그] 도킹형 미니 보조배터리",
       "reward": "",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=418939",
+      "link": "https://tble.kr/view.php?cp_id=418746",
       "image": "",
-      "deadline": "2026-10-27",
-      "location": "배송형",
+      "deadline": "2026-10-21",
+      "location": "구매형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
@@ -853,7 +853,7 @@
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=418889",
       "image": "",
-      "deadline": "2026-10-28",
+      "deadline": "2026-10-29",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
@@ -866,7 +866,7 @@
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=418757",
       "image": "",
-      "deadline": "2026-10-21",
+      "deadline": "2026-10-22",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
@@ -879,7 +879,7 @@
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=418882",
       "image": "",
-      "deadline": "2026-10-25",
+      "deadline": "2026-10-26",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
@@ -887,10 +887,10 @@
       "id": 68
     },
     {
-      "title": "[배송] 닥터코어런 - 허벅지 압박 밴드",
+      "title": "[배송] 메디트리 - 맛있는 파워업 에너지젤",
       "reward": "",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=418852",
+      "link": "https://tble.kr/view.php?cp_id=418879",
       "image": "",
       "deadline": "2026-10-26",
       "location": "배송형",
@@ -900,12 +900,12 @@
       "id": 69
     },
     {
-      "title": "[배송] 메디트리 - 맛있는 파워업 에너지젤",
+      "title": "[배송] 닥터코어런 - 허벅지 압박 밴드",
       "reward": "",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=418879",
+      "link": "https://tble.kr/view.php?cp_id=418852",
       "image": "",
-      "deadline": "2026-10-25",
+      "deadline": "2026-10-27",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
