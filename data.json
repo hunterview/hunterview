@@ -1,7 +1,20 @@
 {
-  "updated_at": "2026-10-20 21:02",
-  "total": 83,
+  "updated_at": "2026-10-21 02:38",
+  "total": 82,
   "campaigns": [
+    {
+      "title": "[서울 용산구] 더함",
+      "reward": "30,000원 금액권",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1791786110154",
+      "image": "./data/campaign/thumb/thumb-2040675526_hbtMmGrF_EB8D94ED95A81_300x300.jpg",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 1,
+      "total": 10,
+      "id": 1
+    },
     {
       "title": "[50,000원 상당] 자유 식사권",
       "reward": "",
@@ -13,7 +26,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 1
+      "id": 2
     },
     {
       "title": "스포데이 아미노온 1박스 (6개입)",
@@ -23,19 +36,6 @@
       "image": "./data/campaign/thumb/thumb-17924795313667468860_4xgE0GzL_ai_EC839DEC84B1_2_300x300.png",
       "deadline": "",
       "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 2
-    },
-    {
-      "title": "빈플랜트 라운드 머그컵 무광 세라믹 도자기",
-      "reward": "라운드 머그컵 [배송비 포함8,900원]",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1792480147",
-      "image": "./data/campaign/thumb/thumb-1930819122_A9RLNHoS_EAB3A0EAB889EC8AA4EB9FACEC9AB4_EC84B8EB9DBCEBAFB9_ECBBA4ED94BC_EBA8B8EAB7B8-1_300x300.png",
-      "deadline": "",
-      "location": "구매형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
@@ -198,11 +198,11 @@
       "id": 15
     },
     {
-      "title": "[119,800원 상당] 러그/카페트 - 리듬스틱 아이보리 150*200cm",
+      "title": "스포데이 아미노온",
       "reward": "",
       "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1792460533",
-      "image": "./data/campaign/thumb/thumb-2039040578_u53iFjan_EC8DB8EB84A4EC9DBC29EB85B8ED8AB8EB9DBCEC9DB8_EC9584EC9DB4EBB3B4EBA6AC28229_300x300.jpg",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1792470320",
+      "image": "./data/campaign/thumb/thumb-3667468860_4xgE0GzL_ai_EC839DEC84B1_2_300x300.png",
       "deadline": "",
       "location": "배송형",
       "review_type": "블로그",
@@ -211,11 +211,11 @@
       "id": 16
     },
     {
-      "title": "[61,700원 상당] 러그/카페트 - 노트라인 아이보리 100*150cm",
+      "title": "+4,500 P",
       "reward": "",
       "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1792466660",
-      "image": "./data/campaign/thumb/thumb-2039040578_784NEBrc_EC8DB8EB84A4EC9DBC29EB85B8ED8AB8EB9DBCEC9DB8_EC84B8EC9DB4ECA780EAB7B8EBA6B028429_300x300.jpg",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1792465433",
+      "image": "./data/campaign/thumb/thumb-2105720963_0sXoN3kW_EC8AA4ED81ACEBA6B0EC83B7_2026-10-20_120508_300x300.png",
       "deadline": "",
       "location": "배송형",
       "review_type": "블로그",
@@ -224,39 +224,39 @@
       "id": 17
     },
     {
-      "title": "[61,700원 상당] 러그/카페트 - 소프트팔레트 100*150cm",
+      "title": "홀빈(원두) / 01. 다크넛 블렌드 (곱기는 선택해주셔도 괜찮습니다) [배송비 포함11,400원]",
       "reward": "",
       "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1792466852",
-      "image": "./data/campaign/thumb/thumb-2039040578_KfRHgSqu_EC8DB8EB84A4EC9DBC29EC868CED9484ED8AB8ED8C94EBA088ED8AB8_EB8C80ED919C_300x300.jpg",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1792473418",
+      "image": "./data/campaign/thumb/thumb-1930819122_XN8rQWOR_2026-10-20_14_17_38_300x300.png",
       "deadline": "",
-      "location": "배송형",
+      "location": "구매형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
       "id": 18
     },
     {
-      "title": "[61,700원 상당] 러그/카페트 - 하프머핀 100*150cm",
-      "reward": "",
+      "title": "브레빌 그라인더 칼날 버 5코어 870 876 878 980 커피머신호환 실버",
+      "reward": "실버 [배송비 포함22,800원]",
       "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1792466994",
-      "image": "./data/campaign/thumb/thumb-2039040578_WhQdXCmF_EC8DB8EB84A4EC9DBC29ED9598ED9484EBA8B8ED9580_EBB284ED84B0EC9890EBA19CEC9AB0_EB8C80ED919C_300x300.jpg",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1792473582",
+      "image": "./data/campaign/thumb/thumb-1930819122_kjylAnIJ_EAB888EC868D_ECA09CED9288EAB3BC_EC9D80EC9D80ED959C_EBB0B0EAB2BD_ED9D90EBA6BC-8_300x300.png",
       "deadline": "",
-      "location": "배송형",
+      "location": "구매형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
       "id": 19
     },
     {
-      "title": "[61,700원 상당] 러그/카페트 - 모던빔 100*150cm",
-      "reward": "",
+      "title": "스텐304 스팀피쳐 일체형 손잡이 밀크저그 커피저그",
+      "reward": "600ml 실버 [배송비 포함12,900원]",
       "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1792467059",
-      "image": "./data/campaign/thumb/thumb-2039040578_rn9HC5ls_EC8DB8EB84A4EC9DBC29EBAAA8EB8D98EBB994_ECB694EAB080EC9DB4EBAFB8ECA78028129_300x300.jpg",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1792473845",
+      "image": "./data/campaign/thumb/thumb-2040675526_YPnxuKH1_i_2fb187d6af84_300x300.jpg",
       "deadline": "",
-      "location": "배송형",
+      "location": "구매형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
@@ -593,7 +593,7 @@
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=418373",
       "image": "",
-      "deadline": "2026-11-07",
+      "deadline": "2026-11-08",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
@@ -606,7 +606,7 @@
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=418880",
       "image": "",
-      "deadline": "2026-10-25",
+      "deadline": "2026-10-26",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
@@ -619,7 +619,7 @@
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=418877",
       "image": "",
-      "deadline": "2026-10-25",
+      "deadline": "2026-10-26",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
@@ -627,26 +627,26 @@
       "id": 48
     },
     {
-      "title": "[구매평] 스페인산 옛날 삼겹살 1kg",
+      "title": "[배송] Hyalferrin - 바이오젠 포어 그랩 샴푸",
       "reward": "",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=418849",
+      "link": "https://tble.kr/view.php?cp_id=418845",
       "image": "",
-      "deadline": "2026-10-26",
-      "location": "구매형",
+      "deadline": "2026-10-27",
+      "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
       "id": 49
     },
     {
-      "title": "[배송] Hyalferrin - 바이오젠 포어 그랩 샴푸",
+      "title": "[구매평] 스페인산 옛날 삼겹살 1kg",
       "reward": "",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=418845",
+      "link": "https://tble.kr/view.php?cp_id=418849",
       "image": "",
-      "deadline": "2026-10-26",
-      "location": "배송형",
+      "deadline": "2026-10-27",
+      "location": "구매형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
@@ -658,7 +658,7 @@
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=418742",
       "image": "",
-      "deadline": "2026-10-21",
+      "deadline": "2026-10-22",
       "location": "방문형",
       "review_type": "블로그",
       "applied": 0,
@@ -671,7 +671,7 @@
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=418940",
       "image": "",
-      "deadline": "2026-10-27",
+      "deadline": "2026-10-28",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
@@ -684,7 +684,7 @@
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=418885",
       "image": "",
-      "deadline": "2026-10-28",
+      "deadline": "2026-10-29",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
@@ -697,7 +697,7 @@
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=418844",
       "image": "",
-      "deadline": "2026-10-26",
+      "deadline": "2026-10-27",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
@@ -705,12 +705,12 @@
       "id": 54
     },
     {
-      "title": "[배송] 리즈LIIZ공식스토어 - 크림",
+      "title": "[배송] 리즈LIIZ공식스토어 - 토너",
       "reward": "",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=418876",
+      "link": "https://tble.kr/view.php?cp_id=418875",
       "image": "",
-      "deadline": "2026-10-26",
+      "deadline": "2026-10-27",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
@@ -718,17 +718,30 @@
       "id": 55
     },
     {
-      "title": "[배송] 리즈LIIZ공식스토어 - 토너",
+      "title": "[배송] 리즈LIIZ공식스토어 - 크림",
       "reward": "",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=418875",
+      "link": "https://tble.kr/view.php?cp_id=418876",
       "image": "",
-      "deadline": "2026-10-26",
+      "deadline": "2026-10-27",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
       "id": 56
+    },
+    {
+      "title": "[구매평/블로그] 휴대용 무선 빗고데기",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=418821",
+      "image": "",
+      "deadline": "2026-10-26",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 57
     },
     {
       "title": "[구매평/블로그] 도킹형 미니 보조배터리 듀얼커넥터",
@@ -737,19 +750,6 @@
       "link": "https://tble.kr/view.php?cp_id=418749",
       "image": "",
       "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 57
-    },
-    {
-      "title": "[구매평/블로그] 휴대용 무선 빗고데기",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=418821",
-      "image": "",
-      "deadline": "2026-10-25",
       "location": "구매형",
       "review_type": "블로그",
       "applied": 0,
@@ -775,7 +775,7 @@
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=418939",
       "image": "",
-      "deadline": "2026-10-27",
+      "deadline": "2026-10-28",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
@@ -788,7 +788,7 @@
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=418950",
       "image": "",
-      "deadline": "2026-10-22",
+      "deadline": "2026-10-23",
       "location": "구매형",
       "review_type": "블로그",
       "applied": 0,
@@ -814,7 +814,7 @@
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=418889",
       "image": "",
-      "deadline": "2026-10-28",
+      "deadline": "2026-10-29",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
@@ -827,7 +827,7 @@
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=418971",
       "image": "",
-      "deadline": "2026-10-28",
+      "deadline": "2026-10-29",
       "location": "방문형",
       "review_type": "블로그",
       "applied": 0,
@@ -835,25 +835,25 @@
       "id": 64
     },
     {
-      "title": "신청 55명 / 모집 2명",
+      "title": "미미엔부 민티부 1450ppm 고불소어린이치약 1개 제공",
       "reward": "",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=417939",
+      "link": "https://tble.kr/view.php?cp_id=418757",
       "image": "",
-      "deadline": "2026-10-31",
-      "location": "방문형",
+      "deadline": "2026-10-22",
+      "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
       "id": 65
     },
     {
-      "title": "미미엔부 민티부 1450ppm 고불소어린이치약 1개 제공",
+      "title": "[배송] 메디트리 - 맛있는 파워업 에너지젤",
       "reward": "",
       "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=418757",
+      "link": "https://tble.kr/view.php?cp_id=418879",
       "image": "",
-      "deadline": "2026-10-21",
+      "deadline": "2026-10-26",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
@@ -866,7 +866,7 @@
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=418882",
       "image": "",
-      "deadline": "2026-10-25",
+      "deadline": "2026-10-26",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
@@ -874,30 +874,17 @@
       "id": 67
     },
     {
-      "title": "[배송] 메디트리 - 맛있는 파워업 에너지젤",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=418879",
-      "image": "",
-      "deadline": "2026-10-25",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 68
-    },
-    {
       "title": "[배송] 닥터코어런 - 허벅지 압박 밴드",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=418852",
       "image": "",
-      "deadline": "2026-10-26",
+      "deadline": "2026-10-27",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 69
+      "id": 68
     },
     {
       "title": "아이워크 C타입 도킹형 보조배터리 5000mAh",
@@ -910,7 +897,7 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 70
+      "id": 69
     },
     {
       "title": "아이워크 도킹형 미니 보조배터리 듀얼커넥터 5000mAh",
@@ -923,7 +910,7 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 71
+      "id": 70
     },
     {
       "title": "[인스타/릴스] 리비아레나 - 나그랑 기모 맨투맨",
@@ -936,20 +923,20 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 72
+      "id": 71
     },
     {
-      "title": "신청 32명 / 모집 5명",
+      "title": "신청 33명 / 모집 5명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=418471",
       "image": "",
-      "deadline": "2026-10-27",
+      "deadline": "2026-10-28",
       "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 73
+      "id": 72
     },
     {
       "title": "일산/덕양/파주",
@@ -962,7 +949,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 74
+      "id": 73
     },
     {
       "title": "모단비즈센터",
@@ -975,7 +962,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 75
+      "id": 74
     },
     {
       "title": "🍽️ 맛집",
@@ -988,7 +975,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 76
+      "id": 75
     },
     {
       "title": "🛍️ 제품·서비스",
@@ -1001,7 +988,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 77
+      "id": 76
     },
     {
       "title": "🎭 문화·스포츠",
@@ -1014,7 +1001,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 78
+      "id": 77
     },
     {
       "title": "📰 기자단",
@@ -1027,7 +1014,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 79
+      "id": 78
     },
     {
       "title": "📸 촬영단",
@@ -1040,7 +1027,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 80
+      "id": 79
     },
     {
       "title": "⏰ 마감임박",
@@ -1053,7 +1040,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 81
+      "id": 80
     },
     {
       "title": "✨ AI 추천픽",
@@ -1066,7 +1053,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 82
+      "id": 81
     },
     {
       "title": "⭐ 체험 후기",
@@ -1079,7 +1066,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 83
+      "id": 82
     }
   ]
 }
