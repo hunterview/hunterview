@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21 16:21",
+  "updated_at": "2026-10-21 21:04",
   "total": 81,
   "campaigns": [
     {
@@ -835,19 +835,6 @@
       "id": 64
     },
     {
-      "title": "[배송] 닥터코어런 - 허벅지 압박 밴드",
-      "reward": "",
-      "platform": "티블",
-      "link": "https://tble.kr/view.php?cp_id=418852",
-      "image": "",
-      "deadline": "2026-10-26",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 65
-    },
-    {
       "title": "[배송] 메디트리 - 포켓 칙칙 프로폴리스 스프레이",
       "reward": "",
       "platform": "티블",
@@ -858,10 +845,23 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
+      "id": 65
+    },
+    {
+      "title": "[배송] 닥터코어런 - 허벅지 압박 밴드",
+      "reward": "",
+      "platform": "티블",
+      "link": "https://tble.kr/view.php?cp_id=418852",
+      "image": "",
+      "deadline": "2026-10-26",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
       "id": 66
     },
     {
-      "title": "신청 37명 / 모집 5명",
+      "title": "신청 39명 / 모집 5명",
       "reward": "",
       "platform": "티블",
       "link": "https://tble.kr/view.php?cp_id=418471",
