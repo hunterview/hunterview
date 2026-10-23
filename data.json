@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23 10:45",
+  "updated_at": "2026-10-23 16:10",
   "total": 55,
   "campaigns": [
     {
@@ -16,6 +16,19 @@
       "id": 1
     },
     {
+      "title": "[60,000원 상당] 속눈썹 마스카라연장",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1791505541",
+      "image": "./data/campaign/thumb/thumb-1925947289_y5qLa2SC_file_000000002b408211b8c80c5f06ddf444_300x300.png",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 2
+    },
+    {
       "title": "[68,000원 상당] 노래 1시간 이용권 5장(실물 쿠폰) + TJ 블루투스 마이크(5만원 상당 + )체험시 1시간 무료 이용",
       "reward": "",
       "platform": "아싸뷰",
@@ -26,7 +39,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 2
+      "id": 3
     },
     {
       "title": "매장 식사가 아닌 매장에서 포장을 해가셔서 집에서 릴스를 올려주셔야 합니다.",
@@ -39,7 +52,7 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 3
+      "id": 4
     },
     {
       "title": "[33,000원 상당] 직화닭발 2인세트 1개",
@@ -52,7 +65,7 @@
       "review_type": "블로그",
       "applied": 1,
       "total": 10,
-      "id": 4
+      "id": 5
     },
     {
       "title": "[50,000원 상당] 오호바이오 고라니 멧돼지 퇴치 냄새없는 야생동물 기피제 오스탑퍼 200g",
@@ -65,7 +78,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 5
+      "id": 6
     },
     {
       "title": "[43,900원 상당] 러뷰 포인텔 볼륨 브라",
@@ -78,7 +91,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 6
+      "id": 7
     },
     {
       "title": "[32,900원 상당] [메이크샐러드] 닭가슴살 부리또(10팩)",
@@ -91,7 +104,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 7
+      "id": 8
     },
     {
       "title": "MIGA 전자파없는 프리미엄 스마트 터치식 온수매트 무소음 침대용 바닥 온수 매트",
@@ -104,7 +117,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 8
+      "id": 9
     },
     {
       "title": "[12,900원 상당] 올덴 ZIPCO 화롯불 붙이는핫팩 파스형 48g",
@@ -117,7 +130,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 9
+      "id": 10
     },
     {
       "title": "[30,000원 상당] 식사권",
@@ -130,7 +143,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 10
+      "id": 11
     },
     {
       "title": "[17,900원 상당] 미코볼 가습기 MK-130",
@@ -143,7 +156,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 11
+      "id": 12
     },
     {
       "title": "단품 [배송비 포함12,800원]",
@@ -156,7 +169,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 12
+      "id": 13
     },
     {
       "title": "[100,000원 상당] 숄더백,크로스백,백팩 =제품 3개정도 보내드립니다.",
@@ -169,7 +182,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 13
+      "id": 14
     },
     {
       "title": "프레소 프로 [배송비 포함48,800원]",
@@ -182,7 +195,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 14
+      "id": 15
     },
     {
       "title": "방문 가능 시간을 확인 후 일정을 지켜주세요.",
@@ -195,7 +208,7 @@
       "review_type": "블로그",
       "applied": 4,
       "total": 10,
-      "id": 15
+      "id": 16
     },
     {
       "title": "[33,500원 상당] 영국 해피버터 오가닉 기버터 150G",
@@ -208,7 +221,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 16
+      "id": 17
     },
     {
       "title": "리보아 전기매트 전자파없는 탄소매트 1인용 전기요 세탁가능",
@@ -221,7 +234,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 17
+      "id": 18
     },
     {
       "title": "쿼크브릭 휴대용 선글라스 케이스 홀더 가죽 안경집 파우치",
@@ -234,7 +247,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 18
+      "id": 19
     },
     {
       "title": "홍대스테이지 Mnet 코이키즈(KO1KEYZ) 영상통화 팬미팅 및 대면 팬미팅 현장",
@@ -242,19 +255,6 @@
       "platform": "아싸뷰",
       "link": "https://assaview.co.kr/campaign.php?cp_id=1792647250",
       "image": "./data/campaign/thumb/thumb-3554249928_FdjWYMO6_ECBAA1ECB298_10_300x300.png",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 19
-    },
-    {
-      "title": "홍대스테이지 청년문화주간 <요즘 청년, 요즘 문화> 현장",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1792646496",
-      "image": "./data/campaign/thumb/thumb-3554249928_4A50TOum_ECBAA1ECB298_6_300x300.png",
       "deadline": "",
       "location": "배송형",
       "review_type": "블로그",
