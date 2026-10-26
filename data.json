@@ -1,7 +1,98 @@
 {
-  "updated_at": "2026-10-25 20:11",
+  "updated_at": "2026-10-26 02:25",
   "total": 55,
   "campaigns": [
+    {
+      "title": "트라세드 천연올인원 바디워시 500ml 2개 [배송비 포함29,800원]",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1791355643",
+      "image": "./data/campaign/thumb/thumb-1791355643178909253517859961971785201937178296622717810797691781079426178107900217794277661778206261177561283517737367411772587813177061742417697385781768981483176837492617683725593076951255_JKlR0xGd_01_300x300.jpg",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 1
+    },
+    {
+      "title": "[42,900원 상당] 시나노골드 사과 중대과 3kg 9-10과",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1792758367640",
+      "image": "./data/campaign/thumb/thumb-1846212451_ZJq1D5AP_ECB694EC849DEC97BDEC849CECA09CEC9E91_28529_300x300.jpg",
+      "deadline": "",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 2
+    },
+    {
+      "title": "[대구 중구] 수주식당",
+      "reward": "30,000원 금액권",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1792782356187",
+      "image": "./data/campaign/thumb/thumb-1792782355_3d8dc152_300x300.jpg",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 1,
+      "total": 10,
+      "id": 3
+    },
+    {
+      "title": "[200,000원 상당] GOHUNABI 고후나비",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1792935592143",
+      "image": "./data/campaign/thumb/thumb-179293559232707893_UiMnFsw1_IMG_9592_300x300.jpg",
+      "deadline": "",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 4
+    },
+    {
+      "title": "홀빈(원두) / 01. 디카페인 베트남 (곱기는 선택해주셔도 괜찮습니다) [배송비 포함28,800원]",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1792936532467",
+      "image": "./data/campaign/thumb/thumb-833079687_vzEloy4w_ECBBA4ED94BCEBB0B1EC9D98_EBB2A0ED8AB8EB82A8_EB9494ECB9B4ED8E98EC9DB8_EB9DBCEBB2A8_EAB590ECB2B4_300x300.png",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 5
+    },
+    {
+      "title": "홀빈(원두) / 01. 디카페인 베트남 (곱기는 선택해주셔도 괜찮습니다) [배송비 포함18,800원]",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1792936694514",
+      "image": "./data/campaign/thumb/thumb-833079687_bFLYMk79_EB9494ECB9B4ED8E98EC9DB8_EBB2A0ED8AB8EB82A8_ECBBA4ED94BC_ED8C8CEC9AB0ECB998_28129_300x300.png",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 6
+    },
+    {
+      "title": "[40,000원 상당] 소개팅 이용권 협찬",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1792976440002",
+      "image": "./data/campaign/thumb/thumb-17929764402109377191_XaCUOP7D_9EC9B94_7EC9DBC_300x300.jpg",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 7
+    },
     {
       "title": "유산균 품은 퀘르브로멜 [배송비 포함31,900원]",
       "reward": "",
@@ -13,7 +104,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 1
+      "id": 8
     },
     {
       "title": "[47,000원 상당] 한돈떡갈비, 한우떡갈비, 흑마늘장아찌",
@@ -26,7 +117,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 2
+      "id": 9
     },
     {
       "title": "[4,900원 상당] 루멘에듀 통합 이용권 1회 (생기부 제외)",
@@ -39,7 +130,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 3
+      "id": 10
     },
     {
       "title": "[30,000원 상당] 1:1 리터칭 증명사진",
@@ -52,7 +143,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 4
+      "id": 11
     },
     {
       "title": "[60,000원 상당] 속눈썹 마스카라연장",
@@ -65,7 +156,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 5
+      "id": 12
     },
     {
       "title": "[68,000원 상당] 노래 1시간 이용권 5장(실물 쿠폰) + TJ 블루투스 마이크(5만원 상당 + )체험시 1시간 무료 이용",
@@ -78,7 +169,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 6
+      "id": 13
     },
     {
       "title": "매장 식사가 아닌 매장에서 포장을 해가셔서 집에서 릴스를 올려주셔야 합니다.",
@@ -91,7 +182,7 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 7
+      "id": 14
     },
     {
       "title": "[33,000원 상당] 직화닭발 2인세트 1개",
@@ -104,7 +195,7 @@
       "review_type": "블로그",
       "applied": 1,
       "total": 10,
-      "id": 8
+      "id": 15
     },
     {
       "title": "[50,000원 상당] 오호바이오 고라니 멧돼지 퇴치 냄새없는 야생동물 기피제 오스탑퍼 200g",
@@ -117,7 +208,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 9
+      "id": 16
     },
     {
       "title": "[43,900원 상당] 러뷰 포인텔 볼륨 브라",
@@ -130,20 +221,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 10
-    },
-    {
-      "title": "[32,900원 상당] [메이크샐러드] 닭가슴살 부리또(10팩)",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1792736343078",
-      "image": "./data/campaign/thumb/thumb-237284206_gLebPXuS_ECB9B4ED8E98_24_EC8DB8EB84A4EC9DBC_600600__85_300x300.jpg",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 11
+      "id": 17
     },
     {
       "title": "MIGA 전자파없는 프리미엄 스마트 터치식 온수매트 무소음 침대용 바닥 온수 매트",
@@ -156,7 +234,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 12
+      "id": 18
     },
     {
       "title": "[12,900원 상당] 올덴 ZIPCO 화롯불 붙이는핫팩 파스형 48g",
@@ -169,7 +247,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 13
+      "id": 19
     },
     {
       "title": "[30,000원 상당] 식사권",
@@ -179,84 +257,6 @@
       "image": "./data/campaign/thumb/thumb-1995133417_zpr3LUmF_IMG_9786_300x300.jpg",
       "deadline": "",
       "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 14
-    },
-    {
-      "title": "[17,900원 상당] 미코볼 가습기 MK-130",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1792497343",
-      "image": "./data/campaign/thumb/thumb-1795150939_7XkNiW0b_EBAFB8ECBD94EBB3BCED948CEB9FACEC8AA4_EBB0B0EB84882_300x300.jpg",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 15
-    },
-    {
-      "title": "단품 [배송비 포함12,800원]",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1792712108283",
-      "image": "./data/campaign/thumb/thumb-17927121082949292000_FKrTuLMI_ChatGPT_Image_2026EB8584_8EC9B94_7EC9DBC_EC98A4ED9B84_12_39_34_300x300.png",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 16
-    },
-    {
-      "title": "[100,000원 상당] 숄더백,크로스백,백팩 =제품 3개정도 보내드립니다.",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1792675666653",
-      "image": "./data/campaign/thumb/thumb-1028581623_tQAhTZc7_ED9994EBA9B4_ECBAA1ECB298_2026-10-22_231537_300x300.jpg",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 17
-    },
-    {
-      "title": "방문 가능 시간을 확인 후 일정을 지켜주세요.",
-      "reward": "30,000원 금액권",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1782425158464",
-      "image": "./data/campaign/thumb/thumb-1782425158_ed183817_300x300.jpg",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 4,
-      "total": 10,
-      "id": 18
-    },
-    {
-      "title": "[33,500원 상당] 영국 해피버터 오가닉 기버터 150G",
-      "reward": "제작된 영상 제공 및 2차활용에 대한 동의 필수",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1792657917206",
-      "image": "./data/campaign/thumb/thumb-990981006_5hPy3c9s_KakaoTalk_20261022_173151893_300x300.png",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 19
-    },
-    {
-      "title": "쿼크브릭 휴대용 선글라스 케이스 홀더 가죽 안경집 파우치",
-      "reward": "베이지 [배송비 포함11,800원]",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1792654948",
-      "image": "./data/campaign/thumb/thumb-988160941_SjfhBTby_3_300x300.png",
-      "deadline": "",
-      "location": "구매형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
@@ -484,10 +484,10 @@
       "id": 37
     },
     {
-      "title": "3,000포인트",
+      "title": "5,000포인트",
       "reward": "",
       "platform": "파블로체험단",
-      "link": "https://pavlovu.com/review_campaign.php?cp_id=1791802230",
+      "link": "https://pavlovu.com/review_campaign.php?cp_id=1791770162",
       "image": "",
       "deadline": "",
       "location": "방문형",
@@ -500,19 +500,6 @@
       "title": "5,000포인트",
       "reward": "",
       "platform": "파블로체험단",
-      "link": "https://pavlovu.com/review_campaign.php?cp_id=1791770162",
-      "image": "",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 39
-    },
-    {
-      "title": "5,000포인트",
-      "reward": "",
-      "platform": "파블로체험단",
       "link": "https://pavlovu.com/review_campaign.php?cp_id=1791765199",
       "image": "",
       "deadline": "",
@@ -520,7 +507,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 40
+      "id": 39
     },
     {
       "title": "음료 2잔+디저트 1개",
@@ -533,7 +520,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 41
+      "id": 40
     },
     {
       "title": "음료 2잔+디저트 1개",
@@ -546,7 +533,7 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 42
+      "id": 41
     },
     {
       "title": "음료 2잔+디저트 1개",
@@ -559,7 +546,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 43
+      "id": 42
     },
     {
       "title": "현엘릭서 30ml",
@@ -572,7 +559,7 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 44
+      "id": 43
     },
     {
       "title": "현엘릭서 30ml",
@@ -583,6 +570,19 @@
       "deadline": "",
       "location": "배송형",
       "review_type": "인스타",
+      "applied": 0,
+      "total": 10,
+      "id": 44
+    },
+    {
+      "title": "마우스패드+포인트 지급",
+      "reward": "",
+      "platform": "파블로체험단",
+      "link": "https://pavlovu.com/review_campaign.php?cp_id=1791366212",
+      "image": "",
+      "deadline": "",
+      "location": "배송형",
+      "review_type": "블로그",
       "applied": 0,
       "total": 10,
       "id": 45
