@@ -1,7 +1,98 @@
 {
-  "updated_at": "2026-10-27 03:01",
+  "updated_at": "2026-10-27 11:18",
   "total": 55,
   "campaigns": [
+    {
+      "title": "실제 운동 시(헬스, 크로스핏, 클라이밍, 유도, 골프 등) 사용 및 사진 촬영 가능한 분",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1791879233",
+      "image": "./data/campaign/thumb/thumb-179187923317905649463138347611_pntQmBJg_EC8DB8EB84A4EC9DBC2_300x300.jpg",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 1
+    },
+    {
+      "title": "+4,500 P",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1793088072238",
+      "image": "./data/campaign/thumb/thumb-1930950751_VenGlFO9_images_300x300.jpg",
+      "deadline": "",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 2
+    },
+    {
+      "title": "[4,900원 상당] 히팅뷰러 속눈썹 고데기",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1793084481684",
+      "image": "./data/campaign/thumb/thumb-1029781727_j39Omwcr_20261027_144754_300x300.jpg",
+      "deadline": "",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 3
+    },
+    {
+      "title": "[선재도 토요 버스킹] 공연 홍보글 작성",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1792570502",
+      "image": "./data/campaign/thumb/thumb-1794264747_0X63eguf_2026_EC84A0EC9EACEB8F84_ED86A0EC9A94_EBB284EC8AA4ED82B9_2ECB0A8_ED8FACEC8AA4ED84B0_28129_300x300.jpg",
+      "deadline": "",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 4
+    },
+    {
+      "title": "[50,000원 상당] 비피온 퓨어 비피더스 밸런스핏 1Box",
+      "reward": "반려동물 키우시는 분, 영상 촬영 자신있는 분",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1793080096585",
+      "image": "./data/campaign/thumb/thumb-179308009617882437812039379918_ZhnEl3Na_260320_E18487E185A2E186AFE18485E185A5E186ABE18489E185B3E18491E185B5E186BA_E1848FE185AEE1848EE185B502_300x300.jpg",
+      "deadline": "",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 5
+    },
+    {
+      "title": "[42,000원 상당] 영양제",
+      "reward": "강아지나 고양이 키우시는 분만",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1756970956",
+      "image": "./data/campaign/thumb/thumb-3076890068_MYl7nqpR_20261027_132910_300x300.png",
+      "deadline": "",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 6
+    },
+    {
+      "title": "가든스오브제 쉐이빙 시카 클렌징 젤 [배송비 포함11,500원]",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1793073512016",
+      "image": "./data/campaign/thumb/thumb-1794999761_X0r6hSVZ_IG_01_Main_1080x1350_300x300.png",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 7
+    },
     {
       "title": "나푸아 충전식 블루투스 10W 미니 베이스기타 앰프 스피커",
       "reward": "NPA10B [배송비 포함59,000원]",
@@ -13,7 +104,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 1
+      "id": 8
     },
     {
       "title": "리보아 인조 토끼털 워셔블 전기 온열 담요 1인용 발열 담요 사무실 캠핑 휴대용",
@@ -26,7 +117,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 2
+      "id": 9
     },
     {
       "title": "리보아 인조 토끼털 워셔블 전기 온열 담요 1인용 발열 담요 사무실 캠핑 휴대용",
@@ -39,7 +130,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 3
+      "id": 10
     },
     {
       "title": "루아덴 휴대용 충전식 손난로 미니 전자 핫팩",
@@ -52,7 +143,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 4
+      "id": 11
     },
     {
       "title": "[25,000원 상당] 달리프 글램 원스텝 톤 블리치",
@@ -65,7 +156,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 5
+      "id": 12
     },
     {
       "title": "[300,000원 상당] 화이트태닝 10회+전용로션",
@@ -78,7 +169,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 6
+      "id": 13
     },
     {
       "title": "[300,000원 상당] 화이트태닝 10회+전용로션",
@@ -91,7 +182,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 7
+      "id": 14
     },
     {
       "title": "e편한 발 바닥 패치 50P [배송비 포함7,900원]",
@@ -104,111 +195,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 8
-    },
-    {
-      "title": "구매키워드 : 크리스마스 / 제품명: 디심플 크리스마스 선물 키링 인형 소품 24pcs",
-      "reward": "24개 × 혼합색상 × 1세트 [배송비 포함8,800원]",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1791960259",
-      "image": "./data/campaign/thumb/thumb-235275400_rFEQtDjn_1_300x300.jpg",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 9
-    },
-    {
-      "title": "구매키워드 : 해루질 갈고리 / 제품명: 디심플 해루질 갈고리 장비 외갈고리 집게",
-      "reward": "혼합색상 × 1개 [배송비 포함4,900원]",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1791960262",
-      "image": "./data/campaign/thumb/thumb-235275400_spnDUGc4_1_300x300.jpg",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 10
-    },
-    {
-      "title": "[당일출고] 국내산 묵은지 국내산 닭 김치 닭볶음탕 닭도리탕 닭 순살 (약750~800g) 밀키트 캠핑 간편집밥 2~3인 분, 800g, 1세트",
-      "reward": "순살 닭도리탕 [배송비 포함37,900원]",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1792962350618",
-      "image": "./data/campaign/thumb/thumb-237534620_GRVmgfWZ_EBACB5EC9D80ECA780_EB8BADEBB3B6EC9D8CED8395_300x300.png",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 11
-    },
-    {
-      "title": "리비언트 점착식 끈끈이 면봉 귀이개 귀후비개, 1세트, 24개입 [배송비 포함3,900원]",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1792987087625",
-      "image": "./data/campaign/thumb/thumb-1792987087179274254117926694113076950102_4uREDfzU_YY_300x300.jpg",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 12
-    },
-    {
-      "title": "리비언트 일회용 발비닐 보습 발커버 [배송비 포함4,900원]",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1792987168785",
-      "image": "./data/campaign/thumb/thumb-179298716817927429803076950102_076q53tF_QQQ_300x300.jpg",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 13
-    },
-    {
-      "title": "선물용 로맨틱 장미 꽃다발 미니 비누꽃 세트 MJS JOYFUL, 옵션2, 1개",
-      "reward": "옵션2, 1개 [배송비 포함9,900원]",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1792990764093",
-      "image": "./data/campaign/thumb/thumb-3696796660_xXPS2t9q_photo_2026-10-26_14-14-25_300x300.jpg",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 14
-    },
-    {
-      "title": "[ 특가세일 ] 로맨틱 비누꽃 장미 꽃다발 + 쇼핑백 세트 더영흥 MJS JOYFUL",
-      "reward": "옵션04 × 1개 [배송비 포함9,900원]",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1792991711418",
-      "image": "./data/campaign/thumb/thumb-3696796660_1fObQCK7_photo_2026-10-26_14-11-21_300x300.jpg",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
       "id": 15
-    },
-    {
-      "title": "다마브로 특대형 이사가방 이민가방 대용량 이불가방, 5개, 블랙",
-      "reward": "블랙 5개 [배송비 포함12,400원]",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1793030517468",
-      "image": "./data/campaign/thumb/thumb-3716938639_FRpCczEn_20261027_010459_300x300.png",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 16
     },
     {
       "title": "[서울 동대문구] 반포식스 청량리역점-원하는때 자유로운 방문, 현지인이 요리하는 쌀국수 맛집",
@@ -221,7 +208,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 17
+      "id": 16
     },
     {
       "title": "[서울 동대문구] 매란방 청량리역점-원하는때 자유로운 방문, 현지인이 요리하는 중식 맛집",
@@ -234,7 +221,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 18
+      "id": 17
     },
     {
       "title": "[서울 송파구] 반포식스 잠실점-원하는때 자유로운 방문, 현지인이 요리하는 쌀국수 맛집",
@@ -247,7 +234,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 19
+      "id": 18
     },
     {
       "title": "[서울 성동구] 매란방 왕십리본점-원하는때 자유로운 방문, 현지인이 요리하는 중식 맛집",
@@ -257,6 +244,19 @@
       "image": "./data/campaign/thumb/thumb-17925612551792550346174252465917423707631794650538_G23kKAIp_2EC9DB8EC84B8ED8AB8_28629_300x300.jpg",
       "deadline": "",
       "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 19
+    },
+    {
+      "title": "기본엘로 [배송비 포함24,800원]",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1793002484613",
+      "image": "./data/campaign/thumb/thumb-3667195354_CN8Bwb9h_E18482E185AEE18481E185B52_01_300x300.jpg",
+      "deadline": "",
+      "location": "구매형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
