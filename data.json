@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27 11:18",
+  "updated_at": "2026-10-27 17:04",
   "total": 55,
   "campaigns": [
     {
@@ -276,13 +276,13 @@
       "id": 21
     },
     {
-      "title": "샴퓨 or 세럼 중 택1",
+      "title": "오늘 마감",
       "reward": "",
       "platform": "파블로체험단",
       "link": "https://pavlovu.com/review_campaign.php?cp_id=1792983083",
-      "image": "",
+      "image": "./data/campaign/pvv3_20261026142003_87fcd0a5c793_640.webp",
       "deadline": "",
-      "location": "배송형",
+      "location": "방문형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
@@ -354,11 +354,11 @@
       "id": 27
     },
     {
-      "title": "삼계탕,옻계탕,백숙,옻닭",
+      "title": "오늘 마감",
       "reward": "",
       "platform": "파블로체험단",
       "link": "https://pavlovu.com/review_campaign.php?cp_id=1792668761",
-      "image": "",
+      "image": "./data/campaign/thumb/thumb-1889562866_EDBAbdWS_Screenshot_3_300x300.jpg",
       "deadline": "",
       "location": "방문형",
       "review_type": "블로그",
