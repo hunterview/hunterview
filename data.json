@@ -1,7 +1,137 @@
 {
-  "updated_at": "2026-10-30 03:40",
+  "updated_at": "2026-10-30 11:54",
   "total": 55,
   "campaigns": [
+    {
+      "title": "[100,000원 상당] 기능성 트레이닝 & AI 체형평가",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1791898385",
+      "image": "./data/campaign/thumb/thumb-17918983851791897715178066833417791840031768271772176214165117527237493739864141_ynx8GXTF_E18485E185B5E1848BE185A5E186AF_E1848BE185B5E18486E185B5E1848CE185B5.001_300x300.jpg",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 1
+    },
+    {
+      "title": "MIGA 튼튼한 접이식 빨래건조대 대형 3단 이불건조대 다용도 Y형 실내 건조대",
+      "reward": "1.6m 그레이 [배송비 포함32,800원]",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1793339053746",
+      "image": "./data/campaign/thumb/thumb-3537415527_duoHZwce_E4B8BBE59BBE_300x300.jpg",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 2
+    },
+    {
+      "title": "샤워기 온도계 본품 [배송비 포함23,800원]",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1793345579139",
+      "image": "./data/campaign/thumb/thumb-988404805_4OeyRYgK_4EC84B8EB8C80_EC98A8EB8F84EAB384_EB8C80ED919CEC9DB4EBAFB8ECA780_000_300x300.jpg",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 3
+    },
+    {
+      "title": "[14,800원 상당] 텐미닛 제모크림",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1793339732800",
+      "image": "./data/campaign/thumb/thumb-179333973217885023591783924931177874654817760633131771470977175438265917496036771745287075174296133817392531283699316630_IP98OaNb_intro_2020_300x300.jpg",
+      "deadline": "",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 4
+    },
+    {
+      "title": "문제성 피부 및 피부 고민인 분들 모집 / 참여조건 가이드라인 확인 필요",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1792546667",
+      "image": "./data/campaign/thumb/thumb-2009347559_TgXNPC2f_4_300x300.jpg",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 5
+    },
+    {
+      "title": "일동생활건강 인생샷 마시는 젖산마그네슘 영양제",
+      "reward": "1개 [배송비 포함21,900원]",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1793326827394",
+      "image": "./data/campaign/thumb/thumb-662103345_Fod3siuA_KakaoTalk_20261021_151837167_300x300.jpg",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 6
+    },
+    {
+      "title": "방문기간 11월 6일 ~11월 7일 / 11월 7일까지 포스팅 완료 필요",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1793329100240",
+      "image": "./data/campaign/thumb/thumb-2113504937_JdNKpBX5_20261030_110911_300x300.png",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 7
+    },
+    {
+      "title": "L 사이즈 [배송비 포함74,900원]",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1793333616590",
+      "image": "./data/campaign/thumb/thumb-17933336161786687076177976275717790914941778494957177251275117687987442040675526_JB9v8Eml_EC94A8EC9C84EB8488_EBB2A0EAB09C_300x300.png",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 8
+    },
+    {
+      "title": "10ml x 30개 1박스 [배송비 포함39,800원]",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1793333778132",
+      "image": "./data/campaign/thumb/thumb-17933337781784507205177976283717790916271778496239177759605417693923042040675526_tr8AybQI_1768182784176757833417664675331765766165239041064_8L6r0EaN_3Q6A6788_300x300.jpg",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 9
+    },
+    {
+      "title": "3g x 30개 1박스 [배송비 포함19,800원]",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1793333934246",
+      "image": "./data/campaign/thumb/thumb-17933339342040675526_5Nm1Z2yq_EC9691EBB0B0ECB694EBA788ED99981_300x300.jpg",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 10
+    },
     {
       "title": "[경북 구미시] 주해1991",
       "reward": "50,000원 금액권",
@@ -13,7 +143,7 @@
       "review_type": "블로그",
       "applied": 1,
       "total": 10,
-      "id": 1
+      "id": 11
     },
     {
       "title": "[45,800원 상당] 트루멜라 1개입",
@@ -26,7 +156,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 2
+      "id": 12
     },
     {
       "title": "[45,800원 상당] 우슬콘드로이친",
@@ -39,7 +169,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 3
+      "id": 13
     },
     {
       "title": "단품 [배송비 포함12,800원]",
@@ -52,7 +182,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 4
+      "id": 14
     },
     {
       "title": "[서울 강서구] 이노야드 마곡나루",
@@ -65,7 +195,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 5
+      "id": 15
     },
     {
       "title": "다마브로 대왕 롤빗 뿌리볼륨 드라이빗 53호",
@@ -78,7 +208,20 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 6
+      "id": 16
+    },
+    {
+      "title": "단품 [배송비 포함6,900원]",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1793306177549",
+      "image": "./data/campaign/thumb/thumb-1029781727_41gZKHbq_20261030_053701_300x300.jpg",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 17
     },
     {
       "title": "[18,000원 상당] 버드데이트 뉴페이스 브라이트닝 마사지크림 50ml",
@@ -91,7 +234,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 7
+      "id": 18
     },
     {
       "title": "[홍대공연장, 홍대스테이지] IDOLE PALETTE VOL.66 라이브 아이돌 공연 현장",
@@ -104,7 +247,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 8
+      "id": 19
     },
     {
       "title": "[홍대공연장, 홍대스테이지] KANO MIYU SEOUL LIVE 『1999』 공연 현장",
@@ -112,149 +255,6 @@
       "platform": "아싸뷰",
       "link": "https://assaview.co.kr/campaign.php?cp_id=1793248449702",
       "image": "./data/campaign/thumb/thumb-2040675526_UZYEO8Ce_EC8AA4ED81ACEBA6B0EC83B7_2026-10-29_165901_300x300.png",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 9
-    },
-    {
-      "title": "[80,000원 상당] 1:1 개인 필라테스 이용 및 AI 체형검사",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1793236926160",
-      "image": "./data/campaign/thumb/thumb-179323692617863335373547138109_NPrUTwbV_E18489E185B3E1848FE185B3E18485E185B5E186ABE18489E185A3E186BA_2026-06-05_E1848BE185A9E18492E185AE_11.01.21_300x300.png",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 10
-    },
-    {
-      "title": "[홍대공연장, 홍대스테이지] 디셈버 콘서트 ‘IMAGINE the Stage’ 현장",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1793245999254",
-      "image": "./data/campaign/thumb/thumb-1028236276_WnBVkAOU_EB9494EC8588EBB284_EBA994EC9DB8ED8FACEC8AA4ED84B0_300x300.png",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 11
-    },
-    {
-      "title": "[100,000원 상당] 1인 신점",
-      "reward": "일 방문자 비공개는 선정 불가",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1781758738",
-      "image": "./data/campaign/thumb/thumb-2077635874_ZfP9KRNg_1775131303782_300x300.png",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 12
-    },
-    {
-      "title": "샴페인1 + 일찍오면 뷔페 가능 + 칵테일",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1782686128",
-      "image": "./data/campaign/thumb/thumb-178268612817742739731764642869243979142_0AwtS89W_h1EC839DEC9DBCEC9E90EBA6AC_300x300.jpg",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 13
-    },
-    {
-      "title": "[200,000원 상당] 커트(레이어드컷 숏기장x)/펌(허그펌,레이어드펌,빌드펌,엘리자벳펌,젤리펌)/염색(애쉬,매트 브라운계열,탈색x)중 선택",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1773729349",
-      "image": "./data/campaign/thumb/thumb-17737293493552255029_WC0bRKE9_KakaoTalk_20260316_151612989_300x300.png",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 14
-    },
-    {
-      "title": "[3,900원 상당] 샤워타월",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1793007189980",
-      "image": "./data/campaign/thumb/thumb-2949544920_qrATfpSR_1_28229_300x300.png",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 15
-    },
-    {
-      "title": "[50,000원 상당] 시그니처 글로리아 속눈썹펌 시술 ( 유지력 2배 )",
-      "reward": "쌍커풀 유 + 직모 + 숱많은분 + 잘린 눈썹 없는 분, 너무 짧지 않은분",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1793180198397",
-      "image": "./data/campaign/thumb/thumb-2040954439_S8UrKsio_EC9DB8EC8AA4ED8380_ED94BCEB939C_300x300.png",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 16
-    },
-    {
-      "title": "[35,000원 상당] 메인메뉴 1개(치킨, 떡볶이 등) + 사이드메뉴 1개",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1776316045",
-      "image": "./data/campaign/thumb/thumb-3076539414_F5DPE6J2_KakaoTalk_20260306_151431059_300x300.jpg",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 17
-    },
-    {
-      "title": "[300,000원 상당] 남자 드롭컷, 아이비리그컷, 필러스컷 +다운펌 , 여자 하이레이어드펌, 허쉬펌 레이어드C컬펌 구합니다~",
-      "reward": "탈색머리 지원 안됩니다'·'머리 기장은 가슴선 밑으로가 좋습니다'",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1790953609",
-      "image": "./data/campaign/thumb/thumb-3698978397_ih8GldsO_IMG_4485_300x300.png",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 18
-    },
-    {
-      "title": "블랙체리 [배송비 포함6,900원]",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1793160769732",
-      "image": "./data/campaign/thumb/thumb-2072898589_Kr0QHM4Y_2_300x300.jpg",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 19
-    },
-    {
-      "title": "[25,000원 상당] 삼성역 로테이션 소개팅 체험 1회권",
-      "reward": "여성분 우선 (88-00년생 대상)",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1792419520",
-      "image": "./data/campaign/thumb/thumb-3529177269_9RJ1ZXg5_KakaoTalk_Photo_2026-10-19-23-29-13_300x300.jpg",
       "deadline": "",
       "location": "배송형",
       "review_type": "블로그",
