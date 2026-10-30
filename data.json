@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30 11:54",
+  "updated_at": "2026-10-30 17:30",
   "total": 55,
   "campaigns": [
     {
@@ -198,32 +198,6 @@
       "id": 15
     },
     {
-      "title": "다마브로 대왕 롤빗 뿌리볼륨 드라이빗 53호",
-      "reward": "53호 × 1개 [배송비 포함7,900원]",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1793263779635",
-      "image": "./data/campaign/thumb/thumb-3716938639_8ZQsLHzU_20261029_175122_300x300.png",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 16
-    },
-    {
-      "title": "단품 [배송비 포함6,900원]",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1793306177549",
-      "image": "./data/campaign/thumb/thumb-1029781727_41gZKHbq_20261030_053701_300x300.jpg",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 17
-    },
-    {
       "title": "[18,000원 상당] 버드데이트 뉴페이스 브라이트닝 마사지크림 50ml",
       "reward": "",
       "platform": "아싸뷰",
@@ -234,7 +208,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 18
+      "id": 16
     },
     {
       "title": "[홍대공연장, 홍대스테이지] IDOLE PALETTE VOL.66 라이브 아이돌 공연 현장",
@@ -247,7 +221,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 19
+      "id": 17
     },
     {
       "title": "[홍대공연장, 홍대스테이지] KANO MIYU SEOUL LIVE 『1999』 공연 현장",
@@ -255,6 +229,32 @@
       "platform": "아싸뷰",
       "link": "https://assaview.co.kr/campaign.php?cp_id=1793248449702",
       "image": "./data/campaign/thumb/thumb-2040675526_UZYEO8Ce_EC8AA4ED81ACEBA6B0EC83B7_2026-10-29_165901_300x300.png",
+      "deadline": "",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 18
+    },
+    {
+      "title": "[80,000원 상당] 1:1 개인 필라테스 이용 및 AI 체형검사",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1793236926160",
+      "image": "./data/campaign/thumb/thumb-179323692617863335373547138109_NPrUTwbV_E18489E185B3E1848FE185B3E18485E185B5E186ABE18489E185A3E186BA_2026-06-05_E1848BE185A9E18492E185AE_11.01.21_300x300.png",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 19
+    },
+    {
+      "title": "[홍대공연장, 홍대스테이지] 디셈버 콘서트 ‘IMAGINE the Stage’ 현장",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1793245999254",
+      "image": "./data/campaign/thumb/thumb-1028236276_WnBVkAOU_EB9494EC8588EBB284_EBA994EC9DB8ED8FACEC8AA4ED84B0_300x300.png",
       "deadline": "",
       "location": "배송형",
       "review_type": "블로그",
