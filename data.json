@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31 03:24",
+  "updated_at": "2026-10-31 11:27",
   "total": 55,
   "campaigns": [
     {
@@ -16,19 +16,6 @@
       "id": 1
     },
     {
-      "title": "워시앤코 빨대 세척솔 32cm 텀블러 30cm 긴빨대 쉬운세척",
-      "reward": "핑크+그레이 × 2개 [배송비 포함6,490원]",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1793264816865",
-      "image": "./data/campaign/thumb/thumb-3716938639_a0oyudhC_20261029_180904_300x300.png",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 2
-    },
-    {
       "title": "별오점 고양이 물림방지 투명 입마개 머리보호캡 헬멧, 투명 S, 2개",
       "reward": "투명 S 2개 [배송비 포함8,900원]",
       "platform": "아싸뷰",
@@ -39,7 +26,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 3
+      "id": 2
     },
     {
       "title": "[100,000원 상당] 기능성 트레이닝 & AI 체형평가",
@@ -52,7 +39,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 4
+      "id": 3
     },
     {
       "title": "MIGA 튼튼한 접이식 빨래건조대 대형 3단 이불건조대 다용도 Y형 실내 건조대",
@@ -65,7 +52,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 5
+      "id": 4
     },
     {
       "title": "샤워기 온도계 본품 [배송비 포함23,800원]",
@@ -78,7 +65,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 6
+      "id": 5
     },
     {
       "title": "[14,800원 상당] 텐미닛 제모크림",
@@ -91,7 +78,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 7
+      "id": 6
     },
     {
       "title": "문제성 피부 및 피부 고민인 분들 모집 / 참여조건 가이드라인 확인 필요",
@@ -104,7 +91,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 8
+      "id": 7
     },
     {
       "title": "일동생활건강 인생샷 마시는 젖산마그네슘 영양제",
@@ -117,7 +104,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 9
+      "id": 8
     },
     {
       "title": "방문기간 11월 6일 ~11월 7일 / 11월 7일까지 포스팅 완료 필요",
@@ -130,7 +117,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 10
+      "id": 9
     },
     {
       "title": "L 사이즈 [배송비 포함74,900원]",
@@ -143,7 +130,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 11
+      "id": 10
     },
     {
       "title": "10ml x 30개 1박스 [배송비 포함39,800원]",
@@ -156,7 +143,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 12
+      "id": 11
     },
     {
       "title": "3g x 30개 1박스 [배송비 포함19,800원]",
@@ -169,7 +156,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 13
+      "id": 12
     },
     {
       "title": "[경북 구미시] 주해1991",
@@ -182,7 +169,7 @@
       "review_type": "블로그",
       "applied": 1,
       "total": 10,
-      "id": 14
+      "id": 13
     },
     {
       "title": "[45,800원 상당] 트루멜라 1개입",
@@ -195,7 +182,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 15
+      "id": 14
     },
     {
       "title": "[45,800원 상당] 우슬콘드로이친",
@@ -208,7 +195,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 16
+      "id": 15
     },
     {
       "title": "단품 [배송비 포함12,800원]",
@@ -221,7 +208,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 17
+      "id": 16
     },
     {
       "title": "[서울 강서구] 이노야드 마곡나루",
@@ -234,20 +221,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 18
-    },
-    {
-      "title": "키워드명 : 전선 요비선 인입선 케이블 상품명 : 엘로브 전선 요비선 인입선 케이블 포설기 전선관 작업 공구 10M",
-      "reward": "10m [배송비 포함7,800원]",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1793233619747",
-      "image": "./data/campaign/thumb/thumb-2038259540_vshlo9QE_2_300x300.jpg",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 19
+      "id": 17
     },
     {
       "title": "키워드명 : 전선 요비선 인입선 케이블 상품명 : 엘로브 전선 요비선 인입선 케이블 포설기 전선관 작업 공구 5m",
@@ -257,6 +231,32 @@
       "image": "./data/campaign/thumb/thumb-2038259540_h2YOrmnz_1_300x300.jpg",
       "deadline": "",
       "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 18
+    },
+    {
+      "title": "다마브로 대왕 롤빗 뿌리볼륨 드라이빗 53호",
+      "reward": "53호 × 1개 [배송비 포함7,900원]",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1793263779635",
+      "image": "./data/campaign/thumb/thumb-3716938639_8ZQsLHzU_20261029_175122_300x300.png",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 19
+    },
+    {
+      "title": "[18,000원 상당] 버드데이트 뉴페이스 브라이트닝 마사지크림 50ml",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1791272985",
+      "image": "./data/campaign/thumb/thumb-2105691594_Q1w45rt0_EBB284EB939CEB8DB0EC9DB4ED8AB8_EBA788EC82ACECA780ED81ACEBA6BC_EC8DB8EB84A4EC9DBC3_1_300x300.jpg",
+      "deadline": "",
+      "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
