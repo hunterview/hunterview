@@ -1,19 +1,110 @@
 {
-  "updated_at": "2026-11-02 03:34",
+  "updated_at": "2026-11-02 14:17",
   "total": 55,
   "campaigns": [
     {
-      "title": "15cm 슈퍼싱글 차콜 [배송비 포함117,900원]",
+      "title": "[200,000원 상당] 웨딩관리(비회원가 1회당 20만원)",
       "reward": "",
       "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1793586373333",
-      "image": "./data/campaign/thumb/thumb-3731748613_ACI8TrJU_1000_1000_01_300x300.jpg",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1793585990871",
+      "image": "./data/campaign/thumb/thumb-2009347559_aBAIjpuR_20261102_112306_300x300.png",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 1
+    },
+    {
+      "title": "널담 고단백 저당 고식이섬유 카스테라&도넛",
+      "reward": "카스테라 도넛 케이크 6종",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1793609365182",
+      "image": "./data/campaign/thumb/thumb-2948931083_UNyzQC9f_ECB9B4EC8AA4ED858CEB9DBC_LLB_EC97B0ECB69CECBBB7_300x300.png",
+      "deadline": "",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 2
+    },
+    {
+      "title": "[32,900원 상당] 자세 교정 밴드 숄더 쉐이퍼 베이지 컬러",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1793603878652",
+      "image": "./data/campaign/thumb/thumb-990899916_fXAP6ulh_fidn_EC96B8EBA1A0EBB3B4EB8F84EC9DB4EBAFB8ECA78028129_300x300.jpg",
+      "deadline": "",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 3
+    },
+    {
+      "title": "회원가입 후 진행 / 비회원 구매일 경우 리뷰작성이 불가할 수 있으며, 이는 취소사유입니다.",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1793494624501",
+      "image": "./data/campaign/thumb/thumb-1949284236_7vN6tMFR_ECB2ADEB8F84EAB090EBA790EB9EADEC9DB4_EBACB8EAB5ACED8FACED95A8_EC8DB8EB84A4EC9DBC_1000x1000_300x300.png",
       "deadline": "",
       "location": "구매형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 1
+      "id": 4
+    },
+    {
+      "title": "[12,000원 상당] 깜빠뉴 3종 중 1개",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1793608981002",
+      "image": "./data/campaign/thumb/thumb-2948931083_bC1rGEiZ_image_28429_300x300.png",
+      "deadline": "",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 5
+    },
+    {
+      "title": "6mm [배송비 포함23,800원]",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1793594712579",
+      "image": "./data/campaign/thumb/thumb-3667195354_fytzEnXO_E18489E185A5E18487E185B3_01_300x300.jpg",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 6
+    },
+    {
+      "title": "[53,000원 상당] 레디바이옴 리부트샷 1박스",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1785914051",
+      "image": "./data/campaign/thumb/thumb-1028743242_UE0Amo29_EBA088EB9494EBB094EC9DB4EC98B4_EC9E90EC82ACEBAAB0_EC8DB8EB84A4EC9DBC_300x300.jpg",
+      "deadline": "",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 7
+    },
+    {
+      "title": "+4,500 P",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1793232527604",
+      "image": "./data/campaign/thumb/thumb-179323252717925414191791332323179090899517885099373068221939_TenrDghU_EBA19CEAB3A0_300x300.png",
+      "deadline": "",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 8
     },
     {
       "title": "[130,000원 상당] 평일 2인 무료 숙박권",
@@ -26,7 +117,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 2
+      "id": 9
     },
     {
       "title": "일동생활건강 인생샹 마시는 젖산마그네슘 영양제 [배송비 포함21,900원]",
@@ -39,7 +130,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 3
+      "id": 10
     },
     {
       "title": "[50,000원 상당] 50,000식사권",
@@ -52,7 +143,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 4
+      "id": 11
     },
     {
       "title": "[20,000원 상당] 떡 2만원",
@@ -65,7 +156,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 5
+      "id": 12
     },
     {
       "title": "헤어 뿌리 볼륨 집게 핀처 볼륨핀 3종 세트",
@@ -78,7 +169,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 6
+      "id": 13
     },
     {
       "title": "[200,000원 상당] 모든 시술 중 1가지 시술 무료(매직세팅은 두가지시술입니다,나머지는 비용발생 )",
@@ -91,20 +182,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 7
-    },
-    {
-      "title": "돈모 청소솔[우드 핸들] [배송비 포함11,900원]",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1793452946577",
-      "image": "./data/campaign/thumb/thumb-833079687_ToxvGUw8_BEAN_PLANT_EC9AB0EB939C_EBB88CEB9FACEC8B9C_product_shot-1_300x300.png",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 8
+      "id": 14
     },
     {
       "title": "사이즈 선택 [배송비 포함9,800원]",
@@ -117,20 +195,20 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 9
+      "id": 15
     },
     {
-      "title": "홀빈(원두) / 01. 다크넛 블렌드 (곱기는 선택해주셔도 괜찮습니다) [배송비 포함27,800원]",
+      "title": "브릭 커피 그라인더(세라믹 칼날) [배송비 포함20,800원]",
       "reward": "",
       "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1793455079636",
-      "image": "./data/campaign/thumb/thumb-17934550791930819122_H2D9oEnZ_2026-10-20_14_13_53_300x300.png",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1793489926442",
+      "image": "./data/campaign/thumb/thumb-17934899261930819122_FJoYG0QW_26-7-26-12_300x300.png",
       "deadline": "",
       "location": "구매형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 10
+      "id": 16
     },
     {
       "title": "[78,000원 상당] 타탄체크 폴라 보니백 XS(44), S(55) 사이즈",
@@ -143,7 +221,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 11
+      "id": 17
     },
     {
       "title": "반려동물(강아지, 고양이, 햄스터, 토끼 등)을 키우시는 분",
@@ -156,7 +234,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 12
+      "id": 18
     },
     {
       "title": "[40,000원 상당] 두피에 순하고 거품이 많은 손상모 전용 샴푸",
@@ -169,7 +247,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 13
+      "id": 19
     },
     {
       "title": "[30,000원 상당] 1:1 리터칭 증명사진",
@@ -182,85 +260,20 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 14
-    },
-    {
-      "title": "[서울 마포구] 홍대 혼술바 우우",
-      "reward": "60,000원 금액권",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1791683686918",
-      "image": "./data/campaign/thumb/thumb-1791683686_b3ee5afb_300x300.jpg",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 1,
-      "total": 10,
-      "id": 15
-    },
-    {
-      "title": "[60,000원 상당] 속눈썹 마스카라연장",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1791505541",
-      "image": "./data/campaign/thumb/thumb-1925947289_y5qLa2SC_file_000000002b408211b8c80c5f06ddf444_300x300.png",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 16
-    },
-    {
-      "title": "[35,000원 상당] 메인메뉴 1개 + 사이드메뉴 1개",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1776401125",
-      "image": "./data/campaign/thumb/thumb-3076539414_SebZXun7_KakaoTalk_20260417_152045643_02_300x300.jpg",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 17
-    },
-    {
-      "title": "워시앤코 빨대 세척솔 32cm 텀블러 30cm 긴빨대 쉬운세척",
-      "reward": "핑크+그레이 × 2개 [배송비 포함6,490원]",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1793264816865",
-      "image": "./data/campaign/thumb/thumb-3716938639_a0oyudhC_20261029_180904_300x300.png",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 18
-    },
-    {
-      "title": "키워드명 : 자전거 킥스텐드 + 전용렌치 1세트 상품명 : 엘로브 자전거 킥스텐드 + 전용렌치 1세트, 1개",
-      "reward": "16인치 1개 [배송비 포함6,700원]",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1793326051677",
-      "image": "./data/campaign/thumb/thumb-237341137_Ts9bw57U_1_300x300.jpg",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 19
-    },
-    {
-      "title": "MIGA 튼튼한 접이식 빨래건조대 대형 3단 이불건조대 다용도 Y형 실내 건조대",
-      "reward": "1.6m 그레이 [배송비 포함32,800원]",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1793339053746",
-      "image": "./data/campaign/thumb/thumb-3537415527_duoHZwce_E4B8BBE59BBE_300x300.jpg",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
       "id": 20
+    },
+    {
+      "title": "고양/파주 · 서비스",
+      "reward": "",
+      "platform": "파블로체험단",
+      "link": "https://pavlovu.com/review_campaign.php?cp_id=1793578886",
+      "image": "",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "인스타",
+      "applied": 0,
+      "total": 10,
+      "id": 21
     },
     {
       "title": "3,000포인트",
@@ -273,7 +286,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 21
+      "id": 22
     },
     {
       "title": "3,000포인트",
@@ -286,7 +299,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 22
+      "id": 23
     },
     {
       "title": "14만원 상당 스시오마카세",
@@ -299,7 +312,7 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 23
+      "id": 24
     },
     {
       "title": "14만원 상당 스시오마카세",
@@ -312,7 +325,7 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 24
+      "id": 25
     },
     {
       "title": "두피세럼 50ml 1개",
@@ -325,7 +338,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 25
+      "id": 26
     },
     {
       "title": "A세트 (3.5만원 상당)",
@@ -338,7 +351,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 26
+      "id": 27
     },
     {
       "title": "A세트 (3.5만원 상당)",
@@ -351,7 +364,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 27
+      "id": 28
     },
     {
       "title": "A세트 (3.5만원 상당)",
@@ -364,7 +377,7 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 28
+      "id": 29
     },
     {
       "title": "A세트 (3.5만원 상당)",
@@ -377,7 +390,7 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 29
+      "id": 30
     },
     {
       "title": "A세트 (3.5만원 상당)",
@@ -390,7 +403,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 30
+      "id": 31
     },
     {
       "title": "셀토스 SP3 콘솔 쿠션",
@@ -403,7 +416,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 31
+      "id": 32
     },
     {
       "title": "셀토스 SP3 콘솔 쿠션",
@@ -416,7 +429,7 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 32
+      "id": 33
     },
     {
       "title": "셀토스 SP3 콘솔 쿠션",
@@ -429,7 +442,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 33
+      "id": 34
     },
     {
       "title": "캐스퍼 EV 수납함",
@@ -442,7 +455,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 34
+      "id": 35
     },
     {
       "title": "캐스퍼 EV 수납함",
@@ -455,7 +468,7 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 35
+      "id": 36
     },
     {
       "title": "캐스퍼 EV 수납함",
@@ -468,7 +481,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 36
+      "id": 37
     },
     {
       "title": "오감놀이 수업+5,000 포인트",
@@ -481,7 +494,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 37
+      "id": 38
     },
     {
       "title": "5,000포인트",
@@ -494,7 +507,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 38
+      "id": 39
     },
     {
       "title": "5,000포인트",
@@ -507,7 +520,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 39
+      "id": 40
     },
     {
       "title": "5,000포인트",
@@ -520,7 +533,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 40
+      "id": 41
     },
     {
       "title": "음료 2잔+디저트 1개",
@@ -533,7 +546,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 41
+      "id": 42
     },
     {
       "title": "음료 2잔+디저트 1개",
@@ -546,7 +559,7 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 42
+      "id": 43
     },
     {
       "title": "음료 2잔+디저트 1개",
@@ -559,7 +572,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 43
+      "id": 44
     },
     {
       "title": "현엘릭서 30ml",
@@ -570,19 +583,6 @@
       "deadline": "",
       "location": "배송형",
       "review_type": "숏폼",
-      "applied": 0,
-      "total": 10,
-      "id": 44
-    },
-    {
-      "title": "현엘릭서 30ml",
-      "reward": "",
-      "platform": "파블로체험단",
-      "link": "https://pavlovu.com/review_campaign.php?cp_id=1791450623",
-      "image": "",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "인스타",
       "applied": 0,
       "total": 10,
       "id": 45
