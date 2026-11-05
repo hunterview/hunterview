@@ -1,7 +1,150 @@
 {
-  "updated_at": "2026-11-04 23:01",
+  "updated_at": "2026-11-05 04:23",
   "total": 55,
   "campaigns": [
+    {
+      "title": "[25,000원 상당] 식사권",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1791383730",
+      "image": "./data/campaign/thumb/thumb-179138373017906605192365070594_9OxgIuLi_572C2A30-8081-4D08-B7FE-D75CD302DDB6_300x300.png",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 1
+    },
+    {
+      "title": "[25,000원 상당] 식사권",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1793844408950",
+      "image": "./data/campaign/thumb/thumb-2040675526_sL7hiIt4_EBAAA8EB85B8ECBBA4EBA6AC1_300x300.png",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 2
+    },
+    {
+      "title": "리보아 먼지없는 거실 카페트 대형 침대 러그 바닥 매트",
+      "reward": "아이보리 100*150cm [배송비 포함16,800원]",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1793756630230",
+      "image": "./data/campaign/thumb/thumb-651135277_ewd26GXZ_E5BEAEE4BFA1E59BBEE78987_20261025154603_892_71_300x300.jpg",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 3
+    },
+    {
+      "title": "화이트 [배송비 포함25,500원]",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1793781926632",
+      "image": "./data/campaign/thumb/thumb-990762335_iQNBLojE_E18489E185B3E1848FE185B3E18485E185B5E186ABE18489E185A3E186BA_2026-11-04_E1848BE185A9E18492E185AE_5.49.18_300x300.png",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 4
+    },
+    {
+      "title": "오르카 미드체어 루노 허리편한 식탁의자 미드센츄리 카페 인테리어 디자인 체어",
+      "reward": "제주 및 도서산간 지역 배송 불가",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1793782788159",
+      "image": "./data/campaign/thumb/thumb-990762335_GWpOtDRw_E18489E185B3E1848FE185B3E18485E185B5E186ABE18489E185A3E186BA_2026-11-04_E1848BE185A9E18492E185AE_6.03.26_300x300.png",
+      "deadline": "",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 5
+    },
+    {
+      "title": "오르카 미드체어 루노 허리편한 식탁의자 미드센츄리 카페 인테리어 디자인 체어",
+      "reward": "제주 및 도서산간 지역 배송 불가",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1793783922508",
+      "image": "./data/campaign/thumb/thumb-990762335_8jnYMVLa_E18489E185B3E1848FE185B3E18485E185B5E186ABE18489E185A3E186BA_2026-11-04_E1848BE185A9E18492E185AE_6.03.46_300x300.png",
+      "deadline": "",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 6
+    },
+    {
+      "title": "오르카 미드체어 루노 허리편한 식탁의자 미드센츄리 카페 인테리어 디자인 체어",
+      "reward": "[82,300원 상당] 오렌지레드",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1793784303326",
+      "image": "./data/campaign/thumb/thumb-990762335_7sdmoBRj_E18489E185B3E1848FE185B3E18485E185B5E186ABE18489E185A3E186BA_2026-11-04_E1848BE185A9E18492E185AE_6.04.03_300x300.png",
+      "deadline": "",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 7
+    },
+    {
+      "title": "+18,000 P",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1793784514722",
+      "image": "./data/campaign/thumb/thumb-1793784514179126666317743209251770586940990762335_GqvcbPjC_E18487E185B3E186AFE18485E185A9E18480E185B3_E18486E185A9E18487E185A1E1848BE185B5E186AF_1_300x300.jpg",
+      "deadline": "",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 8
+    },
+    {
+      "title": "슈닝 홈페이지 내 1688 사이트 주문을 통해 55,000원 내에서 상품 자유롭게 구매 ★배송비 포함, 추가 비용은 본인 부담★ [배송비 포함55,000원]",
+      "reward": "사업자 회원가입이 가능하신 분들에 한해 모집",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1793784605843",
+      "image": "./data/campaign/thumb/thumb-179378460517912664822040675526_ynm2jFVY_EC8A88EB8B9D_300x300.jpg",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 9
+    },
+    {
+      "title": "(곱기는 선택해주셔도 됩니다) 디카페인 브라질 [배송비 포함22,800원]",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1793801504126",
+      "image": "./data/campaign/thumb/thumb-833079687_Bxyc7wtV_2026-11-04_23_12_42_300x300.png",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 10
+    },
+    {
+      "title": "(곱기는 선택해주셔도 됩니다) 디카페인 브라질 [배송비 포함38,800원]",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1793801853772",
+      "image": "./data/campaign/thumb/thumb-833079687_xynpSlQX_2026-11-04_23_18_28_300x300.png",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 11
+    },
     {
       "title": "[4,900원 상당] 루멘에듀 통합 이용권 1회 (생기부 제외)",
       "reward": "",
@@ -13,7 +156,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 1
+      "id": 12
     },
     {
       "title": "[200,000원 상당] 여성 긴머리 염색 [ 탈색 x , 블랙 x ] , 새치염색이력 X 톤다운이력X, 탈색없는 애쉬브라운, 올리브브라운, 매트브라운, 토프브라운 해드립니다",
@@ -26,7 +169,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 2
+      "id": 13
     },
     {
       "title": "[경기 수원시] 명품대패 인계동",
@@ -39,7 +182,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 3
+      "id": 14
     },
     {
       "title": "셀린느 트리오페 스몰 버킷백 방수 나일론 이너백",
@@ -52,20 +195,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 4
-    },
-    {
-      "title": "쿼크브릭 접이식 휴대용 옷걸이 여행용 바지집게 길이 확장형",
-      "reward": "3개, 라이트그레이 [배송비 포함12,900원]",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1793766056062",
-      "image": "./data/campaign/thumb/thumb-988160941_nhfk39uL_EB9DBCEC9DB4ED8AB8_EAB7B8EBA088EC9DB4_300x300.png",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 5
+      "id": 15
     },
     {
       "title": "오사닛 캔디 7.5g 3종 각 1개 (오리지날/캐모마일/엘더베리맛)",
@@ -78,7 +208,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 6
+      "id": 16
     },
     {
       "title": "루비락 골든그램 3단계 800g / 1개",
@@ -91,7 +221,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 7
+      "id": 17
     },
     {
       "title": "오사닛 캔디 7.5g 3종 각 1개 (오리지날/캐모마일/엘더베리맛)",
@@ -104,7 +234,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 8
+      "id": 18
     },
     {
       "title": "몽잘 바리스칼프 로즈마리샴푸 / 500ml / 1개",
@@ -117,7 +247,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 9
+      "id": 19
     },
     {
       "title": "몽잘 트리코그로업 앰플 / 120ml / 1개",
@@ -127,136 +257,6 @@
       "image": "./data/campaign/thumb/thumb-1793768812990981006_Hmbi0vtC_EB9190ED94BCEC95B0ED948C_300x300.png",
       "deadline": "",
       "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 10
-    },
-    {
-      "title": "몽잘 맨즈 플루이드 쉐이빙 젤 / 200ml / 1개",
-      "reward": "남자, 얼굴노출 필수",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1793768874745",
-      "image": "./data/campaign/thumb/thumb-1793768874990981006_QBIJ3hq7_EC8DB8EB84A4EC9DBC_EC8990EC9DB4EBB999ECA0A4_300x300.jpg",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 11
-    },
-    {
-      "title": "몽잘 바리스칼프 모링가 헤어비니거 워터린스 / 200m / 1개",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1793768931140",
-      "image": "./data/campaign/thumb/thumb-1793768931990981006_4J5uProI_EC8DB8EB84A4EC9DBC_ED97A4EC96B4EBB984EB8B88EAB1B0_300x300.jpg",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 12
-    },
-    {
-      "title": "65mm 20매 본품 1개",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1793768958453",
-      "image": "./data/campaign/thumb/thumb-179376895817931714742040675526_quxtiHs0_EAB1B8ED9484EBA6ACEC89AC_300x300.jpg",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 13
-    },
-    {
-      "title": "방탄꼭지 걸프리쉬 베리브라 브리더블 글루",
-      "reward": "8.5cm 본품 1개",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1793768984660",
-      "image": "./data/campaign/thumb/thumb-1793768984179317149517925736081791952081179136175017907392011790151871178952513617888338721788241714990987826_fOiDSFvG_EBB88CEBA6ACEB8D94EBB894_300x300.png",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 14
-    },
-    {
-      "title": "35mm 본품 1개",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1793769008452",
-      "image": "./data/campaign/thumb/thumb-179376900817931715262040675526_DKxCtPsk_EBB0A9ED8384EABCADECA780_EC9790EC96B4EB8B88ED948C_300x300.jpg",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 15
-    },
-    {
-      "title": "방탄꼭지 에어니플 울트라씬",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1793769037030",
-      "image": "./data/campaign/thumb/thumb-17937690371793171592990981006_1PGi9DQU_EC9AB8ED8AB8EB9DBCEC94AC35_300x300.jpg",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 16
-    },
-    {
-      "title": "루비락 골든그램 3단계 800g / 1개",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1793769064815",
-      "image": "./data/campaign/thumb/thumb-17937690641793171621990981006_PaFxNC7B_KakaoTalk_20260826_111816341_300x300.jpg",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 17
-    },
-    {
-      "title": "[50,000원 상당] 속눈썹연장",
-      "reward": "제거할연장없는분 모셔요",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1793768837658",
-      "image": "./data/campaign/thumb/thumb-179376883717757036332040675526_Jl3Tj7IP_EC8AA4ED81ACEBA6B0EC83B7_2026-02-24_150047_300x300.png",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 18
-    },
-    {
-      "title": "방문전 머리 시술상태 미리 체크하니 전화 부탁드립니다",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1747281302",
-      "image": "./data/campaign/thumb/thumb-3732198929_EwA05iQJ_Screenshot_20261104_141134_NAVER_Maps_300x300.jpg",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 19
-    },
-    {
-      "title": "가든스오브제 쉐이빙 시카 클렌징 젤 [배송비 포함11,500원]",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1793073512016",
-      "image": "./data/campaign/thumb/thumb-1794999761_X0r6hSVZ_IG_01_Main_1080x1350_300x300.png",
-      "deadline": "",
-      "location": "구매형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
