@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06 22:33",
+  "updated_at": "2026-11-07 03:51",
   "total": 55,
   "campaigns": [
     {
@@ -224,6 +224,19 @@
       "id": 17
     },
     {
+      "title": "워시앤코 빨대 세척솔 32cm 텀블러 30cm 긴빨대 쉬운세척",
+      "reward": "핑크+그레이 × 2개 [배송비 포함6,490원]",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1793870290428",
+      "image": "./data/campaign/thumb/thumb-17938702903716938639_a0oyudhC_20261029_180904_300x300.png",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 18
+    },
+    {
       "title": "[대구 북구] 노랑나비풋앤바디 대구마사지 북구침산점",
       "reward": "[121,000원 상당] 통증관리/산전산후마사지",
       "platform": "아싸뷰",
@@ -234,7 +247,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 18
+      "id": 19
     },
     {
       "title": "[5,000원 상당] 앤서나인틴 프렙패드 수분패드 1개",
@@ -244,19 +257,6 @@
       "image": "./data/campaign/thumb/thumb-2948974903_7pljaDrX_EC84B8EB9DBCEBA788EC9DB4EB939C_EC8898EBB684_ECB6A9ECA084_ED8CA8EB939C_EAB491EAB3A0_300x300.png",
       "deadline": "",
       "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 19
-    },
-    {
-      "title": "염색,컷,붙임머리컷,붙임머리염색,뿌탈 중 택 1",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1793861511503",
-      "image": "./data/campaign/thumb/thumb-1793861511833283977_f8ViudZS_IMG_2725_300x300.jpg",
-      "deadline": "",
-      "location": "방문형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
