@@ -1,7 +1,150 @@
 {
-  "updated_at": "2026-11-12 23:00",
+  "updated_at": "2026-11-13 04:14",
   "total": 55,
   "campaigns": [
+    {
+      "title": "[50,000원 상당] 기구필라테스 그룹수업 1회",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1768893683",
+      "image": "./data/campaign/thumb/thumb-2009347559_iQcHxTbl_2026-01-20_163B243B27_300x300.png",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 1
+    },
+    {
+      "title": "[30,000원 상당] 1:1 리터칭 증명사진",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1789712702",
+      "image": "./data/campaign/thumb/thumb-2084029453_BqGP4ndA_MNT_2360EC8898ECA095_300x300.jpg",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 2
+    },
+    {
+      "title": "[220,000원 상당] 중앙미생물연구소 캐치콜 라이트 1박스",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1785913877",
+      "image": "./data/campaign/thumb/thumb-17859138771028743242_hAfzUDME_EC9E90EC82ACEBAAB0_EC8DB8EB84A4EC9DBC_300x300.jpg",
+      "deadline": "",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 3
+    },
+    {
+      "title": "빈플랜트 타이탄 레벨링툴 프로 (사이즈 선택 가능) [배송비 포함67,800원]",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1794531377408",
+      "image": "./data/campaign/thumb/thumb-833079687_uQ4XDcky_2026-11-13_09_56_49_300x300.png",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 4
+    },
+    {
+      "title": "홀빈(원두) / 01. 다크넛 블렌드 (곱기는 선택해주셔도 괜찮습니다) [배송비 포함27,800원]",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1794531241160",
+      "image": "./data/campaign/thumb/thumb-833079687_DrC9mz6c_ED9484EBA6ACEBAFB8EC9784_EC8AA4ED858CEC9DB8EBA6ACEC8AA4_EBB0B0EAB2BDEC9D98_EB8BA4ED81ACEB849B_EBB894EBA08CEB939C_300x300.png",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 5
+    },
+    {
+      "title": "[45,000원 상당] 14k기본피어싱",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1775774379",
+      "image": "./data/campaign/thumb/thumb-17757743791770703784176638335317600888911028948582_5sWTlX3n_KakaoTalk_20250704_132010182_300x300.jpg",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 6
+    },
+    {
+      "title": "스페인 프로페셔널 코스메틱스의 전문가용 비건 염모제입니다. PPD 무첨가, 저암모니아 포뮬러로 아비시니안 오일과 올리브오일등을 함유하고 있습니다. 실리콘, 파라벤, 미네랄오일이 없습니다.",
+      "reward": "미용실에서 실제 염색 시술이 가능한 현직 미용사 또는 원장님",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1793845523115",
+      "image": "./data/campaign/thumb/thumb-237511233_AkGxfYce_EC9584EBA5B4ED858CECB9BCEB9DBC_EBB984EAB1B4_1ED8E98EC9DB4ECA780_300x300.png",
+      "deadline": "",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 7
+    },
+    {
+      "title": "[49,500원 상당] 핍스 컴팩트 백팩 (블랙) 1개 제공",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1794493754142",
+      "image": "./data/campaign/thumb/thumb-2943450549_hwjLagUB_500_500_i_300x300.jpg",
+      "deadline": "",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 8
+    },
+    {
+      "title": "쿠팡와우회원만 해당가격에 구매 가능합니다",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1794386237469",
+      "image": "./data/campaign/thumb/thumb-2072898589_UPDcGutz_EBA3B8ECBC80EC96B4_300x300.jpg",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 9
+    },
+    {
+      "title": "키워드명 : 겨울 수도관 동파방지 커버 상품명 : 엘로브 겨울 수도관 동파방지 커버 수도꼭지 보온덮개 방한 커버, 본상품선택, 1개",
+      "reward": "1개 [배송비 포함7,400원]",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1794446319550",
+      "image": "./data/campaign/thumb/thumb-237341137_wymvCWct_1_300x300.jpg",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 10
+    },
+    {
+      "title": "키워드명 : 주방용품 주방 벽 오염방지 투명 시트지 상품명 : 엘로브 주방용품 주방 벽 오염방지 투명 시트지",
+      "reward": "60cm*3m [배송비 포함5,400원]",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1794446935686",
+      "image": "./data/campaign/thumb/thumb-237341137_XWtogePT_1_300x300.jpg",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 11
+    },
     {
       "title": "PEEPS Essential Messenger Bag (BLACK/CHARCOAL/NAVY)",
       "reward": "[36,900원 상당] 핍스 에센셜 메신저백 블랙 1개 제공",
@@ -13,7 +156,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 1
+      "id": 12
     },
     {
       "title": "실제 작업(목공, 디자인, 인테리어 등)에 사용 후 사진 촬영 가능하신 분",
@@ -26,7 +169,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 2
+      "id": 13
     },
     {
       "title": "실제 부착 후 사진 촬영 가능하신 분, 실 사용 사진 필수입니다.",
@@ -39,20 +182,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 3
-    },
-    {
-      "title": "직접 자전거에 설치 후 사진 촬영 가능하신 분, 실 장착 사진 필수입니다.",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1794468706317",
-      "image": "./data/campaign/thumb/thumb-17944687063138347695_SydfG4RI_202604-EC9E90ECA084EAB1B0-ECA084ECA1B0EB93B1-F3-001_300x300.png",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 4
+      "id": 14
     },
     {
       "title": "실제 사용 후 사진 촬영 가능하신 분, 실 사용 사진 필수입니다.",
@@ -65,7 +195,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 5
+      "id": 15
     },
     {
       "title": "실제 운동 시(헬스, 크로스핏, 클라이밍, 유도, 골프 등) 사용 및 사진 촬영 가능한 분",
@@ -78,7 +208,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 6
+      "id": 16
     },
     {
       "title": "[60,000원 상당] 안경 선글라스 체험권",
@@ -91,7 +221,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 7
+      "id": 17
     },
     {
       "title": "12cm 슈퍼싱글 아이보리 [배송비 포함113,900원]",
@@ -104,7 +234,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 8
+      "id": 18
     },
     {
       "title": "프리티 컷팅샷 1세트 [배송비 포함11,900원]",
@@ -117,7 +247,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 9
+      "id": 19
     },
     {
       "title": "프리티 슈가컷팅수 1세트 [배송비 포함11,900원]",
@@ -127,136 +257,6 @@
       "image": "./data/campaign/thumb/thumb-3696570772_KygfsiHU_EC8A88EAB080ECBBB7ED8C85EC8898_EC8DB8EB84A4EC9DBC_01_300x300.jpg",
       "deadline": "",
       "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 10
-    },
-    {
-      "title": "프리티 로즈힙 루이보스차 1세트 [배송비 포함11,900원]",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1794462168278",
-      "image": "./data/campaign/thumb/thumb-3696570772_3TnfCOqe_EBA19CECA688ED9E99_EBA3A8EC9DB4EBB3B4EC8AA4_EC8DB8EB84A4EC9DBC_01_300x300.jpg",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 11
-    },
-    {
-      "title": "프리티 호박수 1세트 [배송비 포함11,900원]",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1794461044932",
-      "image": "./data/campaign/thumb/thumb-3696570772_LCPGXMxh_ED98B8EBB095EC8898_EC8DB8EB84A4EC9DBC_01_300x300.jpg",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 12
-    },
-    {
-      "title": "[12,900원 상당] 자옴쌕850g",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1794460573745",
-      "image": "./data/campaign/thumb/thumb-3534939727_HW3yPu8k_20261112_142004_300x300.png",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 13
-    },
-    {
-      "title": "[50,000원 상당] 오호바이오 고라니 멧돼지 퇴치 냄새없는 야생동물 기피제 오스탑퍼 200g",
-      "reward": "제품 사용 전 피해를 입은 농장·밭 현장 사진(Before)이 필수",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1790904752",
-      "image": "./data/campaign/thumb/thumb-1785021771_PeANGa29_image-6_300x300.png",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 14
-    },
-    {
-      "title": "[50,000원 상당] 안주 25,000원 + 버드와이저 5병 제공",
-      "reward": "30대~50대까지 다양한 연령대",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1794447265487",
-      "image": "./data/campaign/thumb/thumb-1794447265990463139_wJmeaRsQ_KakaoTalk_20261026_230631414_03_300x300.jpg",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 15
-    },
-    {
-      "title": "김포공항 주차장 발렛 이용",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1794446306068",
-      "image": "./data/campaign/thumb/thumb-179444630617894292243542921487_4bWeIi8R_EAB3A8EB939CEC9CA0ECA3BCECB0A8EC9EA5_EBA19CEAB3A0_300x300.png",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 16
-    },
-    {
-      "title": "[100,000원 상당] 골드 테라피 (골드·티타늄) 60분",
-      "reward": "목 어깨 허리 불편 다리부종 만성피로 사무직",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1793851220774",
-      "image": "./data/campaign/thumb/thumb-3542385814_C78yfHos_Screenshot_20261105_131005_NAVER_300x300.jpg",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 17
-    },
-    {
-      "title": "[24,500원 상당] 건강한 진짜 쌀떡! 떡갈비",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1790732668",
-      "image": "./data/campaign/thumb/thumb-2041019229_aT5qL3ex_EB96A1EAB088EBB984_28129_300x300.png",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 18
-    },
-    {
-      "title": "지니핸즈 미용가위 세트 [배송비 포함15,810원]",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1794404508973",
-      "image": "./data/campaign/thumb/thumb-3082187300_QmJ5crYi_111_300x300.jpg",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 19
-    },
-    {
-      "title": "광주 커피머신 , 카페창업 업체 소개",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1787708240",
-      "image": "./data/campaign/thumb/thumb-178770824017400358131982358808_3w6O05ze_KakaoTalk_20230804_141024091_300x300.jpg",
-      "deadline": "",
-      "location": "배송형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
