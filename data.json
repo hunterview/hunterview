@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-14 12:45",
-  "total": 54,
+  "updated_at": "2026-11-14 21:50",
+  "total": 55,
   "campaigns": [
     {
       "title": "[100,000원 상당] 스포팅컷",
@@ -172,19 +172,6 @@
       "id": 13
     },
     {
-      "title": "쿠팡와우회원만 해당가격에 구매 가능합니다",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1794386237469",
-      "image": "./data/campaign/thumb/thumb-2072898589_UPDcGutz_EBA3B8ECBC80EC96B4_300x300.jpg",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 14
-    },
-    {
       "title": "PEEPS Essential Messenger Bag (BLACK/CHARCOAL/NAVY)",
       "reward": "[36,900원 상당] 핍스 에센셜 메신저백 블랙 1개 제공",
       "platform": "아싸뷰",
@@ -195,7 +182,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 15
+      "id": 14
     },
     {
       "title": "실제 작업(목공, 디자인, 인테리어 등)에 사용 후 사진 촬영 가능하신 분",
@@ -208,7 +195,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 16
+      "id": 15
     },
     {
       "title": "실제 부착 후 사진 촬영 가능하신 분, 실 사용 사진 필수입니다.",
@@ -221,7 +208,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 17
+      "id": 16
     },
     {
       "title": "실제 운동 시(헬스, 크로스핏, 클라이밍, 유도, 골프 등) 사용 및 사진 촬영 가능한 분",
@@ -234,7 +221,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 18
+      "id": 17
     },
     {
       "title": "[60,000원 상당] 안경 선글라스 체험권",
@@ -247,7 +234,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 19
+      "id": 18
     },
     {
       "title": "12cm 슈퍼싱글 아이보리 [배송비 포함113,900원]",
@@ -260,16 +247,29 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
+      "id": 19
+    },
+    {
+      "title": "프리티 컷팅샷 1세트 [배송비 포함11,900원]",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1794461687037",
+      "image": "./data/campaign/thumb/thumb-3696570772_vAwpFCkz_ECBBB7ED8C85EC83B7_EC8DB8EB84A4EC9DBC_01_300x300.jpg",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
       "id": 20
     },
     {
-      "title": "페이스 패치 7개",
+      "title": "오늘 마감",
       "reward": "",
       "platform": "파블로체험단",
       "link": "https://pavlovu.com/review_campaign.php?cp_id=1794460950",
-      "image": "",
+      "image": "./data/campaign/pvv3_20261112150235_828dadfee9c9_640.webp",
       "deadline": "",
-      "location": "배송형",
+      "location": "방문형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
@@ -367,13 +367,13 @@
       "id": 28
     },
     {
-      "title": "액정 클리너 3개입",
+      "title": "오늘 마감",
       "reward": "",
       "platform": "파블로체험단",
       "link": "https://pavlovu.com/review_campaign.php?cp_id=1794364444",
-      "image": "",
+      "image": "./data/campaign/pvv3_20261111115042_2f89d1bab0de_640.webp",
       "deadline": "",
-      "location": "배송형",
+      "location": "방문형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
@@ -588,6 +588,19 @@
       "id": 45
     },
     {
+      "title": "일산/덕양/파주",
+      "reward": "",
+      "platform": "포블로그",
+      "link": "https://4blog.net/list/all/local/ggbb/1san",
+      "image": "",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 46
+    },
+    {
       "title": "모단비즈센터",
       "reward": "",
       "platform": "모두의체험단",
@@ -598,7 +611,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 46
+      "id": 47
     },
     {
       "title": "🍽️ 맛집",
@@ -611,7 +624,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 47
+      "id": 48
     },
     {
       "title": "🛍️ 제품·서비스",
@@ -624,7 +637,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 48
+      "id": 49
     },
     {
       "title": "🎭 문화·스포츠",
@@ -637,7 +650,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 49
+      "id": 50
     },
     {
       "title": "📰 기자단",
@@ -650,7 +663,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 50
+      "id": 51
     },
     {
       "title": "📸 촬영단",
@@ -663,7 +676,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 51
+      "id": 52
     },
     {
       "title": "⏰ 마감임박",
@@ -676,7 +689,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 52
+      "id": 53
     },
     {
       "title": "✨ AI 추천픽",
@@ -689,7 +702,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 53
+      "id": 54
     },
     {
       "title": "⭐ 체험 후기",
@@ -702,7 +715,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 54
+      "id": 55
     }
   ]
 }
