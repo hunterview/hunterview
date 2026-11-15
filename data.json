@@ -1,7 +1,20 @@
 {
-  "updated_at": "2026-11-14 21:50",
+  "updated_at": "2026-11-15 03:56",
   "total": 55,
   "campaigns": [
+    {
+      "title": "[40,000원 상당] 남자컷 다운펌",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1755584099",
+      "image": "./data/campaign/thumb/thumb-1889275717_cGTP6rCV_IMG_0717_300x300.jpg",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 1
+    },
     {
       "title": "[100,000원 상당] 스포팅컷",
       "reward": "",
@@ -13,7 +26,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 1
+      "id": 2
     },
     {
       "title": "A.AVENUE 강아지 간식 닭가슴살 사과말이 배말이 육포 져키 개껌",
@@ -26,7 +39,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 2
+      "id": 3
     },
     {
       "title": "[70,000원 상당] one session",
@@ -39,7 +52,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 3
+      "id": 4
     },
     {
       "title": "펜터렉트/ 1박스 [배송비 포함39,800원]",
@@ -52,7 +65,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 4
+      "id": 5
     },
     {
       "title": "키로커트/ 1박스 [배송비 포함38,500원]",
@@ -65,7 +78,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 5
+      "id": 6
     },
     {
       "title": "[서울 성동구] 결이다른Therapy",
@@ -78,7 +91,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 6
+      "id": 7
     },
     {
       "title": "[50,000원 상당] 기구필라테스 그룹수업 1회",
@@ -91,7 +104,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 7
+      "id": 8
     },
     {
       "title": "가든스오브제 쉐이빙 시카 클렌징 젤 [배송비 포함11,500원]",
@@ -104,7 +117,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 8
+      "id": 9
     },
     {
       "title": "[30,000원 상당] 1:1 리터칭 증명사진",
@@ -117,7 +130,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 9
+      "id": 10
     },
     {
       "title": "[220,000원 상당] 중앙미생물연구소 캐치콜 라이트 1박스",
@@ -130,7 +143,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 10
+      "id": 11
     },
     {
       "title": "[45,000원 상당] 14k기본피어싱",
@@ -143,7 +156,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 11
+      "id": 12
     },
     {
       "title": "스페인 프로페셔널 코스메틱스의 전문가용 비건 염모제입니다. PPD 무첨가, 저암모니아 포뮬러로 아비시니안 오일과 올리브오일등을 함유하고 있습니다. 실리콘, 파라벤, 미네랄오일이 없습니다.",
@@ -156,7 +169,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 12
+      "id": 13
     },
     {
       "title": "[49,500원 상당] 핍스 컴팩트 백팩 (블랙) 1개 제공",
@@ -169,7 +182,33 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 13
+      "id": 14
+    },
+    {
+      "title": "쿠팡와우회원만 해당가격에 구매 가능합니다",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1794386237469",
+      "image": "./data/campaign/thumb/thumb-2072898589_UPDcGutz_EBA3B8ECBC80EC96B4_300x300.jpg",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 15
+    },
+    {
+      "title": "키워드명 : 겨울 수도관 동파방지 커버 상품명 : 엘로브 겨울 수도관 동파방지 커버 수도꼭지 보온덮개 방한 커버, 본상품선택, 1개",
+      "reward": "1개 [배송비 포함7,400원]",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1794446319550",
+      "image": "./data/campaign/thumb/thumb-237341137_wymvCWct_1_300x300.jpg",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 16
     },
     {
       "title": "PEEPS Essential Messenger Bag (BLACK/CHARCOAL/NAVY)",
@@ -182,7 +221,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 14
+      "id": 17
     },
     {
       "title": "실제 작업(목공, 디자인, 인테리어 등)에 사용 후 사진 촬영 가능하신 분",
@@ -195,7 +234,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 15
+      "id": 18
     },
     {
       "title": "실제 부착 후 사진 촬영 가능하신 분, 실 사용 사진 필수입니다.",
@@ -208,7 +247,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 16
+      "id": 19
     },
     {
       "title": "실제 운동 시(헬스, 크로스핏, 클라이밍, 유도, 골프 등) 사용 및 사진 촬영 가능한 분",
@@ -216,45 +255,6 @@
       "platform": "아싸뷰",
       "link": "https://assaview.co.kr/campaign.php?cp_id=1794469589624",
       "image": "./data/campaign/thumb/thumb-179446958917931584581792382180179187923317905649463138347611_pntQmBJg_EC8DB8EB84A4EC9DBC2_300x300.jpg",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 17
-    },
-    {
-      "title": "[60,000원 상당] 안경 선글라스 체험권",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1768895269",
-      "image": "./data/campaign/thumb/thumb-2009347559_af0FEGX4_1_300x300.jpg",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 18
-    },
-    {
-      "title": "12cm 슈퍼싱글 아이보리 [배송비 포함113,900원]",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1794466161319",
-      "image": "./data/campaign/thumb/thumb-3731748613_0WLBonbz_1000_1000_01_300x300.jpg",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 19
-    },
-    {
-      "title": "프리티 컷팅샷 1세트 [배송비 포함11,900원]",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1794461687037",
-      "image": "./data/campaign/thumb/thumb-3696570772_vAwpFCkz_ECBBB7ED8C85EC83B7_EC8DB8EB84A4EC9DBC_01_300x300.jpg",
       "deadline": "",
       "location": "구매형",
       "review_type": "블로그",
