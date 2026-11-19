@@ -1,7 +1,72 @@
 {
-  "updated_at": "2026-11-18 23:44",
-  "total": 55,
+  "updated_at": "2026-11-19 05:13",
+  "total": 54,
   "campaigns": [
+    {
+      "title": "[33,500원 상당] 영국 해피버터 오가닉 기버터 150G",
+      "reward": "제작된 영상 제공 및 2차활용에 대한 동의 필수",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1795056075548",
+      "image": "./data/campaign/thumb/thumb-990981006_qPbQvwl1_KakaoTalk_20261022_173151893_300x300.png",
+      "deadline": "",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 1
+    },
+    {
+      "title": "[인천 영종구] 해피유머리스트",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1769605909",
+      "image": "./data/campaign/thumb/thumb-17696059091994344308_LkX36seQ_good_300x300.jpg",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 2
+    },
+    {
+      "title": "생화꽃다발 로즈하모니 졸업식 기념일 축하 꽃다발 꽃택배 꽃집",
+      "reward": "로즈하모니 핑크 [배송비 포함47,900원]",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1794991842683",
+      "image": "./data/campaign/thumb/thumb-832870177_FvK7ejHL_EBB894EBA3A828_300x300.jpg",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 3
+    },
+    {
+      "title": "퓨어몰링 공간절약 초슬림 논슬립 옷걸이",
+      "reward": "블랙 10개 [배송비 포함5,300원]",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1794810861859",
+      "image": "./data/campaign/thumb/thumb-2417549798_nCq2VrKw_EC8DB8EB84A4EC9DBC05_300x300.jpg",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 4
+    },
+    {
+      "title": "퓨어몰링 회전형 논슬립 어깨뿔방지 옷걸이",
+      "reward": "화이트 10개 [배송비 포함5,300원]",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1794799181193",
+      "image": "./data/campaign/thumb/thumb-2174180238_qBjcRSuN_877a2ed47725be64178cbbbc9e222f3e_300x300.jpg",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 5
+    },
     {
       "title": "[서울 마포구] 홍대 혼술바 우우",
       "reward": "60,000원 금액권",
@@ -13,7 +78,7 @@
       "review_type": "블로그",
       "applied": 2,
       "total": 10,
-      "id": 1
+      "id": 6
     },
     {
       "title": "+4,500 P",
@@ -26,7 +91,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 2
+      "id": 7
     },
     {
       "title": "가방 모양유지, 내부 오염방지, 깔끔한 수납정리를 도와주는 이너백입니다.",
@@ -39,7 +104,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 3
+      "id": 8
     },
     {
       "title": "널담 고단백 저당 슬랩 브래드",
@@ -52,7 +117,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 4
+      "id": 9
     },
     {
       "title": "[겨울한정] 고단백 슈톨렌",
@@ -65,7 +130,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 5
+      "id": 10
     },
     {
       "title": "모어그로우 이펙티브 데일리 스칼프 팩샴푸 (1,000원 할인쿠폰 적용 금지) [배송비 포함58,000원]",
@@ -78,7 +143,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 6
+      "id": 11
     },
     {
       "title": "모어그로우 이펙티브 데일리 스칼프 팩샴푸 (1,000원 할인쿠폰 적용 금지) [배송비 포함58,000원]",
@@ -91,7 +156,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 7
+      "id": 12
     },
     {
       "title": "모어그로우 이펙티브 데일리 스칼프 팩샴푸 (1,000원 할인쿠폰 적용 금지) [배송비 포함58,000원]",
@@ -104,7 +169,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 8
+      "id": 13
     },
     {
       "title": "모어그로우 넘버제로 프리미에르 노워시 트리트먼트 100ml 2개입 (1,000원 할인쿠폰 적용 금지) [배송비 포함39,000원]",
@@ -117,7 +182,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 9
+      "id": 14
     },
     {
       "title": "모어그로우 넘버제로 프리미에르 노워시 트리트먼트 100ml 2개입 (1,000원 할인쿠폰 적용 금지) [배송비 포함39,000원]",
@@ -130,7 +195,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 10
+      "id": 15
     },
     {
       "title": "이츠페이 사용 (상점에서 배달대행비, 월세, 인건비)를 카드결제 리뷰",
@@ -143,7 +208,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 11
+      "id": 16
     },
     {
       "title": "65mm 20매 본품 1개",
@@ -156,7 +221,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 12
+      "id": 17
     },
     {
       "title": "방탄꼭지 걸프리쉬 베리브라 브리더블 글루",
@@ -169,7 +234,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 13
+      "id": 18
     },
     {
       "title": "35mm 본품 1개",
@@ -182,7 +247,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 14
+      "id": 19
     },
     {
       "title": "방탄꼭지 에어니플 울트라씬",
@@ -190,71 +255,6 @@
       "platform": "아싸뷰",
       "link": "https://assaview.co.kr/campaign.php?cp_id=1794967267447",
       "image": "./data/campaign/thumb/thumb-179496726717937690371793171592990981006_1PGi9DQU_EC9AB8ED8AB8EB9DBCEC94AC35_300x300.jpg",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 15
-    },
-    {
-      "title": "[300,000원 상당] 화이트태닝 10회+전용로션",
-      "reward": "당일취소 시 아싸뷰 패널티 부여 예정",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1791250021",
-      "image": "./data/campaign/thumb/thumb-2039085906_Wl1mcKNY_1790817622022_300x300.jpg",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 16
-    },
-    {
-      "title": "루비락 골든그램 3단계 800g / 1개",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1794966482584",
-      "image": "./data/campaign/thumb/thumb-1794966482179376800117931707061792572552990981006_efNSQdql_KakaoTalk_20260826_111816341_300x300.jpg",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 17
-    },
-    {
-      "title": "몽잘 바리스칼프 로즈마리샴푸 / 500ml / 1개",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1794966650767",
-      "image": "./data/campaign/thumb/thumb-2040675526_TVOC9kQJ_EBAABDEC9E98EC83B4ED91B8_300x300.jpg",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 18
-    },
-    {
-      "title": "몽잘 트리코그로업 앰플 / 120ml / 1개",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1794966892784",
-      "image": "./data/campaign/thumb/thumb-17949668922040675526_3SZEs2Kf_EC8AA4ED81ACEBA6B0EC83B7_2026-11-11_151929_300x300.png",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 19
-    },
-    {
-      "title": "몽잘 맨즈 플루이드 쉐이빙 젤 / 200ml / 1개",
-      "reward": "남자, 얼굴노출 필수",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1794966922824",
-      "image": "./data/campaign/thumb/thumb-179496692217943744391793768874990981006_QBIJ3hq7_EC8DB8EB84A4EC9DBC_EC8990EC9DB4EBB999ECA0A4_300x300.jpg",
       "deadline": "",
       "location": "배송형",
       "review_type": "블로그",
@@ -588,19 +588,6 @@
       "id": 45
     },
     {
-      "title": "일산/덕양/파주",
-      "reward": "",
-      "platform": "포블로그",
-      "link": "https://4blog.net/list/all/local/ggbb/1san",
-      "image": "",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 46
-    },
-    {
       "title": "모단비즈센터",
       "reward": "",
       "platform": "모두의체험단",
@@ -611,7 +598,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 47
+      "id": 46
     },
     {
       "title": "🍽️ 맛집",
@@ -624,7 +611,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 48
+      "id": 47
     },
     {
       "title": "🛍️ 제품·서비스",
@@ -637,7 +624,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 49
+      "id": 48
     },
     {
       "title": "🎭 문화·스포츠",
@@ -650,7 +637,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 50
+      "id": 49
     },
     {
       "title": "📰 기자단",
@@ -663,7 +650,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 51
+      "id": 50
     },
     {
       "title": "📸 촬영단",
@@ -676,7 +663,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 52
+      "id": 51
     },
     {
       "title": "⏰ 마감임박",
@@ -689,7 +676,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 53
+      "id": 52
     },
     {
       "title": "✨ AI 추천픽",
@@ -702,7 +689,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 54
+      "id": 53
     },
     {
       "title": "⭐ 체험 후기",
@@ -715,7 +702,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 55
+      "id": 54
     }
   ]
 }
