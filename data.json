@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-20 23:31",
-  "total": 54,
+  "updated_at": "2026-11-21 04:54",
+  "total": 55,
   "campaigns": [
     {
       "title": "[39,000원 상당] 기본쪽갈비 (간장) 1개 + 매운쪽갈비 1개 + 추억의도시락 1개",
@@ -16,6 +16,19 @@
       "id": 1
     },
     {
+      "title": "리비언트 여성 구두 벗겨짐 방지 고정밴드",
+      "reward": "10개 [배송비 포함3,900원]",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1795166482817",
+      "image": "./data/campaign/thumb/thumb-17951664821794994787179490321017948105063076950102_7w5yJEub_ccc_300x300.jpg",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 2
+    },
+    {
       "title": "안 입는 브랜드 옷 정리하고, 리워드 받아가세요!",
       "reward": "",
       "platform": "아싸뷰",
@@ -26,7 +39,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 2
+      "id": 3
     },
     {
       "title": "프리미엄 의류중고거래 플랫폼 [10만원 구매 지원금] 제공",
@@ -39,7 +52,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 3
+      "id": 4
     },
     {
       "title": "프리미엄 의류중고거래 플랫폼 [10만원 구매 지원금] 제공",
@@ -52,7 +65,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 4
+      "id": 5
     },
     {
       "title": "모어그로우 이펙티브 데일리 스칼프 팩샴푸 (1,000원 할인쿠폰 적용 금지) [배송비 포함58,000원]",
@@ -65,7 +78,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 5
+      "id": 6
     },
     {
       "title": "+4,500 P",
@@ -78,7 +91,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 6
+      "id": 7
     },
     {
       "title": "6cm 퀸 블루 [배송비 포함82,460원]",
@@ -91,7 +104,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 7
+      "id": 8
     },
     {
       "title": "[200,000원 상당] 개인 바바틀 및 무료 입장 [마감때까지 드립니다]",
@@ -104,7 +117,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 8
+      "id": 9
     },
     {
       "title": "11/26(목) 23:59까지 방문&포스팅 작성 가능한 분만 지원하세요. / 3~7세 자녀(여아)와 같이 동반하여 체험진행 필요",
@@ -117,7 +130,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 9
+      "id": 10
     },
     {
       "title": "[100,000원 상당] 1인 신점",
@@ -130,7 +143,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 10
+      "id": 11
     },
     {
       "title": "[66,000원 상당] 1시간 등관리+얼굴관리",
@@ -143,7 +156,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 11
+      "id": 12
     },
     {
       "title": "[서울 광진구] 건대 혼술바 우우",
@@ -156,7 +169,7 @@
       "review_type": "블로그",
       "applied": 1,
       "total": 10,
-      "id": 12
+      "id": 13
     },
     {
       "title": "[서울 광진구] 군자 혼술바 우우",
@@ -169,7 +182,7 @@
       "review_type": "블로그",
       "applied": 1,
       "total": 10,
-      "id": 13
+      "id": 14
     },
     {
       "title": "[35,000원 상당] 로테이션 소개팅 참여권",
@@ -182,7 +195,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 14
+      "id": 15
     },
     {
       "title": "서비스 제공 없이 쇼룸 방문 후 후기 작성",
@@ -195,7 +208,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 15
+      "id": 16
     },
     {
       "title": "[50,000원 상당] 오호바이오 고라니 멧돼지 퇴치 냄새없는 야생동물 기피제 오스탑퍼 200g",
@@ -208,7 +221,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 16
+      "id": 17
     },
     {
       "title": "서비스 제공 없이 쇼룸 방문 후 후기 작성",
@@ -221,7 +234,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 17
+      "id": 18
     },
     {
       "title": "오르카 미드테이블 슬릿 다용도 침대 선반 소파 매거진 사이드 테이블",
@@ -234,7 +247,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 18
+      "id": 19
     },
     {
       "title": "오르카 미드테이블 슬릿 다용도 침대 선반 소파 매거진 사이드 테이블",
@@ -242,19 +255,6 @@
       "platform": "아싸뷰",
       "link": "https://assaview.co.kr/campaign.php?cp_id=1794863093114",
       "image": "./data/campaign/thumb/thumb-990762335_O2lE67VM_E18489E185B3E1848FE185B3E18485E185B5E186ABE18489E185A3E186BA_2026-11-17_E1848BE185A9E1848CE185A5E186AB_6.09.02_300x300.png",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 19
-    },
-    {
-      "title": "+4,500 P",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1795046882341",
-      "image": "./data/campaign/thumb/thumb-17950468821793924930179323252717925414191791332323179090899517885099373068221939_TenrDghU_EBA19CEAB3A0_300x300.png",
       "deadline": "",
       "location": "배송형",
       "review_type": "블로그",
@@ -588,6 +588,19 @@
       "id": 45
     },
     {
+      "title": "일산/덕양/파주",
+      "reward": "",
+      "platform": "포블로그",
+      "link": "https://4blog.net/list/all/local/ggbb/1san",
+      "image": "",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 46
+    },
+    {
       "title": "모단비즈센터",
       "reward": "",
       "platform": "모두의체험단",
@@ -598,7 +611,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 46
+      "id": 47
     },
     {
       "title": "🍽️ 맛집",
@@ -611,7 +624,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 47
+      "id": 48
     },
     {
       "title": "🛍️ 제품·서비스",
@@ -624,7 +637,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 48
+      "id": 49
     },
     {
       "title": "🎭 문화·스포츠",
@@ -637,7 +650,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 49
+      "id": 50
     },
     {
       "title": "📰 기자단",
@@ -650,7 +663,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 50
+      "id": 51
     },
     {
       "title": "📸 촬영단",
@@ -663,7 +676,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 51
+      "id": 52
     },
     {
       "title": "⏰ 마감임박",
@@ -676,7 +689,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 52
+      "id": 53
     },
     {
       "title": "✨ AI 추천픽",
@@ -689,7 +702,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 53
+      "id": 54
     },
     {
       "title": "⭐ 체험 후기",
@@ -702,7 +715,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 54
+      "id": 55
     }
   ]
 }
