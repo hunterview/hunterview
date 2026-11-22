@@ -1,7 +1,33 @@
 {
-  "updated_at": "2026-11-22 13:49",
-  "total": 54,
+  "updated_at": "2026-11-22 23:00",
+  "total": 55,
   "campaigns": [
+    {
+      "title": "[전남광주 고흥군] 준베이커리",
+      "reward": "15,000원 금액권",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1782635927415",
+      "image": "./data/campaign/thumb/thumb-2040675526_SojsGX54_E18483E185A1E1848BE185AEE186ABE18485E185A9E18483E185B3_28129_300x300.jpg",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 2,
+      "total": 10,
+      "id": 1
+    },
+    {
+      "title": "[47,000원 상당] 한돈떡갈비, 한우떡갈비, 흑마늘장아찌",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1772682174",
+      "image": "./data/campaign/thumb/thumb-2070919091_dmGkhM3w_KakaoTalk_20251208_145518704_12_300x300.jpg",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 2
+    },
     {
       "title": "[30,000원 상당] 1:1 리터칭 증명사진",
       "reward": "",
@@ -13,7 +39,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 1
+      "id": 3
     },
     {
       "title": "[39,000원 상당] 기본쪽갈비 (간장) 1개 + 매운쪽갈비 1개 + 추억의도시락 1개",
@@ -26,7 +52,7 @@
       "review_type": "블로그",
       "applied": 2,
       "total": 10,
-      "id": 2
+      "id": 4
     },
     {
       "title": "안 입는 브랜드 옷 정리하고, 리워드 받아가세요!",
@@ -39,7 +65,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 3
+      "id": 5
     },
     {
       "title": "프리미엄 의류중고거래 플랫폼 [10만원 구매 지원금] 제공",
@@ -52,7 +78,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 4
+      "id": 6
     },
     {
       "title": "프리미엄 의류중고거래 플랫폼 [10만원 구매 지원금] 제공",
@@ -65,7 +91,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 5
+      "id": 7
     },
     {
       "title": "모어그로우 이펙티브 데일리 스칼프 팩샴푸 (1,000원 할인쿠폰 적용 금지) [배송비 포함58,000원]",
@@ -78,7 +104,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 6
+      "id": 8
     },
     {
       "title": "+4,500 P",
@@ -91,7 +117,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 7
+      "id": 9
     },
     {
       "title": "샴페인1 + 일찍오면 뷔페 가능 + 칵테일",
@@ -104,7 +130,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 8
+      "id": 10
     },
     {
       "title": "[200,000원 상당] 개인 바바틀 및 무료 입장",
@@ -117,7 +143,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 9
+      "id": 11
     },
     {
       "title": "[200,000원 상당] 개인 바바틀 및 무료 입장 [마감때까지 드립니다]",
@@ -130,7 +156,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 10
+      "id": 12
     },
     {
       "title": "11/26(목) 23:59까지 방문&포스팅 작성 가능한 분만 지원하세요. / 3~7세 자녀(여아)와 같이 동반하여 체험진행 필요",
@@ -143,7 +169,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 11
+      "id": 13
     },
     {
       "title": "[100,000원 상당] 1인 신점",
@@ -156,7 +182,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 12
+      "id": 14
     },
     {
       "title": "[66,000원 상당] 1시간 등관리+얼굴관리",
@@ -169,7 +195,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 13
+      "id": 15
     },
     {
       "title": "[서울 광진구] 건대 혼술바 우우",
@@ -182,7 +208,7 @@
       "review_type": "블로그",
       "applied": 1,
       "total": 10,
-      "id": 14
+      "id": 16
     },
     {
       "title": "[서울 광진구] 군자 혼술바 우우",
@@ -195,7 +221,7 @@
       "review_type": "블로그",
       "applied": 1,
       "total": 10,
-      "id": 15
+      "id": 17
     },
     {
       "title": "[35,000원 상당] 로테이션 소개팅 참여권",
@@ -208,7 +234,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 16
+      "id": 18
     },
     {
       "title": "서비스 제공 없이 쇼룸 방문 후 후기 작성",
@@ -221,7 +247,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 17
+      "id": 19
     },
     {
       "title": "[50,000원 상당] 오호바이오 고라니 멧돼지 퇴치 냄새없는 야생동물 기피제 오스탑퍼 200g",
@@ -229,32 +255,6 @@
       "platform": "아싸뷰",
       "link": "https://assaview.co.kr/campaign.php?cp_id=1790904752",
       "image": "./data/campaign/thumb/thumb-1785021771_PeANGa29_image-6_300x300.png",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 18
-    },
-    {
-      "title": "서비스 제공 없이 쇼룸 방문 후 후기 작성",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1794865276225",
-      "image": "./data/campaign/thumb/thumb-1794865276990762335_jbDeER5U_E18489E185B3E1848FE185B3E18485E185B5E186ABE18489E185A3E186BA_2026-11-17_E1848BE185A9E1848CE185A5E186AB_6.27.35_300x300.png",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 19
-    },
-    {
-      "title": "오르카 미드테이블 슬릿 다용도 침대 선반 소파 매거진 사이드 테이블",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1794863695482",
-      "image": "./data/campaign/thumb/thumb-1794863695990762335_O2lE67VM_E18489E185B3E1848FE185B3E18485E185B5E186ABE18489E185A3E186BA_2026-11-17_E1848BE185A9E1848CE185A5E186AB_6.09.02_300x300.png",
       "deadline": "",
       "location": "배송형",
       "review_type": "블로그",
@@ -328,13 +328,13 @@
       "id": 25
     },
     {
-      "title": "커스텀 수건 5매입",
+      "title": "오늘 마감",
       "reward": "",
       "platform": "파블로체험단",
       "link": "https://pavlovu.com/review_campaign.php?cp_id=1794894976",
-      "image": "",
+      "image": "./data/campaign/pvv3_20261117152300_248f55f5e915_640.webp",
       "deadline": "",
-      "location": "배송형",
+      "location": "방문형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
@@ -354,32 +354,6 @@
       "id": 27
     },
     {
-      "title": "오늘 마감",
-      "reward": "",
-      "platform": "파블로체험단",
-      "link": "https://pavlovu.com/review_campaign.php?cp_id=1794805721",
-      "image": "./data/campaign/pvv3_20261116140911_6e5e01a45669_640.webp",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 28
-    },
-    {
-      "title": "오늘 마감",
-      "reward": "",
-      "platform": "파블로체험단",
-      "link": "https://pavlovu.com/review_campaign.php?cp_id=1794805409",
-      "image": "./data/campaign/pvv3_20261116140352_582b7dee8cdf_640.webp",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 29
-    },
-    {
       "title": "고양/파주 · 서비스",
       "reward": "",
       "platform": "파블로체험단",
@@ -390,7 +364,7 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 30
+      "id": 28
     },
     {
       "title": "강서/양천 · 맛집",
@@ -403,7 +377,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 31
+      "id": 29
     },
     {
       "title": "강서/양천 · 맛집",
@@ -416,7 +390,7 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 32
+      "id": 30
     },
     {
       "title": "강서/양천 · 맛집",
@@ -429,7 +403,7 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 33
+      "id": 31
     },
     {
       "title": "강서/양천 · 맛집",
@@ -442,7 +416,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 34
+      "id": 32
     },
     {
       "title": "광주 · 뷰티",
@@ -455,7 +429,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 35
+      "id": 33
     },
     {
       "title": "젖산 마그네슘",
@@ -468,7 +442,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 36
+      "id": 34
     },
     {
       "title": "EV5 실리콘 컵홀더 커버",
@@ -481,7 +455,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 37
+      "id": 35
     },
     {
       "title": "EV5 실리콘 컵홀더 커버",
@@ -494,7 +468,7 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 38
+      "id": 36
     },
     {
       "title": "EV5 실리콘 컵홀더 커버",
@@ -507,7 +481,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 39
+      "id": 37
     },
     {
       "title": "EV5 하단 수납 콘솔 트레이",
@@ -520,7 +494,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 40
+      "id": 38
     },
     {
       "title": "EV5 하단 수납 콘솔 트레이",
@@ -533,7 +507,7 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 41
+      "id": 39
     },
     {
       "title": "EV5 하단 수납 콘솔 트레이",
@@ -546,7 +520,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 42
+      "id": 40
     },
     {
       "title": "네O트리(윙가디움)",
@@ -559,7 +533,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 43
+      "id": 41
     },
     {
       "title": "네O트리(윙가디움)",
@@ -572,7 +546,7 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 44
+      "id": 42
     },
     {
       "title": "네O트리(윙가디움)",
@@ -585,7 +559,46 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
+      "id": 43
+    },
+    {
+      "title": "그랜저 컵커버+충전패드",
+      "reward": "",
+      "platform": "파블로체험단",
+      "link": "https://pavlovu.com/review_campaign.php?cp_id=1794277130",
+      "image": "",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 44
+    },
+    {
+      "title": "그랜저 컵커버+충전패드",
+      "reward": "",
+      "platform": "파블로체험단",
+      "link": "https://pavlovu.com/review_campaign.php?cp_id=1794276943",
+      "image": "",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "숏폼",
+      "applied": 0,
+      "total": 10,
       "id": 45
+    },
+    {
+      "title": "일산/덕양/파주",
+      "reward": "",
+      "platform": "포블로그",
+      "link": "https://4blog.net/list/all/local/ggbb/1san",
+      "image": "",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 46
     },
     {
       "title": "모단비즈센터",
@@ -598,7 +611,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 46
+      "id": 47
     },
     {
       "title": "🍽️ 맛집",
@@ -611,7 +624,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 47
+      "id": 48
     },
     {
       "title": "🛍️ 제품·서비스",
@@ -624,7 +637,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 48
+      "id": 49
     },
     {
       "title": "🎭 문화·스포츠",
@@ -637,7 +650,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 49
+      "id": 50
     },
     {
       "title": "📰 기자단",
@@ -650,7 +663,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 50
+      "id": 51
     },
     {
       "title": "📸 촬영단",
@@ -663,7 +676,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 51
+      "id": 52
     },
     {
       "title": "⏰ 마감임박",
@@ -676,7 +689,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 52
+      "id": 53
     },
     {
       "title": "✨ AI 추천픽",
@@ -689,7 +702,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 53
+      "id": 54
     },
     {
       "title": "⭐ 체험 후기",
@@ -702,7 +715,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 54
+      "id": 55
     }
   ]
 }
