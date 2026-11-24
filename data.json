@@ -1,7 +1,111 @@
 {
-  "updated_at": "2026-11-23 16:54",
+  "updated_at": "2026-11-24 03:39",
   "total": 55,
   "campaigns": [
+    {
+      "title": "널담 고식이섬유 뚱낭시에",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1795488919691",
+      "image": "./data/campaign/thumb/thumb-2948931083_Ew81b7SJ_261120_EB8490EB8BB4EC9DB8EC8AA4ED8380_EB9AB1EB82ADEC8B9CEC9790_ED81ACEBA6ACEC8AA4EBA788EC8AA4_EBA088EB939CEB8888_ED94BCEB939C_1080x1350_300x300.png",
+      "deadline": "",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 1
+    },
+    {
+      "title": "널담 고식이섬유 연말 뚱카롱",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1795488786850",
+      "image": "./data/campaign/thumb/thumb-2948931083_yY4xh8Nq_261120_EB8490EB8BB4EC9DB8EC8AA4ED8380_EB9AB1ECB9B4EBA1B1_ED81ACEBA6ACEC8AA4EBA788EC8AA4_EC84B8EBA19CECA081ECB8B5_ED94BCEB939C_1080x1350_300x300.png",
+      "deadline": "",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 2
+    },
+    {
+      "title": "[50,000원 상당] 50분 상당의 드럼 원데이 클래스 1회 (당일 연습실 이용권 포함)",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1791010204",
+      "image": "./data/campaign/thumb/thumb-17910102043667163078_jRxJzFi1_IMG_6682_300x300.jpg",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 3
+    },
+    {
+      "title": "[300,000원 상당] 화이트태닝 10회+전용로션",
+      "reward": "당일취소 시 아싸뷰 패널티 부여 예정",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1791251823",
+      "image": "./data/campaign/thumb/thumb-17912518232039085906_Wl1mcKNY_1790817622022_300x300.jpg",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 4
+    },
+    {
+      "title": "[37,000원 상당] 선데이투먼데이 다이아몬드 스피큘 5000샷 1.4g x 2ea",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1795437543166",
+      "image": "./data/campaign/thumb/thumb-453077700_p9SyEZJF_file_00000000c518820bb16797c0d77f9195_300x300.png",
+      "deadline": "",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 5
+    },
+    {
+      "title": "[37,000원 상당] 선데이투먼데이 다이아몬드 스피큘 5000샷 1.4g x 2ea",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1795435570823",
+      "image": "./data/campaign/thumb/thumb-453077700_v3rHBU2E_file_00000000827c820b998e89f4d0360ed5_300x300.png",
+      "deadline": "",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 6
+    },
+    {
+      "title": "아쿠아 미르토 아르제빌 오 드 퍼퓸 (판매자로켓)",
+      "reward": "쿠팡와우회원만 해당 가격에 구매 가능합니다",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1795399642826",
+      "image": "./data/campaign/thumb/thumb-2072898589_GM5ulY9k_EC9584ECBFA0EC9584EBAFB8EBA5B4ED86A0_300x300.jpg",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 7
+    },
+    {
+      "title": "리비언트 대형 대용량 공업용 주사기 500ML",
+      "reward": "500ML 1개 [배송비 포함6,200원]",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1795419348069",
+      "image": "./data/campaign/thumb/thumb-1795419348179499457517949034563076950102_n7H4uvBm_EEEE_300x300.jpg",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 8
+    },
     {
       "title": "[대구 달서구] 소연에스테틱(피부/바디/두피/탈모}",
       "reward": "[70,000원 상당] 수기윤곽(접시경락포함)",
@@ -13,7 +117,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 1
+      "id": 9
     },
     {
       "title": "밀양산업관광지원사업 인스타그램 피드",
@@ -26,7 +130,7 @@
       "review_type": "인스타",
       "applied": 0,
       "total": 10,
-      "id": 2
+      "id": 10
     },
     {
       "title": "[65,900원 상당] DRAEV 남자 국내제작 천연소가죽 스웨이드 블로퍼 5cm 키높이 발편한 슬리퍼",
@@ -39,7 +143,7 @@
       "review_type": "인스타",
       "applied": 0,
       "total": 10,
-      "id": 3
+      "id": 11
     },
     {
       "title": "[250,000원 상당] 풋스파 + 등스크럽 + 마사지 + 시워터테라피 ( 온열테라피) + 두피 25만원 프로그램 ( 시간 70분 ) - 마사지는 상체만 가능",
@@ -52,7 +156,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 4
+      "id": 12
     },
     {
       "title": "[34,000원 상당] 다이아몬드 스피큘 5000샷 1.4g x 2ea",
@@ -65,7 +169,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 5
+      "id": 13
     },
     {
       "title": "우리맛김 성수동 굿즈팝업스토어 위드 BADA BITES",
@@ -78,7 +182,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 6
+      "id": 14
     },
     {
       "title": "[50,000원 상당] 기구필라테스 그룹수업 1회",
@@ -91,7 +195,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 7
+      "id": 15
     },
     {
       "title": "시그니처 바디워시 285ml 1개 [배송비 포함28,000원]",
@@ -104,7 +208,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 8
+      "id": 16
     },
     {
       "title": "전체파마/전체염색/ 대기업 AI진단 두피크리닉 1회 권 ( 15만원 이상희망시 차액결제는 개인이 부담)택1",
@@ -117,7 +221,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 9
+      "id": 17
     },
     {
       "title": "[121,000원 상당] 통증관리/산전마사지/산후마사지",
@@ -130,7 +234,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 10
+      "id": 18
     },
     {
       "title": "[130,000원 상당] 애니메디자인연장 + 언더",
@@ -143,7 +247,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 11
+      "id": 19
     },
     {
       "title": "04년생~90년생 솔로만 참여 가능 / 예약제로 비용 선결제 후 반환 예정",
@@ -155,110 +259,6 @@
       "location": "방문형",
       "review_type": "블로그",
       "applied": 0,
-      "total": 10,
-      "id": 12
-    },
-    {
-      "title": "[13,000원 상당] [디자인 랜덤발송] 헤어 악세서리(집게핀 등)",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1794724725328",
-      "image": "./data/campaign/thumb/thumb-1995116016_9DSlOAQ5_ED97A4EC96B4ECA791EAB28C_282329_300x300.jpg",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 13
-    },
-    {
-      "title": "펜터렉트/ 1박스 [배송비 포함39,800원]",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1784178152",
-      "image": "./data/campaign/thumb/thumb-2105842212_B7LT0Jfo_500_3_300x300.png",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 14
-    },
-    {
-      "title": "키로커트/ 1박스 [배송비 포함38,500원]",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1784521789",
-      "image": "./data/campaign/thumb/thumb-2105842212_lKY26Trk_ECA09CEBAAA9-EC9786EC9D8C-1_300x300.png",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 15
-    },
-    {
-      "title": "[20,000원 상당] 차량석고방향제",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1795397234806",
-      "image": "./data/campaign/thumb/thumb-832842922_1c6rBTVW_IMG_20250114_211730_152_300x300.jpg",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 16
-    },
-    {
-      "title": "[경북 구미시] 심달구지 막창(구미)",
-      "reward": "[40,000원 상당] 식사권",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1795392406796",
-      "image": "./data/campaign/thumb/thumb-981228842_ypSMW18Z_IMG_1623_300x300.jpg",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 17
-    },
-    {
-      "title": "블랙 40cm x 4단 [배송비 포함17,800원]",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1794981284772",
-      "image": "./data/campaign/thumb/thumb-3508637911_PJIKlCgD_7878_300x300.png",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 18
-    },
-    {
-      "title": "[서울 성동구] 결이다른Therapy",
-      "reward": "집중케어 50분 관리",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1795143162569",
-      "image": "./data/campaign/thumb/thumb-17951431621783325228238341284_XJS3bOMc_20260308_094003_300x300.jpg",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 19
-    },
-    {
-      "title": "[전남광주 고흥군] 준베이커리",
-      "reward": "15,000원 금액권",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1782635927415",
-      "image": "./data/campaign/thumb/thumb-2040675526_SojsGX54_E18483E185A1E1848BE185AEE186ABE18485E185A9E18483E185B3_28129_300x300.jpg",
-      "deadline": "",
-      "location": "방문형",
-      "review_type": "블로그",
-      "applied": 2,
       "total": 10,
       "id": 20
     },
