@@ -1,7 +1,46 @@
 {
-  "updated_at": "2026-11-24 03:39",
+  "updated_at": "2026-11-24 16:45",
   "total": 55,
   "campaigns": [
+    {
+      "title": "[200,000원 상당] 커트포함 / 염색(붉은끼없는 브라운계열,탈색x,새치커버0)",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1794572311278",
+      "image": "./data/campaign/thumb/thumb-179457231117737293493552255029_WC0bRKE9_KakaoTalk_20260316_151612989_300x300.png",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 1
+    },
+    {
+      "title": "코 옆 붉은기 코 밑 완화 나비존 장벽 케어 또롱떼 옵티멈 컴포트 크림",
+      "reward": "본품 1개(50ml) [배송비 포함29,500원]",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1794897161549",
+      "image": "./data/campaign/thumb/thumb-2040865775_nVwgEv4A_EC97B0ECB69CECBBB73_300x300.jpg",
+      "deadline": "",
+      "location": "구매형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 2
+    },
+    {
+      "title": "+4,500 P",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1795486452334",
+      "image": "./data/campaign/thumb/thumb-2105754408_I2nF5EWC_1_300x300.png",
+      "deadline": "",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 3
+    },
     {
       "title": "널담 고식이섬유 뚱낭시에",
       "reward": "",
@@ -13,7 +52,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 1
+      "id": 4
     },
     {
       "title": "널담 고식이섬유 연말 뚱카롱",
@@ -26,7 +65,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 2
+      "id": 5
     },
     {
       "title": "[50,000원 상당] 50분 상당의 드럼 원데이 클래스 1회 (당일 연습실 이용권 포함)",
@@ -39,7 +78,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 3
+      "id": 6
     },
     {
       "title": "[300,000원 상당] 화이트태닝 10회+전용로션",
@@ -52,7 +91,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 4
+      "id": 7
     },
     {
       "title": "[37,000원 상당] 선데이투먼데이 다이아몬드 스피큘 5000샷 1.4g x 2ea",
@@ -65,7 +104,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 5
+      "id": 8
     },
     {
       "title": "[37,000원 상당] 선데이투먼데이 다이아몬드 스피큘 5000샷 1.4g x 2ea",
@@ -78,33 +117,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 6
-    },
-    {
-      "title": "아쿠아 미르토 아르제빌 오 드 퍼퓸 (판매자로켓)",
-      "reward": "쿠팡와우회원만 해당 가격에 구매 가능합니다",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1795399642826",
-      "image": "./data/campaign/thumb/thumb-2072898589_GM5ulY9k_EC9584ECBFA0EC9584EBAFB8EBA5B4ED86A0_300x300.jpg",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 7
-    },
-    {
-      "title": "리비언트 대형 대용량 공업용 주사기 500ML",
-      "reward": "500ML 1개 [배송비 포함6,200원]",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1795419348069",
-      "image": "./data/campaign/thumb/thumb-1795419348179499457517949034563076950102_n7H4uvBm_EEEE_300x300.jpg",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 8
+      "id": 9
     },
     {
       "title": "[대구 달서구] 소연에스테틱(피부/바디/두피/탈모}",
@@ -117,7 +130,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 9
+      "id": 10
     },
     {
       "title": "밀양산업관광지원사업 인스타그램 피드",
@@ -130,7 +143,7 @@
       "review_type": "인스타",
       "applied": 0,
       "total": 10,
-      "id": 10
+      "id": 11
     },
     {
       "title": "[65,900원 상당] DRAEV 남자 국내제작 천연소가죽 스웨이드 블로퍼 5cm 키높이 발편한 슬리퍼",
@@ -143,7 +156,7 @@
       "review_type": "인스타",
       "applied": 0,
       "total": 10,
-      "id": 11
+      "id": 12
     },
     {
       "title": "[250,000원 상당] 풋스파 + 등스크럽 + 마사지 + 시워터테라피 ( 온열테라피) + 두피 25만원 프로그램 ( 시간 70분 ) - 마사지는 상체만 가능",
@@ -156,7 +169,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 12
+      "id": 13
     },
     {
       "title": "[34,000원 상당] 다이아몬드 스피큘 5000샷 1.4g x 2ea",
@@ -164,19 +177,6 @@
       "platform": "아싸뷰",
       "link": "https://assaview.co.kr/campaign.php?cp_id=1795413665495",
       "image": "./data/campaign/thumb/thumb-453077700_NXiGortM_file_00000000ff3c820bbc1b182c509666da_300x300.png",
-      "deadline": "",
-      "location": "배송형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 13
-    },
-    {
-      "title": "우리맛김 성수동 굿즈팝업스토어 위드 BADA BITES",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1795415298895",
-      "image": "./data/campaign/thumb/thumb-237272618_nNu42MWV_KakaoTalk_20261121_200255536_01_300x300.jpg",
       "deadline": "",
       "location": "배송형",
       "review_type": "블로그",
@@ -198,19 +198,6 @@
       "id": 15
     },
     {
-      "title": "시그니처 바디워시 285ml 1개 [배송비 포함28,000원]",
-      "reward": "",
-      "platform": "아싸뷰",
-      "link": "https://assaview.co.kr/campaign.php?cp_id=1795062301447",
-      "image": "./data/campaign/thumb/thumb-822160200_X7CVS3Df_KakaoTalk_20261120_141258345_03_300x300.png",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 16
-    },
-    {
       "title": "전체파마/전체염색/ 대기업 AI진단 두피크리닉 1회 권 ( 15만원 이상희망시 차액결제는 개인이 부담)택1",
       "reward": "15만원 이상 희망시 차액결제는 개인이 부담",
       "platform": "아싸뷰",
@@ -221,7 +208,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 17
+      "id": 16
     },
     {
       "title": "[121,000원 상당] 통증관리/산전마사지/산후마사지",
@@ -234,7 +221,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 18
+      "id": 17
     },
     {
       "title": "[130,000원 상당] 애니메디자인연장 + 언더",
@@ -247,7 +234,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 19
+      "id": 18
     },
     {
       "title": "04년생~90년생 솔로만 참여 가능 / 예약제로 비용 선결제 후 반환 예정",
@@ -260,7 +247,46 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
+      "id": 19
+    },
+    {
+      "title": "[13,000원 상당] [디자인 랜덤발송] 헤어 악세서리(집게핀 등)",
+      "reward": "",
+      "platform": "아싸뷰",
+      "link": "https://assaview.co.kr/campaign.php?cp_id=1794724725328",
+      "image": "./data/campaign/thumb/thumb-1995116016_9DSlOAQ5_ED97A4EC96B4ECA791EAB28C_282329_300x300.jpg",
+      "deadline": "",
+      "location": "배송형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
       "id": 20
+    },
+    {
+      "title": "12만원 드라이+메이크업",
+      "reward": "",
+      "platform": "파블로체험단",
+      "link": "https://pavlovu.com/review_campaign.php?cp_id=1795514655",
+      "image": "",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 21
+    },
+    {
+      "title": "염색, 펌 중 택1",
+      "reward": "",
+      "platform": "파블로체험단",
+      "link": "https://pavlovu.com/review_campaign.php?cp_id=1795500476",
+      "image": "",
+      "deadline": "",
+      "location": "방문형",
+      "review_type": "블로그",
+      "applied": 0,
+      "total": 10,
+      "id": 22
     },
     {
       "title": "1박 2일 숙박권",
@@ -273,7 +299,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 21
+      "id": 23
     },
     {
       "title": "분O만강원 세종직영점",
@@ -286,20 +312,20 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 22
+      "id": 24
     },
     {
-      "title": "배송 · 뷰티",
+      "title": "오늘 마감",
       "reward": "",
       "platform": "파블로체험단",
       "link": "https://pavlovu.com/review_campaign.php?cp_id=1795395726",
-      "image": "",
+      "image": "./data/campaign/pvv3_20261123102910_167893fe7407_640.webp",
       "deadline": "",
-      "location": "배송형",
+      "location": "방문형",
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 23
+      "id": 25
     },
     {
       "title": "성향활용 프로그램 코칭수업",
@@ -312,7 +338,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 24
+      "id": 26
     },
     {
       "title": "서초/강남 · 서비스",
@@ -325,7 +351,7 @@
       "review_type": "인스타",
       "applied": 0,
       "total": 10,
-      "id": 25
+      "id": 27
     },
     {
       "title": "서초/강남 · 서비스",
@@ -338,7 +364,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 26
+      "id": 28
     },
     {
       "title": "5,000포인트",
@@ -351,7 +377,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 27
+      "id": 29
     },
     {
       "title": "제O글램핑 위고고 (부동산)",
@@ -364,7 +390,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 28
+      "id": 30
     },
     {
       "title": "5,000포인트",
@@ -377,7 +403,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 29
+      "id": 31
     },
     {
       "title": "용인/성남 · 맛집",
@@ -390,7 +416,7 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 30
+      "id": 32
     },
     {
       "title": "용인/성남 · 맛집",
@@ -403,7 +429,7 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 31
+      "id": 33
     },
     {
       "title": "용인/성남 · 맛집",
@@ -416,7 +442,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 32
+      "id": 34
     },
     {
       "title": "고양/파주 · 서비스",
@@ -429,7 +455,7 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 33
+      "id": 35
     },
     {
       "title": "강서/양천 · 맛집",
@@ -442,7 +468,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 34
+      "id": 36
     },
     {
       "title": "강서/양천 · 맛집",
@@ -455,7 +481,7 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 35
+      "id": 37
     },
     {
       "title": "강서/양천 · 맛집",
@@ -468,7 +494,7 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 36
+      "id": 38
     },
     {
       "title": "강서/양천 · 맛집",
@@ -481,7 +507,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 37
+      "id": 39
     },
     {
       "title": "광주 · 뷰티",
@@ -494,7 +520,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 38
+      "id": 40
     },
     {
       "title": "젖산 마그네슘",
@@ -507,7 +533,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 39
+      "id": 41
     },
     {
       "title": "EV5 실리콘 컵홀더 커버",
@@ -520,7 +546,7 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 40
+      "id": 42
     },
     {
       "title": "EV5 실리콘 컵홀더 커버",
@@ -533,7 +559,7 @@
       "review_type": "숏폼",
       "applied": 0,
       "total": 10,
-      "id": 41
+      "id": 43
     },
     {
       "title": "EV5 실리콘 컵홀더 커버",
@@ -546,39 +572,13 @@
       "review_type": "블로그",
       "applied": 0,
       "total": 10,
-      "id": 42
-    },
-    {
-      "title": "EV5 하단 수납 콘솔 트레이",
-      "reward": "",
-      "platform": "파블로체험단",
-      "link": "https://pavlovu.com/review_campaign.php?cp_id=1794288097",
-      "image": "",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "블로그",
-      "applied": 0,
-      "total": 10,
-      "id": 43
-    },
-    {
-      "title": "EV5 하단 수납 콘솔 트레이",
-      "reward": "",
-      "platform": "파블로체험단",
-      "link": "https://pavlovu.com/review_campaign.php?cp_id=1794287569",
-      "image": "",
-      "deadline": "",
-      "location": "구매형",
-      "review_type": "숏폼",
-      "applied": 0,
-      "total": 10,
       "id": 44
     },
     {
       "title": "EV5 하단 수납 콘솔 트레이",
       "reward": "",
       "platform": "파블로체험단",
-      "link": "https://pavlovu.com/review_campaign.php?cp_id=1794282880",
+      "link": "https://pavlovu.com/review_campaign.php?cp_id=1794288097",
       "image": "",
       "deadline": "",
       "location": "구매형",
